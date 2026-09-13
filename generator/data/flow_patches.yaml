@@ -6,8 +6,10 @@
   # text is displayed.
   - index:
       - 0x1
+      - 0x4
       - 0x9
       - 0xC
+      - 0xF
       - 0x8F
       - 0x192
       - 0x1A4
@@ -15,11 +17,6 @@
       - 0x197
       - 0x1BC
       - 0x1C9
-      - 0x14A
-      - 0x210
-      - 0x1E0
-      - 0x1EC
-      - 0x1F4
     type: event
     event: no-op
     parameters: 0x00000000

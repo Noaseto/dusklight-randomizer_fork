@@ -158,6 +158,7 @@ configure_file(
         "${CMAKE_CURRENT_SOURCE_DIR}/mod.json.in"
         "${CMAKE_CURRENT_SOURCE_DIR}/mod.json"
         @ONLY
+        NEWLINE_STYLE LF
 )
 
 add_mod(randomizer

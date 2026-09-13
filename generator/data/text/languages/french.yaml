@@ -2547,6 +2547,11 @@ Talo Sharpshooting:
     Text: le mini-jeu {tir de précision de Fénir}
   Cryptic:
     Text: the {Talo Sharpshooting} minigame
+  Template Overrides:
+    - Keys:
+        - Location Hint
+      Pretty:
+        Text: du mini-jeu de {tir de précision de Fénir}
 
 Renados Letter Check:
   Standard:
@@ -2558,11 +2563,16 @@ Renados Letter Check:
 
 Ilia Memory Reward:
   Standard:
-    Text: récompense souvenir d'Iria
+    Text: souvenir d'Iria
   Pretty:
-    Text: "{récompense souvenir d'Iria}"
+    Text: le "{souvenir d'Iria}"
   Cryptic:
     Text: "{Ilia Memory Reward}"
+  Template Overrides:
+    - Keys:
+        - Location Hint
+      Pretty:
+        Text: du {souvenir d'Iria}
 
 Shad Dominion Rod:
   Standard:
@@ -2852,6 +2862,12 @@ Skybook From Impaz:
     Plurality: Plural
   Cryptic:
     Text: the {Skybook From Impaz}
+  Template Overrides:
+    - Keys:
+        - Location Hint
+      Pretty:
+        Text: des {Écrits Célestiens d'Impa}
+        Plurality: Plural
 
 Cats Hide and Seek Minigame:
   Standard:
@@ -3096,11 +3112,16 @@ Lanayru Field Skulltula Grotto Chest:
 
 Lanayru Ice Block Puzzle Cave Chest:
   Standard:
-    Text: coffre de la caverne puzzle de bloc de glace dans la plaine de Lanelle
+    Text: coffre de la caverne aux blocs de glace dans la plaine de Lanelle
   Pretty:
-    Text: le {coffre de la caverne puzzle de bloc de glace dans la plaine de Lanelle}
+    Text: le {coffre de la caverne aux blocs de glace dans la plaine de Lanelle}
   Cryptic:
     Text: the {Lanayru Ice Block Puzzle Cave Chest}
+  Template Overrides:
+    - Keys:
+        - Location Hint
+      Pretty:
+        Text: du {coffre de la caverne aux blocs de glace dans la plaine de Lanelle}
 
 Lanayru Field Spinner Track Chest:
   Standard:
@@ -4096,6 +4117,11 @@ Plumm Fruit Balloon Minigame:
     Text: le {mini-jeu Éclate-Fruits de Prune}
   Cryptic:
     Text: the {Plumm Fruit Balloon Minigame}
+  Template Overrides:
+    - Keys:
+        - Location Hint
+      Pretty:
+        Text: du {mini-jeu Éclate-Fruits de Prune}
 
 Upper Zoras River Warp Portal:
   Standard:
@@ -4933,11 +4959,16 @@ Cave of Ordeals Floor 44 Poe:
 
 Cave of Ordeals Great Fairy Reward:
   Standard:
-    Text: récompense de la grande Fée de la Caverne de l'Ordalie
+    Text: don de la grande Fée de la Caverne de l'Ordalie
   Pretty:
-    Text: la {récompense de la grande Fée de la Caverne de l'Ordalie}
+    Text: le {don de la grande Fée de la Caverne de l'Ordalie}
   Cryptic:
-    Text: the {Cave of Ordeals Great Fairy Reward}
+    Text: the {Cave of Ordeals Great Fairy Reward} TODO ELO
+  Template Overrides:
+    - Keys:
+        - Location Hint
+      Pretty:
+        Text: du {don de la grande Fée de la Caverne de l'Ordalie}
 
 Mirror Chamber Warp Portal:
   Standard:
@@ -6242,6 +6273,11 @@ City in the Sky Aeralfos Chest:
     Text: le {coffre d'Aéralfos de Célestia}
   Cryptic:
     Text: the {Célestia Aeralfos Chest}
+  Template Overrides:
+    - Keys:
+        - Location Hint
+      Pretty:
+        Text: du {coffre d'Aéralfos de Célestia}
 
 City in the Sky Chest Behind North Fan:
   Standard:
@@ -6375,7 +6411,7 @@ Palace of Twilight Collect Both Sols:
   Standard:
     Text: collecter les deux astres du Palais du Crépuscule
   Pretty:
-    Text: "{collecter les deux astres du Palais du Crépuscule}"
+    Text: après avoir {collecter les deux astres du Palais du Crépuscule}
   Cryptic:
     Text: the {Palais du Crépuscule Collect Both Sols}
 
@@ -6939,6 +6975,11 @@ Faron Woods:
     Text: "{forêt de Firone}"
   Cryptic:
     Text: a {forest}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: la {forêt de Firone}
 
 Sacred Grove:
   Standard:
@@ -6947,22 +6988,37 @@ Sacred Grove:
     Text: le {Sanctuaire de la forêt}
   Cryptic:
     Text: a {hidden grove}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {Sanctuaire de la forêt}
 
 Faron Field:
   Standard:
     Text: plaine de Firone
   Pretty:
-    Text: "{plaine de Firone}"
+    Text: la {plaine de Firone}
   Cryptic:
     Text: a {field near the forest}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: la {plaine de Firone}
 
 Kakariko Gorge:
   Standard:
     Text: Gorge de Cocorico
   Pretty:
-    Text: "{Gorge de Cocorico}"
+    Text: le {Gorge de Cocorico}
   Cryptic:
     Text: a {field with a large chasm}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {Gorge de Cocorico}
 
 Kakariko Village:
   Standard:
@@ -6979,22 +7035,37 @@ Kakariko Graveyard:
     Text: le {cimetière de Cocorico}
   Cryptic:
     Text: a {yard for the dead}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {cimetière de Cocorico}
 
 Death Mountain:
   Standard:
     Text: Montagne de la mort
   Pretty:
-    Text: "{Montagne de la mort}"
+    Text: la {Montagne de la mort}
   Cryptic:
     Text: a {volcano path}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: la {Montagne de la mort}
 
 Eldin Field:
   Standard:
-    Text: plaine d'Ordinn
+    Text: plaine d'Ordinn - S
   Pretty:
-    Text: "{plaine d'Ordinn}"
+    Text: "{plaine d'Ordinn - S}"
   Cryptic:
     Text: a {field near a volcano}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: la {plaine d'Ordinn - S}
 
 North Eldin:
   Standard:
@@ -7003,22 +7074,37 @@ North Eldin:
     Text: "{plaine d'Ordinn - N}"
   Cryptic:
     Text: a {narrow gray field}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: la {plaine d'Ordinn - N}
 
 Hidden Village:
   Standard:
     Text: Village Oublié
   Pretty:
-    Text: Le {Village Oublié}
+    Text: le {Village Oublié}
   Cryptic:
     Text: a {secluded settlement}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {Village Oublié}
 
 Lanayru Field:
   Standard:
     Text: plaine de Lanelle
   Pretty:
-    Text: "{plaine de Lanelle}"
+    Text: la {plaine de Lanelle}
   Cryptic:
     Text: a {field with a river}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: la {plaine de Lanelle}
 
 Beside Castle Town:
   Standard:
@@ -7035,6 +7121,11 @@ Castle Town:
     Text: la {citadelle}
   Cryptic:
     Text: a {city}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: la {citadelle}
 
 South of Castle Town:
   Standard:
@@ -7043,14 +7134,24 @@ South of Castle Town:
     Text: le {sud de la citadelle}
   Cryptic:
     Text: a {field south of a city}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {sud de la citadelle}
 
 Great Bridge of Hylia:
   Standard:
-    Text: grand pont du Lac Hylia
+    Text: viaduc Hylia
   Pretty:
-    Text: le {grand pont du Lac Hylia}
+    Text: le {viaduc Hylia}
   Cryptic:
     Text: a {path along a great bridge}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {viaduc Hylia}
 
 Lake Hylia:
   Standard:
@@ -7059,6 +7160,11 @@ Lake Hylia:
     Text: le {Lac Hylia}
   Cryptic:
     Text: a {vast lake}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {Lac Hylia}
 
 Lanayru Spring:
   Standard:
@@ -7067,6 +7173,11 @@ Lanayru Spring:
     Text: la {Source de Lanelle}
   Cryptic:
     Text: a {cavernous spring}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: la {Source de Lanelle}
 
 Upper Zoras River:
   Standard:
@@ -7075,6 +7186,11 @@ Upper Zoras River:
     Text: la {Rivière Zora (Amont)}
   Cryptic:
     Text: a {fork in the river}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: la {Rivière Zora (Amont)}
 
 Zoras Domain:
   Standard:
@@ -7083,22 +7199,37 @@ Zoras Domain:
     Text: le {Village Zora}
   Cryptic:
     Text: the {home of a grand waterfall}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {Village Zora}
 
 South Gerudo Desert:
   Standard:
     Text: Désert Gerudo - S
   Pretty:
-    Text: "{Désert Gerudo - S}"
+    Text: le {Désert Gerudo - S}
   Cryptic:
     Text: the {southern desert}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {Désert Gerudo - S}
 
 North Gerudo Desert:
   Standard:
     Text: Désert Gerudo - N
   Pretty:
-    Text: "{Désert Gerudo - N}"
+    Text: le {Désert Gerudo - N}
   Cryptic:
     Text: the {northern desert}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {Désert Gerudo - N}
 
 Bulblin Camp:
   Standard:
@@ -7107,6 +7238,11 @@ Bulblin Camp:
     Text: le {camp Bulblin}
   Cryptic:
     Text: a {camp of enemies}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {camp Bulblin}
 
 Mirror Chamber:
   Standard:
@@ -7115,14 +7251,24 @@ Mirror Chamber:
     Text: la {Chambre du Miroir}
   Cryptic:
     Text: a {chamber of chains}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: la {Chambre du Miroir}
 
 Snowpeak Mountain:
   Standard:
     Text: Cimes enneigées
   Pretty:
-    Text: "{Cimes enneigées}"
+    Text: les {Cimes enneigées}
   Cryptic:
     Text: a {snowy mountain}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: les {Cimes enneigées}
 
 Forest Temple:
   Standard:
@@ -7131,6 +7277,11 @@ Forest Temple:
     Text: le {Temple Sylvestre}
   Cryptic:
     Text: a {deep forest}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {Temple Sylvestre}
 
 Goron Mines:
   Standard:
@@ -7139,6 +7290,11 @@ Goron Mines:
     Text: la {Mine Goron}
   Cryptic:
     Text: a {volcanic mine}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: la {Mine Goron}
 
 Lakebed Temple:
   Standard:
@@ -7147,6 +7303,11 @@ Lakebed Temple:
     Text: le {Temple Abyssal}
   Cryptic:
     Text: an {underground lake}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {Temple Abyssal}
 
 Arbiters Grounds:
   Standard:
@@ -7155,6 +7316,11 @@ Arbiters Grounds:
     Text: la {Tour du Jugement}
   Cryptic:
     Text: an {ancient prison}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: la {Tour du Jugement}
 
 Snowpeak Ruins:
   Standard:
@@ -7164,6 +7330,12 @@ Snowpeak Ruins:
     Plurality: Plural
   Cryptic:
     Text: a {snowy mansion}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: les {Ruines des Pics Blancs}
+        Plurality: Plural
 
 Temple of Time:
   Standard:
@@ -7172,6 +7344,11 @@ Temple of Time:
     Text: le {Temple du Temps}
   Cryptic:
     Text: the {past}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {Temple du Temps}
 
 City in the Sky:
   Standard:
@@ -7188,6 +7365,11 @@ Palace of Twilight:
     Text: le {Palais du Crépuscule}
   Cryptic:
     Text: "{another realm}"
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {Palais du Crépuscule}
 
 Hyrule Castle:
   Standard:
@@ -7196,6 +7378,11 @@ Hyrule Castle:
     Text: le {Château d'Hyrule}
   Cryptic:
     Text: the {kingdom's castle}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+      Standard:
+        Text: le {Château d'Hyrule}
 
 # BOSS/GOAL NAMES
 Diababa:
@@ -7249,7 +7436,7 @@ Item Hint:
 
 Location Hint:
   Standard:
-    Text: <fast>On raconte que la récompense de <Location Pretty or Cryptic Name> est <Item Pretty or Cryptic Name>.
+    Text: <fast>On raconte que la récompense <Location Pretty or Cryptic Name> |est/sont| <Item Pretty or Cryptic Name>.
 
 # NO REQUIRED DUNGEON TEXT
 No Required Dungeons Text:

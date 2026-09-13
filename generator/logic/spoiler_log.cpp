@@ -32,8 +32,7 @@ namespace randomizer::logic::spoiler_log
 
     void LogBasicInfo(std::ofstream& log, Randomizer* randomizer)
     {
-        // TODO: print mod version instead of dusklight version
-        // log << "Dusklight Version: " << DUSK_WC_DESCRIBE << std::endl;
+        log << "Dusklight Randomizer Version: " << FULL_RANDOMIZER_VERSION << std::endl;
         log << "Seed: " << randomizer->GetConfig().GetSeed() << std::endl;
         log << "Permalink: " << randomizer->GetConfig().GetPermalink() << std::endl;
         log << "Hash: " << randomizer->GetConfig().GetHash() << std::endl;

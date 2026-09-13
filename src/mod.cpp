@@ -44,7 +44,7 @@ MOD_EXPORT ModResult mod_initialize(ModError* error) {
         return mods::set_error(error, result, "failed to initialize session");
     }
 
-    svc_log->info(mod_ctx, "randomizer initialized");
+    svc_log->info(mod_ctx, "randomizer " FULL_RANDOMIZER_VERSION " initialized");
     return MOD_OK;
 }
 

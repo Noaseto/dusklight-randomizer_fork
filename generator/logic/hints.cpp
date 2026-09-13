@@ -404,9 +404,11 @@ namespace randomizer::logic::hints {
         fullText.Replace("<goal name>", goalNameText);
 
         // Handle plurality if necessary
-        for (auto& langText : fullText.mEntries) {
+        for (size_t lang = 0; lang < fullText.mEntries.size(); ++lang) {
+            auto& langText = fullText.mEntries[lang];
             if (!langText.str.empty() && utility::str::Contains(langText.str, '|')) {
-                langText.str = ProcessHintPlurality(langText.str, hintRegionNames.size() > 1);
+                bool plural = hintRegionNames.size() > 1 || hintRegionText[0].mEntries[lang].plurality == Text::PLURAL;
+                langText.str = ProcessHintPlurality(langText.str, plural);
             }
         }
 

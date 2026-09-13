@@ -1,7 +1,7 @@
 {
   "id": "dev.twilitrealm.randomizer",
   "name": "Dusklight Randomizer",
-  "version": "1.0.1",
+  "version": "@RANDOMIZER_VERSION@",
   "author": "Twilit Realm",
   "description": "To play, select the Randomizer game mode on the pre-launch menu. Seed selection will happen when selecting a new file."
 }

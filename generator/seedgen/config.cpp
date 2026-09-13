@@ -384,7 +384,7 @@ namespace randomizer::seedgen::config
 
         std::string permalink{};
 
-        permalink += RANDOMIZER_VERSION;
+        permalink += FULL_RANDOMIZER_VERSION;
         permalink += '\0';
         permalink += std::to_string(settings::GetSettingInfoHash());
         permalink += '\0';
@@ -490,7 +490,7 @@ namespace randomizer::seedgen::config
 
         if (permaSettingsInfoHash != std::to_string(settings::GetSettingInfoHash())) {
             return fmt::format("Pasted permalink was generated with an incompatible Randomizer version.\n"
-                                  "Your version: {}\nPermalink version: {}", RANDOMIZER_VERSION, permaVersion);
+                                  "Your version: {}\nPermalink version: {}", FULL_RANDOMIZER_VERSION, permaVersion);
         }
 
         const std::vector<char> bytes(permaPackedSettings.begin(), permaPackedSettings.end());

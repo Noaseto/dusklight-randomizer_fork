@@ -117,6 +117,49 @@ foreach (RANDOMIZER_FILE IN LISTS RANDOMIZER_DATA)
     b_embed(randomizer_embeds "${RANDOMIZER_FILE}")
 endforeach ()
 
+# Versioning
+set(RANDOMIZER_VERSION "1.0.1")
+find_package(Git QUIET)
+if(GIT_FOUND)
+    execute_process(
+            COMMAND ${GIT_EXECUTABLE} rev-parse --short HEAD
+            WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
+            OUTPUT_VARIABLE GIT_COMMIT_HASH
+            OUTPUT_STRIP_TRAILING_WHITESPACE
+            ERROR_QUIET
+    )
+
+    execute_process(
+            COMMAND ${GIT_EXECUTABLE} rev-parse --abbrev-ref HEAD
+            WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
+            OUTPUT_VARIABLE GIT_BRANCH
+            OUTPUT_STRIP_TRAILING_WHITESPACE
+            ERROR_QUIET
+    )
+
+    execute_process(
+            COMMAND ${GIT_EXECUTABLE} status --porcelain
+            WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
+            OUTPUT_VARIABLE GIT_STATUS_OUTPUT
+            OUTPUT_STRIP_TRAILING_WHITESPACE
+            ERROR_QUIET
+    )
+
+    set(FULL_RANDOMIZER_VERSION "v${RANDOMIZER_VERSION}-${GIT_BRANCH}-${GIT_COMMIT_HASH}")
+
+    if(NOT GIT_STATUS_OUTPUT STREQUAL "")
+        set(FULL_RANDOMIZER_VERSION "${FULL_RANDOMIZER_VERSION}-dirty")
+    endif()
+else()
+    set(FULL_RANDOMIZER_VERSION "v${RANDOMIZER_VERSION}-unknown")
+endif()
+
+configure_file(
+        "${CMAKE_CURRENT_SOURCE_DIR}/mod.json.in"
+        "${CMAKE_CURRENT_SOURCE_DIR}/mod.json"
+        @ONLY
+)
+
 add_mod(randomizer
     FEATURES game fmt
     SOURCES  src/mod.cpp ${RANDOMIZER_GENERATOR_SOURCES} ${RANDOMIZER_SOURCES}
@@ -129,7 +172,7 @@ target_link_libraries(randomizer PRIVATE yaml-cpp::yaml-cpp base64pp randomizer_
 
 string(LENGTH "${CMAKE_CURRENT_SOURCE_DIR}/" RANDOMIZER_SOURCE_PATH_SIZE)
 target_compile_definitions(randomizer PRIVATE
-        RANDOMIZER_VERSION="1.0.0"
+        FULL_RANDOMIZER_VERSION="${FULL_RANDOMIZER_VERSION}"
         RANDO_DATA_PATH="generator/data/"
         SOURCE_PATH_SIZE=${RANDOMIZER_SOURCE_PATH_SIZE}
 )
@@ -139,7 +182,7 @@ add_executable(randomizer_generator ${CMAKE_CURRENT_SOURCE_DIR}/generator/genera
 target_link_libraries(randomizer_generator PRIVATE
         dusklight_mod_api yaml-cpp::yaml-cpp base64pp fmt::fmt randomizer_embeds)
 target_compile_definitions(randomizer_generator PRIVATE
-        RANDOMIZER_VERSION="1.0.0"
+        FULL_RANDOMIZER_VERSION="${FULL_RANDOMIZER_VERSION}"
         RANDO_DATA_PATH="generator/data/"
         SOURCE_PATH_SIZE=${RANDOMIZER_SOURCE_PATH_SIZE}
         RANDO_SAVE_PATH="${CMAKE_BINARY_DIR}/randomizer/"
@@ -156,7 +199,7 @@ if (NOT EXISTS "${RANDO_LOGIC_TESTS_PATH}")
 endif()
 
 target_compile_definitions(randomizer_generator_tests PRIVATE
-        RANDOMIZER_VERSION="1.0.0"
+        FULL_RANDOMIZER_VERSION="${FULL_RANDOMIZER_VERSION}"
         RANDO_DATA_PATH="generator/data/"
         SOURCE_PATH_SIZE=${RANDOMIZER_SOURCE_PATH_SIZE}
         RANDO_SAVE_PATH="${CMAKE_BINARY_DIR}/randomizer tests/"

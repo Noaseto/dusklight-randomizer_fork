@@ -1,8 +1,6 @@
 #include "../utility/log.hpp"
 #include "../utility/time.hpp"
 
-#define RANDOMIZER_VERSION "1.0.0"
-
 namespace randomizer::utility::log
 {
     LogInfo::LogInfo() {}
@@ -77,7 +75,7 @@ namespace randomizer::utility::log
     {
         output.open(LOG_PATH);
         output << "Program opened " << randomizer::utility::time::ProgramTime::getDateStr(); // time string ends with \n
-        output << "Dusk Randomizer Version " << RANDOMIZER_VERSION << std::endl;
+        output << "Dusk Randomizer Version " << FULL_RANDOMIZER_VERSION << std::endl;
         output << std::endl << std::endl;
     }
 

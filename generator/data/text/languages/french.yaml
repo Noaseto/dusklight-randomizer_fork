@@ -356,9 +356,9 @@ Seeds 50:
 
 Foolish Item:
   Standard:
-    Text: Foolish Item
+    Text: Faux'bjet
   Pretty:
-    Text: a {Foolish Item}
+    Text: un {Faux'bjet}
   Cryptic:
     Text: a {chilly surprise}
 
@@ -511,6 +511,10 @@ Piece of Heart:
     Text: some {love}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+      Pretty:
+        Text: le {Fragment de cœur}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -558,15 +562,19 @@ Ordon Shield:
   Standard:
     Text: Bouclier de Toal
   Pretty:
-    Text: le {bouclier de Toal}
+    Text: le {Bouclier de Toal}
   Cryptic:
     Text: a {sturdy reminder of home}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: le Bouclier de Toal
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
-        Text: du {bouclier de Toal}
+        Text: du {Bouclier de Toal}
 
 Wooden Shield:
   Standard:
@@ -591,6 +599,10 @@ Hylian Shield:
     Text: an {unbreakable shield}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: le Bouclier d'Hylia
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -604,6 +616,10 @@ Magic Armor:
   Cryptic:
     Text: "{magical clothing}"
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: l'Armure magique
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -631,6 +647,10 @@ Zora Armor:
     Text: the {fish suit}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: la tenue Zora
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -638,12 +658,16 @@ Zora Armor:
 
 Shadow Crystal:
   Standard:
-    Text: Cristal d'ombre
+    Text: Cristal Maudit
   Pretty:
-    Text: le {cristal d'ombre}
+    Text: le {Cristal Maudit}
   Cryptic:
     Text: a {crystal of dark power}
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: le Cristal Maudit
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -655,12 +679,12 @@ Shadow Crystal:
         - Castle Town Goron Hylian Shield Confirmation Initial Text Template
         - Castle Town Goron Hylian Shield Confirmation Later Text Template
       Pretty:
-        Text: le {crristal d'ombrre}
+        Text: le {Crristal Maudit}
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
-        Text: du {crristal d'ombrre}
+        Text: du {Crristal Maudit}
 
 Progressive Wallet:
   Standard:
@@ -669,15 +693,11 @@ Progressive Wallet:
     Text: une {Bourse Progressive}
   Cryptic:
     Text: a {money bag}
-# English overrides the exact text used for the Agitha hint sign
-# Feel free to use if necessary
-#  Template Overrides:
-#    - Keys:
-#        - Agithas Castle Some Items Sign Text
-#      Pretty:
-#        Text:
-#      Cryptic:
-#        Text:
+  Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: une Bourse
 
 Upper Zoras River Portal:
   Standard:
@@ -720,6 +740,10 @@ Hawkeye:
     Text: the {zoom-and-enhance}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: l'Œil du faucon
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -732,15 +756,11 @@ Progressive Sword:
     Text: une {Épée}
   Cryptic:
     Text: a {sharp weapon}
-# English overrides the exact text used for the Agitha hint sign
-# Feel free to use if necessary
-#  Template Overrides:
-#    - Keys:
-#        - Agithas Castle Some Items Sign Text
-#      Pretty:
-#        Text:
-#      Cryptic:
-#        Text:
+  Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: une Épée
 
 Gale Boomerang:
   Standard:
@@ -815,15 +835,11 @@ Progressive Bow:
     Text: un {Arc}
   Cryptic:
     Text: an {arrow launcher}
-# English overrides the exact text used for the Agitha hint sign
-# Feel free to use if necessary
-#  Template Overrides:
-#    - Keys:
-#        - Agithas Castle Some Items Sign Text
-#      Pretty:
-#        Text:
-#      Cryptic:
-#        Text:
+  Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: un Arc
 
 Progressive Clawshot:
   Standard:
@@ -832,15 +848,11 @@ Progressive Clawshot:
     Text: un {Grappin}
   Cryptic:
     Text: a {chain launcher}
-# English overrides the exact text used for the Agitha hint sign
-# Feel free to use if necessary
-#  Template Overrides:
-#    - Keys:
-#        - Agithas Castle Some Items Sign Text
-#      Pretty:
-#        Text:
-#      Cryptic:
-#        Text:
+  Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: un Grappin
 
 Iron Boots:
   Standard:
@@ -852,6 +864,11 @@ Iron Boots:
     Text: the {heavy shoes}
     Plurality: Plural
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: les Bottes de fer
+        Plurality: Plural
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -879,15 +896,11 @@ Progressive Dominion Rod:
     Text: un {Bâton Anima}
   Cryptic:
     Text: a {rod of control}
-# English overrides the exact text used for the Agitha hint sign
-# Feel free to use if necessary
-#  Template Overrides:
-#    - Keys:
-#        - Agithas Castle Some Items Sign Text
-#      Pretty:
-#        Text:
-#      Cryptic:
-#        Text:
+  Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: un Bâton Anima
 
 Lantern:
   Standard:
@@ -897,6 +910,10 @@ Lantern:
   Cryptic:
     Text: the {small light}
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: la Lanterne
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -922,15 +939,11 @@ Progressive Fishing Rod:
     Text: une {Canne à pêche}
   Cryptic:
     Text: a {rod of patience}
-# English overrides the exact text used for the Agitha hint sign
-# Feel free to use if necessary
-#  Template Overrides:
-#    - Keys:
-#        - Agithas Castle Some Items Sign Text
-#      Pretty:
-#        Text:
-#      Cryptic:
-#        Text:
+  Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: une Canne à pêche
 
 Slingshot:
   Standard:
@@ -940,6 +953,10 @@ Slingshot:
   Cryptic:
     Text: the {child's toy}
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: le Lance-pierre
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -997,6 +1014,10 @@ Bomb Bag:
   Cryptic:
     Text: a {bag for explosions}
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: un Sac de bombe
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
@@ -1082,6 +1103,10 @@ Bottle with Half Milk:
     Text: a {baby bottle}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: un Flacon de Lait (moitié)
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -1112,6 +1137,10 @@ Bottle with Great Fairies Tears:
   Cryptic:
     Text: a {bottle of great power}
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: un Flacon de Larmes de Féè
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -1232,6 +1261,10 @@ Horse Call:
     Text: the {horse beckoner}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: le Lien de l'amitié
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -1245,6 +1278,10 @@ Forest Temple Small Key:
   Cryptic:
     Text: a {key for a deep forest}
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: une petite clé du Temple sylvestre
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -1272,6 +1309,10 @@ Goron Mines Small Key:
     Text: a {key for a volcanic mine}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: une petite clé de la Mine Goron
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -1298,6 +1339,10 @@ Lakebed Temple Small Key:
     Text: a {key for an underground lake}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: une petite clé du Temple Abyssal
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -1311,6 +1356,10 @@ Arbiters Grounds Small Key:
   Cryptic:
     Text: a {key for an ancient prison}
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: une petite clé de la Tour du Jugement
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -1338,6 +1387,10 @@ Snowpeak Ruins Small Key:
     Text: a {key for a snowy mansion}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: une petite clé des Ruines des Pics Blancs
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -1364,6 +1417,10 @@ Temple of Time Small Key:
     Text: a {key for the past}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: une petite clé du Temple du Temps
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -1378,6 +1435,10 @@ City in the Sky Small Key:
     Text: a {key for the skies above}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: une petite clé de Célestia
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -1391,6 +1452,10 @@ Palace of Twilight Small Key:
   Cryptic:
     Text: a {key for a another realm}
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: une petite clé du Palais du Crépuscule
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -1418,6 +1483,10 @@ Hyrule Castle Small Key:
     Text: a {key for a kingdom's castle}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: une petite clé du Château d'Hyrule
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -1443,6 +1512,10 @@ Gerudo Desert Bulblin Camp Key:
   Cryptic:
     Text: the {key for a desert tent}
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: la petite clé du Camp Bulblin du désert Gerudo
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -1477,6 +1550,10 @@ Aurus Memo:
   Cryptic:
     Text: a {friend's favor}
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: la Note de Lafrel
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -1790,15 +1867,11 @@ Progressive Mirror Shard:
     Text: un {Fragment de Miroir Progressif}
   Cryptic:
     Text: a {reflective shard of power}
-# English overrides the exact text used for the Agitha hint sign
-# Feel free to use if necessary
-#  Template Overrides:
-#    - Keys:
-#        - Agithas Castle Some Items Sign Text
-#      Pretty:
-#        Text:
-#      Cryptic:
-#        Text:
+  Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: un Fragment de Miroir
 
 Arbiters Grounds Compass:
   Standard:
@@ -2672,20 +2745,21 @@ Female Dayfly:
 
 Progressive Fused Shadow:
   Standard:
-    Text: cristal d'ombre Progressif
+    Text: cristal d'Ombre Progressif
   Pretty:
-    Text: un {cristal d'ombre}
+    Text: un {cristal d'Ombre}
   Cryptic:
     Text: a {shadow of ultimate power}
-# English overrides the exact text used for the Agitha hint sign
-# Feel free to use if necessary
-#  Template Overrides:
-#    - Keys:
-#        - Agithas Castle Some Items Sign Text
-#      Pretty:
-#        Text:
-#      Cryptic:
-#        Text:
+  Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: un cristal d'Ombre
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {cristal d'Ombre}
 
 Poe Soul:
   Standard:
@@ -2695,6 +2769,10 @@ Poe Soul:
   Cryptic:
     Text: a {soul of the dead}
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: une âme de spectre
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -2715,20 +2793,16 @@ Poe Soul:
 
 Progressive Hidden Skill:
   Standard:
-    Text: technique Progressive
+    Text: Botte secrète Progressive
   Pretty:
-    Text: une {technique}
+    Text: une {Botte secrète}
   Cryptic:
     Text: a {forgotten technique}
-# English overrides the exact text used for the Agitha hint sign
-# Feel free to use if necessary
-#  Template Overrides:
-#    - Keys:
-#        - Agithas Castle Some Items Sign Text
-#      Pretty:
-#        Text:
-#      Cryptic:
-#        Text:
+  Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: une Botte secrète
 
 Bridge of Eldin Portal:
   Standard:
@@ -2740,20 +2814,16 @@ Bridge of Eldin Portal:
 
 Progressive Sky Book:
   Standard:
-    Text: écrits Célestiens Progressifs
+    Text: Écrits Célestiens Progressifs
   Pretty:
-    Text: des {écrits Célestiens}
+    Text: des {Écrits Célestiens}
   Cryptic:
     Text: a {glyph of the heavens}
-# English overrides the exact text used for the Agitha hint sign
-# Feel free to use if necessary
-#  Template Overrides:
-#    - Keys:
-#        - Agithas Castle Some Items Sign Text
-#      Pretty:
-#        Text:
-#      Cryptic:
-#        Text:
+  Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: des Écrits Célestiens
 
 Purple Rupee Links House:
   Standard:
@@ -2783,6 +2853,10 @@ Gate Keys:
     Plurality: Plural
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: les clés du portail
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -2810,6 +2884,10 @@ Ordon Pumpkin:
     Text: a {soup ingredient}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: un potiron
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -2835,6 +2913,10 @@ Ordon Cheese:
   Cryptic:
     Text: a {soup ingredient}
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: du fromage
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -3693,9 +3775,9 @@ Sacred Grove Pedestal Master Sword:
 
 Sacred Grove Pedestal Shadow Crystal:
   Standard:
-    Text: Cristal d'ombre du piédestal du Sanctuaire de la forêt
+    Text: Cristal Maudit du piédestal du Sanctuaire de la forêt
   Pretty:
-    Text: le {Cristal d'ombre du piédestal du Sanctuaire de la forêt}
+    Text: le {Cristal Maudit du piédestal du Sanctuaire de la forêt}
   Cryptic:
     Text: the {Master Sword Pedestal}
 
@@ -4453,6 +4535,7 @@ Eldin Field Stalfos Grotto Stalfos Chest:
   Cryptic:
     Text: the {Eldin Field Stalfos Grotto Stalfos Chest}
 
+# todo La trad ici sonne bizarre
 Skybook From Impaz:
   Standard:
     Text: Écrits Célestiens d'Impa
@@ -4720,7 +4803,7 @@ Lanayru Ice Block Puzzle Cave Chest:
     - Keys:
         - Location Hint
       Pretty:
-        Text: du {coffre de la caverne aux blocs de glace dans la plaine de Lanelle}
+        Text: de la {caverne aux blocs de glace dans la plaine de Lanelle}
 
 Lanayru Field Spinner Track Chest:
   Standard:
@@ -5782,7 +5865,7 @@ Iza Helping Hand:
   Standard:
     Text: aider Lise
   Pretty:
-    Text: pour avoir {aider Lise}
+    Text: pour avoir {aidé Lise}
   Cryptic:
     Text: being {Iza's Helping Hand}
 
@@ -6413,9 +6496,9 @@ Gerudo Desert Northwest Chest Behind Gates:
 
 Gerudo Desert North Small Chest Before Bulblin Camp:
   Standard:
-    Text: petit coffre au nord du Désert Gerudo avant le camp Bulblin
+    Text: petit coffre au nord du Désert Gerudo avant le Camp Bulblin
   Pretty:
-    Text: le {petit coffre au nord du Désert Gerudo avant le camp Bulblin}
+    Text: le {petit coffre au nord du Désert Gerudo avant le Camp Bulblin}
   Cryptic:
     Text: the {Gerudo Desert North Small Chest Before Bulblin Camp}
 
@@ -6429,33 +6512,33 @@ Gerudo Desert Golden Wolf:
 
 Outside Bulblin Camp Poe:
   Standard:
-    Text: âme de spectre avant le camp Bulblin
+    Text: âme de spectre avant le Camp Bulblin
   Pretty:
-    Text: l'{âme de spectre avant le camp Bulblin}
+    Text: l'{âme de spectre avant le Camp Bulblin}
   Cryptic:
     Text: the {Outside Bulblin Camp Poe}
 
 Bulblin Camp First Chest Under Tower At Entrance:
   Standard:
-    Text: premier coffre sous la tour à l'entrée du camp Bulblin
+    Text: premier coffre sous la tour à l'entrée du Camp Bulblin
   Pretty:
-    Text: le {premier coffre sous la tour à l'entrée du camp Bulblin}
+    Text: le {premier coffre sous la tour à l'entrée du Camp Bulblin}
   Cryptic:
     Text: the {Bulblin Camp First Chest Under Tower At Entrance}
 
 Bulblin Camp Small Chest in Back of Camp:
   Standard:
-    Text: petit coffre à l'arrière du camp Bulblin
+    Text: petit coffre à l'arrière du Camp Bulblin
   Pretty:
-    Text: le {petit coffre à l'arrière du camp Bulblin}
+    Text: le {petit coffre à l'arrière du Camp Bulblin}
   Cryptic:
     Text: the {Bulblin Camp Small Chest in Back of Camp}
 
 Bulblin Camp Roasted Boar:
   Standard:
-    Text: Bullbo rôti du camp Bulblin
+    Text: Bullbo rôti du Camp Bulblin
   Pretty:
-    Text: le {Bullbo rôti du camp Bulblin}
+    Text: le {Bullbo rôti du Camp Bulblin}
   Cryptic:
     Text: the {Bulblin Camp Roasted Boar}
 
@@ -6469,9 +6552,9 @@ Bulblin Guard Key:
 
 Bulblin Camp Poe:
   Standard:
-    Text: âme de spectre du camp Bulblin
+    Text: âme de spectre du Camp Bulblin
   Pretty:
-    Text: l'{âme de spectre du camp Bulblin}
+    Text: l'{âme de spectre du Camp Bulblin}
   Cryptic:
     Text: the {Bulblin Camp Poe}
 
@@ -8469,9 +8552,9 @@ Gerudo Desert Hint Sign:
 
 Bulblin Camp Hint Sign:
   Standard:
-    Text: panneau d'indice du camp Bulblin
+    Text: panneau d'indice du Camp Bulblin
   Pretty:
-    Text: le {panneau d'indice du camp Bulblin}
+    Text: le {panneau d'indice du Camp Bulblin}
   Cryptic:
     Text: the {Bulblin Camp panneau d'indice}
 
@@ -8837,16 +8920,16 @@ North Gerudo Desert:
 
 Bulblin Camp:
   Standard:
-    Text: camp Bulblin
+    Text: Camp Bulblin
   Pretty:
-    Text: le {camp Bulblin}
+    Text: le {Camp Bulblin}
   Cryptic:
     Text: a {camp of enemies}
   Template Overrides:
     - Keys:
         - Path Hint
       Standard:
-        Text: le {camp Bulblin}
+        Text: le {Camp Bulblin}
 
 Mirror Chamber:
   Standard:
@@ -9036,6 +9119,8 @@ Barren Hint:
 
 Item Hint:
   Standard:
+    # todo
+    #    vu sur un panneau : On raconte que une Épée peut être trouvé à le Lac Hylia
     Text: <fast>On raconte que <Item Pretty or Cryptic Name> peut être trouvé à <regions>.
 
 Location Hint:
@@ -9056,7 +9141,7 @@ Foolish Get Item Text:
 Shadow Crystal Get Item Text:
   Standard:
     Text: |-
-      <slow>Tu obtiens le <red>Cristal Maudit<white>!
+      <slow>Vous obtenez le <red>Cristal Maudit<white>!
       La sombre manifestation des
       pouvoirs de <red>Xanto<white> qui permet
       de se transformer à volonté!
@@ -9072,7 +9157,7 @@ Restored Dominion Rod Text:
 Forest Temple Small Key Get Item Text:
   Standard:
     Text: |-
-      <fast>Tu obtiens une <red>petite clé<white>
+      <fast>Vous obtenez une <red>petite clé<white>
       pour le <green>Temple Sylvestre<white>!
 
 Goron Mines Small Key Get Item Text:
@@ -9127,7 +9212,7 @@ Bulblin Camp Small Key Get Item Text:
   Standard:
     Text: |-
       <fast>Vous obtenez une <red>petite clé<white>
-      pour le <orange>camp Bulblin<white>!
+      pour le <orange>Camp Bulblin<white>!
 
 Forest Temple Big Key Get Item Text:
   Standard:
@@ -9491,6 +9576,7 @@ Kakariko Malo Mart Hawkeye After Purchase Text Template:
   Standard:
     Text: |-
       <Item Pretty Name> que tu as acheté était le dernier exemplaire...
+#     Todo les Pretty name commençant pas "un-e" à template override pas le-la (voir Fragment de cœur)
 
 Kakariko Malo Mart Red Potion Too Expensive Text Template:
   Standard:
@@ -9993,7 +10079,7 @@ Dungeon Item Inventory Text:
   Standard:
     Text: |-
       Cristaux: %d/3       Légende des clés:
-      Fragments: %d/4       Possédés (Total)
+      Fragments: %d/4      Possédés (Total)
       
       Forêt
       Mine

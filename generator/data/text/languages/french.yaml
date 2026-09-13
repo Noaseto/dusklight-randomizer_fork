@@ -217,6 +217,13 @@ Bombs 5:
   Cryptic:
     Text: some {regular explosives}
     Plurality: Plural
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de {Bombes (lot de 5)}
+        Plurality: Plural
 
 Bombs 10:
   Standard:
@@ -227,6 +234,13 @@ Bombs 10:
   Cryptic:
     Text: some {regular explosives}
     Plurality: Plural
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de {Bombes (lot de 10)}
+        Plurality: Plural
 
 Bombs 20:
   Standard:
@@ -237,6 +251,13 @@ Bombs 20:
   Cryptic:
     Text: some {regular explosives}
     Plurality: Plural
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de {Bombes (lot de 20)}
+        Plurality: Plural
 
 Bombs 30:
   Standard:
@@ -247,6 +268,13 @@ Bombs 30:
   Cryptic:
     Text: some {regular explosives}
     Plurality: Plural
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de {Bombes (lot de 30)}
+        Plurality: Plural
 
 Arrows 10:
   Standard:
@@ -256,6 +284,13 @@ Arrows 10:
     Plurality: Plural
   Cryptic:
     Text: some {thin ammo}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de {Flèches (lot de 10)}
+        Plurality: Plural
 
 Arrows 20:
   Standard:
@@ -265,6 +300,13 @@ Arrows 20:
     Plurality: Plural
   Cryptic:
     Text: some {thin ammo}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de {Flèches (lot de 20)}
+        Plurality: Plural
 
 Arrows 30:
   Standard:
@@ -274,6 +316,13 @@ Arrows 30:
     Plurality: Plural
   Cryptic:
     Text: some {thin ammo}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de {Flèches (lot de 30)}
+        Plurality: Plural
 
 Seeds 50:
   Standard:
@@ -303,6 +352,7 @@ Seeds 50:
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
         Text: de {50 graines}
+        Plurality: Plural
 
 Foolish Item:
   Standard:
@@ -422,21 +472,35 @@ Bomblings 5:
   Standard:
     Text: Bombinsecte (lot de 5)
   Pretty:
-    Text: "{Bombinsecte (lot de 5)}"
+    Text: des {Bombinsectes (lot de 5)}
     Plurality: Plural
   Cryptic:
     Text: some {crawling explosives}
     Plurality: Plural
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de {Bombinsectes (lot de 5)}
+        Plurality: Plural
 
 Bomblings 10:
   Standard:
     Text: Bombinsecte (lot de 10)
   Pretty:
-    Text: "{Bombinsecte (lot de 10)}"
+    Text: des {Bombinsectes (lot de 10)}
     Plurality: Plural
   Cryptic:
     Text: some {crawling explosives}
     Plurality: Plural
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de {Bombinsectes (lot de 10)}
+        Plurality: Plural
 
 Piece of Heart:
   Standard:
@@ -497,6 +561,12 @@ Ordon Shield:
     Text: le {bouclier de Toal}
   Cryptic:
     Text: a {sturdy reminder of home}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: du {bouclier de Toal}
 
 Wooden Shield:
   Standard:
@@ -505,14 +575,26 @@ Wooden Shield:
     Text: un {Bouclier en bois}
   Cryptic:
     Text: a {wood protector}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {Bouclier en bois}
 
 Hylian Shield:
   Standard:
     Text: Bouclier d'Hylia
   Pretty:
-    Text: le {bouclier d'Hylia}
+    Text: le {Bouclier d'Hylia}
   Cryptic:
     Text: an {unbreakable shield}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: du {Bouclier d'Hylia}
 
 Magic Armor:
   Standard:
@@ -547,6 +629,12 @@ Zora Armor:
     Text: la {tenue Zora}
   Cryptic:
     Text: the {fish suit}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de la {tenue Zora}
 
 Shadow Crystal:
   Standard:
@@ -630,6 +718,12 @@ Hawkeye:
     Text: l'{Œil du faucon}
   Cryptic:
     Text: the {zoom-and-enhance}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de l'{Œil du faucon}
 
 Progressive Sword:
   Standard:
@@ -707,6 +801,12 @@ Ball and Chain:
     Text: le {Boulet}
   Cryptic:
     Text: the {iron weight}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: du {Boulet}
 
 Progressive Bow:
   Standard:
@@ -882,6 +982,12 @@ Giant Bomb Bag:
     Text: un {Sac de bombe géant}
   Cryptic:
     Text: an {explosive capacity upgrade}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {Sac de bombe géant}
 
 Bomb Bag:
   Standard:
@@ -890,6 +996,12 @@ Bomb Bag:
     Text: un {Sac de bombe}
   Cryptic:
     Text: a {bag for explosions}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {Sac de bombe}
 
 Death Mountain Portal:
   Standard:
@@ -914,6 +1026,12 @@ Empty Bottle:
     Text: un {Flacon vide}
   Cryptic:
     Text:
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {Flacon vide}
 
 Red Potion Shop:
   Standard:
@@ -948,6 +1066,12 @@ Blue Potion Shop:
     Text: une {Potion bleue}
   Cryptic:
     Text: a {blue health refill}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {Potion bleue}
 
 Bottle with Half Milk:
   Standard:
@@ -956,6 +1080,12 @@ Bottle with Half Milk:
     Text: un {Flacon de Lait (moitié)}
   Cryptic:
     Text: a {baby bottle}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {Flacon de Lait (moitié)}
 
 Lantern Oil Shop:
   Standard:
@@ -1060,6 +1190,12 @@ Wooden Statue:
   Cryptic:
     Text: "{memories of home}"
     Plurality: Plural
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de la {Statuette en bois}
 
 Ilias Charm:
   Standard:
@@ -1094,6 +1230,12 @@ Horse Call:
     Text: le {Lien de l'amitié}
   Cryptic:
     Text: the {horse beckoner}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: du {Lien de l'amitié}
 
 Forest Temple Small Key:
   Standard:
@@ -1154,6 +1296,12 @@ Lakebed Temple Small Key:
     Text: une {petite clé du Temple Abyssal}
   Cryptic:
     Text: a {key for an underground lake}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {petite clé du Temple Abyssal}
 
 Arbiters Grounds Small Key:
   Standard:
@@ -1214,6 +1362,12 @@ Temple of Time Small Key:
     Text: une {petite clé du Temple du Temps}
   Cryptic:
     Text: a {key for the past}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {petite clé du Temple du Temps}
 
 City in the Sky Small Key:
   Standard:
@@ -1222,6 +1376,12 @@ City in the Sky Small Key:
     Text: une {petite clé de Célestia}
   Cryptic:
     Text: a {key for the skies above}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {petite clé de Célestia}
 
 Palace of Twilight Small Key:
   Standard:
@@ -1602,6 +1762,12 @@ Lakebed Temple Compass:
     Text: la {boussole du Temple Abyssal}
   Cryptic:
     Text: the {pointer for an underground lake}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de la {boussole du Temple Abyssal}
 
 Bottle with Lantern Oil:
   Standard:
@@ -1610,6 +1776,12 @@ Bottle with Lantern Oil:
     Text: un {Flacon d'huile}
   Cryptic:
     Text: a {bottle with lighter fluid}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {Flacon d'huile}
 
 Progressive Mirror Shard:
   Standard:
@@ -1687,6 +1859,12 @@ Temple of Time Compass:
     Text: la {boussole du Temple du Temps}
   Cryptic:
     Text: the {pointer for the past}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de la {boussole du Temple du Temps}
 
 City in the Sky Compass:
   Standard:
@@ -1695,6 +1873,12 @@ City in the Sky Compass:
     Text: la {boussole de Célestia}
   Cryptic:
     Text: the {pointer for the skies above}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: de la {boussole de Célestia}
 
 Palace of Twilight Compass:
   Standard:
@@ -2065,6 +2249,12 @@ Male Butterfly:
     Text: un {<male>papillon}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {<male>papillon}
 
 Female Butterfly:
   Standard:
@@ -2073,6 +2263,12 @@ Female Butterfly:
     Text: un {<female>papillon}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {<female>papillon}
 
 Male Stag Beetle:
   Standard:
@@ -2081,6 +2277,12 @@ Male Stag Beetle:
     Text: une {<male>lucane}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {<male>lucane}
 
 Female Stag Beetle:
   Standard:
@@ -2089,6 +2291,12 @@ Female Stag Beetle:
     Text: une {<female>lucane}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {<female>lucane}
 
 Male Grasshopper:
   Standard:
@@ -2149,6 +2357,12 @@ Male Phasmid:
     Text: un {<male>phasme}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {<male>phasme}
 
 Female Phasmid:
   Standard:
@@ -2157,6 +2371,12 @@ Female Phasmid:
     Text: un {<female>phasme}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {<female>phasme}
 
 Male Pill Bug:
   Standard:
@@ -2217,6 +2437,12 @@ Male Mantis:
     Text: une {<male>mante}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {<male>mante}
 
 Female Mantis:
   Standard:
@@ -2225,6 +2451,12 @@ Female Mantis:
     Text: une {<female>mante}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {<female>mante}
 
 Male Ladybug:
   Standard:
@@ -2233,6 +2465,12 @@ Male Ladybug:
     Text: une {<male>coccinelle}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {<male>coccinelle}
 
 Female Ladybug:
   Standard:
@@ -2241,6 +2479,12 @@ Female Ladybug:
     Text: une {<female>coccinelle}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {<female>coccinelle}
 
 Male Snail:
   Standard:
@@ -2301,6 +2545,12 @@ Male Dragonfly:
     Text: une {<male>libellule}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {<male>libellule}
 
 Female Dragonfly:
   Standard:
@@ -2309,6 +2559,12 @@ Female Dragonfly:
     Text: une {<female>libellule}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {<female>libellule}
 
 Male Ant:
   Standard:

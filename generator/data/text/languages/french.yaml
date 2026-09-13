@@ -28,7 +28,7 @@
 # ITEM NAMES
 Green Rupee:
   Standard:
-    Text: rubis vert
+    Text: Rubis vert
   Pretty:
     Text: un {rubis vert}
   Cryptic:
@@ -36,7 +36,7 @@ Green Rupee:
 
 Blue Rupee:
   Standard:
-    Text: rubis bleu
+    Text: Rubis bleu
   Pretty:
     Text: un {rubis bleu}
   Cryptic:
@@ -44,7 +44,7 @@ Blue Rupee:
 
 Yellow Rupee:
   Standard:
-    Text: rubis jaune
+    Text: Rubis jaune
   Pretty:
     Text: un {rubis jaune}
   Cryptic:
@@ -52,7 +52,7 @@ Yellow Rupee:
 
 Red Rupee:
   Standard:
-    Text: rubis rouge
+    Text: Rubis rouge
   Pretty:
     Text: un {rubis rouge}
   Cryptic:
@@ -60,7 +60,7 @@ Red Rupee:
 
 Purple Rupee:
   Standard:
-    Text: rubis violet
+    Text: Rubis violet
   Pretty:
     Text: un {rubis violet}
   Cryptic:
@@ -68,7 +68,7 @@ Purple Rupee:
 
 Orange Rupee:
   Standard:
-    Text: rubis orange
+    Text: Rubis orange
   Pretty:
     Text: un {rubis orange}
   Cryptic:
@@ -76,7 +76,7 @@ Orange Rupee:
 
 Silver Rupee:
   Standard:
-    Text: rubis argent
+    Text: Rubis argent
   Pretty:
     Text: un {rubis argent}
   Cryptic:
@@ -86,7 +86,7 @@ Bombs 5:
   Standard:
     Text: Bombes (lot de 5)
   Pretty:
-    Text: "{Bombes (lot de 5)}"
+    Text: des {Bombes (lot de 5)}
     Plurality: Plural
   Cryptic:
     Text: some {regular explosives}
@@ -96,7 +96,7 @@ Bombs 10:
   Standard:
     Text: Bombes (lot de 10)
   Pretty:
-    Text: "{Bombes (lot de 10)}"
+    Text: des {Bombes (lot de 10)}
     Plurality: Plural
   Cryptic:
     Text: some {regular explosives}
@@ -106,7 +106,7 @@ Bombs 20:
   Standard:
     Text: Bombes (lot de 20)
   Pretty:
-    Text: "{Bombes (lot de 20)}"
+    Text: des {Bombes (lot de 20)}
     Plurality: Plural
   Cryptic:
     Text: some {regular explosives}
@@ -116,7 +116,7 @@ Bombs 30:
   Standard:
     Text: Bombes (lot de 30)
   Pretty:
-    Text: "{Bombes (lot de 30)}"
+    Text: des {Bombes (lot de 30)}
     Plurality: Plural
   Cryptic:
     Text: some {regular explosives}
@@ -126,7 +126,7 @@ Arrows 10:
   Standard:
     Text: Flèches (lot de 10)
   Pretty:
-    Text: "{Flèches (lot de 10)}"
+    Text: des {Flèches (lot de 10)}
     Plurality: Plural
   Cryptic:
     Text: some {thin ammo}
@@ -135,7 +135,7 @@ Arrows 20:
   Standard:
     Text: Flèches (lot de 20)
   Pretty:
-    Text: "{Flèches (lot de 20)}"
+    Text: des {Flèches (lot de 20)}
     Plurality: Plural
   Cryptic:
     Text: some {thin ammo}
@@ -144,7 +144,7 @@ Arrows 30:
   Standard:
     Text: Flèches (lot de 30)
   Pretty:
-    Text: "{Flèches (lot de 30)}"
+    Text: des {Flèches (lot de 30)}
     Plurality: Plural
   Cryptic:
     Text: some {thin ammo}
@@ -153,7 +153,7 @@ Seeds 50:
   Standard:
     Text: 50 graines
   Pretty:
-    Text: "{50 graines}"
+    Text: des {50 graines}
     Plurality: Plural
   Cryptic:
     Text: some {pellets}
@@ -1199,7 +1199,7 @@ Progressive Fused Shadow:
 
 Poe Soul:
   Standard:
-    Text: âme de spectre
+    Text: Âme de spectre
   Pretty:
     Text: une {âme de spectre}
   Cryptic:
@@ -7260,13 +7260,13 @@ No Required Dungeons Text:
 Foolish Get Item Text:
   Standard:
     Text: |-
-      <fast>un vent <light blue>glaçé<white> se fait sentir ...
+      <fast>un vent <light blue>glaçé<white> se fait sentir...
 
 Shadow Crystal Get Item Text:
   Standard:
     Text: |-
       <slow>Tu obtiens le <red>Cristal Maudit<white>!
-      !La sombre manifestation des
+      La sombre manifestation des
       pouvoirs de <red>Xanto<white> qui permet
       de se transformer à volonté!
 
@@ -7641,27 +7641,23 @@ Slingshot Shop Text Template:
 Slingshot Shop Too Expensive Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> coûte <purple>30 rubis<white>.
-      Si tu le veux, il faut le payer.
+      <Item Pretty Name> coûte <purple>30 rubis<white>. Si tu le veux, il faut le payer.
 
 Slingshot Shop Purchase Confirmation Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> is <purple>30 Rupees<white>.
+      <Item Pretty Name> coûte <purple>30 rubis<white>.
       Tu en veux un?<begin choice>
 
 Slingshot Shop After Purchase Text Template:
   Standard:
     Text: |-
-      Je ne pensais pas que tu voudrais acheter
-      <Item Pretty Name>... Tu as l'intention d'y
-      jouer avec les autres enfants?
+      Je ne pensais pas que tu voudrais acheter <Item Pretty Name>... Tu as l'intention d'y jouer avec les autres enfants?
 
 Barnes Special Offer Text Template:
   Standard:
     Text: |-
-      Allez, je te fais une <Item Pretty Name>,
-      pour <purple>120 rubis<white>. Ça te tente?<begin choice>
+      Allez, je te fais <Item Pretty Name>, pour <purple>120 rubis<white>. Ça te tente?<begin choice>
 
 Kakariko Malo Mart Wooden Shield Purchase Confirmation Text Template:
   Standard:
@@ -7672,31 +7668,22 @@ Kakariko Malo Mart Wooden Shield Purchase Confirmation Text Template:
 Kakariko Malo Mart Wooden Shield Too Expensive Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> est à <purple>50 rubis<white>.
-      Ne crois pas que je te ferai un prix 
-      tout ça parce qu'on vient du même
-      patelin!
+      <Item Pretty Name> est à <purple>50 rubis<white>. Ne crois pas que je te ferai un prix tout ça parce qu'on vient du même patelin!
 
 Kakariko Malo Mart Hylian Shield Purchase Confirmation Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> fait <purple>200 rubis<white>.
-      tu le veux?<begin choice>
+      <Item Pretty Name> fait <purple>200 rubis<white>. Tu achètes?<begin choice>
 
 Kakariko Malo Mart Hylian Shield Too Expensive Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> fait <purple>200 rubis<white>,
-      et tu n'as pas 200 rubis... Ne crois
-      pas que je te ferai un prix tout ça
-      parce qu'on vient du même patelin!
+      <Item Pretty Name> fait <purple>200 rubis<white>, et tu n'as pas 200 rubis... Ne crois pas que je te ferai un prix tout ça parce qu'on vient du même patelin!
 
 Kakariko Malo Mart Hylian Shield After Purchase Text Template:
   Standard:
     Text: |-
-      Le <Item Standard Name> que tu as
-      acheté était le dernier que j'avais
-      en stock. Prends-en soin...
+      <Item Pretty Name> que tu as acheté était le dernier que j'avais en stock. Prends-en soin...
 
 Kakariko Malo Mart Hawkeye Purchase Confirmation Text Template:
   Standard:
@@ -7707,31 +7694,27 @@ Kakariko Malo Mart Hawkeye Purchase Confirmation Text Template:
 Kakariko Malo Mart Hawkeye Too Expensive Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> coûte <purple>100 rubis<white>,
-      ne crois pas que je te ferai un prix.
+      <Item Pretty Name> coûte <purple>100 rubis<white>, ne crois pas que je te ferai un prix.
 
 Kakariko Malo Mart Hawkeye After Purchase Text Template:
   Standard:
     Text: |-
-      <Item Standard Name> que tu as acheté
-      était le dernier exemplaire...
+      <Item Pretty Name> que tu as acheté était le dernier exemplaire...
 
 Kakariko Malo Mart Red Potion Too Expensive Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> coûte <purple>30 rubis<white>,
-      et la maison ne fait pas crédit...
+      <Item Pretty Name> coûte <purple>30 rubis<white>, et la maison ne fait pas crédit...
 
 Kakariko Malo Mart Red Potion Purchase Confirmation Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> coûte <purple>30 rubis<white>,
-      tu en veux une?<begin choice>
+      <Item Pretty Name> coûte <purple>30 rubis<white>, tu en veux une?<begin choice>
 
 Kakariko Malo Mart Red Potion Text Template:
   Standard:
     Text: |-
-      <Item Standard Name>: <purple>30 rubis<white>
+      <Item Pretty Name>: <purple>30 rubis<white>
 #      This potion replenishes your
 #      life energy. Keep it in an <red>empty
 #      bottle<white>.
@@ -7773,9 +7756,11 @@ Chudleys Shop Magic Armor Text Template:
   Standard:
     Text: |-
       <Item Standard Name>
-      Cette armure garantit votre sécurité
-      tant que vous possédez des rubis.
-      Réservée aux grandes fortunes.
+      Avec ceci votre sécurité est garanti, tant que vous possédez des rubis.
+      Réservée aux grandes fortunes
+#      Cette armure garantit votre sécurité
+#      tant que vous possédez des rubis.
+#      Réservée aux grandes fortunes.
 
 Castle Town Malo Mart Magic Armor After Purchase Text Template:
   Standard:
@@ -7820,8 +7805,7 @@ Castle Town Goron Red Potion Confirmation Initial Text Template:
 Castle Town Goron Red Potion Confirmation Later Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> rredonne plein de
-      forrces! Cela coûte <purple>40 rrubis<white>!<begin choice>
+      <Item Pretty Name> rredonne plein de forrces! Cela coûte <purple>40 rrubis<white>!<begin choice>
 
 Castle Town Goron Lantern Oil Confirmation Initial Text Template:
   Standard:
@@ -7833,55 +7817,42 @@ Castle Town Goron Lantern Oil Confirmation Initial Text Template:
 Castle Town Goron Lantern Oil Confirmation Later Text Template:
   Standard:
     Text: |-
-      Vous voulez pasm'acheter
-      <Item Pretty Name>?
-      ça coute <purple>30 rrubis<white>.<begin choice>
+      Vous voulez pas m'acheter <Item Pretty Name>? Ça coute <purple>30 rrubis<white>.<begin choice>
 
 Castle Town Goron Arrow Refill Secret Text Template:
   Standard:
     Text: |-
-      Malgré tout ce qu'il se pass, si tu
-      penses que tu as besoin de 
-      <Item Pretty Name>
-      Fais le moi savoirr.
+      Malgré tout ce qu'il se passe, si tu penses que tu as besoin de <Item Pretty Name>, fais le moi savoirr.
 
 Castle Town Goron Arrow Refill Confirmation Initial Text Template:
   Standard:
     Text: |-
-      Donne-moi <purple>40 rubis<white> pourr
-      <Item Pretty Name>, ça irra...<begin choice>
+      Donne-moi <purple>40 rubis<white> pourr <Item Pretty Name>, ça irra...<begin choice>
 
 Castle Town Goron Arrow Refill Embarrassing Text Template:
   Standard:
     Text: |-
-      Je vois... d'accorrd. C'est
-      Malheurreux. Mais la seule chose que je 
-      puisse te vendre c'est <Item Pretty Name>.
+      Je vois... d'accorrd. C'est malheurreux. Mais la seule chose que je puisse te vendre c'est <Item Pretty Name>.
 
 Castle Town Goron Arrow Refill Let Me Know Text Template:
   Standard:
     Text: |-
-      Si tu as à nouveau besion de
-      <Item Pretty Name>, rreviens
-      me voirr.
+      Si tu as à nouveau besoin de <Item Pretty Name>, rreviens me voirr.
 
 Castle Town Goron Arrow Refill Confirmation Later Text Template:
   Standard:
     Text: |-
-      Donne-moi <purple>40 rubis<white> pourr
-      <Item Pretty Name>, ça irra...<begin choice>
+      Donne-moi <purple>40 rubis<white> pourr <Item Pretty Name>, ça irra...<begin choice>
 
 Castle Town Goron Hylian Shield Confirmation Initial Text Template:
   Standard:
     Text: |-
-      Bon... Tu veux <Item Pretty Name>
-      pourr <purple>210 rrubis<white>?<begin choice>
+      Bon... Tu veux <Item Pretty Name> pourr <purple>210 rrubis<white>?<begin choice>
 
 Castle Town Goron Hylian Shield Confirmation Later Text Template:
   Standard:
     Text: |-
-      Tu veux acheter <Item Pretty Name>
-      pourr <purple>210 rrubis<white>?<begin choice>
+      Tu veux acheter <Item Pretty Name> pourr <purple>210 rrubis<white>?<begin choice>
 
 Agithas Castle Zero Items Sign Text:
   Standard:
@@ -7919,10 +7890,7 @@ Coro Bottle Offer 2 Text Template:
 Coro Bottle Offer 3 Text Template:
   Standard:
     Text: |-
-      Je vends <Item Standard Name> pour 
-      <purple>100 rubis<white>, mais tu peux aussi
-      simplement <red>faire le plein d'huile<white>
-      pour <purple>20 rubis<white>. Alors?<begin choice>
+      Je vends <Item Standard Name> pour <purple>100 rubis<white>, mais tu peux aussi simplement <red>faire le plein d'huile<white> pour <purple>20 rubis<white>. Alors?<begin choice>
 
 Coro Bottle Offer 4 Text Template:
   Standard:
@@ -7935,9 +7903,11 @@ Coro Bottle Offer 4 Text Template:
 Fishing Hole Sign Text Template:
   Standard:
     Text: |-
-      <red>        PROTÉGEZ LA NATURE!
-      <white>NE jetez PAS des flacons vide ou
-      <Item Pretty Name> ici! les poissons PLEURENT!
+      <red>      PROTÉGEZ LA NATURE!
+      
+      <white>NE jetez PAS des flacons vide
+      ou <Item Pretty Name> ici!
+      les poissons PLEURENT!
 
       Veuillez garder cet espace propre!
 
@@ -8016,7 +7986,7 @@ Midna Hints Item Hints Intro:
 Midna Hints Location Hints Intro:
   Standard:
     Text: |-
-      Ces <red>locations<white> me sont connus:
+      Ces <red>éléments<white> me sont connus:
 
 Ordon Hint Sign Text:
   Standard:
@@ -8226,6 +8196,7 @@ Cave of Ordeals Hint Sign Text:
 Dungeon Item Additional Info Text:
   Standard:
     Text: |-
+      
       Appuyer sur
       Start pour
       afficher plus
@@ -8234,22 +8205,22 @@ Dungeon Item Additional Info Text:
 Dungeon Item Inventory Text:
   Standard:
     Text: |-
-      Cristaux: %d/3        Key Legend:
-      Fragments: %d/4         Current (Total)
+      Cristaux: %d/3       Légende des clés:
+      Fragments: %d/4       Possédés (Total)
       
-      Temple Sylvestre
-      Mine Goron
-      Temple Abyssal
-      Tour du Jugement
-      Pics Blancs
-      Temple du Temps
-      Célestia
-      Palais du Crépuscule
-      Château d'Hyrule
+      Forêt
+      Mine
+      Lac
       Désert
-      portail de Firone
-      portail de Kikolou
-      portails Cocorico
+      Pics Blancs
+      Temps
+      Célestia
+      Crépuscule
+      Hyrule
+      Désert
+      P. Firone
+      P. Kikolou
+      P. Cocorico
 
 Dungeon Item Inventory Yes Text:
   Standard:

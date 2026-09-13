@@ -33,6 +33,21 @@ Green Rupee:
     Text: un {rubis vert}
   Cryptic:
     Text: a {penny}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {rrubis verrt}
 
 Blue Rupee:
   Standard:
@@ -41,6 +56,21 @@ Blue Rupee:
     Text: un {rubis bleu}
   Cryptic:
     Text: a {fiver}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {rrubis bleu}
 
 Yellow Rupee:
   Standard:
@@ -49,6 +79,21 @@ Yellow Rupee:
     Text: un {rubis jaune}
   Cryptic:
     Text: some {change}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {rrubis jaune}
 
 Red Rupee:
   Standard:
@@ -57,6 +102,21 @@ Red Rupee:
     Text: un {rubis rouge}
   Cryptic:
     Text: "{couch cash}"
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {rrubis rrouge}
 
 Purple Rupee:
   Standard:
@@ -65,6 +125,21 @@ Purple Rupee:
     Text: un {rubis violet}
   Cryptic:
     Text: a {good sum}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {rrubis violet}
 
 Orange Rupee:
   Standard:
@@ -73,6 +148,21 @@ Orange Rupee:
     Text: un {rubis orange}
   Cryptic:
     Text: a {payday}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {rrubis orrange}
 
 Silver Rupee:
   Standard:
@@ -81,6 +171,21 @@ Silver Rupee:
     Text: un {rubis argent}
   Cryptic:
     Text: "{many riches}"
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {rrubis arrgent}
 
 Bombs 5:
   Standard:
@@ -153,11 +258,27 @@ Seeds 50:
   Standard:
     Text: 50 graines
   Pretty:
-    Text: des {50 graines}
+    Text: "{50 graines}"
     Plurality: Plural
   Cryptic:
     Text: some {pellets}
     Plurality: Plural
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: "{50 grraines}"
+        Plurality: Plural
 
 Foolish Item:
   Standard:
@@ -187,31 +308,79 @@ Water Bombs 5:
   Standard:
     Text: Hydro-bombes (lot de 5)
   Pretty:
-    Text: "{Hydro-bombes (lot de 5)}"
+    Text: des {Hydro-bombes (lot de 5)}
     Plurality: Plural
   Cryptic:
     Text: some {water explosives}
     Plurality: Plural
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: des {Hydrro-bombes (lot de 5)}
+        Plurality: Plural
 
 Water Bombs 10:
   Standard:
     Text: Hydro-bombes (lot de 10)
   Pretty:
-    Text: "{Hydro-bombes (lot de 10)}"
+    Text: des {Hydro-bombes (lot de 10)}
     Plurality: Plural
   Cryptic:
     Text: some {water explosives}
     Plurality: Plural
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: des {Hydrro-bombes (lot de 10)}
+        Plurality: Plural
 
 Water Bombs 15:
   Standard:
     Text: Hydro-bombes (lot de 15)
   Pretty:
-    Text: "{Hydro-bombes (lot de 15)}"
+    Text: des {Hydro-bombes (lot de 15)}
     Plurality: Plural
   Cryptic:
     Text: some {water explosives}
     Plurality: Plural
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: des {Hydrro-bombes (lot de 15)}
+        Plurality: Plural
 
 Bomblings 5:
   Standard:
@@ -240,6 +409,21 @@ Piece of Heart:
     Text: un {Fragment de cœur}
   Cryptic:
     Text: some {love}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {Frragment de cœurr}
 
 Heart Container:
   Standard:
@@ -248,6 +432,21 @@ Heart Container:
     Text: un {réceptacle de cœur}
   Cryptic:
     Text: a {lot of love}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {rréceptacle de cœurr}
 
 Ordon Shield:
   Standard:
@@ -280,6 +479,21 @@ Magic Armor:
     Text: l'{Armure magique}
   Cryptic:
     Text: "{magical clothing}"
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: l'{Arrmurre magique}
 
 Zora Armor:
   Standard:
@@ -296,6 +510,21 @@ Shadow Crystal:
     Text: le {cristal d'ombre}
   Cryptic:
     Text: a {crystal of dark power}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: le {crristal d'ombrre}
 
 Progressive Wallet:
   Standard:
@@ -378,6 +607,21 @@ Gale Boomerang:
     Text: le {Boomerang tornade}
   Cryptic:
     Text: the {fairy of winds}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: le {Boomerrang torrnade}
 
 Spinner:
   Standard:
@@ -386,6 +630,21 @@ Spinner:
     Text: l'{Aérouage}
   Cryptic:
     Text: the {gear rotator}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: l'{Aérrouage}
 
 Ball and Chain:
   Standard:
@@ -438,6 +697,22 @@ Iron Boots:
   Cryptic:
     Text: the {heavy shoes}
     Plurality: Plural
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: les {Bottes de ferr}
+        Plurality: Plural
 
 Progressive Dominion Rod:
   Standard:
@@ -463,6 +738,21 @@ Lantern:
     Text: la {Lanterne}
   Cryptic:
     Text: the {small light}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {Lanterrne}
 
 Progressive Fishing Rod:
   Standard:
@@ -488,6 +778,22 @@ Slingshot:
     Text: le {Lance-pierre}
   Cryptic:
     Text: the {child's toy}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        # ça fait beaucoup de R là, mais c'est une pierrrre pour un gorron
+        Text: le {Lance-pierrrre}
 
 Kakariko Gorge Portal:
   Standard:
@@ -552,6 +858,21 @@ Red Potion Shop:
     Text: une {Potion rouge}
   Cryptic:
     Text: a {health refill}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: une {Potion rrouge}
 
 Blue Potion Shop:
   Standard:
@@ -573,7 +894,7 @@ Lantern Oil Shop:
   Standard:
     Text: Boutique d'huile
   Pretty:
-    Text: de l'{huile}
+    Text: la {Boutique d'huile}
   Cryptic:
     Text: an {oil refill}
 
@@ -593,6 +914,21 @@ Bottle with Great Fairies Tears:
     Text: un {Flacon de Larmes de Fée}
   Cryptic:
     Text: a {bottle of great power}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {Flacon de Larrmes de Fée}
 
 Renados Letter:
   Standard:
@@ -601,6 +937,21 @@ Renados Letter:
     Text: la {Lettre de Reynald}
   Cryptic:
     Text: a {letter from a concerned shaman}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {Lettrre de Rreynald}
 
 Invoice:
   Standard:
@@ -609,6 +960,21 @@ Invoice:
     Text: la {Facture}
   Cryptic:
     Text: the {bill for the doctor}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {Facturre}
 
 Wooden Statue:
   Standard:
@@ -626,6 +992,21 @@ Ilias Charm:
     Text: le {Collier d'Iria}
   Cryptic:
     Text: a {friend's item}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: le {Collier d'Irria}
 
 Horse Call:
   Standard:
@@ -642,6 +1023,21 @@ Forest Temple Small Key:
     Text: une {petite clé du Temple sylvestre}
   Cryptic:
     Text: a {key for a deep forest}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: une {petite clé du Temple sylvestrre}
 
 Goron Mines Small Key:
   Standard:
@@ -650,6 +1046,21 @@ Goron Mines Small Key:
     Text: une {petite clé de la Mine Goron}
   Cryptic:
     Text: a {key for a volcanic mine}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: une {petite clé de la Mine Gorron}
 
 Lakebed Temple Small Key:
   Standard:
@@ -666,6 +1077,21 @@ Arbiters Grounds Small Key:
     Text: une {petite clé de la Tour du Jugement}
   Cryptic:
     Text: a {key for an ancient prison}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: une {petite clé de la Tourr du Jugement}
 
 Snowpeak Ruins Small Key:
   Standard:
@@ -674,6 +1100,21 @@ Snowpeak Ruins Small Key:
     Text: une {petite clé des Ruines des Pics Blancs}
   Cryptic:
     Text: a {key for a snowy mansion}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: une {petite clé des Rruines des Pics Blancs}
 
 Temple of Time Small Key:
   Standard:
@@ -698,6 +1139,21 @@ Palace of Twilight Small Key:
     Text: une {petite clé du Palais du Crépuscule}
   Cryptic:
     Text: a {key for a another realm}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: une {petite clé du Palais du Crrépuscule}
 
 Hyrule Castle Small Key:
   Standard:
@@ -706,6 +1162,21 @@ Hyrule Castle Small Key:
     Text: une {petite clé du Château d'Hyrule}
   Cryptic:
     Text: a {key for a kingdom's castle}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: une {petite clé du Château d'Hyrrule}
 
 Gerudo Desert Bulblin Camp Key:
   Standard:
@@ -714,6 +1185,21 @@ Gerudo Desert Bulblin Camp Key:
     Text: la {petite clé du Camp Bulblin du désert Gerudo}
   Cryptic:
     Text: the {key for a desert tent}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {petite clé du Camp Bulblin du déserrt Gerrudo}
 
 Lake Hylia Portal:
   Standard:
@@ -730,6 +1216,21 @@ Aurus Memo:
     Text: la {Note de Lafrel}
   Cryptic:
     Text: a {friend's favor}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {Note de Lafrrel}
 
 Asheis Sketch:
   Standard:
@@ -738,6 +1239,21 @@ Asheis Sketch:
     Text: le {Croquis du yéti}
   Cryptic:
     Text: a {sketch of a horrific beast}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: le {Crroquis du yéti}
 
 Forest Temple Big Key:
   Standard:
@@ -746,6 +1262,21 @@ Forest Temple Big Key:
     Text: la {grande clé du Temple Sylvestre}
   Cryptic:
     Text: the {key to the twilit parasite}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {grrande clé du Temple Sylvestrre}
 
 Lakebed Temple Big Key:
   Standard:
@@ -754,6 +1285,21 @@ Lakebed Temple Big Key:
     Text: la {grande clé du Temple Abyssal}
   Cryptic:
     Text: the {key to the twilit aquatic}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {grrande clé du Temple Abyssal}
 
 Arbiters Grounds Big Key:
   Standard:
@@ -762,6 +1308,21 @@ Arbiters Grounds Big Key:
     Text: la {grande clé de la Tour du Jugement}
   Cryptic:
     Text: the {key to the twilit fossil}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {grrande clé de la Tourr du Jugement}
 
 Temple of Time Big Key:
   Standard:
@@ -770,6 +1331,21 @@ Temple of Time Big Key:
     Text: la {grande clé du Temple du Temps}
   Cryptic:
     Text: the {key to the twilit arachnid}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {grrande clé du Temple du Temps}
 
 City in the Sky Big Key:
   Standard:
@@ -778,6 +1354,21 @@ City in the Sky Big Key:
     Text: la {grande clé de Célestia}
   Cryptic:
     Text: the {key to the twilit dragon}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {grrande clé de Célestia}
 
 Palace of Twilight Big Key:
   Standard:
@@ -786,6 +1377,21 @@ Palace of Twilight Big Key:
     Text: la {grande clé du Palais du Crépuscule}
   Cryptic:
     Text: the {key to the usurper king}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {grrande clé du Palais du Crrépuscule}
 
 Hyrule Castle Big Key:
   Standard:
@@ -794,6 +1400,21 @@ Hyrule Castle Big Key:
     Text: la {grande clé du Château d'Hyrule}
   Cryptic:
     Text: the {key to the castle throne room}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {grrande clé du Château d'Hyrrule}
 
 Forest Temple Compass:
   Standard:
@@ -802,6 +1423,21 @@ Forest Temple Compass:
     Text: la {boussole du Temple Sylvestre}
   Cryptic:
     Text: the {pointer for a deep forest}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {boussole du Temple Sylvestrre}
 
 Goron Mines Compass:
   Standard:
@@ -810,6 +1446,21 @@ Goron Mines Compass:
     Text: la {boussole de la Mine Goron}
   Cryptic:
     Text: the {pointer for a volcano}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {boussole de la Mine Gorron}
 
 Lakebed Temple Compass:
   Standard:
@@ -851,6 +1502,21 @@ Arbiters Grounds Compass:
     Text: la {boussole de la Tour du Jugement}
   Cryptic:
     Text: the {pointer for an ancient prison}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {boussole de la Tourr du Jugement}
 
 Snowpeak Ruins Compass:
   Standard:
@@ -859,6 +1525,21 @@ Snowpeak Ruins Compass:
     Text: la {boussole des Ruines des Pics Blancs}
   Cryptic:
     Text: the {pointer for a snowy mansion}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {boussole des Rruines des Pics Blancs}
 
 Temple of Time Compass:
   Standard:
@@ -883,6 +1564,21 @@ Palace of Twilight Compass:
     Text: la {boussole du Palais du Crépuscule}
   Cryptic:
     Text: the {pointer for another realm}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {boussole du Palais du Crrépuscule}
 
 Hyrule Castle Compass:
   Standard:
@@ -891,6 +1587,21 @@ Hyrule Castle Compass:
     Text: la {boussole du Château d'Hyrule}
   Cryptic:
     Text: the {pointer for the kingdom's castle}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {boussole du Château d'Hyrrule}
 
 Mirror Chamber Portal:
   Standard:
@@ -915,6 +1626,21 @@ Forest Temple Dungeon Map:
     Text: la {carte du Temple Sylvestre}
   Cryptic:
     Text: the {map for a deep forest}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {carrte du Temple Sylvestrre}
 
 Goron Mines Dungeon Map:
   Standard:
@@ -923,6 +1649,21 @@ Goron Mines Dungeon Map:
     Text: la {carte de la Mine Goron}
   Cryptic:
     Text: the {map for a volcano}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {carrte de la Mine Gorron}
 
 Lakebed Temple Dungeon Map:
   Standard:
@@ -931,6 +1672,21 @@ Lakebed Temple Dungeon Map:
     Text: la {carte du Temple Abyssal}
   Cryptic:
     Text: the {map for an underground lake}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {carrte du Temple Abyssal}
 
 Arbiters Grounds Dungeon Map:
   Standard:
@@ -939,6 +1695,21 @@ Arbiters Grounds Dungeon Map:
     Text: la {carte de la Tour du Jugement}
   Cryptic:
     Text: the {map for an ancient prison}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {carrte de la Tourr du Jugement}
 
 Snowpeak Ruins Dungeon Map:
   Standard:
@@ -947,6 +1718,21 @@ Snowpeak Ruins Dungeon Map:
     Text: la {carte des Ruines des Pics Blancs}
   Cryptic:
     Text: the {map for a snowy mansion}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {carrte des Rruines des Pics Blancs}
 
 Temple of Time Dungeon Map:
   Standard:
@@ -955,6 +1741,21 @@ Temple of Time Dungeon Map:
     Text: la {carte du Temple du Temps}
   Cryptic:
     Text: the {map for the past}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {carrte du Temple du Temps}
 
 City in the Sky Dungeon Map:
   Standard:
@@ -963,6 +1764,21 @@ City in the Sky Dungeon Map:
     Text: la {carte de Célestia}
   Cryptic:
     Text: the {map for the skies above}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {carrte de Célestia}
 
 Palace of Twilight Dungeon Map:
   Standard:
@@ -971,6 +1787,21 @@ Palace of Twilight Dungeon Map:
     Text: la {carte du Palais du Crépuscule}
   Cryptic:
     Text: the {map for another realm}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {carrte du Palais du Crrépuscule}
 
 Hyrule Castle Dungeon Map:
   Standard:
@@ -979,6 +1810,21 @@ Hyrule Castle Dungeon Map:
     Text: la {carte du Château d'Hyrule}
   Cryptic:
     Text: the {map for the kingdom's castle}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {carrte du Château d'Hyrrule}
 
 Sacred Grove Portal:
   Standard:
@@ -995,6 +1841,21 @@ Male Beetle:
     Text: un {<male>scarabée}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {<male>scarrabée}
 
 Female Beetle:
   Standard:
@@ -1003,6 +1864,21 @@ Female Beetle:
     Text: un {<female>scarabée}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {<female>scarrabée}
 
 Male Butterfly:
   Standard:
@@ -1043,6 +1919,21 @@ Male Grasshopper:
     Text: une{<male>sauterelle}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: une{<male>sauterrelle}
 
 Female Grasshopper:
   Standard:
@@ -1051,6 +1942,21 @@ Female Grasshopper:
     Text: une {<female>sauterelle}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: une {<female>sauterrelle}
 
 Male Phasmid:
   Standard:
@@ -1075,6 +1981,21 @@ Male Pill Bug:
     Text: un {<male>cloporte}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {<male>cloporrte}
 
 Female Pill Bug:
   Standard:
@@ -1083,6 +2004,21 @@ Female Pill Bug:
     Text: un {<female>cloporte}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {<female>cloporrte}
 
 Male Mantis:
   Standard:
@@ -1118,19 +2054,49 @@ Female Ladybug:
 
 Male Snail:
   Standard:
-    Text: escargot femelle mâle
+    Text: escargot mâle
   Pretty:
     Text: un {<female><male>escargot}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {<female><male>escarrgot}
 
 Female Snail:
   Standard:
-    Text: escargot mâle femelle
+    Text: escargot femelle
   Pretty:
     Text: un {<male><female>escargot}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {<male><female>escarrgot}
 
 Male Dragonfly:
   Standard:
@@ -1155,6 +2121,21 @@ Male Ant:
     Text: une {<male>fourmi}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: une {<male>fourrmi}
 
 Female Ant:
   Standard:
@@ -1163,6 +2144,21 @@ Female Ant:
     Text: une {<female>fourmi}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: une {<female>fourrmi}
 
 Male Dayfly:
   Standard:
@@ -1171,6 +2167,21 @@ Male Dayfly:
     Text: un {<male>éphémère}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {<male>éphémèrre}
 
 Female Dayfly:
   Standard:
@@ -1179,6 +2190,21 @@ Female Dayfly:
     Text: un {<female>éphémère}
   Cryptic:
     Text: a {shiny insect}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {<female>éphémèrre}
 
 Progressive Fused Shadow:
   Standard:
@@ -1204,6 +2230,21 @@ Poe Soul:
     Text: une {âme de spectre}
   Cryptic:
     Text: a {soul of the dead}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: une {âme de spectrre}
 
 Progressive Hidden Skill:
   Standard:
@@ -1273,6 +2314,22 @@ Gate Keys:
   Cryptic:
     Text: "{King Bulblin's keys}"
     Plurality: Plural
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: les {clés du porrtail}
+        Plurality: Plural
 
 Ordon Pumpkin:
   Standard:
@@ -1281,6 +2338,21 @@ Ordon Pumpkin:
     Text: un {Potiron de Toal}
   Cryptic:
     Text: a {soup ingredient}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {Potirron de Toal}
 
 Ordon Cheese:
   Standard:
@@ -1289,6 +2361,21 @@ Ordon Cheese:
     Text: du {Fromage de Toal}
   Cryptic:
     Text: a {soup ingredient}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: du {Frromage de Toal}
 
 Snowpeak Ruins Bedroom Key:
   Standard:
@@ -1297,6 +2384,21 @@ Snowpeak Ruins Bedroom Key:
     Text: la {clé de la chambre des Ruines des Pics Blancs}
   Cryptic:
     Text: the {key to a snowy bedroom}
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: la {clé de la chambrre des Rruines des Pics Blancs}
 
 Goron Mines Key Shard:
   Standard:
@@ -1305,6 +2407,21 @@ Goron Mines Key Shard:
     Text: un {Fragment de clé de la Mine Goron}
   Cryptic:
     Text: "{one third of a key}"
+  Template Overrides:
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {Frragment de clé de la Mine Gorron}
 
 Faron Woods Coro Key:
   Standard:
@@ -4181,9 +5298,9 @@ Upper Zoras River Poe:
 
 Iza Helping Hand:
   Standard:
-    Text: aide de Lise
+    Text: aider Lise
   Pretty:
-    Text: être l'{aide de Lise}
+    Text: pour avoir {aider Lise}
   Cryptic:
     Text: being {Iza's Helping Hand}
 
@@ -4963,7 +6080,7 @@ Cave of Ordeals Great Fairy Reward:
   Pretty:
     Text: le {don de la grande Fée de la Caverne de l'Ordalie}
   Cryptic:
-    Text: the {Cave of Ordeals Great Fairy Reward} TODO ELO
+    Text: the {Cave of Ordeals Great Fairy Reward}
   Template Overrides:
     - Keys:
         - Location Hint
@@ -5657,6 +6774,11 @@ Arbiters Grounds Death Sword Chest:
     Text: le {coffre du faucheur de la Tour du Jugement}
   Cryptic:
     Text: the {Tour du Jugement Death Sword Chest}
+  Template Overrides:
+    - Keys:
+        - Location Hint
+      Pretty:
+        Text: du {coffre du faucheur de la Tour du Jugement}
 
 Arbiters Grounds Spinner Room First Small Chest:
   Standard:
@@ -7436,7 +8558,7 @@ Item Hint:
 
 Location Hint:
   Standard:
-    Text: <fast>On raconte que la récompense <Location Pretty or Cryptic Name> |est/sont| <Item Pretty or Cryptic Name>.
+    Text: <fast>On raconte que |la récompense <Location Pretty or Cryptic Name> est/les récompenses <Location Pretty or Cryptic Name> sont| <Item Pretty or Cryptic Name>.
 
 # NO REQUIRED DUNGEON TEXT
 No Required Dungeons Text:

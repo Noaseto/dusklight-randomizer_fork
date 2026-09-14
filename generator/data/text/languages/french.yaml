@@ -9125,6 +9125,7 @@ Item Hint:
 
 Location Hint:
   Standard:
+    # todo les réceptacle de cœur de boss
     Text: <fast>On raconte que |la récompense <Location Pretty or Cryptic Name> est/les récompenses <Location Pretty or Cryptic Name> sont| <Item Pretty or Cryptic Name>.
 
 # NO REQUIRED DUNGEON TEXT
@@ -9787,7 +9788,7 @@ Fishing Hole Sign Text Template:
 Custom Midna Call Need Something Text:
   Standard:
     Text: |-
-      Besoin de quelque chose?<begin choice>
+      Tu veux quelque chose?<begin choice>
 
 Custom Midna Call 3 Choice Text:
   Standard:
@@ -9805,7 +9806,7 @@ Custom Midna Call 2 Choice Text:
 Custom Midna Call Hints Text:
   Standard:
     Text: |-
-      Je n'ai aucune indication à donner.
+      Ksh ksh... Je n'ai rien à te dire.
 
 Return to Spawn Dungeon Intro Text:
   Standard:
@@ -9829,37 +9830,42 @@ Return to Spawn Dungeon No Choice Text:
 Midna Hints Required Dungeons Intro Zero Dungeons:
   Standard:
     Text: |-
-      Il n'y a <red>aucun<white> donjon requis.
+      Ksh ksh... Il <red>n'y a pas<white> de
+      donjon à faire.
 
 Midna Hints Required Dungeons Intro One Dungeon:
   Standard:
     Text: |-
-      Il y a <red>1<white> donjon requis:
+      Tu serais moins stupide que tu en
+      a l'air si tu faisais le <red>seul<white>
+      donjon nécessaire:
 
 Midna Hints Required Dungeons Intro At Least Two Dungeons:
   Standard:
     Text: |-
-      Il y a <red><required dungeon count><white> donjons requis:
+      Je vais t'aider, il faut faire <red><required dungeon count><white>
+      donjons ksh ksh...
 
 Midna Hints Path Hints Intro:
   Standard:
     Text: |-
-      Le <red>chemin<white> suivant t'attend:
+      Eh ben alors, tu te demande <red>où aller<white>?
 
 Midna Hints Barren Hints Intro:
   Standard:
     Text: |-
-      Il n'y a <purple>rien<white> à trouver dans ces endroits:
+      Ksh ksh ksh... Il <purple>n'y a rien<white> là bas:
 
 Midna Hints Item Hints Intro:
   Standard:
     Text: |-
-      Ces <green>items<white> risquent de s'avérer utiles:
+      Tu ne sais pas quoi chercher Ksh ksh...
+      Ces <green>équipements<white> risquent de s'avérer utiles:
 
 Midna Hints Location Hints Intro:
   Standard:
     Text: |-
-      Ces <red>éléments<white> me sont connus:
+      Grâce à la magie des ombres, je <red>sais<white> des choses:
 
 Ordon Hint Sign Text:
   Standard:

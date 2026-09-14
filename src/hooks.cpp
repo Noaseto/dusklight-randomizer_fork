@@ -478,6 +478,9 @@ HookAction hookPreOnEventBit(ModContext*, void* args, void*, void*) {
             dComIfGs_onEventBit(BRIDGE_REPAIR_FUNDRAISING_COMPLETED);
             dComIfGs_onStageSwitch(6, 0x1B); // Bridge exists
         }
+        // Exit flight by foul after Lanayru twilight cleared
+        // This deactivates the horse stop trigger in north eldin
+        dComIfGs_onStageSwitch(6, 0x16);
         break;
 
     case REMOVE_SWORD_SHIELD_FROM_WOLF_BACK:

@@ -412,6 +412,8 @@ namespace randomizer::logic::hints {
             }
         }
 
+        // Capitalize incase any language templates start with an uncapitalized letter
+        fullText.Capitalize();
         return fullText;
     }
 
@@ -420,6 +422,8 @@ namespace randomizer::logic::hints {
         auto regionText = addColor(getTextObjectForTemplate(region, Text::STANDARD, textTemplate), Text::PURPLE);
         auto fullText = getTextObject(textTemplate);
         fullText.Replace("<region>", regionText);
+        // Capitalize incase any language templates start with an uncapitalized letter
+        fullText.Capitalize();
         return fullText;
     }
 
@@ -461,6 +465,8 @@ namespace randomizer::logic::hints {
             }
         }
 
+        // Capitalize incase any language templates start with an uncapitalized letter
+        fullText.Capitalize();
         return fullText;
     }
 
@@ -485,6 +491,8 @@ namespace randomizer::logic::hints {
             }
         }
 
+        // Capitalize incase any language templates start with an uncapitalized letter
+        fullText.Capitalize();
         return fullText;
     }
 

@@ -690,7 +690,7 @@ Progressive Wallet:
   Standard:
     Text: Bourse Progressive
   Pretty:
-    Text: une {Bourse Progressive}
+    Text: une {Bourse}
   Cryptic:
     Text: a {money bag}
   Template Overrides:
@@ -1864,7 +1864,7 @@ Progressive Mirror Shard:
   Standard:
     Text: Fragment de Miroir Progressif
   Pretty:
-    Text: un {Fragment de Miroir Progressif}
+    Text: un {Fragment de Miroir}
   Cryptic:
     Text: a {reflective shard of power}
   Template Overrides:
@@ -2814,16 +2814,16 @@ Bridge of Eldin Portal:
 
 Progressive Sky Book:
   Standard:
-    Text: Écrits Célestiens Progressifs
+    Text: Glyphes Célestiens Progressifs
   Pretty:
-    Text: des {Écrits Célestiens}
+    Text: des {Glyphes Célestiens}
   Cryptic:
     Text: a {glyph of the heavens}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
-        Text: des Écrits Célestiens
+        Text: des Glyphes Célestiens
 
 Purple Rupee Links House:
   Standard:
@@ -3050,7 +3050,7 @@ Progressive Wallet x2:
 
 Progressive Sword x1:
   Standard:
-    Text: Branche taillée
+    Text: Épée de bois
 
 Progressive Sword x2:
   Standard:
@@ -5051,7 +5051,7 @@ Agitha Male Beetle Reward:
   Standard:
     Text: récompense de Machaon pour un scarabée mâle
   Pretty:
-    Text: apporter à {Machaon} le {scarabée mâle}
+    Text: apporter à {Machaon le scarabée mâle}
   Cryptic:
     Text: bringing {Machaon} the {Male Beetle}
 
@@ -5059,7 +5059,7 @@ Agitha Female Beetle Reward:
   Standard:
     Text: récompense de Machaon pour un scarabée femelle
   Pretty:
-    Text: apporter à {Machaon} le {scarabée femelle}
+    Text: apporter à {Machaon le scarabée femelle}
   Cryptic:
     Text: bringing {Machaon} the {Female Beetle}
 
@@ -5067,7 +5067,7 @@ Agitha Male Butterfly Reward:
   Standard:
     Text: récompense de Machaon pour un papillon mâle
   Pretty:
-    Text: apporter à {Machaon} le {papillon mâle}
+    Text: apporter à {Machaon le papillon mâle}
   Cryptic:
     Text: bringing {Agitha} the {Male Butterfly}
 
@@ -5075,7 +5075,7 @@ Agitha Female Butterfly Reward:
   Standard:
     Text: récompense de Machaon pour un papillon femelle
   Pretty:
-    Text: apporter à {Machaon} le {papillon femelle}
+    Text: apporter à {Machaon le papillon femelle}
   Cryptic:
     Text: bringing {Machaon} the {Female Butterfly}
 
@@ -5083,7 +5083,7 @@ Agitha Male Stag Beetle Reward:
   Standard:
     Text: récompense de Machaon pour une lucane mâle
   Pretty:
-    Text: apporter à {Machaon} la {lucane mâle}
+    Text: apporter à {Machaon la lucane mâle}
   Cryptic:
     Text: bringing {Machaon} the {Male Stag Beetle}
 
@@ -5091,7 +5091,7 @@ Agitha Female Stag Beetle Reward:
   Standard:
     Text: récompense de Machaon pour une lucane femelle
   Pretty:
-    Text: apporter à {Machaon} la {lucane femelle}
+    Text: apporter à {Machaon la lucane femelle}
   Cryptic:
     Text: bringing {Machaon} the {Female Stag Beetle}
 
@@ -5099,7 +5099,7 @@ Agitha Male Grasshopper Reward:
   Standard:
     Text: récompense de Machaon pour une sauterelle mâle
   Pretty:
-    Text: apporter à {Machaon} la {sauterelle mâle}
+    Text: apporter à {Machaon la sauterelle mâle}
   Cryptic:
     Text: bringing {Machaon} the {Male Grasshopper}
 
@@ -5107,7 +5107,7 @@ Agitha Female Grasshopper Reward:
   Standard:
     Text: Agitha Female Grasshopper Reward
   Pretty:
-    Text: apporter à {Machaon} la {sauterelle femelle}
+    Text: apporter à {Machaon la sauterelle femelle}
   Cryptic:
     Text: bringing {Machaon} the {Female Grasshopper}
 
@@ -5115,7 +5115,7 @@ Agitha Male Phasmid Reward:
   Standard:
     Text: récompense de Machaon pour un phasme mâle
   Pretty:
-    Text: apporter à {Machaon} le {phasme mâle}
+    Text: apporter à {Machaon le phasme mâle}
   Cryptic:
     Text: bringing {Machaon} the {Male Phasmid}
 
@@ -5123,7 +5123,7 @@ Agitha Female Phasmid Reward:
   Standard:
     Text: récompense de Machaon pour un phasme femelle
   Pretty:
-    Text: apporter à {Machaon} le {phasme femelle}
+    Text: apporter à {Machaon le phasme femelle}
   Cryptic:
     Text: bringing {Machaon} the {Female Phasmid}
 
@@ -5131,7 +5131,7 @@ Agitha Male Pill Bug Reward:
   Standard:
     Text: récompense de Machaon pour un cloporte mâle
   Pretty:
-    Text: apporter à {Machaon} le {cloporte mâle}
+    Text: apporter à {Machaon le cloporte mâle}
   Cryptic:
     Text: bringing {Machaon} the {Male Pill Bug}
 
@@ -5139,7 +5139,7 @@ Agitha Female Pill Bug Reward:
   Standard:
     Text: récompense de Machaon pour un cloporte femelle
   Pretty:
-    Text: apporter à {Machaon} le {cloporte femelle}
+    Text: apporter à {Machaon le cloporte femelle}
   Cryptic:
     Text: bringing {Machaon} the {Female Pill Bug}
 
@@ -5147,7 +5147,7 @@ Agitha Male Mantis Reward:
   Standard:
     Text: récompense de Machaon pour une mante mâle
   Pretty:
-    Text: apporter à {Machaon} la {mante mâle}
+    Text: apporter à {Machaon la mante mâle}
   Cryptic:
     Text: bringing {Machaon} the {Male Mantis}
 
@@ -5155,7 +5155,7 @@ Agitha Female Mantis Reward:
   Standard:
     Text: récompense de Machaon pour une mante femelle
   Pretty:
-    Text: apporter à {Machaon} la {mante femelle}
+    Text: apporter à {Machaon la mante femelle}
   Cryptic:
     Text: bringing {Machaon} the {Female Mantis}
 
@@ -5163,7 +5163,7 @@ Agitha Male Ladybug Reward:
   Standard:
     Text: récompense de Machaon pour une coccinelle mâle
   Pretty:
-    Text: apporter à {Machaon} la {coccinelle mâle}
+    Text: apporter à {Machaon la coccinelle mâle}
   Cryptic:
     Text: bringing {Machaon} the {Male Ladybug}
 
@@ -5171,7 +5171,7 @@ Agitha Female Ladybug Reward:
   Standard:
     Text: récompense de Machaon pour une coccinelle femelle
   Pretty:
-    Text: apporter à {Machaon} la {coccinelle femelle}
+    Text: apporter à {Machaon la coccinelle femelle}
   Cryptic:
     Text: bringing {Machaon} the {Female Ladybug}
 
@@ -5179,7 +5179,7 @@ Agitha Male Snail Reward:
   Standard:
     Text: récompense de Machaon pour un escargot mâle
   Pretty:
-    Text: apporter à {Machaon} l'{escargot mâle}
+    Text: apporter à {Machaon l'escargot mâle}
   Cryptic:
     Text: bringing {Machaon} the {Male Snail}
 
@@ -5187,7 +5187,7 @@ Agitha Female Snail Reward:
   Standard:
     Text: récompense de Machaon pour un escargot femelle
   Pretty:
-    Text: apporter à {Machaon} l'{escargot femelle}
+    Text: apporter à {Machaon l'escargot femelle}
   Cryptic:
     Text: bringing {Machaon} the {Female Snail}
 
@@ -5195,7 +5195,7 @@ Agitha Male Dragonfly Reward:
   Standard:
     Text: récompense de Machaon pour une libellule mâle
   Pretty:
-    Text: apporter à {Machaon} la {libellule mâle}
+    Text: apporter à {Machaon la libellule mâle}
   Cryptic:
     Text: bringing {Machaon} the {Male Dragonfly}
 
@@ -5203,7 +5203,7 @@ Agitha Female Dragonfly Reward:
   Standard:
     Text: récompense de Machaon pour une libellule femelle
   Pretty:
-    Text: apporter à {Machaon} la {libellule femelle}
+    Text: apporter à {Machaon la libellule femelle}
   Cryptic:
     Text: bringing {Machaon} the {Female Dragonfly}
 
@@ -5211,7 +5211,7 @@ Agitha Male Ant Reward:
   Standard:
     Text: récompense de Machaon pour une fourmi mâle
   Pretty:
-    Text: apporter à {Machaon} la {fourmi mâle}
+    Text: apporter à {Machaon la fourmi mâle}
   Cryptic:
     Text: bringing {Machaon} the {Male Ant}
 
@@ -5219,7 +5219,7 @@ Agitha Female Ant Reward:
   Standard:
     Text: récompense de Machaon pour une fourmi femelle
   Pretty:
-    Text: apporter à {Machaon} la {fourmi femelle}
+    Text: apporter à {Machaon la fourmi femelle}
   Cryptic:
     Text: bringing {Machaon} the {Female Ant}
 
@@ -5227,7 +5227,7 @@ Agitha Male Dayfly Reward:
   Standard:
     Text: récompense de Machaon pour un éphémère mâle
   Pretty:
-    Text: apporter à {Machaon} l'{éphémère mâle}
+    Text: apporter à {Machaon l'éphémère mâle}
   Cryptic:
     Text: bringing {Machaon} the {Male Dayfly}
 
@@ -5235,7 +5235,7 @@ Agitha Female Dayfly Reward:
   Standard:
     Text: récompense de Machaon pour un éphémère femelle
   Pretty:
-    Text: apporter à {Machaon} l'{éphémère femelle}
+    Text: apporter à {Machaon l'éphémère femelle}
   Cryptic:
     Text: bringing {Machaon} the {Female Dayfly}
 
@@ -8651,147 +8651,169 @@ Ordon:
   Standard:
     Text: Toal
   Pretty:
-    Text: "{Toal}"
+    Text: à {Toal}
   Cryptic:
     Text: a {quaint village}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+        - Item Hint
+      Standard:
+        Text: à {Toal}
 
 Faron Woods:
   Standard:
     Text: forêt de Firone
   Pretty:
-    Text: "{forêt de Firone}"
+    Text: à la {forêt de Firone}
   Cryptic:
     Text: a {forest}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: la {forêt de Firone}
+        Text: à la {forêt de Firone}
 
 Sacred Grove:
   Standard:
     Text: Sanctuaire de la forêt
   Pretty:
-    Text: le {Sanctuaire de la forêt}
+    Text: au {Sanctuaire de la forêt}
   Cryptic:
     Text: a {hidden grove}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {Sanctuaire de la forêt}
+        Text: au {Sanctuaire de la forêt}
 
 Faron Field:
   Standard:
     Text: plaine de Firone
   Pretty:
-    Text: la {plaine de Firone}
+    Text: dans la {plaine de Firone}
   Cryptic:
     Text: a {field near the forest}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: la {plaine de Firone}
+        Text: dans la {plaine de Firone}
 
 Kakariko Gorge:
   Standard:
     Text: Gorge de Cocorico
   Pretty:
-    Text: le {Gorge de Cocorico}
+    Text: au {Gorge de Cocorico}
   Cryptic:
     Text: a {field with a large chasm}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {Gorge de Cocorico}
+        Text: au {Gorge de Cocorico}
 
 Kakariko Village:
   Standard:
     Text: Cocorico
   Pretty:
-    Text: "{Cocorico}"
+    Text: à {Cocorico}
   Cryptic:
     Text: a {charming village}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+        - Item Hint
+      Standard:
+        Text: à {Cocorico}
 
 Kakariko Graveyard:
   Standard:
     Text: cimetière de Cocorico
   Pretty:
-    Text: le {cimetière de Cocorico}
+    Text: au {cimetière de Cocorico}
   Cryptic:
     Text: a {yard for the dead}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {cimetière de Cocorico}
+        Text: au {cimetière de Cocorico}
 
 Death Mountain:
   Standard:
     Text: Montagne de la mort
   Pretty:
-    Text: la {Montagne de la mort}
+    Text: à la {Montagne de la mort}
   Cryptic:
     Text: a {volcano path}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: la {Montagne de la mort}
+        Text: à la {Montagne de la mort}
 
 Eldin Field:
   Standard:
     Text: plaine d'Ordinn - S
   Pretty:
-    Text: "{plaine d'Ordinn - S}"
+    Text: dans la {plaine d'Ordinn - S}
   Cryptic:
     Text: a {field near a volcano}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: la {plaine d'Ordinn - S}
+        Text: dans la {plaine d'Ordinn - S}
 
 North Eldin:
   Standard:
     Text: plaine d'Ordinn - N
   Pretty:
-    Text: "{plaine d'Ordinn - N}"
+    Text: dans la {plaine d'Ordinn - N}
   Cryptic:
     Text: a {narrow gray field}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: la {plaine d'Ordinn - N}
+        Text: dans la {plaine d'Ordinn - N}
 
 Hidden Village:
   Standard:
     Text: Village Oublié
   Pretty:
-    Text: le {Village Oublié}
+    Text: au {Village Oublié}
   Cryptic:
     Text: a {secluded settlement}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {Village Oublié}
+        Text: au {Village Oublié}
 
 Lanayru Field:
   Standard:
     Text: plaine de Lanelle
   Pretty:
-    Text: la {plaine de Lanelle}
+    Text: dans la {plaine de Lanelle}
   Cryptic:
     Text: a {field with a river}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: la {plaine de Lanelle}
+        Text: dans la {plaine de Lanelle}
 
 Beside Castle Town:
   Standard:
@@ -8805,271 +8827,300 @@ Castle Town:
   Standard:
     Text: citadelle
   Pretty:
-    Text: la {citadelle}
+    Text: à la {citadelle}
   Cryptic:
     Text: a {city}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: la {citadelle}
+        Text: à la {citadelle}
 
 South of Castle Town:
   Standard:
     Text: sud de la citadelle
   Pretty:
-    Text: le {sud de la citadelle}
+    Text: au {sud de la citadelle}
   Cryptic:
     Text: a {field south of a city}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {sud de la citadelle}
+        Text: au {sud de la citadelle}
 
 Great Bridge of Hylia:
   Standard:
-    Text: viaduc Hylia
+    Text: Viaduc Hylia
   Pretty:
-    Text: le {viaduc Hylia}
+    Text: au {Viaduc Hylia}
   Cryptic:
     Text: a {path along a great bridge}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {viaduc Hylia}
+        Text: au {Viaduc Hylia}
 
 Lake Hylia:
   Standard:
     Text: Lac Hylia
   Pretty:
-    Text: le {Lac Hylia}
+    Text: au {Lac Hylia}
   Cryptic:
     Text: a {vast lake}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {Lac Hylia}
+        Text: au {Lac Hylia}
 
 Lanayru Spring:
   Standard:
     Text: Source de Lanelle
   Pretty:
-    Text: la {Source de Lanelle}
+    Text: à la {Source de Lanelle}
   Cryptic:
     Text: a {cavernous spring}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: la {Source de Lanelle}
+        Text: à la {Source de Lanelle}
 
 Upper Zoras River:
   Standard:
     Text: Rivière Zora (Amont)
   Pretty:
-    Text: la {Rivière Zora (Amont)}
+    Text: à la {Rivière Zora (Amont)}
   Cryptic:
     Text: a {fork in the river}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: la {Rivière Zora (Amont)}
+        Text: à la {Rivière Zora (Amont)}
 
 Zoras Domain:
   Standard:
     Text: Village Zora
   Pretty:
-    Text: le {Village Zora}
+    Text: au {Village Zora}
   Cryptic:
     Text: the {home of a grand waterfall}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {Village Zora}
+        Text: au {Village Zora}
 
 South Gerudo Desert:
   Standard:
     Text: Désert Gerudo - S
   Pretty:
-    Text: le {Désert Gerudo - S}
+    Text: au {Désert Gerudo - S}
   Cryptic:
     Text: the {southern desert}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {Désert Gerudo - S}
+        Text: au {Désert Gerudo - S}
 
 North Gerudo Desert:
   Standard:
     Text: Désert Gerudo - N
   Pretty:
-    Text: le {Désert Gerudo - N}
+    Text: au {Désert Gerudo - N}
   Cryptic:
     Text: the {northern desert}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {Désert Gerudo - N}
+        Text: au {Désert Gerudo - N}
 
 Bulblin Camp:
   Standard:
     Text: Camp Bulblin
   Pretty:
-    Text: le {Camp Bulblin}
+    Text: au {Camp Bulblin}
   Cryptic:
     Text: a {camp of enemies}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {Camp Bulblin}
+        Text: au {Camp Bulblin}
 
 Mirror Chamber:
   Standard:
     Text: Chambre du Miroir
   Pretty:
-    Text: la {Chambre du Miroir}
+    Text: dans la {Chambre du Miroir}
   Cryptic:
     Text: a {chamber of chains}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: la {Chambre du Miroir}
+        Text: dans la {Chambre du Miroir}
 
 Snowpeak Mountain:
   Standard:
     Text: Cimes enneigées
   Pretty:
-    Text: les {Cimes enneigées}
+    Text: aux {Cimes enneigées}
+    Plurality: Plural
   Cryptic:
     Text: a {snowy mountain}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: les {Cimes enneigées}
+        Text: aux {Cimes enneigées}
+        Plurality: Plural
 
 Forest Temple:
   Standard:
     Text: Temple Sylvestre
   Pretty:
-    Text: le {Temple Sylvestre}
+    Text: dans le {Temple Sylvestre}
   Cryptic:
     Text: a {deep forest}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {Temple Sylvestre}
+        Text: dans le {Temple Sylvestre}
 
 Goron Mines:
   Standard:
     Text: Mine Goron
   Pretty:
-    Text: la {Mine Goron}
+    Text: dans la {Mine Goron}
   Cryptic:
     Text: a {volcanic mine}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: la {Mine Goron}
+        Text: dans la {Mine Goron}
 
 Lakebed Temple:
   Standard:
     Text: Temple Abyssal
   Pretty:
-    Text: le {Temple Abyssal}
+    Text: dans le {Temple Abyssal}
   Cryptic:
     Text: an {underground lake}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {Temple Abyssal}
+        Text: dans le {Temple Abyssal}
 
 Arbiters Grounds:
   Standard:
     Text: Tour du Jugement
   Pretty:
-    Text: la {Tour du Jugement}
+    Text: dans la {Tour du Jugement}
   Cryptic:
     Text: an {ancient prison}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: la {Tour du Jugement}
+        Text: dans la {Tour du Jugement}
 
 Snowpeak Ruins:
   Standard:
     Text: Ruines des Pics Blancs
   Pretty:
-    Text: les {Ruines des Pics Blancs}
+    Text: aux {Ruines des Pics Blancs}
     Plurality: Plural
   Cryptic:
     Text: a {snowy mansion}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: les {Ruines des Pics Blancs}
+        Text: aux {Ruines des Pics Blancs}
         Plurality: Plural
 
 Temple of Time:
   Standard:
     Text: Temple du Temps
   Pretty:
-    Text: le {Temple du Temps}
+    Text: dans le {Temple du Temps}
   Cryptic:
     Text: the {past}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {Temple du Temps}
+        Text: dans le {Temple du Temps}
 
 City in the Sky:
   Standard:
     Text: Célestia
   Pretty:
-    Text: "{Célestia}"
+    Text: à {Célestia}
   Cryptic:
+    Plurality: Plural
     Text: the {skies above}
+  Template Overrides:
+    - Keys:
+        - Path Hint
+        - Item Hint
+      Standard:
+        Text: à {Célestia}
 
 Palace of Twilight:
   Standard:
     Text: Palais du Crépuscule
   Pretty:
-    Text: le {Palais du Crépuscule}
+    Text: dans {Palais du Crépuscule}
   Cryptic:
     Text: "{another realm}"
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {Palais du Crépuscule}
+        Text: dans {Palais du Crépuscule}
 
 Hyrule Castle:
   Standard:
     Text: Château d'Hyrule
   Pretty:
-    Text: le {Château d'Hyrule}
+    Text: au {Château d'Hyrule}
   Cryptic:
     Text: the {kingdom's castle}
   Template Overrides:
     - Keys:
         - Path Hint
+        - Item Hint
       Standard:
-        Text: le {Château d'Hyrule}
+        Text: au {Château d'Hyrule}
 
 # BOSS/GOAL NAMES
 Diababa:
@@ -9111,21 +9162,20 @@ Ganondorf:
 # HINT TEMPLATES
 Path Hint:
   Standard:
-    Text: <fast>On raconte que <regions> |est/sont| sur le chemin de <goal name>.
+    Text: <fast>File <regions> si tu veux tenir face à <goal name>.
 
 Barren Hint:
   Standard:
-    Text: <fast>On raconte que visiter <region> est stupide.
+    # Todo Does not seem to be displayed
+    Text: <fast>Aller <region>? Ce serait vraiment stupide de ta part.
 
 Item Hint:
   Standard:
-    # todo
-    #    vu sur un panneau : On raconte que une Épée peut être trouvé à le Lac Hylia
-    Text: <fast>On raconte que <Item Pretty or Cryptic Name> peut être trouvé à <regions>.
+    Text: <fast><Item Pretty or Cryptic Name> se |trouve/trouvent| <regions>.
 
 Location Hint:
   Standard:
-    # todo les réceptacle de cœur de boss
+    # todo les réceptacle de cœur de boss, et revoir la phrase pour coller au style de midna
     Text: <fast>On raconte que |la récompense <Location Pretty or Cryptic Name> est/les récompenses <Location Pretty or Cryptic Name> sont| <Item Pretty or Cryptic Name>.
 
 # NO REQUIRED DUNGEON TEXT
@@ -9837,7 +9887,7 @@ Midna Hints Required Dungeons Intro One Dungeon:
   Standard:
     Text: |-
       Tu serais moins stupide que tu en
-      a l'air si tu faisais le <red>seul<white>
+      as l'air si tu faisais le <red>seul<white>
       donjon nécessaire:
 
 Midna Hints Required Dungeons Intro At Least Two Dungeons:
@@ -9849,7 +9899,7 @@ Midna Hints Required Dungeons Intro At Least Two Dungeons:
 Midna Hints Path Hints Intro:
   Standard:
     Text: |-
-      Eh ben alors, tu te demande <red>où aller<white>?
+      Eh ben alors, tu te demandes <red>où aller<white>?
 
 Midna Hints Barren Hints Intro:
   Standard:
@@ -9859,13 +9909,12 @@ Midna Hints Barren Hints Intro:
 Midna Hints Item Hints Intro:
   Standard:
     Text: |-
-      Tu ne sais pas quoi chercher Ksh ksh...
-      Ces <green>équipements<white> risquent de s'avérer utiles:
+      Tu ne sais pas quoi chercher, ksh ksh... Ces <green>équipements<white> risquent de s'avérer utiles:
 
 Midna Hints Location Hints Intro:
   Standard:
     Text: |-
-      Grâce à la magie des ombres, je <red>sais<white> des choses:
+      Ksh ksh... Grâce à la magie des ombres, je <red>sais<white> des choses:
 
 Ordon Hint Sign Text:
   Standard:

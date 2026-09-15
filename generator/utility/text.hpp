@@ -150,4 +150,6 @@ namespace randomizer {
     void applyMessageCodes(std::string&);
 
     Text makeTextListing(std::vector<Text> texts);
+
+    int findFirstNonMessageCodeIndex(const std::string& str);
 }; // namespace Text

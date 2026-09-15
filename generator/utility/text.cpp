@@ -88,7 +88,8 @@ const auto kSilverMessageCode = text_color_code(0xBFBFBFFF);
             for (size_t lang = 0; lang < mEntries.size(); ++lang) {
                 auto& entry = mEntries[lang];
                 if (!entry.str.empty() && lang != JAPANESE) {
-                    entry.str[0] = std::toupper(entry.str[0], latin1Locale);
+                    auto firstCharIndex = findFirstNonMessageCodeIndex(entry.str);
+                    entry.str[firstCharIndex] = std::toupper(entry.str[firstCharIndex], latin1Locale);
                 }
             }
         } catch (const std::runtime_error&) {
@@ -96,7 +97,8 @@ const auto kSilverMessageCode = text_color_code(0xBFBFBFFF);
             for (size_t lang = 0; lang < mEntries.size(); ++lang) {
                 auto& entry = mEntries[lang];
                 if (!entry.str.empty() && lang != JAPANESE) {
-                    entry.str[0] = static_cast<char>(std::toupper(static_cast<unsigned char>(entry.str[0])));
+                    auto firstCharIndex = findFirstNonMessageCodeIndex(entry.str);
+                    entry.str[firstCharIndex] = static_cast<char>(std::toupper(static_cast<unsigned char>(entry.str[firstCharIndex])));
                 }
             }
         }
@@ -878,5 +880,22 @@ const auto kSilverMessageCode = text_color_code(0xBFBFBFFF);
         listingText.mEntries[Text::SPANISH].str = spanish;
         listingText.mEntries[Text::JAPANESE].str = japanese;
         return listingText;
+    }
+
+    int findFirstNonMessageCodeIndex(const std::string& str) {
+        bool messageCode{};
+        int index = 0;
+        do {
+            messageCode = false;
+            for (const auto& code : messageCodes | std::views::keys) {
+                if (str.substr(index).starts_with(code)) {
+                    index += static_cast<int>(code.size());
+                    messageCode = true;
+                    break;
+                }
+            }
+        } while (messageCode);
+
+        return index;
     }
 }; // namespace Text

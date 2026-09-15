@@ -100,6 +100,7 @@ void GenerateRandomizerSeed() {
     seedGenStatus.store(SeedGenerateStatus::Generating);
     std::thread rando_gen_thread(StartSeedGeneration);
     rando_gen_thread.detach();
+    seedGenProgressValue.store(0.f);
 }
 
 ModResult UpdateSeedGenerationDialog() {

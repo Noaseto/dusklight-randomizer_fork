@@ -22,15 +22,19 @@ enum class SeedGenerateStatus {
 
 UiDialogHandle seedGenDialog{0};
 UiElementHandle seedGenProgressBar{0};
+static std::mutex seedGenProgressBarMutex;
 static std::atomic seedGenStatus = SeedGenerateStatus::Ready;
-static std::atomic seedGenProgressValue = 0.0f;
+static std::atomic seedGenProgressValueTarget = 0.0f;
+static float seedGenProgressValueCurrent = 0.0f;
 static std::string generationStatusMsg{};
 static std::mutex generationStatusMutex;
 
 void OnDialogActionOK(ModContext* ctx, UiDialogHandle dialogHandle, void*) {
     mDoAud_seStartMenu(Z2SE_SY_MENU_BACK);
     if (seedGenDialog == dialogHandle) {
+        std::lock_guard lock{seedGenProgressBarMutex};
         seedGenDialog = 0;
+        seedGenProgressBar = 0;
     }
     session::svc_mng.ui->dialog_close(ctx, dialogHandle);
 }
@@ -100,16 +104,44 @@ void GenerateRandomizerSeed() {
     seedGenStatus.store(SeedGenerateStatus::Generating);
     std::thread rando_gen_thread(StartSeedGeneration);
     rando_gen_thread.detach();
-    seedGenProgressValue.store(0.f);
+    seedGenProgressValueTarget.store(0.f);
 }
 
-ModResult UpdateSeedGenerationDialog() {
+void UpdateProgressBar() {
+    std::lock_guard lock{seedGenProgressBarMutex};
+    if (seedGenProgressBar == 0) {
+        return;
+    }
+
+    using namespace std::chrono_literals;
+    static constexpr float kSpeed = 8.0f;
+
+    // Smoothly update the progress bar depending on what the target value is
+    static auto prevTime = std::chrono::steady_clock::now();
+    auto curTime = std::chrono::steady_clock::now();
+    float deltaTime = std::chrono::duration<float>(curTime - prevTime).count();
+    prevTime = curTime;
+
+    float targetValue = seedGenProgressValueTarget.load(std::memory_order_relaxed);
+    auto& currentValue = seedGenProgressValueCurrent;
+    if (targetValue <= currentValue) {
+        currentValue = targetValue;
+    } else if (targetValue - currentValue > 0.f) {
+        currentValue += (targetValue - currentValue) * (1.0f - std::exp(-kSpeed * deltaTime));
+    }
+
+    auto* ctx = session::svc_mng.mod_ctx;
+    auto* ui_svc = session::svc_mng.ui;
+    ui_svc->elem_set_progress(ctx, seedGenProgressBar, currentValue);
+}
+
+void UpdateSeedGenerationDialog() {
     if (seedGenDialog == 0) {
         const auto status = seedGenStatus.load();
         if (status == SeedGenerateStatus::Success || status == SeedGenerateStatus::Error) {
             seedGenStatus.store(SeedGenerateStatus::Ready);
         }
-        return MOD_OK;
+        return;
     }
 
     auto curSeedGenStatus = seedGenStatus.load();
@@ -120,7 +152,6 @@ ModResult UpdateSeedGenerationDialog() {
 
     // Update the progress bar if we're still attempting to generate
     if (curSeedGenStatus == SeedGenerateStatus::Generating) {
-        ui_svc->elem_set_progress(ctx, seedGenProgressBar, seedGenProgressValue.load(std::memory_order_relaxed));
         ui_svc->dialog_set_body(ctx, seedGenDialog, generationStatus.c_str());
     }
     // Change the modal text if we've finished attempting to generate
@@ -128,11 +159,11 @@ ModResult UpdateSeedGenerationDialog() {
              curSeedGenStatus == SeedGenerateStatus::Error)
     {
         if (curSeedGenStatus == SeedGenerateStatus::Success) {
-            ui_svc->elem_set_progress(ctx, seedGenProgressBar, 1.0f);
+            seedGenProgressValueTarget.store(1.f);
             mDoAud_seStartMenu(Z2SE_SY_FILE_SAVE_OK);
             ui_svc->dialog_set_icon(ctx, seedGenDialog, "celebration");
         } else {
-            ui_svc->elem_set_progress(ctx, seedGenProgressBar, 0.0f);
+            seedGenProgressValueTarget.store(0.f);
             mDoAud_seStartMenu(Z2SE_SYS_RESULT_WRONG);
             ui_svc->dialog_set_icon(ctx, seedGenDialog, "error");
         }
@@ -140,12 +171,10 @@ ModResult UpdateSeedGenerationDialog() {
         ui_svc->dialog_set_body(ctx, seedGenDialog, generationStatus.c_str());
         seedGenStatus.store(SeedGenerateStatus::Ready);
     }
-
-    return MOD_OK;
 }
 
 void UpdateSeedGenProgressValue(float progress) {
-    seedGenProgressValue.store(progress, std::memory_order_relaxed);
+    seedGenProgressValueTarget.store(progress, std::memory_order_relaxed);
 }
 
 

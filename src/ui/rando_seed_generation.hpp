@@ -7,7 +7,8 @@
 namespace randomizer::ui {
 
 void GenerateRandomizerSeed();
-ModResult UpdateSeedGenerationDialog();
+void UpdateProgressBar();
+void UpdateSeedGenerationDialog();
 void UpdateSeedGenProgressValue(float progress);
 void UpdateGenerationStatusMsg(const std::string& str);
 std::string ReadGenerationStatusMsg();

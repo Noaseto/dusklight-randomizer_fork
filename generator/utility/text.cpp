@@ -628,7 +628,7 @@ const auto kSilverMessageCode = text_color_code(0xBFBFBFFF);
         return tb.at(name).at(type).mEntries.at(language).str;
     }
 
-    Text addColor(const Text& t, Text::Color color, int count /* = 1*/) {
+    Text addColor(const Text& t, Text::Color color, int count /* = max*/) {
         const static std::unordered_map<Text::Color, std::string> colorStrings = {
             {Text::WHITE, "<white>"},
             {Text::RED, "<red>"},

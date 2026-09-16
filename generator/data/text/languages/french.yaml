@@ -24,6 +24,102 @@
 # todo: revoir la géographie du Désert Gerudo, j'ai mis Désert Gerudo à la fin partout, c'est pas correct
 #       par exemple, coffre du nord-ouest derrière les barrières du Désert Gerudo
 # todo les trads des salles de donjons sont pas folichones :/
+#
+#
+# TODO: these will not stay, they are there while creating the cryptic messages as a memo
+# Lieux cryptiques :
+#
+# Ordon: Toal
+# la maison
+#
+# Faron Woods: forêt de Firone
+# forêt N : bois/boisé/tréfonds des bois
+# forêt S : une clairière
+#
+# Sacred Grove: Sanctuaire de la forêt
+# Un lieu sacré
+#
+# Faron Field: plaine de Firone
+# 
+#
+# Kakariko Gorge: Gorge de Cocorico
+# un gros trou
+#
+# Kakariko Village: Cocorico
+# un petit village
+#
+# Kakariko Graveyard: cimetière de Cocorico
+#
+# Death Mountain: Montagne de la mort
+# un volcan
+#
+# Eldin Field: plaine d'Ordinn - S
+#
+# North Eldin: plaine d'Ordinn - N
+#
+# Hidden Village: Village Oublié
+#
+# Lanayru Field: plaine de Lanelle
+#
+# Beside Castle Town: derrière la citadelle
+#
+# Castle Town: citadelle
+# un bourg
+#
+# South of Castle Town: sud de la citadelle
+#
+# Great Bridge of Hylia: Viaduc Hylia
+#
+# Lake Hylia: Lac Hylia
+# grand plan d'eau
+#
+# Lanayru Spring: Source de Lanelle
+#
+# Upper Zoras River: Rivière Zora (Amont)
+# torrentiel/torent
+#
+# Zoras Domain: Village Zora
+# cité des eaux
+#
+# South Gerudo Desert: Désert Gerudo - S
+#
+# North Gerudo Desert: Désert Gerudo - N
+#
+# Bulblin Camp: Camp Bulblin
+# nomades/camp de nomades
+#
+# Mirror Chamber: Chambre du Miroir
+# le Colisée
+#
+# Snowpeak Mountain: Cimes enneigées
+#
+# Forest Temple: Temple Sylvestre
+# un antre boisé
+#
+# Goron Mines: Mine Goron
+# un antre magmatique
+#
+# Lakebed Temple: Temple Abyssal
+# un antre submergé
+#
+# Arbiters Grounds: Tour du Jugement
+# un tribunal
+#
+# Snowpeak Ruins: Ruines des Pics Blancs
+# une maison délabré
+#
+# Temple of Time: Temple du Temps
+# un temps révolu 
+#
+# City in the Sky: Célestia
+# paradis/paradisiaque
+#
+# Palace of Twilight: Palais du Crépuscule
+# une autre dimension
+#
+# Hyrule Castle: Château d'Hyrule
+# Roi/Royale
+
 
 # ITEM NAMES
 Green Rupee:
@@ -32,7 +128,7 @@ Green Rupee:
   Pretty:
     Text: un {rubis vert}
   Cryptic:
-    Text: a {penny}
+    Text: une {pièce}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -58,7 +154,8 @@ Blue Rupee:
   Pretty:
     Text: un {rubis bleu}
   Cryptic:
-    Text: a {fiver}
+    Text: des {pièces}
+    Plurality: Plural
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -84,7 +181,7 @@ Yellow Rupee:
   Pretty:
     Text: un {rubis jaune}
   Cryptic:
-    Text: some {change}
+    Text: un {billet}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -110,7 +207,8 @@ Red Rupee:
   Pretty:
     Text: un {rubis rouge}
   Cryptic:
-    Text: "{couch cash}"
+    Text: des {billets}
+    Plurality: Plural
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -136,7 +234,7 @@ Purple Rupee:
   Pretty:
     Text: un {rubis violet}
   Cryptic:
-    Text: a {good sum}
+    Text: une belle {somme}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -162,7 +260,7 @@ Orange Rupee:
   Pretty:
     Text: un {rubis orange}
   Cryptic:
-    Text: a {payday}
+    Text: une {fortune}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -188,7 +286,7 @@ Silver Rupee:
   Pretty:
     Text: un {rubis argent}
   Cryptic:
-    Text: "{many riches}"
+    Text: une pluie {de billet}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -215,7 +313,7 @@ Bombs 5:
     Text: des {Bombes (lot de 5)}
     Plurality: Plural
   Cryptic:
-    Text: some {regular explosives}
+    Text: des {explosifs}
     Plurality: Plural
   Template Overrides:
     - Keys:
@@ -232,7 +330,7 @@ Bombs 10:
     Text: des {Bombes (lot de 10)}
     Plurality: Plural
   Cryptic:
-    Text: some {regular explosives}
+    Text: pas mal d'{explosifs}
     Plurality: Plural
   Template Overrides:
     - Keys:
@@ -249,7 +347,7 @@ Bombs 20:
     Text: des {Bombes (lot de 20)}
     Plurality: Plural
   Cryptic:
-    Text: some {regular explosives}
+    Text: beaucoup d'{explosifs}
     Plurality: Plural
   Template Overrides:
     - Keys:
@@ -266,7 +364,7 @@ Bombs 30:
     Text: des {Bombes (lot de 30)}
     Plurality: Plural
   Cryptic:
-    Text: some {regular explosives}
+    Text: énormément d'{explosifs}
     Plurality: Plural
   Template Overrides:
     - Keys:
@@ -283,7 +381,8 @@ Arrows 10:
     Text: des {Flèches (lot de 10)}
     Plurality: Plural
   Cryptic:
-    Text: some {thin ammo}
+    Text: des {munitions}
+    Plurality: Plural
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -299,7 +398,8 @@ Arrows 20:
     Text: des {Flèches (lot de 20)}
     Plurality: Plural
   Cryptic:
-    Text: some {thin ammo}
+    Text: pas mal de {munitions}
+    Plurality: Plural
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -315,7 +415,8 @@ Arrows 30:
     Text: des {Flèches (lot de 30)}
     Plurality: Plural
   Cryptic:
-    Text: some {thin ammo}
+    Text: beaucoup de {munitions}
+    Plurality: Plural
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -331,7 +432,7 @@ Seeds 50:
     Text: "{50 graines}"
     Plurality: Plural
   Cryptic:
-    Text: some {pellets}
+    Text: des {munitions} pour enfant
     Plurality: Plural
   Template Overrides:
     - Keys:
@@ -351,7 +452,7 @@ Seeds 50:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
-        Text: de {50 graines}
+        Text: de {50 grraines}
         Plurality: Plural
 
 Foolish Item:
@@ -360,7 +461,18 @@ Foolish Item:
   Pretty:
     Text: un {Faux'bjet}
   Cryptic:
-    Text: a {chilly surprise}
+    Text: un {espoir}
+  Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {Faux'bjet}
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {Faux'bjet}
 
 Ordon Spring Portal:
   Standard:
@@ -368,7 +480,7 @@ Ordon Spring Portal:
   Pretty:
     Text: le portail {Source de Toal}
   Cryptic:
-    Text: a {portal to home}
+    Text: le portail de {la maison}
 
 South Faron Portal:
   Standard:
@@ -376,7 +488,7 @@ South Faron Portal:
   Pretty:
     Text: le portail {Forêt de Firone - S}
   Cryptic:
-    Text: a {portal to a forest clearing}
+    Text: le portail d'{une clairière}
 
 Water Bombs 5:
   Standard:
@@ -385,7 +497,7 @@ Water Bombs 5:
     Text: des {Hydro-bombes (lot de 5)}
     Plurality: Plural
   Cryptic:
-    Text: some {water explosives}
+    Text: des {mines}
     Plurality: Plural
   Template Overrides:
     - Keys:
@@ -415,7 +527,7 @@ Water Bombs 10:
     Text: des {Hydro-bombes (lot de 10)}
     Plurality: Plural
   Cryptic:
-    Text: some {water explosives}
+    Text: pas mal de {mines}
     Plurality: Plural
   Template Overrides:
     - Keys:
@@ -445,7 +557,7 @@ Water Bombs 15:
     Text: des {Hydro-bombes (lot de 15)}
     Plurality: Plural
   Cryptic:
-    Text: some {water explosives}
+    Text: beaucoup de {mines}
     Plurality: Plural
   Template Overrides:
     - Keys:
@@ -475,7 +587,7 @@ Bomblings 5:
     Text: des {Bombinsectes (lot de 5)}
     Plurality: Plural
   Cryptic:
-    Text: some {crawling explosives}
+    Text: des {explosifs vivants}
     Plurality: Plural
   Template Overrides:
     - Keys:
@@ -492,7 +604,7 @@ Bomblings 10:
     Text: des {Bombinsectes (lot de 10)}
     Plurality: Plural
   Cryptic:
-    Text: some {crawling explosives}
+    Text: pas mal d'{explosifs vivants}
     Plurality: Plural
   Template Overrides:
     - Keys:
@@ -508,7 +620,7 @@ Piece of Heart:
   Pretty:
     Text: un {Fragment de cœur}
   Cryptic:
-    Text: some {love}
+    Text: une peu d'{amour}
   Template Overrides:
     - Keys:
         - Kakariko Malo Mart Hawkeye After Purchase Text Template
@@ -538,7 +650,7 @@ Heart Container:
   Pretty:
     Text: un {réceptacle de cœur}
   Cryptic:
-    Text: a {lot of love}
+    Text: de l'{amour}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -564,7 +676,7 @@ Ordon Shield:
   Pretty:
     Text: le {Bouclier de Toal}
   Cryptic:
-    Text: a {sturdy reminder of home}
+    Text: un {rappel solide de la maison}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -582,7 +694,7 @@ Wooden Shield:
   Pretty:
     Text: un {Bouclier en bois}
   Cryptic:
-    Text: a {wood protector}
+    Text: une {défense naturel}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -596,7 +708,7 @@ Hylian Shield:
   Pretty:
     Text: le {Bouclier d'Hylia}
   Cryptic:
-    Text: an {unbreakable shield}
+    Text: un {bouclier incassable}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -614,7 +726,8 @@ Magic Armor:
   Pretty:
     Text: l'{Armure magique}
   Cryptic:
-    Text: "{magical clothing}"
+    Text: des {vêtements magiques}
+    Plurality: Plural
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -644,7 +757,8 @@ Zora Armor:
   Pretty:
     Text: la {tenue Zora}
   Cryptic:
-    Text: the {fish suit}
+    Text: des {vêtements de poissons}
+    Plurality: Plural
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -662,7 +776,7 @@ Shadow Crystal:
   Pretty:
     Text: le {Cristal Maudit}
   Cryptic:
-    Text: a {crystal of dark power}
+    Text: une {malédiction contrôlée}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -692,7 +806,7 @@ Progressive Wallet:
   Pretty:
     Text: une {Bourse}
   Cryptic:
-    Text: a {money bag}
+    Text: une {tirelire}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -705,7 +819,7 @@ Upper Zoras River Portal:
   Pretty:
     Text: le portail {Rivière Zora (Amont)}
   Cryptic:
-    Text: a {portal to some raging rapids}
+    Text: le portail {torrentiel}
 
 Castle Town Portal:
   Standard:
@@ -713,7 +827,7 @@ Castle Town Portal:
   Pretty:
     Text: le portail {Entrée de la citadelle}
   Cryptic:
-    Text: a {portal to the city}
+    Text: le portail d'un {bourg}
 
 Gerudo Desert Portal:
   Standard:
@@ -721,7 +835,7 @@ Gerudo Desert Portal:
   Pretty:
     Text: le portail {Désert Gerudo}
   Cryptic:
-    Text: a {portal to a challenging cave}
+    Text: le portail d'un {grand défi}
 
 North Faron Portal:
   Standard:
@@ -729,7 +843,7 @@ North Faron Portal:
   Pretty:
     Text: le portail {Forêt de Firone - N}
   Cryptic:
-    Text: a {portal to a forest clearing}
+    Text: le portail dans les {bois}
 
 Hawkeye:
   Standard:
@@ -737,7 +851,7 @@ Hawkeye:
   Pretty:
     Text: l'{Œil du faucon}
   Cryptic:
-    Text: the {zoom-and-enhance}
+    Text: les {jumelles}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -755,7 +869,7 @@ Progressive Sword:
   Pretty:
     Text: une {Épée}
   Cryptic:
-    Text: a {sharp weapon}
+    Text: un {truc tranchant}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -768,7 +882,7 @@ Gale Boomerang:
   Pretty:
     Text: le {Boomerang tornade}
   Cryptic:
-    Text: the {fairy of winds}
+    Text: la {fée sylvestre}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -794,7 +908,7 @@ Spinner:
   Pretty:
     Text: l'{Aérouage}
   Cryptic:
-    Text: the {gear rotator}
+    Text: un {cheval mécanique}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -820,7 +934,7 @@ Ball and Chain:
   Pretty:
     Text: le {Boulet}
   Cryptic:
-    Text: the {iron weight}
+    Text: un {poids}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -834,7 +948,7 @@ Progressive Bow:
   Pretty:
     Text: un {Arc}
   Cryptic:
-    Text: an {arrow launcher}
+    Text: un {bâton avec une ficelle}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -847,7 +961,7 @@ Progressive Clawshot:
   Pretty:
     Text: un {Grappin}
   Cryptic:
-    Text: a {chain launcher}
+    Text: une {chaîne}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -861,7 +975,7 @@ Iron Boots:
     Text: les {Bottes de fer}
     Plurality: Plural
   Cryptic:
-    Text: the {heavy shoes}
+    Text: des {souliers métalliques}
     Plurality: Plural
   Template Overrides:
     - Keys:
@@ -895,7 +1009,7 @@ Progressive Dominion Rod:
   Pretty:
     Text: un {Bâton Anima}
   Cryptic:
-    Text: a {rod of control}
+    Text: un {bâton magique}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -908,7 +1022,7 @@ Lantern:
   Pretty:
     Text: la {Lanterne}
   Cryptic:
-    Text: the {small light}
+    Text: une {lumière d'appoint}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -938,7 +1052,7 @@ Progressive Fishing Rod:
   Pretty:
     Text: une {Canne à pêche}
   Cryptic:
-    Text: a {rod of patience}
+    Text: une {preuve de patience}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -951,7 +1065,7 @@ Slingshot:
   Pretty:
     Text: le {Lance-pierre}
   Cryptic:
-    Text: the {child's toy}
+    Text: un {jouet pour enfant}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -982,7 +1096,7 @@ Kakariko Gorge Portal:
   Pretty:
     Text: le portail {Gorge de Cocorico}
   Cryptic:
-    Text: a {portal to a big gap}
+    Text: le portail d'un {gros trou}
 
 Kakariko Village Portal:
   Standard:
@@ -990,7 +1104,7 @@ Kakariko Village Portal:
   Pretty:
     Text: le portail {Cocorico}
   Cryptic:
-    Text: a {portal to a village}
+    Text: le portail {d'un petit village}
 
 Giant Bomb Bag:
   Standard:
@@ -998,7 +1112,7 @@ Giant Bomb Bag:
   Pretty:
     Text: un {Sac de bombe géant}
   Cryptic:
-    Text: an {explosive capacity upgrade}
+    Text: une {amélioration d'explosifs}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -1012,7 +1126,7 @@ Bomb Bag:
   Pretty:
     Text: un {Sac de bombe}
   Cryptic:
-    Text: a {bag for explosions}
+    Text: un {sac d'explosifs}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1030,7 +1144,7 @@ Death Mountain Portal:
   Pretty:
     Text: le portail {Montagne de la mort}
   Cryptic:
-    Text: a {portal to a volcano}
+    Text: le portail d'un {volcan}
 
 Zoras Domain Portal:
   Standard:
@@ -1038,7 +1152,7 @@ Zoras Domain Portal:
   Pretty:
     Text: le portail {Village des Zora}
   Cryptic:
-    Text: a {portal to water}
+    Text: le portail de la {cité des eaux}
 
 Empty Bottle:
   Standard:
@@ -1046,7 +1160,7 @@ Empty Bottle:
   Pretty:
     Text: un {Flacon vide}
   Cryptic:
-    Text:
+    Text: un {réservoir}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -1060,7 +1174,7 @@ Red Potion Shop:
   Pretty:
     Text: une {Potion rouge}
   Cryptic:
-    Text: a {health refill}
+    Text: de l'{amour en poche}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1084,7 +1198,7 @@ Blue Potion Shop:
   Standard:
     Text: Potion bleue
   Pretty:
-    Text: une {Potion bleue}
+    Text: beaucoup d'{amour en poche}
   Cryptic:
     Text: a {blue health refill}
   Template Overrides:
@@ -1100,7 +1214,7 @@ Bottle with Half Milk:
   Pretty:
     Text: un {Flacon de Lait (moitié)}
   Cryptic:
-    Text: a {baby bottle}
+    Text: un {biberon}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1118,7 +1232,7 @@ Lantern Oil Shop:
   Pretty:
     Text: la {Boutique d'huile}
   Cryptic:
-    Text: an {oil refill}
+    Text: une {recharge de lumière}
 
 Fairy Tears:
   Standard:
@@ -1127,7 +1241,7 @@ Fairy Tears:
     Text: des {Larmes de fée}
     Plurality: Plural
   Cryptic:
-    Text: a {refill of great power}
+    Text: un {pouvoir immense}
 
 Bottle with Great Fairies Tears:
   Standard:
@@ -1135,7 +1249,7 @@ Bottle with Great Fairies Tears:
   Pretty:
     Text: un {Flacon de Larmes de Fée}
   Cryptic:
-    Text: a {bottle of great power}
+    Text: une {charge d'un pouvoir immense}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1165,7 +1279,7 @@ Renados Letter:
   Pretty:
     Text: la {Lettre de Reynald}
   Cryptic:
-    Text: a {letter from a concerned shaman}
+    Text: la {lettre d'un guide spirituel}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1191,7 +1305,8 @@ Invoice:
   Pretty:
     Text: la {Facture}
   Cryptic:
-    Text: the {bill for the doctor}
+    Text: les {impayés d'un docteur}
+    Plurality: Plural
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1217,8 +1332,7 @@ Wooden Statue:
   Pretty:
     Text: la {Statuette en bois}
   Cryptic:
-    Text: "{memories of home}"
-    Plurality: Plural
+    Text: un {souvenir gravé}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -1232,7 +1346,7 @@ Ilias Charm:
   Pretty:
     Text: le {Collier d'Iria}
   Cryptic:
-    Text: a {friend's item}
+    Text: le {bien d'une amie}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1258,7 +1372,7 @@ Horse Call:
   Pretty:
     Text: le {Lien de l'amitié}
   Cryptic:
-    Text: the {horse beckoner}
+    Text: le {murmure hippique}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1276,7 +1390,7 @@ Forest Temple Small Key:
   Pretty:
     Text: une {petite clé du Temple sylvestre}
   Cryptic:
-    Text: a {key for a deep forest}
+    Text: une {clé d'un antre boisé}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1306,7 +1420,7 @@ Goron Mines Small Key:
   Pretty:
     Text: une {petite clé de la Mine Goron}
   Cryptic:
-    Text: a {key for a volcanic mine}
+    Text: une {clé d'un antre magmatique}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1336,7 +1450,7 @@ Lakebed Temple Small Key:
   Pretty:
     Text: une {petite clé du Temple Abyssal}
   Cryptic:
-    Text: a {key for an underground lake}
+    Text: une {clé d'un antre submergé}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1354,7 +1468,7 @@ Arbiters Grounds Small Key:
   Pretty:
     Text: une {petite clé de la Tour du Jugement}
   Cryptic:
-    Text: a {key for an ancient prison}
+    Text: une {clé d'un tribunal}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1414,7 +1528,7 @@ Temple of Time Small Key:
   Pretty:
     Text: une {petite clé du Temple du Temps}
   Cryptic:
-    Text: a {key for the past}
+    Text: une {clé d'un temps révolu}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1432,7 +1546,7 @@ City in the Sky Small Key:
   Pretty:
     Text: une {petite clé de Célestia}
   Cryptic:
-    Text: a {key for the skies above}
+    Text: une {clé paradisiaque}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1450,7 +1564,7 @@ Palace of Twilight Small Key:
   Pretty:
     Text: une {petite clé du Palais du Crépuscule}
   Cryptic:
-    Text: a {key for a another realm}
+    Text: une {clé d'une autre dimension}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1480,7 +1594,7 @@ Hyrule Castle Small Key:
   Pretty:
     Text: une {petite clé du Château d'Hyrule}
   Cryptic:
-    Text: a {key for a kingdom's castle}
+    Text: une {clé royale}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1510,7 +1624,7 @@ Gerudo Desert Bulblin Camp Key:
   Pretty:
     Text: la {petite clé du Camp Bulblin du désert Gerudo}
   Cryptic:
-    Text: the {key for a desert tent}
+    Text: la {clé de nomades}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1540,7 +1654,7 @@ Lake Hylia Portal:
   Pretty:
     Text: le portail {Lac Hylia}
   Cryptic:
-    Text: a {portal to a vast lake}
+    Text: le portail d'un {grand plan d'eau}
 
 Aurus Memo:
   Standard:
@@ -1548,7 +1662,7 @@ Aurus Memo:
   Pretty:
     Text: la {Note de Lafrel}
   Cryptic:
-    Text: a {friend's favor}
+    Text: la {faveur d'un ami}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1578,7 +1692,7 @@ Asheis Sketch:
   Pretty:
     Text: le {Croquis du yéti}
   Cryptic:
-    Text: a {sketch of a horrific beast}
+    Text: un {dessin terrifiant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1604,7 +1718,7 @@ Forest Temple Big Key:
   Pretty:
     Text: la {grande clé du Temple Sylvestre}
   Cryptic:
-    Text: the {key to the twilit parasite}
+    Text: la {clé de la corruption d'un antre boisé}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1630,7 +1744,7 @@ Lakebed Temple Big Key:
   Pretty:
     Text: la {grande clé du Temple Abyssal}
   Cryptic:
-    Text: the {key to the twilit aquatic}
+    Text: la {clé de la corruption d'un antre magmatique}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1656,7 +1770,7 @@ Arbiters Grounds Big Key:
   Pretty:
     Text: la {grande clé de la Tour du Jugement}
   Cryptic:
-    Text: the {key to the twilit fossil}
+    Text: la {clé de la corruption d'un tribunal}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1682,7 +1796,7 @@ Temple of Time Big Key:
   Pretty:
     Text: la {grande clé du Temple du Temps}
   Cryptic:
-    Text: the {key to the twilit arachnid}
+    Text: la {clé de la corruption d'un temps révolu}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1708,7 +1822,7 @@ City in the Sky Big Key:
   Pretty:
     Text: la {grande clé de Célestia}
   Cryptic:
-    Text: the {key to the twilit dragon}
+    Text: la {clé de la corruption du paradis}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1734,7 +1848,7 @@ Palace of Twilight Big Key:
   Pretty:
     Text: la {grande clé du Palais du Crépuscule}
   Cryptic:
-    Text: the {key to the usurper king}
+    Text: la {clé de la corruption d'une autre dimension}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1760,7 +1874,7 @@ Hyrule Castle Big Key:
   Pretty:
     Text: la {grande clé du Château d'Hyrule}
   Cryptic:
-    Text: the {key to the castle throne room}
+    Text: la {clé du Roi}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1786,7 +1900,7 @@ Forest Temple Compass:
   Pretty:
     Text: la {boussole du Temple Sylvestre}
   Cryptic:
-    Text: the {pointer for a deep forest}
+    Text: la {rose des vents d'un antre boisé}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1812,7 +1926,7 @@ Goron Mines Compass:
   Pretty:
     Text: la {boussole de la Mine Goron}
   Cryptic:
-    Text: the {pointer for a volcano}
+    Text: la {rose des vents d'un antre magmatique}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1838,7 +1952,7 @@ Lakebed Temple Compass:
   Pretty:
     Text: la {boussole du Temple Abyssal}
   Cryptic:
-    Text: the {pointer for an underground lake}
+    Text: la {rose des vents d'un antre submergé}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -1852,7 +1966,7 @@ Bottle with Lantern Oil:
   Pretty:
     Text: un {Flacon d'huile}
   Cryptic:
-    Text: a {bottle with lighter fluid}
+    Text: une {charge de lumière}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -1866,7 +1980,7 @@ Progressive Mirror Shard:
   Pretty:
     Text: un {Fragment de Miroir}
   Cryptic:
-    Text: a {reflective shard of power}
+    Text: la {réflexion morcelée d'un pouvoir}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -1879,7 +1993,7 @@ Arbiters Grounds Compass:
   Pretty:
     Text: la {boussole de la Tour du Jugement}
   Cryptic:
-    Text: the {pointer for an ancient prison}
+    Text: la {rose des vents d'un tribunal}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1905,7 +2019,7 @@ Snowpeak Ruins Compass:
   Pretty:
     Text: la {boussole des Ruines des Pics Blancs}
   Cryptic:
-    Text: the {pointer for a snowy mansion}
+    Text: la {rose des vents d'une maison délabrée}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1931,7 +2045,7 @@ Temple of Time Compass:
   Pretty:
     Text: la {boussole du Temple du Temps}
   Cryptic:
-    Text: the {pointer for the past}
+    Text: la {rose des vents d'un temps révolu}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -1945,7 +2059,7 @@ City in the Sky Compass:
   Pretty:
     Text: la {boussole de Célestia}
   Cryptic:
-    Text: the {pointer for the skies above}
+    Text: la {rose des vents du paradis}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -1959,7 +2073,7 @@ Palace of Twilight Compass:
   Pretty:
     Text: la {boussole du Palais du Crépuscule}
   Cryptic:
-    Text: the {pointer for another realm}
+    Text: la {rose des vents d'une autre dimension}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -1985,7 +2099,7 @@ Hyrule Castle Compass:
   Pretty:
     Text: la {boussole du Château d'Hyrule}
   Cryptic:
-    Text: the {pointer for the kingdom's castle}
+    Text: la {rose des vents royale}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2011,7 +2125,7 @@ Mirror Chamber Portal:
   Pretty:
     Text: le portail {Chambre du Miroir}
   Cryptic:
-    Text: a {portal to a coliseum}
+    Text: le portail du {Colisée}
 
 Snowpeak Portal:
   Standard:
@@ -2019,7 +2133,7 @@ Snowpeak Portal:
   Pretty:
     Text: le portail {Cime des pics Blancs}
   Cryptic:
-    Text: a {portal to a snowy mountain}
+    Text: le portail {d'un sommet enneigé}
 
 Forest Temple Dungeon Map:
   Standard:
@@ -2027,7 +2141,7 @@ Forest Temple Dungeon Map:
   Pretty:
     Text: la {carte du Temple Sylvestre}
   Cryptic:
-    Text: the {map for a deep forest}
+    Text: l'{atlas d'un antre boisé}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2053,7 +2167,7 @@ Goron Mines Dungeon Map:
   Pretty:
     Text: la {carte de la Mine Goron}
   Cryptic:
-    Text: the {map for a volcano}
+    Text: l'{atlas d'un antre magmatique}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2079,7 +2193,7 @@ Lakebed Temple Dungeon Map:
   Pretty:
     Text: la {carte du Temple Abyssal}
   Cryptic:
-    Text: the {map for an underground lake}
+    Text: l'{atlas d'un antre submergé}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2105,7 +2219,7 @@ Arbiters Grounds Dungeon Map:
   Pretty:
     Text: la {carte de la Tour du Jugement}
   Cryptic:
-    Text: the {map for an ancient prison}
+    Text: l'{atlas d'un tribunal}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2131,7 +2245,7 @@ Snowpeak Ruins Dungeon Map:
   Pretty:
     Text: la {carte des Ruines des Pics Blancs}
   Cryptic:
-    Text: the {map for a snowy mansion}
+    Text: l'{atlas d'une maison délabrée}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2157,7 +2271,7 @@ Temple of Time Dungeon Map:
   Pretty:
     Text: la {carte du Temple du Temps}
   Cryptic:
-    Text: the {map for the past}
+    Text: l'{atlas d'un temps révolu}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2183,7 +2297,7 @@ City in the Sky Dungeon Map:
   Pretty:
     Text: la {carte de Célestia}
   Cryptic:
-    Text: the {map for the skies above}
+    Text: l'{atlas du paradis}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2209,7 +2323,7 @@ Palace of Twilight Dungeon Map:
   Pretty:
     Text: la {carte du Palais du Crépuscule}
   Cryptic:
-    Text: the {map for another realm}
+    Text: l'{atlas d'une autre dimension}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2235,7 +2349,7 @@ Hyrule Castle Dungeon Map:
   Pretty:
     Text: la {carte du Château d'Hyrule}
   Cryptic:
-    Text: the {map for the kingdom's castle}
+    Text: l'{atlas du roi}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2261,7 +2375,7 @@ Sacred Grove Portal:
   Pretty:
     Text: le portail {Sanctuaire de la forêt}
   Cryptic:
-    Text: a {portal to an ancient forest}
+    Text: le portail {d'un lieu sacré}
 
 Male Beetle:
   Standard:
@@ -2269,7 +2383,7 @@ Male Beetle:
   Pretty:
     Text: un {<male>scarabée}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2295,7 +2409,7 @@ Female Beetle:
   Pretty:
     Text: un {<female>scarabée}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2321,7 +2435,7 @@ Male Butterfly:
   Pretty:
     Text: un {<male>papillon}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -2335,7 +2449,7 @@ Female Butterfly:
   Pretty:
     Text: un {<female>papillon}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -2349,7 +2463,7 @@ Male Stag Beetle:
   Pretty:
     Text: une {<male>lucane}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -2363,7 +2477,7 @@ Female Stag Beetle:
   Pretty:
     Text: une {<female>lucane}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -2377,7 +2491,7 @@ Male Grasshopper:
   Pretty:
     Text: une{<male>sauterelle}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2403,7 +2517,7 @@ Female Grasshopper:
   Pretty:
     Text: une {<female>sauterelle}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2429,7 +2543,7 @@ Male Phasmid:
   Pretty:
     Text: un {<male>phasme}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -2443,7 +2557,7 @@ Female Phasmid:
   Pretty:
     Text: un {<female>phasme}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -2457,7 +2571,7 @@ Male Pill Bug:
   Pretty:
     Text: un {<male>cloporte}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2483,7 +2597,7 @@ Female Pill Bug:
   Pretty:
     Text: un {<female>cloporte}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2509,7 +2623,7 @@ Male Mantis:
   Pretty:
     Text: une {<male>mante}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -2523,7 +2637,7 @@ Female Mantis:
   Pretty:
     Text: une {<female>mante}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -2537,7 +2651,7 @@ Male Ladybug:
   Pretty:
     Text: une {<male>coccinelle}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -2551,7 +2665,7 @@ Female Ladybug:
   Pretty:
     Text: une {<female>coccinelle}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -2565,7 +2679,7 @@ Male Snail:
   Pretty:
     Text: un {<female><male>escargot}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2591,7 +2705,7 @@ Female Snail:
   Pretty:
     Text: un {<male><female>escargot}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2617,7 +2731,7 @@ Male Dragonfly:
   Pretty:
     Text: une {<male>libellule}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -2631,7 +2745,7 @@ Female Dragonfly:
   Pretty:
     Text: une {<female>libellule}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
@@ -2645,7 +2759,7 @@ Male Ant:
   Pretty:
     Text: une {<male>fourmi}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2671,7 +2785,7 @@ Female Ant:
   Pretty:
     Text: une {<female>fourmi}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2697,7 +2811,7 @@ Male Dayfly:
   Pretty:
     Text: un {<male>éphémère}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2723,7 +2837,7 @@ Female Dayfly:
   Pretty:
     Text: un {<female>éphémère}
   Cryptic:
-    Text: a {shiny insect}
+    Text: un {insecte brillant}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2749,7 +2863,7 @@ Progressive Fused Shadow:
   Pretty:
     Text: un {cristal d'Ombre}
   Cryptic:
-    Text: a {shadow of ultimate power}
+    Text: un {morceau du pouvoir suprême}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -2767,7 +2881,7 @@ Poe Soul:
   Pretty:
     Text: une {âme de spectre}
   Cryptic:
-    Text: a {soul of the dead}
+    Text: la {volonté des défunts}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -2797,7 +2911,7 @@ Progressive Hidden Skill:
   Pretty:
     Text: une {Botte secrète}
   Cryptic:
-    Text: a {forgotten technique}
+    Text: un {talent ancestral}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -2810,7 +2924,7 @@ Bridge of Eldin Portal:
   Pretty:
     Text: le portail {Pont d'Ordinn}
   Cryptic:
-    Text: a {portal to a long bridge}
+    Text: le portail d'un {Pont très long}
 
 Progressive Sky Book:
   Standard:
@@ -2818,7 +2932,7 @@ Progressive Sky Book:
   Pretty:
     Text: des {Glyphes Célestiens}
   Cryptic:
-    Text: a {glyph of the heavens}
+   Text: une {verse paradisiaque}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -2831,8 +2945,7 @@ Purple Rupee Links House:
   Pretty:
     Text: Le {rubis violet de ton sous-sol}
   Cryptic:
-    Text: "{your savings}"
-    Plurality: Plural
+    Text: votre {tirelire secrète}
 
 North Faron Woods Gate Key:
   Standard:
@@ -2840,7 +2953,7 @@ North Faron Woods Gate Key:
   Pretty:
     Text: la {clé du portail de la Forêt de Firone - N}
   Cryptic:
-    Text: a {key to a northern forest}
+    Text: la {clé du tréfond des bois}
 
 Gate Keys:
   Standard:
@@ -2849,7 +2962,7 @@ Gate Keys:
     Text: les {clés du portail}
     Plurality: Plural
   Cryptic:
-    Text: "{King Bulblin's keys}"
+    Text: les {clés du Roi des Nomades}
     Plurality: Plural
   Template Overrides:
     - Keys:
@@ -2881,7 +2994,7 @@ Ordon Pumpkin:
   Pretty:
     Text: un {Potiron de Toal}
   Cryptic:
-    Text: a {soup ingredient}
+    Text: un {ingrédient de soupe}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -2911,7 +3024,7 @@ Ordon Cheese:
   Pretty:
     Text: du {Fromage de Toal}
   Cryptic:
-    Text: a {soup ingredient}
+    Text: un {ingrédient de soupe}
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
@@ -2941,7 +3054,7 @@ Snowpeak Ruins Bedroom Key:
   Pretty:
     Text: la {clé de la chambre des Ruines des Pics Blancs}
   Cryptic:
-    Text: the {key to a snowy bedroom}
+    Text: la {clé de la chambre corrompue}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2967,7 +3080,7 @@ Goron Mines Key Shard:
   Pretty:
     Text: un {Fragment de clé de la Mine Goron}
   Cryptic:
-    Text: "{one third of a key}"
+    Text: le {tiers d'une clé}
   Template Overrides:
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
@@ -2993,7 +3106,7 @@ Faron Woods Coro Key:
   Pretty:
     Text: la {clé de Kikolou}
   Cryptic:
-    Text: a {key to a forest cave}
+    Text: la {clé d'une cave boisée}
 
 Game Beatable:
   Standard:
@@ -3001,7 +3114,7 @@ Game Beatable:
   Pretty:
     Text: "{Jeu terminable}"
   Cryptic:
-    Text: the {game-winning item}
+    Text: l'{objet du Go Mode}
 
 Hint:
   Standard:
@@ -3009,7 +3122,7 @@ Hint:
   Pretty:
     Text: un {Indice}
   Cryptic:
-    Text: a {piece of knowledge}
+    Text: une {indication}
 
 Faron Twilight Tear:
   Standard:
@@ -3017,7 +3130,8 @@ Faron Twilight Tear:
   Pretty:
     Text: une {larme de lumière de Firone}
   Cryptic:
-    Text: a {tear of a forest spirit}
+    Text: la {tristesse de l'esprit Sylvestre}
+
 
 Eldin Twilight Tear:
   Standard:
@@ -3025,7 +3139,7 @@ Eldin Twilight Tear:
   Pretty:
     Text: une {larme de lumière d'Ordinn}
   Cryptic:
-    Text: a {tear of a volcano spirit}
+    Text: la {tristesse de l'esprit du Feu}
 
 Lanayru Twilight Tear:
   Standard:
@@ -3033,7 +3147,7 @@ Lanayru Twilight Tear:
   Pretty:
     Text: une {larme de lumière de Lanelle}
   Cryptic:
-    Text: a {tear of a lake spirit}
+    Text: la {tristesse de l'esprit de l'Eau}
 
 # ITEM NAMES FOR PROGRESSIVE ITEMS
 Progressive Wallet x0:
@@ -3134,11 +3248,11 @@ Progressive Sky Book x7:
 # TODO: Cryptic text for all locations
 Wooden Sword Chest:
   Standard:
-    Text: coffre de la Branche taillée
+    Text: coffre de l'Épée de bois
   Pretty:
-    Text: le {coffre de la Branche taillée}
+    Text: le {coffre d'une Épée de bois}
   Cryptic:
-    Text: the {Wooden Sword Chest}
+    Text: le {coffre d'un truc tranchant}
 
 Links Basement Chest:
   Standard:
@@ -3146,7 +3260,7 @@ Links Basement Chest:
   Pretty:
     Text: "{coffre du sous-sol de Link}"
   Cryptic:
-    Text: "{Links Basement Chest}"
+    Text: le {coffre de la tirelire de Link}
 
 Uli Cradle Delivery:
   Standard:
@@ -3154,7 +3268,7 @@ Uli Cradle Delivery:
   Pretty:
     Text: "{livraison du couffin d'Uli}"
   Cryptic:
-    Text: "{Uli Cradle Delivery}"
+    Text: le {cadeau du lit d'un nourisson}
 
 Ordon Cat Rescue:
   Standard:
@@ -3162,7 +3276,7 @@ Ordon Cat Rescue:
   Pretty:
     Text: le {sauvetage du chat de Toal}
   Cryptic:
-    Text: the {Ordon Cat Rescue}
+    Text: l'offrande piscivore {au félin}
 
 Sera Shop Slingshot:
   Standard:
@@ -3170,7 +3284,7 @@ Sera Shop Slingshot:
   Pretty:
     Text: acheter le {Lance-pierre du Chat-pharnaüm}
   Cryptic:
-    Text: buying the {Sera Shop Slingshot}
+    Text: l'acquisition {d'un jouet pour enfant}
 
 Ordon Shield Check:
   Standard:
@@ -3178,7 +3292,7 @@ Ordon Shield Check:
   Pretty:
     Text: le {Bouclier de Toal}
   Cryptic:
-    Text: the {Ordon Shield}
+    Text: l'acquisition d'un {rappel solide de la maison}
 
 Ordon Sword:
   Standard:
@@ -3186,7 +3300,7 @@ Ordon Sword:
   Pretty:
     Text: l'{Épée de Toal}
   Cryptic:
-    Text: the {Ordon Sword}
+    Text: l'acquisition d'un {truc tranchant nostalgique}
 
 Wrestling With Bo:
   Standard:
@@ -3194,8 +3308,9 @@ Wrestling With Bo:
   Pretty:
     Text: "{Lutte avec Bohdan}"
   Cryptic:
-    Text: pushing a middle-aged man
+    Text: l'affrontement avec le {maire)
 
+# todo cryptic for standing rupees
 Ordon Bo Cliff Rupee:
   Standard:
     Text: rubis de Toal, falaise de Bohdan
@@ -3330,7 +3445,7 @@ Herding Goats Reward:
   Pretty:
     Text: la {récompense du mini-jeu du Troupeau de Chèvres}
   Cryptic:
-    Text: the {Herding Goats Reward}
+    Text: la gratification des {biquettes}
 
 Ordon Ranch Grotto Lantern Chest:
   Standard:
@@ -3346,7 +3461,7 @@ Ordon Spring Golden Wolf:
   Pretty:
     Text: le {loup dorée de la Source de Toal}
   Cryptic:
-    Text: the {Ordon Spring Golden Wolf}
+    Text: la bête aurifère de {la maison}
 
 Ordon Spring Warp Portal:
   Standard:
@@ -3354,8 +3469,9 @@ Ordon Spring Warp Portal:
   Pretty:
     Text: le portail {Source de Toal}
   Cryptic:
-    Text: the {Ordon Spring Warp Portal}
+    Text: le portail de {la maison}
 
+# Todo cryptic des insectes
 South Faron Woods Twilit Insect in Tunnel 1:
   Standard:
     Text: insecte des ombres 1 du tunnel de la forêt de Firone - S
@@ -3490,7 +3606,7 @@ South Faron Warp Portal:
   Pretty:
     Text: le portail {Forêt de Firone - S}
   Cryptic:
-    Text: the {South Faron Warp Portal}
+    Text: le portail d'{une clairière}
 
 Coro Lantern:
   Standard:
@@ -3498,7 +3614,7 @@ Coro Lantern:
   Pretty:
     Text: la {Lanterne Kikolou}
   Cryptic:
-    Text: the {Coro Lantern}
+    Text: la {lumière d'appoint d'un gardien}
 
 Coro Gate Key:
   Standard:
@@ -3506,7 +3622,7 @@ Coro Gate Key:
   Pretty:
     Text: la {clé du portail de Kikolou}
   Cryptic:
-    Text: the {Coro Gate Key}
+    Text: la clé {d'un gardien}
 
 Coro Bottle:
   Standard:
@@ -3514,8 +3630,9 @@ Coro Bottle:
   Pretty:
     Text: acheter le {Flacon de Kikolou}
   Cryptic:
-    Text: buying the {Coro Bottle}
+    Text: acquérir un {réservoir de charge}
 
+# todo cryptic boulder rupee
 Faron Woods Coro Boulder Rupee 1:
   Standard:
     Text: rubis 1 sous le rocher de Kikolou dans la forêt de Firone
@@ -3610,7 +3727,7 @@ North Faron Warp Portal:
   Pretty:
     Text: le portail {Forêt de Firone - N}
   Cryptic:
-    Text: the {North Faron Warp Portal}
+    Text: le portail dans les {bois}
 
 Faron Woods Golden Wolf:
   Standard:
@@ -3618,7 +3735,7 @@ Faron Woods Golden Wolf:
   Pretty:
     Text: le {loup dorée de la Forêt de Firone}
   Cryptic:
-    Text: the {Faron Woods Golden Wolf}
+    Text: la bête aurifère des {bois}
 
 North Faron Woods Deku Baba Chest:
   Standard:
@@ -3635,6 +3752,7 @@ Faron Woods Owl Statue Sky Character:
     Text: le {glyphe Célestien de la statue de hibou de la forêt de Firone}
   Cryptic:
     Text: the {Faron Woods Owl Statue Sky Character}
+# qqchose gravure aviaire
 
 Faron Woods Owl Statue Chest:
   Standard:
@@ -3763,7 +3881,7 @@ Sacred Grove Warp Portal:
   Pretty:
     Text: le portail {Sanctuaire de la forêt}
   Cryptic:
-    Text: the {Sacred Grove Warp Portal}
+    Text: le portail d'{un lieu sacré}
 
 Sacred Grove Pedestal Master Sword:
   Standard:
@@ -3955,7 +4073,7 @@ Kakariko Gorge Warp Portal:
   Pretty:
     Text: le portail {Cocorico}
   Cryptic:
-    Text: the {Kakariko Gorge Warp Portal}
+    Text: le portail d'{un gros trou}
 
 Kakariko Gorge Female Pill Bug:
   Standard:
@@ -4067,7 +4185,7 @@ Kakariko Village Warp Portal:
   Pretty:
     Text: le portail {Cocorico}
   Cryptic:
-    Text: the {Kakariko Village Warp Portal}
+    Text: le portail d'{un petit village}
 
 Eldin Spring Underwater Chest:
   Standard:
@@ -4240,7 +4358,7 @@ Renados Letter Check:
   Pretty:
     Text: la {Lettre de Reynald}
   Cryptic:
-    Text: "{Renados Letter}"
+    Text: la {lettre d'un guide spirituel}
 
 Ilia Memory Reward:
   Standard:
@@ -4309,7 +4427,7 @@ Kakariko Graveyard Golden Wolf:
   Pretty:
     Text: le {loup dorée du cimetière de Cocorico}
   Cryptic:
-    Text: the {Kakariko Graveyard Golden Wolf}
+    Text: la bête aurifère {là où repose les défunts}
 
 Kakariko Graveyard Open Poe:
   Standard:
@@ -4333,7 +4451,7 @@ Death Mountain Warp Portal:
   Pretty:
     Text: le portail {Montagne de la mort}
   Cryptic:
-    Text: the {Death Mountain Warp Portal}
+    Text: le portail d'{un volcan}
 
 Death Mountain Alcove Chest:
   Standard:
@@ -4543,7 +4661,7 @@ Skybook From Impaz:
     Text: les {Écrits Célestiens d'Impa}
     Plurality: Plural
   Cryptic:
-    Text: the {Skybook From Impaz}
+    Text: un {très vieux livre}
   Template Overrides:
     - Keys:
         - Location Hint
@@ -4557,7 +4675,7 @@ Cats Hide and Seek Minigame:
   Pretty:
     Text: le {mini-jeu de cache-cache de chats}
   Cryptic:
-    Text: the {Cats Hide and Seek Minigame}
+    Text: "{trouve miaou}"
 
 Hidden Village Poe:
   Standard:
@@ -4573,7 +4691,7 @@ Ilia Charm:
   Pretty:
     Text: "{Lien de l'Amitié}"
   Cryptic:
-    Text: "{Ilia Charm}"
+    Text: le {murmure hippique}
 
 Castle Town Twilit Insect:
   Standard:
@@ -4798,7 +4916,7 @@ Lanayru Ice Block Puzzle Cave Chest:
   Pretty:
     Text: le {coffre de la caverne aux blocs de glace dans la plaine de Lanelle}
   Cryptic:
-    Text: the {Lanayru Ice Block Puzzle Cave Chest}
+    Text: l'{entrepot des glaçons}
   Template Overrides:
     - Keys:
         - Location Hint
@@ -4835,7 +4953,7 @@ Castle Town Warp Portal:
   Pretty:
     Text: le portail {Entrée de la citadelle}
   Cryptic:
-    Text: the {Castle Town Warp Portal}
+    Text: le portail du {bourg}
 
 West Hyrule Field Female Butterfly:
   Standard:
@@ -4883,7 +5001,7 @@ West Hyrule Field Golden Wolf:
   Pretty:
     Text: le {loup dorée dans la plaine ouest d'Hyrule}
   Cryptic:
-    Text: the {West Hyrule Field Golden Wolf}
+    Text: la bête aurifère de la {plaine de lanelle}
 
 Hyrule Field Amphitheater Owl Statue Chest:
   Standard:
@@ -4915,7 +5033,7 @@ Charlo Donation Blessing:
   Pretty:
     Text: la {bénédiction du don à Charlo}
   Cryptic:
-    Text: "{Charlo Donation Blessing}"
+    Text: "{vider sa tirelire}"
 
 STAR Prize 1:
   Standard:
@@ -4923,7 +5041,7 @@ STAR Prize 1:
   Pretty:
     Text: le {premier prix du Chapiteau de l'Étoile}
   Cryptic:
-    Text: "{STAR Prize 1}"
+    Text: "{1ère étoile}"
 
 STAR Prize 2:
   Standard:
@@ -4931,7 +5049,7 @@ STAR Prize 2:
   Pretty:
     Text: le {second prix du Chapiteau de l'Étoile}
   Cryptic:
-    Text: "{STAR Prize 2}"
+    Text: "{2ème étoile}"
 
 Castle Town Goron Shop Red Potion:
   Standard:
@@ -4988,7 +5106,7 @@ North Castle Town Golden Wolf:
   Pretty:
     Text: le {loup dorée du nord de la citadelle}
   Cryptic:
-    Text: the {North Castle Town Golden Wolf}
+    Text: la {bête aurifère du bourg}
 
 Doctors Office Balcony Chest:
   Standard:
@@ -5012,7 +5130,7 @@ Jovani 20 Poe Soul Reward:
   Pretty:
     Text: donner à {Giovanni 20 âmes de spectre}
   Cryptic:
-    Text: giving {Jovani 20 Poe Souls}
+    Text: rassembler {20 volontés de défunts}
 
 Jovani 60 Poe Soul Reward:
   Standard:
@@ -5020,7 +5138,7 @@ Jovani 60 Poe Soul Reward:
   Pretty:
     Text: donner à {Giovanni 60 âmes de spectre}
   Cryptic:
-    Text: giving {Jovani 60 Poe Souls}
+    Text: rassembler {toutes les volonté de défunts}
 
 # HD Only Location
 # Gengle 60 Poe Soul Reward:
@@ -5045,7 +5163,7 @@ Telma Invoice:
   Pretty:
     Text: la {Facture de Telma}
   Cryptic:
-    Text: the {Telma Invoice}
+    Text: les {impayés d'un docteur}
 
 Agitha Male Beetle Reward:
   Standard:
@@ -5414,7 +5532,7 @@ Lake Hylia Warp Portal:
   Pretty:
     Text: le portail {Lac Hylia}
   Cryptic:
-    Text: the {Lake Hylia Warp Portal}
+    Text: le portail d'{un grand plan d'eau}
 
 Auru Gift To Fyer:
   Standard:
@@ -5422,7 +5540,7 @@ Auru Gift To Fyer:
   Pretty:
     Text: la {Note de Lafrel à Tobi}
   Cryptic:
-    Text: the {Auru Gift To Fyer}
+    Text: la {faveur d'un ami}
 
 Lake Hylia Tower Poe:
   Standard:
@@ -5798,7 +5916,7 @@ Plumm Fruit Balloon Minigame:
   Pretty:
     Text: le {mini-jeu Éclate-Fruits de Prune}
   Cryptic:
-    Text: the {Plumm Fruit Balloon Minigame}
+    Text: "{manger 5 fruits et légumes}"
   Template Overrides:
     - Keys:
         - Location Hint
@@ -5811,7 +5929,7 @@ Upper Zoras River Warp Portal:
   Pretty:
     Text: le portail {Rivière Zora (Amont)}
   Cryptic:
-    Text: the {Upper Zoras River Warp Portal}
+    Text: le portail {torrentiel}
 
 Upper Zoras River Female Dragonfly:
   Standard:
@@ -5867,7 +5985,7 @@ Iza Helping Hand:
   Pretty:
     Text: pour avoir {aidé Lise}
   Cryptic:
-    Text: being {Iza's Helping Hand}
+    Text: pour avoir {aidé une femme}
 
 Iza Raging Rapids Minigame:
   Standard:
@@ -5883,7 +6001,8 @@ Fishing Hole Bottle:
   Pretty:
     Text: le {Flacon du Paradis du Pêcheur}
   Cryptic:
-    Text: the {Fishing Hole Bottle}
+    Text: les {déchets dans la nature}
+    Plurality: Plural
 
 Fishing Hole Heart Piece:
   Standard:
@@ -5899,7 +6018,7 @@ Zoras Domain Warp Portal:
   Pretty:
     Text: le portail {Village des Zora}
   Cryptic:
-    Text: the {Zoras Domain Warp Portal}
+    Text: le portail de la {cité des eaux}
 
 Zoras Domain Male Dragonfly:
   Standard:
@@ -6092,7 +6211,7 @@ Snowpeak Warp Portal:
   Pretty:
     Text: le portail {Cime des pics Blancs}
   Cryptic:
-    Text: the {Snowpeak Warp Portal}
+    Text: le portail {d'un sommet enneigé}
 
 Ashei Sketch:
   Standard:
@@ -6100,7 +6219,7 @@ Ashei Sketch:
   Pretty:
     Text: le {Croquis du yéti}
   Cryptic:
-    Text: "{Ashei Sketch}"
+    Text: un {dessin terrifiant}
 
 Snowpeak Blizzard Poe:
   Standard:
@@ -6324,7 +6443,7 @@ Gerudo Desert Warp Portal:
   Pretty:
     Text: le portail {Désert Gerudo}
   Cryptic:
-    Text: the {Gerudo Desert Warp Portal}
+    Text: le portail d'un {grand défi}
 
 Gerudo Desert East Poe:
   Standard:
@@ -6508,7 +6627,7 @@ Gerudo Desert Golden Wolf:
   Pretty:
     Text: le {loup dorée du Désert Gerudo}
   Cryptic:
-    Text: the {Gerudo Desert Golden Wolf}
+    Text: la bête aurifère d'un {grand espace vide}
 
 Outside Bulblin Camp Poe:
   Standard:
@@ -6540,7 +6659,7 @@ Bulblin Camp Roasted Boar:
   Pretty:
     Text: le {Bullbo rôti du Camp Bulblin}
   Cryptic:
-    Text: the {Bulblin Camp Roasted Boar}
+    Text: le {repas de nomades}
 
 Bulblin Guard Key:
   Standard:
@@ -6658,7 +6777,7 @@ Mirror Chamber Warp Portal:
   Pretty:
     Text: le portail {Chambre du Miroir}
   Cryptic:
-    Text: the {Mirror Chamber Warp Portal}
+    Text: le portail du {Colisée}
 
 Forest Temple Entrance Vines Chest:
   Standard:
@@ -8372,7 +8491,7 @@ Defeat Ganondorf:
   Pretty:
     Text: "{Vaincre Ganondorf}"
   Cryptic:
-    Text: "{Vaincre Ganondorf}"
+    Text: "{Courage + Sagesse > Force}"
 
 Ordon Hint Sign:
   Standard:

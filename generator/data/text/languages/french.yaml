@@ -131,6 +131,11 @@ Green Rupee:
     Text: une {pièce}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {rubis vert}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -158,6 +163,11 @@ Blue Rupee:
     Plurality: Plural
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {rubis bleu}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -183,6 +193,11 @@ Yellow Rupee:
   Cryptic:
     Text: un {billet}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {rubis jaune}
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -211,6 +226,11 @@ Red Rupee:
     Plurality: Plural
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {rubis rouge}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -236,6 +256,11 @@ Purple Rupee:
   Cryptic:
     Text: une belle {somme}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {rubis violet}
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -263,6 +288,11 @@ Orange Rupee:
     Text: une {fortune}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {rubis orange}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -288,6 +318,11 @@ Silver Rupee:
   Cryptic:
     Text: une pluie {de billet}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {rubis argent}
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -317,6 +352,11 @@ Bombs 5:
     Plurality: Plural
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: les {Bombes (lot de 5)}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -333,6 +373,11 @@ Bombs 10:
     Text: pas mal d'{explosifs}
     Plurality: Plural
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: les {Bombes (lot de 10)}
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
@@ -351,6 +396,11 @@ Bombs 20:
     Plurality: Plural
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: les {Bombes (lot de 20)}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -367,6 +417,11 @@ Bombs 30:
     Text: énormément d'{explosifs}
     Plurality: Plural
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: les {Bombes (lot de 30)}
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
@@ -385,6 +440,11 @@ Arrows 10:
     Plurality: Plural
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: les {Flèches (lot de 10)}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -401,6 +461,11 @@ Arrows 20:
     Text: pas mal de {munitions}
     Plurality: Plural
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: les {Flèches (lot de 20)}
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
@@ -419,6 +484,11 @@ Arrows 30:
     Plurality: Plural
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: les {Flèches (lot de 30)}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -435,6 +505,11 @@ Seeds 50:
     Text: des {munitions} pour enfant
     Plurality: Plural
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: les {graines}
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -501,6 +576,11 @@ Water Bombs 5:
     Plurality: Plural
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: les {Hydro-bombes (lot de 5)}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -530,6 +610,11 @@ Water Bombs 10:
     Text: pas mal de {mines}
     Plurality: Plural
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: les {Hydro-bombes (lot de 10)}
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -561,6 +646,11 @@ Water Bombs 15:
     Plurality: Plural
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: les {Hydro-bombes (lot de 15)}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -591,6 +681,11 @@ Bomblings 5:
     Plurality: Plural
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: les {Bombinsectes (lot de 5)}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -608,6 +703,11 @@ Bomblings 10:
     Plurality: Plural
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: les {Bombinsectes (lot de 10)}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -624,6 +724,7 @@ Piece of Heart:
   Template Overrides:
     - Keys:
         - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
       Pretty:
         Text: le {Fragment de cœur}
     - Keys:
@@ -653,6 +754,11 @@ Heart Container:
     Text: de l'{amour}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {réceptacle de cœur}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -679,6 +785,11 @@ Ordon Shield:
     Text: un {rappel solide de la maison}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {Bouclier de Toal}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
         Text: le Bouclier de Toal
@@ -697,6 +808,11 @@ Wooden Shield:
     Text: une {défense naturel}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {Bouclier en bois}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -710,6 +826,11 @@ Hylian Shield:
   Cryptic:
     Text: un {bouclier incassable}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {Bouclier d'Hylia}
     - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
@@ -729,6 +850,11 @@ Magic Armor:
     Text: des {vêtements magiques}
     Plurality: Plural
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: l'{Armure magique}
     - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
@@ -761,6 +887,11 @@ Zora Armor:
     Plurality: Plural
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {tenue Zora}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
         Text: la tenue Zora
@@ -778,6 +909,11 @@ Shadow Crystal:
   Cryptic:
     Text: une {malédiction contrôlée}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {Cristal Maudit}
     - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
@@ -809,9 +945,31 @@ Progressive Wallet:
     Text: une {tirelire}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {Bourse}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
         Text: une Bourse
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: une {Bourrse}
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {Bourrse}
 
 Upper Zoras River Portal:
   Standard:
@@ -872,9 +1030,19 @@ Progressive Sword:
     Text: un {truc tranchant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: l'{Épée}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
         Text: une Épée
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {Épée}
 
 Gale Boomerang:
   Standard:
@@ -937,6 +1105,10 @@ Ball and Chain:
     Text: un {poids}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: le Boulet
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -951,9 +1123,31 @@ Progressive Bow:
     Text: un {bâton avec une ficelle}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: l'{Arc}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
         Text: un Arc
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {Arrc}
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {Arrc}
 
 Progressive Clawshot:
   Standard:
@@ -964,9 +1158,31 @@ Progressive Clawshot:
     Text: une {chaîne}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {Grappin}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
         Text: un Grappin
+    - Keys:
+        - Castle Town Goron Red Potion Confirmation Initial Text Template
+        - Castle Town Goron Red Potion Confirmation Later Text Template
+        - Castle Town Goron Lantern Oil Confirmation Initial Text Template
+        - Castle Town Goron Lantern Oil Confirmation Later Text Template
+        - Castle Town Goron Arrow Refill Confirmation Initial Text Template
+        - Castle Town Goron Arrow Refill Embarrassing Text Template
+        - Castle Town Goron Arrow Refill Confirmation Later Text Template
+        - Castle Town Goron Hylian Shield Confirmation Initial Text Template
+        - Castle Town Goron Hylian Shield Confirmation Later Text Template
+      Pretty:
+        Text: un {Grrappin}
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {Grrappin}
 
 Iron Boots:
   Standard:
@@ -1012,9 +1228,19 @@ Progressive Dominion Rod:
     Text: un {bâton magique}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {Bâton Anima}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
         Text: un Bâton Anima
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'un {Bâton Anima}
 
 Lantern:
   Standard:
@@ -1055,9 +1281,19 @@ Progressive Fishing Rod:
     Text: une {preuve de patience}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {Canne à pêche}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
         Text: une Canne à pêche
+    - Keys:
+        - Castle Town Goron Arrow Refill Secret Text Template
+        - Castle Town Goron Arrow Refill Let Me Know Text Template
+      Pretty:
+        Text: d'une {Canne à pêche}
 
 Slingshot:
   Standard:
@@ -1129,6 +1365,11 @@ Bomb Bag:
     Text: un {sac d'explosifs}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {Sac de bombe}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
         Text: un Sac de bombe
@@ -1177,6 +1418,11 @@ Red Potion Shop:
     Text: de l'{amour en poche}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {Potion rouge}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -1202,6 +1448,11 @@ Blue Potion Shop:
   Cryptic:
     Text: a {blue health refill}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {Potion bleue}
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
@@ -1252,9 +1503,14 @@ Bottle with Great Fairies Tears:
     Text: une {charge d'un pouvoir immense}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {Flacon de Larmes de Fée}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
-        Text: un Flacon de Larmes de Féè
+        Text: un Flacon de Larmes de Fée
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -1393,6 +1649,11 @@ Forest Temple Small Key:
     Text: une {clé d'un antre boisé}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {petite clé du Temple sylvestre}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
         Text: une petite clé du Temple sylvestre
@@ -1422,6 +1683,11 @@ Goron Mines Small Key:
   Cryptic:
     Text: une {clé d'un antre magmatique}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {petite clé de la Mine Goron}
     - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
@@ -1453,6 +1719,11 @@ Lakebed Temple Small Key:
     Text: une {clé d'un antre submergé}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {petite clé du Temple Abyssal}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
         Text: une petite clé du Temple Abyssal
@@ -1470,6 +1741,11 @@ Arbiters Grounds Small Key:
   Cryptic:
     Text: une {clé d'un tribunal}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {petite clé du Temple Abyssal}
     - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
@@ -1498,8 +1774,13 @@ Snowpeak Ruins Small Key:
   Pretty:
     Text: une {petite clé des Ruines des Pics Blancs}
   Cryptic:
-    Text: a {key for a snowy mansion}
+    Text: une {clé d'une maison délabrée}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {petite clé des Ruines des Pics Blancs}
     - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
@@ -1531,6 +1812,11 @@ Temple of Time Small Key:
     Text: une {clé d'un temps révolu}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {petite clé du Temple du Temps}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
         Text: une petite clé du Temple du Temps
@@ -1549,6 +1835,11 @@ City in the Sky Small Key:
     Text: une {clé paradisiaque}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {petite clé de Célestia}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
         Text: une petite clé de Célestia
@@ -1566,6 +1857,11 @@ Palace of Twilight Small Key:
   Cryptic:
     Text: une {clé d'une autre dimension}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {petite clé du Palais du Crépuscule}
     - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
@@ -1596,6 +1892,11 @@ Hyrule Castle Small Key:
   Cryptic:
     Text: une {clé royale}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {petite clé du Château d'Hyrule}
     - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
@@ -1969,6 +2270,11 @@ Bottle with Lantern Oil:
     Text: une {charge de lumière}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {Flacon d'huile}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -1982,6 +2288,11 @@ Progressive Mirror Shard:
   Cryptic:
     Text: la {réflexion morcelée d'un pouvoir}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {Fragment de Miroir}
     - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
@@ -2386,6 +2697,11 @@ Male Beetle:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {<male>scarabée}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -2411,6 +2727,11 @@ Female Beetle:
   Cryptic:
     Text: un {insecte brillant}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {<female>scarabée}
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -2438,6 +2759,11 @@ Male Butterfly:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {<male>papillon}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -2451,6 +2777,11 @@ Female Butterfly:
   Cryptic:
     Text: un {insecte brillant}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {<female>papillon}
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
@@ -2466,6 +2797,11 @@ Male Stag Beetle:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {<male>lucane}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -2480,6 +2816,11 @@ Female Stag Beetle:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {<female>lucane}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -2493,6 +2834,11 @@ Male Grasshopper:
   Cryptic:
     Text: un {insecte brillant}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {<male>sauterelle}
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -2520,6 +2866,11 @@ Female Grasshopper:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {<female>sauterelle}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -2546,6 +2897,11 @@ Male Phasmid:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {<male>phasme}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -2560,6 +2916,11 @@ Female Phasmid:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {<female>phasme}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -2573,6 +2934,11 @@ Male Pill Bug:
   Cryptic:
     Text: un {insecte brillant}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {<male>cloporte}
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -2600,6 +2966,11 @@ Female Pill Bug:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {<female>cloporte}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -2626,6 +2997,11 @@ Male Mantis:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {<male>mante}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -2639,6 +3015,11 @@ Female Mantis:
   Cryptic:
     Text: un {insecte brillant}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {<female>mante}
     - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
@@ -2654,6 +3035,11 @@ Male Ladybug:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {<male>coccinelle}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -2668,6 +3054,11 @@ Female Ladybug:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {<female>coccinelle}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -2681,6 +3072,11 @@ Male Snail:
   Cryptic:
     Text: un {insecte brillant}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: l'{<female><male>escargot}
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -2708,6 +3104,11 @@ Female Snail:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: l'{<male><female>escargot}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -2734,6 +3135,11 @@ Male Dragonfly:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {<male>libellule}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -2748,6 +3154,11 @@ Female Dragonfly:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {<female>libellule}
+    - Keys:
         - Castle Town Goron Arrow Refill Secret Text Template
         - Castle Town Goron Arrow Refill Let Me Know Text Template
       Pretty:
@@ -2761,6 +3172,11 @@ Male Ant:
   Cryptic:
     Text: un {insecte brillant}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {<male>fourmi}
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -2788,6 +3204,11 @@ Female Ant:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: la {<female>fourmi}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -2813,6 +3234,11 @@ Male Dayfly:
   Cryptic:
     Text: un {insecte brillant}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: l'{<male>éphémère}
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -2840,6 +3266,11 @@ Female Dayfly:
     Text: un {insecte brillant}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: l'{<female>éphémère}
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -2866,6 +3297,11 @@ Progressive Fused Shadow:
     Text: un {morceau du pouvoir suprême}
   Template Overrides:
     - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {cristal d'Ombre}
+    - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
         Text: un cristal d'Ombre
@@ -2883,6 +3319,11 @@ Poe Soul:
   Cryptic:
     Text: la {volonté des défunts}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: l'{âme de spectre}
     - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
@@ -2934,6 +3375,11 @@ Progressive Sky Book:
   Cryptic:
    Text: une {verse paradisiaque}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: les {Glyphes Célestiens}
     - Keys:
         - Agithas Castle Some Items Sign Text
       Pretty:
@@ -3082,6 +3528,11 @@ Goron Mines Key Shard:
   Cryptic:
     Text: le {tiers d'une clé}
   Template Overrides:
+    - Keys:
+        - Kakariko Malo Mart Hawkeye After Purchase Text Template
+        - Kakariko Malo Mart Hylian Shield After Purchase Text Template
+      Pretty:
+        Text: le {Fragment de clé de la Mine Goron}
     - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
@@ -9687,13 +10138,12 @@ Slingshot Shop Text Template:
 Slingshot Shop Too Expensive Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> coûte <purple>30 rubis<white>. Si tu le veux, il faut le payer.
+      <Item Pretty Name> coûte <purple>30 rubis<white>. Si tu veux, il faut payer.
 
 Slingshot Shop Purchase Confirmation Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> coûte <purple>30 rubis<white>.
-      Tu en veux un?<begin choice>
+      <Item Pretty Name> coûte <purple>30 rubis<white>. Tu veux?<begin choice>
 
 Slingshot Shop After Purchase Text Template:
   Standard:
@@ -9709,7 +10159,7 @@ Kakariko Malo Mart Wooden Shield Purchase Confirmation Text Template:
   Standard:
     Text: |-
       <Item Pretty Name> est à <purple>50 rubis<white>.
-      tu le veux?<begin choice>
+      tu veux?<begin choice>
 
 Kakariko Malo Mart Wooden Shield Too Expensive Text Template:
   Standard:
@@ -9729,13 +10179,13 @@ Kakariko Malo Mart Hylian Shield Too Expensive Text Template:
 Kakariko Malo Mart Hylian Shield After Purchase Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> que tu as acheté était le dernier que j'avais en stock. Prends-en soin...
+      <Item Pretty Name> que tu as acheté était mon dernier en stock. Prends-en soin...
 
 Kakariko Malo Mart Hawkeye Purchase Confirmation Text Template:
   Standard:
     Text: |-
       <Item Pretty Name> coûte <purple>100 rubis<white>,
-      tu le veux?<begin choice>
+      tu veux?<begin choice>
 
 Kakariko Malo Mart Hawkeye Too Expensive Text Template:
   Standard:
@@ -9745,7 +10195,7 @@ Kakariko Malo Mart Hawkeye Too Expensive Text Template:
 Kakariko Malo Mart Hawkeye After Purchase Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> que tu as acheté était le dernier exemplaire...
+      <Item Pretty Name> que tu as acheté était mon dernier exemplaire...
 #     Todo les Pretty name commençant pas "un-e" à template override pas le-la (voir Fragment de cœur)
 
 Kakariko Malo Mart Red Potion Too Expensive Text Template:
@@ -9756,7 +10206,7 @@ Kakariko Malo Mart Red Potion Too Expensive Text Template:
 Kakariko Malo Mart Red Potion Purchase Confirmation Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> coûte <purple>30 rubis<white>, tu en veux une?<begin choice>
+      <Item Pretty Name> coûte <purple>30 rubis<white>, tu veux?<begin choice>
 
 Kakariko Malo Mart Red Potion Text Template:
   Standard:

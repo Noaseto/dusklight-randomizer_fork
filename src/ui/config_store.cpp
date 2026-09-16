@@ -29,6 +29,12 @@ bool TryCreateRandomSeed() {
     return false;
 }
 
+void NewRandomSeed() {
+    auto& config = GetRandomizerConfig();
+    config.SetSeed(seedgen::seed::GenerateSeed());
+    SaveRandomizerConfig();
+}
+
 seedgen::settings::Setting* FindSetting(const std::string& key) {
     if (key.empty()) {
         mods::log::error("Key is empty! Unable to find setting.");

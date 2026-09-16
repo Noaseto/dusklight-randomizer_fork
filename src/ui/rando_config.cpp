@@ -652,6 +652,13 @@ ModResult buildSeedManagementTab(ModContext* ctx, UiWindowHandle, UiElementHandl
         });
 
     add_button(leftPane,
+        "New Seed String",
+        "Use a new random seed string for seed generation.",
+        [](ModContext*, void*) {
+            NewRandomSeed();
+        });
+
+    add_button(leftPane,
         "Delete Seed",
         "Delete a selected seed.",
         buildSeedDeleteDialog);

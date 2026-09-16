@@ -141,7 +141,7 @@ namespace randomizer {
     Text getTextObjectForTemplate(const std::string& name, Text::Type type, const std::string& textTemplate);
     const std::string& getTextStr(const std::string& name, Text::Type type = Text::STANDARD, Text::Language language = Text::ENGLISH);
 
-    Text addColor(const Text& t, Text::Color color, int count = 1);
+    Text addColor(const Text& t, Text::Color color, int count = std::numeric_limits<int>::max());
 
     // Adds newlines in appropriate places to properly break the text string for textboxes
     void breakLines(std::string& str, float maxStrLength, int lang);
@@ -150,4 +150,6 @@ namespace randomizer {
     void applyMessageCodes(std::string&);
 
     Text makeTextListing(std::vector<Text> texts);
+
+    int findFirstNonMessageCodeIndex(const std::string& str);
 }; // namespace Text

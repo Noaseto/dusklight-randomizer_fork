@@ -29,6 +29,7 @@
 #include "d/actor/d_a_npc4.h"
 #include "d/actor/d_a_npc_bans.h"
 #include "d/actor/d_a_npc_fairy.h"
+#include "d/actor/d_a_npc_ks.h"
 #include "d/actor/d_a_npc_shad.h"
 #include "d/actor/d_a_npc_yelia.h"
 #include "d/actor/d_a_npc_ykm.h"
@@ -127,6 +128,9 @@ DEFINE_HOOK_SYMBOL("b_bq_end", void(b_bq_class*), bq_end);
 DEFINE_HOOK(&daDoor20_c::checkOpenMsgDoor, daDoor20_c__checkOpenMsgDoor);
 
 DEFINE_HOOK_SYMBOL("demo_camera_end", void(e_mk_class*), e_mk_demo_camera_end);
+
+DEFINE_HOOK_SYMBOL("src/d/actor/d_a_npc_ks.cpp#action_check", void(npc_ks_class*), Npc_Ks_action_check);
+DEFINE_HOOK_SYMBOL("daNpc_Ks_Execute", int(npc_ks_class*), Npc_Ks_Execute);
 
 DEFINE_HOOK(&dStage_changeScene4Event, changeScene4Event);
 DEFINE_HOOK_SYMBOL("dStage_playerInit", int(dStage_dt_c*, void*, int, void*), stage_playerInit);
@@ -675,6 +679,11 @@ HookAction hookPreSaveInfoOnSwitch(ModContext*, void* args, void*, void*) {
     // Set custom flag for the Temple of Time pedestal strike
     if (getStageID() == Sacred_Grove && i_no == 0xEE) {
         i_this->onSwitch(0x63, room_no);
+    }
+
+    if (getStageID() == Forest_Temple && i_no == 0x52) {
+        // Do not set the flag for the 4 monkey cutscene in FT
+        return HOOK_SKIP_ORIGINAL;
     }
 
     // We check to see if the flag being set is for the UZR portal as a safety precaution.
@@ -1960,6 +1969,71 @@ void hookPostEmkDemoCameraEnd(ModContext*, void* args, void* retval, void*) {
         }
         break;
     }
+}
+
+struct monkeyFields {
+    s16 action{};
+    s16 mode{};
+    s8 field_0xaec{};
+};
+std::array<monkeyFields, 8> monkeyData{};
+
+s16 leaderMode{};
+HookAction hookPreNpcKsActionCheck(ModContext*, void* args, void*, void*) {
+    auto monkey = mods::arg<npc_ks_class*>(args, 0);
+
+    // Keep track of the leader monkey's (the one with the flower) mode
+    if (monkey->set_id == 0) {
+        leaderMode = monkey->mode;
+    }
+
+    return HOOK_CONTINUE;
+}
+
+void hookPostNpcKsActionCheck(ModContext*, void* args, void*, void*) {
+    auto monkey = mods::arg<npc_ks_class*>(args, 0);
+    auto& data = monkeyData[monkey->set_id];
+
+    // Stop the leader monkey from attempting to run towards the north door if she's
+    // the only monkey saved. Restore her mode from before the function ran otherwise this
+    // function will keep setting her mode to 0. Only the leader monkey ever gets their action
+    // set to 100.
+    if (monkey->action == 110) {
+        monkey->action = 100;
+        monkey->mode = leaderMode;
+    }
+
+    // If the leader monkey tries to start the cutscene of the 4 monkeys going north
+    // don't allow that. Only the leader monkey ever gets their demo mode set to 80.
+    if (monkey->demo_mode == 80) {
+        monkey->action = data.action;
+        monkey->mode = data.mode;
+        monkey->field_0xaec = data.field_0xaec;
+        monkey->demo_mode = 0;
+    }
+}
+
+HookAction hookPreNpcKsExecute(ModContext*, void* args, void*, void*) {
+    auto monkey = mods::arg<npc_ks_class*>(args, 0);
+    auto& data = monkeyData[monkey->set_id];
+
+    // Don't allow any monkeys to continuously run towards the north door of the main room
+    if (monkey->action == 111) {
+        monkey->action = data.action;
+        monkey->mode = data.mode;
+        monkey->field_0xaec = data.field_0xaec;
+    }
+
+    return HOOK_CONTINUE;
+}
+
+// Keep track of all monkey's previous action, mode, and collision field
+void hookPostNpcKsExecute(ModContext*, void* args, void*, void*) {
+    auto monkey = mods::arg<npc_ks_class*>(args, 0);
+    auto& data = monkeyData[monkey->set_id];
+    data.action = monkey->action;
+    data.mode = monkey->mode;
+    data.field_0xaec = monkey->field_0xaec;
 }
 
 HookAction hookPreChangeScene4Event(ModContext*, void*, void*, void*) {
@@ -3380,6 +3454,11 @@ ModResult initialize() {
 
     ADD_HOOK_POST(e_mk_demo_camera_end, hookPostEmkDemoCameraEnd);
 
+    ADD_HOOK_PRE(Npc_Ks_action_check, hookPreNpcKsActionCheck);
+    ADD_HOOK_POST(Npc_Ks_action_check, hookPostNpcKsActionCheck);
+    ADD_HOOK_PRE(Npc_Ks_Execute, hookPreNpcKsExecute);
+    ADD_HOOK_POST(Npc_Ks_Execute, hookPostNpcKsExecute);
+
     ADD_HOOK_PRE(changeScene4Event, hookPreChangeScene4Event);
     ADD_HOOK_POST(changeScene4Event, hookPostChangeScene4Event);
     ADD_HOOK_PRE(stage_playerInit, hookPreStagePlayerInit);
@@ -3525,6 +3604,9 @@ ModResult uninstall() {
     mods::hook::uninstall<daDoor20_c__checkOpenMsgDoor>(svc_hook);
 
     mods::hook::uninstall<e_mk_demo_camera_end>(svc_hook);
+
+    mods::hook::uninstall<Npc_Ks_action_check>(svc_hook);
+    mods::hook::uninstall<Npc_Ks_Execute>(svc_hook);
 
     mods::hook::uninstall<changeScene4Event>(svc_hook);
     mods::hook::uninstall<stage_playerInit>(svc_hook);

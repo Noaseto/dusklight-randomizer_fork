@@ -25,7 +25,7 @@
     South Faron Cave Chest: Can_Pass_Faron_Woods_Coro_Gate
     Faron Mist Cave Open Chest: Can_Pass_Faron_Woods_Coro_Gate and Lantern # Not requiring lantern could lock this check out after completing the prologue
     Faron Mist Cave Lantern Chest: Can_Pass_Faron_Woods_Coro_Gate and Lantern
-    North Faron Woods Deku Baba Chest: Can_Pass_Faron_Woods_Coro_Gate
+    North Faron Woods Deku Baba Chest: Can_Pass_Faron_Woods_Coro_Gate and North_Faron_Woods_Gate_Key
 
 # SOUTH FARON WOODS
 

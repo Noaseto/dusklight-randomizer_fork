@@ -230,8 +230,8 @@ Can Complete Lanayru Twilight: Lanayru_Twilight_Cleared == On or count(Lanayru_T
 Can Complete All Twilight: Can_Complete_Faron_Twilight and Can_Complete_Eldin_Twilight and Can_Complete_Lanayru_Twilight
 
 Can Defeat Faron Twilit Insect: Twilight
-Can Defeat Eldin Twilit Insect: Twilight
-Can Defeat Lanayru Twilit Insect: Twilight and Can_Complete_Eldin_Twilight
+Can Defeat Eldin Twilit Insect: Twilight and (Shadow_Crystal or 'Can_Access_Faron_Field')
+Can Defeat Lanayru Twilit Insect: Twilight and Can_Complete_Eldin_Twilight and (Shadow_Crystal or 'Can_Access_North_Eldin_Field')
 
 Can Clear Forest: Can_Complete_Faron_Twilight and ('Can_Complete_Forest_Temple' or Faron_Woods_Logic == Open)
 

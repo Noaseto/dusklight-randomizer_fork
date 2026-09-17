@@ -46,3 +46,7 @@
 .excluded-locations-inner-pane-right > span {
     padding-left: 10dp;
 }
+
+.fill-horizontal {
+    flex-grow: 1
+}

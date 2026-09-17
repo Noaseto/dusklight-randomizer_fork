@@ -7,6 +7,7 @@
 #include "../utility/log.hpp"
 #include "../utility/platform.hpp"
 #include "../utility/random.hpp"
+#include "../utility/string.hpp"
 #include "../utility/yaml.hpp"
 #include "../logic/entrance_shuffle.hpp"
 
@@ -630,5 +631,30 @@ namespace randomizer::seedgen::config
         utility::random::RandomInit(integerSeed);
 
         return 0;
+    }
+
+    bool LooksLikePermalink(std::string str) {
+        std::string permalink = b64_decode(str);
+        // Empty string gets returned if there was an error
+        if (permalink.empty()) {
+            return false;
+        }
+
+        // Split the string into version parts
+        constexpr char delimiter = '-';
+        auto versionParts = utility::str::Split(permalink, delimiter);
+
+        if (versionParts.size() < 2) {
+            return false;
+        }
+
+        // If the first part looks like it contains version information, then it's probably a permalink
+        auto& mainVersion = versionParts.at(0);
+        if (mainVersion.starts_with('v') && std::ranges::count(mainVersion, '.') == 2 &&
+            std::ranges::count_if(mainVersion, isdigit) >= 3) {
+            return true;
+        }
+
+        return false;
     }
 } // namespace randomizer::seedgen::config

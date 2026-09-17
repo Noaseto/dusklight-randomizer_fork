@@ -113,7 +113,6 @@ void UpdateProgressBar() {
         return;
     }
 
-    using namespace std::chrono_literals;
     static constexpr float kSpeed = 8.0f;
 
     // Smoothly update the progress bar depending on what the target value is

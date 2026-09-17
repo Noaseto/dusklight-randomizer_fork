@@ -938,7 +938,7 @@ Shadow Crystal:
 
 Progressive Wallet:
   Standard:
-    Text: Bourse Progressive
+    Text: Bourse
   Pretty:
     Text: une {Bourse}
   Cryptic:
@@ -1023,7 +1023,7 @@ Hawkeye:
 
 Progressive Sword:
   Standard:
-    Text: Épée Progressive
+    Text: Épée
   Pretty:
     Text: une {Épée}
   Cryptic:
@@ -1116,7 +1116,7 @@ Ball and Chain:
 
 Progressive Bow:
   Standard:
-    Text: Arc Progressif
+    Text: Arc
   Pretty:
     Text: un {Arc}
   Cryptic:
@@ -1151,7 +1151,7 @@ Progressive Bow:
 
 Progressive Clawshot:
   Standard:
-    Text: Grappin Progressif
+    Text: Grappin
   Pretty:
     Text: un {Grappin}
   Cryptic:
@@ -1274,7 +1274,7 @@ Lantern:
 
 Progressive Fishing Rod:
   Standard:
-    Text: Canne à pêche Progressive
+    Text: Canne à pêche
   Pretty:
     Text: une {Canne à pêche}
   Cryptic:
@@ -2282,7 +2282,7 @@ Bottle with Lantern Oil:
 
 Progressive Mirror Shard:
   Standard:
-    Text: Fragment de Miroir Progressif
+    Text: Fragment de Miroir
   Pretty:
     Text: un {Fragment de Miroir}
   Cryptic:
@@ -3290,7 +3290,7 @@ Female Dayfly:
 
 Progressive Fused Shadow:
   Standard:
-    Text: cristal d'Ombre Progressif
+    Text: cristal d'Ombre
   Pretty:
     Text: un {cristal d'Ombre}
   Cryptic:
@@ -3348,7 +3348,7 @@ Poe Soul:
 
 Progressive Hidden Skill:
   Standard:
-    Text: Botte secrète Progressive
+    Text: Botte secrète
   Pretty:
     Text: une {Botte secrète}
   Cryptic:
@@ -3369,11 +3369,12 @@ Bridge of Eldin Portal:
 
 Progressive Sky Book:
   Standard:
-    Text: Glyphes Célestiens Progressifs
+    Text: Glyphes Célestiens
   Pretty:
     Text: des {Glyphes Célestiens}
+    Plurality: Plural
   Cryptic:
-   Text: une {verse paradisiaque}
+    Text: une {verse paradisiaque}
   Template Overrides:
     - Keys:
         - Kakariko Malo Mart Hawkeye After Purchase Text Template

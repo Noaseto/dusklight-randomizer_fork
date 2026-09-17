@@ -15,8 +15,10 @@
 #include "tracker.hpp"
 
 #include <algorithm>
-#include <thread>
 #include <map>
+#include <mutex>
+#include <ranges>
+#include <thread>
 #include <unordered_set>
 
 #include "d/d_file_select.h"
@@ -92,32 +94,55 @@ UiMenuTabHandle g_menu_tab{};
 
 FileSelectGateWindowCtx g_file_select_window_ctx{};
 
-namespace {
 std::vector<std::string> get_compatible_seed_hashes() {
     const std::filesystem::path seedDir = paths::GetRandomizerSeedsPath();
     std::filesystem::create_directories(seedDir);
 
+    static std::map<std::filesystem::path, std::filesystem::file_time_type> verifiedSeeds{};
     std::vector<std::string> seedHashes;
+
+    // Mutex so that we can pre-load verified seeds on a different thread when the randomizer
+    // is selected.
+    static std::mutex compatibleSeedHashesMutex{};
+    std::lock_guard lock{compatibleSeedHashesMutex};
+
     for (const auto& entry : std::filesystem::directory_iterator(seedDir)) {
         if (!entry.is_directory()) {
             continue;
         }
 
         try {
-            const YAML::Node seedData = LoadYAML(entry.path() / "seed.dat");
-            if (seedData["formatVersion"] &&
-                seedData["formatVersion"].as<u32>() == RandomizerContext::FORMAT_VERSION) {
+            auto it = verifiedSeeds.find(entry.path());
+            auto writeTime = std::filesystem::last_write_time(entry.path() / "seed.dat");
+
+            // If the seed hasn't changed since the last time we verified it, add it immediately
+            if (it != verifiedSeeds.end() && it->second == writeTime) {
                 seedHashes.push_back(entry.path().filename().string());
+            } else {
+                // If we haven't verified the seed, do that now
+                const YAML::Node seedData = LoadYAML(entry.path() / "seed.dat");
+                if (seedData["formatVersion"] &&
+                    seedData["formatVersion"].as<u32>() == RandomizerContext::FORMAT_VERSION)
+                {
+                    verifiedSeeds[entry.path()] = std::filesystem::last_write_time(entry.path() / "seed.dat");
+                    seedHashes.push_back(entry.path().filename().string());
+                }
             }
         } catch (const std::exception&) {
             // Incomplete or malformed seeds cannot be activated and should not be offered.
         }
     }
 
+    // Clear verified seeds which were deleted
+    std::erase_if(verifiedSeeds, [](const auto& item) {
+        return !std::filesystem::exists(item.first);
+    });
+
     std::ranges::sort(seedHashes);
     return seedHashes;
 }
 
+namespace {
 std::vector<std::string> get_presets() {
     const std::filesystem::path presetsDir = paths::GetRandomizerPresetsPath();
     std::filesystem::create_directories(presetsDir);
@@ -149,8 +174,29 @@ ModResult add_button(UiElementHandle pane, const char* label, const char* help_r
     return session::svc_mng.ui->pane_add_control(session::svc_mng.mod_ctx, pane, &desc, out_handle);
 }
 
+ModResult add_icon_button(UiElementHandle pane, const char* icon, const char* label, const char* help_rml,
+    UiPressedFn on_pressed, UiPredicateFn is_disabled = nullptr, void* userdata = nullptr, UiElementHandle* out_handle = nullptr)
+{
+    UiControlDesc desc = UI_CONTROL_DESC_INIT;
+    desc.kind = UI_CONTROL_ICON_BUTTON;
+    desc.icon = icon;
+    desc.label = label;
+    desc.help_rml = help_rml;
+    desc.on_pressed = on_pressed;
+    desc.is_disabled = is_disabled;
+    desc.user_data = userdata;
+    return session::svc_mng.ui->pane_add_control(session::svc_mng.mod_ctx, pane, &desc, out_handle);
+}
+
 void add_section(UiElementHandle pane, const char* label) {
     session::svc_mng.ui->pane_add_section(session::svc_mng.mod_ctx, pane, label);
+}
+
+ModResult add_row(UiElementHandle pane, UiElementHandle* rowHandle, const UiRowAlign align, const bool wrap = false) {
+    UiRowDesc row = UI_ROW_DESC_INIT;
+    row.align = align;
+    row.wrap = wrap;
+    return session::svc_mng.ui->pane_add_row(session::svc_mng.mod_ctx, pane, &row, rowHandle);
 }
 
 void add_string_input(UiElementHandle pane, const char* label, const char* help_rml,
@@ -654,9 +700,13 @@ ModResult buildSeedManagementTab(ModContext* ctx, UiWindowHandle, UiElementHandl
             GenerateRandomizerSeed();
         });
 
-    add_string_input(leftPane,
+    UiElementHandle seedRow{};
+    add_row(leftPane, &seedRow, UI_ROW_ALIGN_SPACE_BETWEEN);
+
+    UiElementHandle seedStringElement{};
+    add_string_input(seedRow,
         "Seed String",
-        "Current value of the seed used by the randomizer for generation. Leave blank for a random value.",
+        "Current value used by the randomizer for seeding generation. If blank, a random seed value will be chosen for seed generation.",
         31,
         [](ModContext*, void*, UiControlValue* out_value) {
             static char buffer[32];
@@ -673,27 +723,28 @@ ModResult buildSeedManagementTab(ModContext* ctx, UiWindowHandle, UiElementHandl
 
             GetRandomizerConfig().SetSeed(value->string_value);
             SaveRandomizerConfig();
-        });
+        },
+        &seedStringElement);
+    svc_ui->elem_set_class(ctx, seedStringElement, "fill-horizontal", true);
 
-    add_button(leftPane,
-        "New Seed String",
+    add_icon_button(seedRow,
+        "shuffle",
+        "Random Seed String",
         "Use a new random seed string for seed generation.",
         [](ModContext*, void*) {
             NewRandomSeed();
-        });
-
-    add_button(leftPane,
-        "Delete Seed",
-        "Delete a selected seed.",
-        buildSeedDeleteDialog);
+    });
 
     add_section(leftPane, "Permalink");
+    UiElementHandle permalinkRow{};
+    add_row(leftPane, &permalinkRow, UI_ROW_ALIGN_CENTER);
     {
-        std::string help_rml = "Copy your current settings permalink to share with others.<br/>";
+        std::string help_rml = "Click this button to copy your current settings permalink to share with others.<br/>";
         help_rml += fmt::format(
             "<br/>Current Permalink:<br/><span style=\"word-break: break-all;\">{}</span>",
             GetRandomizerConfig().GetPermalink());
-        add_button(leftPane,
+        UiElementHandle copyPermalinkElement{};
+        add_button(permalinkRow,
             "Copy Permalink",
             help_rml.c_str(),
             [](ModContext*, void*) {
@@ -704,11 +755,17 @@ ModResult buildSeedManagementTab(ModContext* ctx, UiWindowHandle, UiElementHandl
                 desc.body_rml = "Permalink Copied";
                 desc.duration_ms = 3000;
                 session::svc_mng.ui->push_toast(session::svc_mng.mod_ctx, &desc);
-            });
+            },
+            nullptr,
+            nullptr,
+            &copyPermalinkElement);
+        svc_ui->elem_set_class(ctx, copyPermalinkElement, "fill-horizontal", true);
     }
-    add_button(leftPane,
+
+    UiElementHandle pastePermalinkElement{};
+    add_button(permalinkRow,
         "Paste Permalink",
-        "Paste in a permalink from your clipboard. This will overwrite your current settings.",
+        "Click this button to paste in a permalink from your clipboard. This will overwrite your current settings.",
         [](ModContext*, void*) {
             std::string text;
             ModResult rt = mods::ui::get_clipboard_text(text);
@@ -734,18 +791,41 @@ ModResult buildSeedManagementTab(ModContext* ctx, UiWindowHandle, UiElementHandl
             desc.body_rml = "Applied Permalink";
             desc.duration_ms = 3000;
             session::svc_mng.ui->push_toast(session::svc_mng.mod_ctx, &desc);
-        });
+        },
+        nullptr,
+        nullptr,
+        &pastePermalinkElement);
+    svc_ui->elem_set_class(ctx, pastePermalinkElement, "fill-horizontal", true);
 
     add_section(leftPane, "Presets");
-    add_button(leftPane,
-        "Save Current Settings as Preset",
-        "Save the current settings to your list of presets.",
-        buildPresetSaveDialog);
+    UiElementHandle presetsRow{};
+    add_row(leftPane, &presetsRow, UI_ROW_ALIGN_CENTER);
 
-    add_button(leftPane,
+    UiElementHandle savePresetElement{};
+    add_button(presetsRow,
+        "Save Preset",
+        "Save the current settings as a preset you can load later.",
+        buildPresetSaveDialog,
+        nullptr,
+        nullptr,
+        &savePresetElement);
+    svc_ui->elem_set_class(ctx, savePresetElement, "fill-horizontal", true);
+
+    UiElementHandle loadPresetElement{};
+    add_button(presetsRow,
         "Load Preset",
-        "Choose an existing preset to load from.",
-        buildPresetLoadDialog);
+        "Choose a previously saved preset to load from.",
+        buildPresetLoadDialog,
+        nullptr,
+        nullptr,
+        &loadPresetElement);
+    svc_ui->elem_set_class(ctx, loadPresetElement, "fill-horizontal", true);
+
+    add_section(leftPane, "Delete Seeds");
+    add_button(leftPane,
+        "Delete Seed",
+        "Delete a selected seed.",
+        buildSeedDeleteDialog);
 
     return MOD_OK;
 }
@@ -1220,11 +1300,11 @@ struct ExcludedTabLocData {
     std::unordered_set<std::string> categories{};
 };
 
-const std::vector<ExcludedTabLocData>& excluded_location_catalog() {
+const std::vector<ExcludedTabLocData>& excluded_location_catalog(const bool forceLoad = false) {
     static std::vector<ExcludedTabLocData> locationsForExcludedTab;
 
     // If we haven't loaded the locations to display for the excluded locations tab, load them up
-    if (locationsForExcludedTab.empty()) {
+    if (locationsForExcludedTab.empty() || forceLoad) {
         auto locationDataTree = LOAD_EMBED_YAML(RANDO_DATA_PATH "locations.yaml");
         for (const auto& locationNode : locationDataTree) {
             ExcludedTabLocData excludedTabLocData{};
@@ -1678,6 +1758,11 @@ ModResult buildPlayTab(ModContext* ctx, UiWindowHandle, UiElementHandle leftPane
 
     return MOD_OK;
 }
+}
+
+// Function to call for pre-loading excluded location catalog when selecting randomizer game mode
+void load_excluded_locations() {
+    excluded_location_catalog(true);
 }
 
 ModResult buildMenuTab() {

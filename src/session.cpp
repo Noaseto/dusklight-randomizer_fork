@@ -5,6 +5,7 @@
 #include "randomizer_context.hpp"
 #include "hooks.hpp"
 #include "ui/ui.hpp"
+#include "ui/rando_config.hpp"
 #include "flags.h"
 #include "item_ids.h"
 #include "tools.h"
@@ -430,6 +431,17 @@ void onSaveWritten(ModContext*, uint32_t, void*) {
     saveAncientDocumentNum();
 }
 
+void preLoadRandomizerData() {
+    // Load text database now so that we don't hitch when opening up the item wheel the first time
+    getTextDatabase();
+
+    // Verify current seeds now so we don't hitch when getting seeds in the future
+    ui::get_compatible_seed_hashes();
+
+    // Load the excluded locations catalog for the excluded locations menu
+    ui::load_excluded_locations();
+}
+
 TextureReplacementHandle logoTexHandle{};
 
 ModResult onGameModeActivated(void*, ModError* error) {
@@ -459,9 +471,9 @@ ModResult onGameModeActivated(void*, ModError* error) {
         return mods::set_error(error, result, "failed to initialize ui");
     }
 
-    // Load text database now so that we don't hitch when opening up the item wheel the first time
-    std::thread loadTextThread{getTextDatabase};
-    loadTextThread.detach();
+    // Preload certain data to prevent hitching that would happen if loading the data as necessary
+    std::thread preLoadDataThread{preLoadRandomizerData};
+    preLoadDataThread.detach();
 
     mods::log::info("randomizer game mode activated");
     return MOD_OK;
@@ -475,14 +487,14 @@ void shutdown() {
     svc_mng.texture->unregister(mod_ctx, logoTexHandle);
 }
 
-ModResult onGameModeDeactivated(void*, ModError* error) {
+ModResult onGameModeDeactivated(void*, ModError*) {
     shutdown();
 
     mods::log::info("randomizer game mode deactivated");
     return MOD_OK;
 }
 
-ModResult onGameModeUpdate(void*, ModError* error) {
+ModResult onGameModeUpdate(void*, ModError*) {
     ui::update();
     session::update();
     return MOD_OK;

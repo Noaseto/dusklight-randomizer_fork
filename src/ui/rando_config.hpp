@@ -1,6 +1,7 @@
 #pragma once
 
 #include <filesystem>
+#include <string>
 #include <vector>
 #include <mods/api.h>
 #include "mods/svc/ui.h"
@@ -24,6 +25,9 @@ struct FileSelectGateWindowCtx {
     bool is_proceed{false};
 };
 extern FileSelectGateWindowCtx g_file_select_window_ctx;
+
+std::vector<std::string> get_compatible_seed_hashes();
+void load_excluded_locations();
 
 void SaveNewRandomizerPreset(const std::string& presetName, bool overwriteExisting = false);
 void ApplyExistingRandomizerPreset(const std::filesystem::path& presetFilePath);

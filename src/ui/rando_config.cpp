@@ -624,6 +624,23 @@ void buildSeedDeleteDialog(ModContext* ctx, void* user_data) {
     session::svc_mng.ui->dialog_push(mod_ctx, &desc, &g_seedDeleteDialog);
 }
 
+void buildSeedStringPermalinkPastedDialog(ModContext* ctx, void* user_data) {
+    UiDialogAction actions[] = {
+        {sizeof(UiDialogAction), "OK",
+            [](ModContext* ctx, UiDialogHandle dialog, void* user_data) {
+                session::svc_mng.ui->dialog_close(ctx, dialog);
+            },nullptr, false, nullptr},
+    };
+
+    UiDialogDesc desc = UI_DIALOG_DESC_INIT;
+    desc.title = "Possible Permalink Detected";
+    desc.body_rml = "It looks like you may have tried inputting a permalink into the seed string field. To apply a permalink, click the \"Paste Permalink\" button below.";
+    desc.actions = actions;
+    desc.action_count = std::size(actions);
+    desc.build = nullptr;
+    session::svc_mng.ui->dialog_push(mod_ctx, &desc, nullptr);
+}
+
 ModResult buildSeedManagementTab(ModContext* ctx, UiWindowHandle, UiElementHandle leftPane,
     UiElementHandle rightPane, void*, ModError*)
 {
@@ -646,7 +663,14 @@ ModResult buildSeedManagementTab(ModContext* ctx, UiWindowHandle, UiElementHandl
             strncpy(buffer,GetRandomizerConfig().GetSeed().c_str(),31);
             out_value->string_value = buffer;
         },
-        [](ModContext*, void*, const UiControlValue* value) {
+        [](ModContext* ctx, void* user_data, const UiControlValue* value) {
+            // If it seems like the user attempted to paste a permalink into the seed string field,
+            // don't apply it to the seed string
+            if (seedgen::config::LooksLikePermalink(value->string_value)) {
+                buildSeedStringPermalinkPastedDialog(ctx, user_data);
+                return;
+            }
+
             GetRandomizerConfig().SetSeed(value->string_value);
             SaveRandomizerConfig();
         });

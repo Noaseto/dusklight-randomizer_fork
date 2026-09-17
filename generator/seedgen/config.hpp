@@ -67,4 +67,5 @@ namespace randomizer::seedgen::config
     };
 
     int SeedRNG(Config& config, bool resolveNonStandardRandom = false, bool ignoreInvalidPlandomizer = true);
+    bool LooksLikePermalink(std::string str);
 } // namespace randomizer::seedgen::config

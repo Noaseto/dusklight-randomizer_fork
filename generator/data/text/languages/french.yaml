@@ -40,7 +40,7 @@
 # Un lieu sacré
 #
 # Faron Field: plaine de Firone
-# 
+# les Landes (région du Sud de la France)
 #
 # Kakariko Gorge: Gorge de Cocorico
 # un gros trou
@@ -54,19 +54,24 @@
 # un volcan
 #
 # Eldin Field: plaine d'Ordinn - S
-#
 # North Eldin: plaine d'Ordinn - N
+# plaines des sables (plaine de l'île de la Réunion -> volcan)
+# un couloir à ciel ouvert (le chemin vers le village oublié)
 #
 # Hidden Village: Village Oublié
+# le Far West
 #
 # Lanayru Field: plaine de Lanelle
+# prés salés (Mont St Michel, de l'eau)
 #
 # Beside Castle Town: derrière la citadelle
+# à l'ombre du bourg
 #
 # Castle Town: citadelle
 # un bourg
 #
 # South of Castle Town: sud de la citadelle
+# le parc du bourg
 #
 # Great Bridge of Hylia: Viaduc Hylia
 #
@@ -75,6 +80,7 @@
 #
 # Lanayru Spring: Source de Lanelle
 #
+#
 # Upper Zoras River: Rivière Zora (Amont)
 # torrentiel/torent
 #
@@ -82,8 +88,8 @@
 # cité des eaux
 #
 # South Gerudo Desert: Désert Gerudo - S
-#
 # North Gerudo Desert: Désert Gerudo - N
+# Un nulle part
 #
 # Bulblin Camp: Camp Bulblin
 # nomades/camp de nomades
@@ -91,7 +97,8 @@
 # Mirror Chamber: Chambre du Miroir
 # le Colisée
 #
-# Snowpeak Mountain: Cimes enneigées
+# Snowpeak Mountain: cimes des pics blancs
+# sommet enneigé
 #
 # Forest Temple: Temple Sylvestre
 # un antre boisé
@@ -106,7 +113,7 @@
 # un tribunal
 #
 # Snowpeak Ruins: Ruines des Pics Blancs
-# une maison délabré
+# une maison délabrée
 #
 # Temple of Time: Temple du Temps
 # un temps révolu 
@@ -119,6 +126,9 @@
 #
 # Hyrule Castle: Château d'Hyrule
 # Roi/Royale
+#
+# J'ai également appelé tous les bulblins des nomades, j'avais joué à cyberpunk ya pas longtemps, et dans le désert,
+# c'est les nomades. Dans TP, dans le désert ya le camp bulblin.
 
 
 # ITEM NAMES
@@ -555,7 +565,7 @@ Ordon Spring Portal:
   Pretty:
     Text: le portail {Source de Toal}
   Cryptic:
-    Text: le portail de {la maison}
+    Text: le passage de {la maison}
 
 South Faron Portal:
   Standard:
@@ -563,7 +573,7 @@ South Faron Portal:
   Pretty:
     Text: le portail {Forêt de Firone - S}
   Cryptic:
-    Text: le portail d'{une clairière}
+    Text: le passage d'{une clairière}
 
 Water Bombs 5:
   Standard:
@@ -782,7 +792,7 @@ Ordon Shield:
   Pretty:
     Text: le {Bouclier de Toal}
   Cryptic:
-    Text: un {rappel solide de la maison}
+    Text: une {muraille nostalgique}
   Template Overrides:
     - Keys:
         - Kakariko Malo Mart Hawkeye After Purchase Text Template
@@ -824,7 +834,7 @@ Hylian Shield:
   Pretty:
     Text: le {Bouclier d'Hylia}
   Cryptic:
-    Text: un {bouclier incassable}
+    Text: un {pavois incassable}
   Template Overrides:
     - Keys:
         - Kakariko Malo Mart Hawkeye After Purchase Text Template
@@ -977,7 +987,7 @@ Upper Zoras River Portal:
   Pretty:
     Text: le portail {Rivière Zora (Amont)}
   Cryptic:
-    Text: le portail {torrentiel}
+    Text: le passage {torrentiel}
 
 Castle Town Portal:
   Standard:
@@ -985,7 +995,7 @@ Castle Town Portal:
   Pretty:
     Text: le portail {Entrée de la citadelle}
   Cryptic:
-    Text: le portail d'un {bourg}
+    Text: le passage d'un {bourg}
 
 Gerudo Desert Portal:
   Standard:
@@ -993,7 +1003,7 @@ Gerudo Desert Portal:
   Pretty:
     Text: le portail {Désert Gerudo}
   Cryptic:
-    Text: le portail d'un {grand défi}
+    Text: le passage d'un {grand défi}
 
 North Faron Portal:
   Standard:
@@ -1001,7 +1011,7 @@ North Faron Portal:
   Pretty:
     Text: le portail {Forêt de Firone - N}
   Cryptic:
-    Text: le portail dans les {bois}
+    Text: le passage dans les {bois}
 
 Hawkeye:
   Standard:
@@ -1120,7 +1130,7 @@ Progressive Bow:
   Pretty:
     Text: un {Arc}
   Cryptic:
-    Text: un {bâton avec une ficelle}
+    Text: un {bâton voûté}
   Template Overrides:
     - Keys:
         - Kakariko Malo Mart Hawkeye After Purchase Text Template
@@ -1155,7 +1165,7 @@ Progressive Clawshot:
   Pretty:
     Text: un {Grappin}
   Cryptic:
-    Text: une {chaîne}
+    Text: une {longue chaîne}
   Template Overrides:
     - Keys:
         - Kakariko Malo Mart Hawkeye After Purchase Text Template
@@ -1191,7 +1201,7 @@ Iron Boots:
     Text: les {Bottes de fer}
     Plurality: Plural
   Cryptic:
-    Text: des {souliers métalliques}
+    Text: des {chaussures de sécurités}
     Plurality: Plural
   Template Overrides:
     - Keys:
@@ -1225,7 +1235,7 @@ Progressive Dominion Rod:
   Pretty:
     Text: un {Bâton Anima}
   Cryptic:
-    Text: un {bâton magique}
+    Text: un {vieux bâton}
   Template Overrides:
     - Keys:
         - Kakariko Malo Mart Hawkeye After Purchase Text Template
@@ -1278,7 +1288,7 @@ Progressive Fishing Rod:
   Pretty:
     Text: une {Canne à pêche}
   Cryptic:
-    Text: une {preuve de patience}
+    Text: un {bâton et ficelle}
   Template Overrides:
     - Keys:
         - Kakariko Malo Mart Hawkeye After Purchase Text Template
@@ -1332,7 +1342,7 @@ Kakariko Gorge Portal:
   Pretty:
     Text: le portail {Gorge de Cocorico}
   Cryptic:
-    Text: le portail d'un {gros trou}
+    Text: le passage d'un {gros trou}
 
 Kakariko Village Portal:
   Standard:
@@ -1340,7 +1350,7 @@ Kakariko Village Portal:
   Pretty:
     Text: le portail {Cocorico}
   Cryptic:
-    Text: le portail {d'un petit village}
+    Text: le passage {d'un petit village}
 
 Giant Bomb Bag:
   Standard:
@@ -1385,7 +1395,7 @@ Death Mountain Portal:
   Pretty:
     Text: le portail {Montagne de la mort}
   Cryptic:
-    Text: le portail d'un {volcan}
+    Text: le passage d'un {volcan}
 
 Zoras Domain Portal:
   Standard:
@@ -1393,7 +1403,7 @@ Zoras Domain Portal:
   Pretty:
     Text: le portail {Village des Zora}
   Cryptic:
-    Text: le portail de la {cité des eaux}
+    Text: le passage de la {cité des eaux}
 
 Empty Bottle:
   Standard:
@@ -1444,9 +1454,9 @@ Blue Potion Shop:
   Standard:
     Text: Potion bleue
   Pretty:
-    Text: beaucoup d'{amour en poche}
+    Text: une {Poion bleue}
   Cryptic:
-    Text: a {blue health refill}
+    Text: beaucoup d'{amour en poche}
   Template Overrides:
     - Keys:
         - Kakariko Malo Mart Hawkeye After Purchase Text Template
@@ -1832,7 +1842,7 @@ City in the Sky Small Key:
   Pretty:
     Text: une {petite clé de Célestia}
   Cryptic:
-    Text: une {clé paradisiaque}
+    Text: une {clé du paradis}
   Template Overrides:
     - Keys:
         - Kakariko Malo Mart Hawkeye After Purchase Text Template
@@ -1955,7 +1965,7 @@ Lake Hylia Portal:
   Pretty:
     Text: le portail {Lac Hylia}
   Cryptic:
-    Text: le portail d'un {grand plan d'eau}
+    Text: le passage d'un {grand plan d'eau}
 
 Aurus Memo:
   Standard:
@@ -2286,6 +2296,7 @@ Progressive Mirror Shard:
   Pretty:
     Text: un {Fragment de Miroir}
   Cryptic:
+# todo je suis pas fan :/
     Text: la {réflexion morcelée d'un pouvoir}
   Template Overrides:
     - Keys:
@@ -2436,7 +2447,7 @@ Mirror Chamber Portal:
   Pretty:
     Text: le portail {Chambre du Miroir}
   Cryptic:
-    Text: le portail du {Colisée}
+    Text: le passage du {Colisée}
 
 Snowpeak Portal:
   Standard:
@@ -2444,7 +2455,7 @@ Snowpeak Portal:
   Pretty:
     Text: le portail {Cime des pics Blancs}
   Cryptic:
-    Text: le portail {d'un sommet enneigé}
+    Text: le passage {d'un sommet enneigé}
 
 Forest Temple Dungeon Map:
   Standard:
@@ -2686,7 +2697,7 @@ Sacred Grove Portal:
   Pretty:
     Text: le portail {Sanctuaire de la forêt}
   Cryptic:
-    Text: le portail {d'un lieu sacré}
+    Text: le passage {d'un lieu sacré}
 
 Male Beetle:
   Standard:
@@ -3365,7 +3376,7 @@ Bridge of Eldin Portal:
   Pretty:
     Text: le portail {Pont d'Ordinn}
   Cryptic:
-    Text: le portail d'un {Pont très long}
+    Text: le passage d'un {Pont très long}
 
 Progressive Sky Book:
   Standard:
@@ -3374,7 +3385,7 @@ Progressive Sky Book:
     Text: des {Glyphes Célestiens}
     Plurality: Plural
   Cryptic:
-    Text: une {verse paradisiaque}
+    Text: une {verse du paradis}
   Template Overrides:
     - Keys:
         - Kakariko Malo Mart Hawkeye After Purchase Text Template
@@ -3566,7 +3577,8 @@ Game Beatable:
   Pretty:
     Text: "{Jeu terminable}"
   Cryptic:
-    Text: l'{objet du Go Mode}
+# todo: aucune idée mais ça semblait bien
+    Text: "{Go Mode}"
 
 Hint:
   Standard:
@@ -3697,14 +3709,13 @@ Progressive Sky Book x7:
 # LOCATION NAMES
 # NOTE: Location names which are identical to item names (i.e. Ordon Shield) need
 # to have "Check" appended to their key for text data
-# TODO: Cryptic text for all locations
 Wooden Sword Chest:
   Standard:
     Text: coffre de l'Épée de bois
   Pretty:
     Text: le {coffre d'une Épée de bois}
   Cryptic:
-    Text: le {coffre d'un truc tranchant}
+    Text: le {coffre du domicile}
 
 Links Basement Chest:
   Standard:
@@ -3712,7 +3723,7 @@ Links Basement Chest:
   Pretty:
     Text: "{coffre du sous-sol de Link}"
   Cryptic:
-    Text: le {coffre de la tirelire de Link}
+    Text: le {coffre de la tirelire}
 
 Uli Cradle Delivery:
   Standard:
@@ -3744,7 +3755,7 @@ Ordon Shield Check:
   Pretty:
     Text: le {Bouclier de Toal}
   Cryptic:
-    Text: l'acquisition d'un {rappel solide de la maison}
+    Text: l'acquisition d'une {muraille nostalgique}
 
 Ordon Sword:
   Standard:
@@ -3921,7 +3932,7 @@ Ordon Spring Warp Portal:
   Pretty:
     Text: le portail {Source de Toal}
   Cryptic:
-    Text: le portail de {la maison}
+    Text: le passage de {la maison}
 
 # Todo cryptic des insectes
 South Faron Woods Twilit Insect in Tunnel 1:
@@ -4058,7 +4069,7 @@ South Faron Warp Portal:
   Pretty:
     Text: le portail {Forêt de Firone - S}
   Cryptic:
-    Text: le portail d'{une clairière}
+    Text: le passage d'{une clairière}
 
 Coro Lantern:
   Standard:
@@ -4066,7 +4077,7 @@ Coro Lantern:
   Pretty:
     Text: la {Lanterne Kikolou}
   Cryptic:
-    Text: la {lumière d'appoint d'un gardien}
+    Text: la {lumière d'appoint du gardien}
 
 Coro Gate Key:
   Standard:
@@ -4074,7 +4085,7 @@ Coro Gate Key:
   Pretty:
     Text: la {clé du portail de Kikolou}
   Cryptic:
-    Text: la clé {d'un gardien}
+    Text: la clé {du gardien}
 
 Coro Bottle:
   Standard:
@@ -4082,7 +4093,7 @@ Coro Bottle:
   Pretty:
     Text: acheter le {Flacon de Kikolou}
   Cryptic:
-    Text: acquérir un {réservoir de charge}
+    Text: l'acquisition du {réservoir} du gardien
 
 # todo cryptic boulder rupee
 Faron Woods Coro Boulder Rupee 1:
@@ -4179,7 +4190,7 @@ North Faron Warp Portal:
   Pretty:
     Text: le portail {Forêt de Firone - N}
   Cryptic:
-    Text: le portail dans les {bois}
+    Text: le passage dans les {bois}
 
 Faron Woods Golden Wolf:
   Standard:
@@ -4204,7 +4215,7 @@ Faron Woods Owl Statue Sky Character:
     Text: le {glyphe Célestien de la statue de hibou de la forêt de Firone}
   Cryptic:
     Text: the {Faron Woods Owl Statue Sky Character}
-# qqchose gravure aviaire
+# todo qqchose gravure aviaire
 
 Faron Woods Owl Statue Chest:
   Standard:
@@ -4333,7 +4344,7 @@ Sacred Grove Warp Portal:
   Pretty:
     Text: le portail {Sanctuaire de la forêt}
   Cryptic:
-    Text: le portail d'{un lieu sacré}
+    Text: le passage d'{un lieu sacré}
 
 Sacred Grove Pedestal Master Sword:
   Standard:
@@ -4341,7 +4352,8 @@ Sacred Grove Pedestal Master Sword:
   Pretty:
     Text: le {piédestal d'excalibur du Sanctuaire de la forêt}
   Cryptic:
-    Text: the {Master Sword Pedestal}
+# todo x2: référence au Roi Arthur, c'est peut-être un peu trop cryptique
+    Text: la {quête du Roi}
 
 Sacred Grove Pedestal Shadow Crystal:
   Standard:
@@ -4349,7 +4361,7 @@ Sacred Grove Pedestal Shadow Crystal:
   Pretty:
     Text: le {Cristal Maudit du piédestal du Sanctuaire de la forêt}
   Cryptic:
-    Text: the {Master Sword Pedestal}
+    Text: la {quête du Roi}
 
 Sacred Grove Master Sword Poe:
   Standard:
@@ -4525,7 +4537,7 @@ Kakariko Gorge Warp Portal:
   Pretty:
     Text: le portail {Cocorico}
   Cryptic:
-    Text: le portail d'{un gros trou}
+    Text: le passage d'un {gros trou}
 
 Kakariko Gorge Female Pill Bug:
   Standard:
@@ -4637,7 +4649,7 @@ Kakariko Village Warp Portal:
   Pretty:
     Text: le portail {Cocorico}
   Cryptic:
-    Text: le portail d'{un petit village}
+    Text: le passage d'{un petit village}
 
 Eldin Spring Underwater Chest:
   Standard:
@@ -4701,7 +4713,7 @@ Kakariko Village Malo Mart Hawkeye:
   Pretty:
     Text: acheter le {Œil de faucon des Galeries Balder de Cocorico}
   Cryptic:
-    Text: buying the {Kakariko Village Malo Mart Hawkeye}
+    Text: acheter les {jumelles}
 
 Kakariko Village Malo Mart Hylian Shield:
   Standard:
@@ -4709,7 +4721,7 @@ Kakariko Village Malo Mart Hylian Shield:
   Pretty:
     Text: acheter le {Bouclier Hylien des Galeries Balder de Cocorico}
   Cryptic:
-    Text: buying the {Kakariko Village Malo Mart Hylian Shield}
+    Text: acheter le {pavois incassable}
 
 Kakariko Village Malo Mart Red Potion:
   Standard:
@@ -4717,7 +4729,7 @@ Kakariko Village Malo Mart Red Potion:
   Pretty:
     Text: acheter la {Potion Rouge des Galeries Balder de Cocorico}
   Cryptic:
-    Text: buying the {Kakariko Village Malo Mart Red Potion}
+    Text: acheter de l'{amour en poche}
 
 Kakariko Village Malo Mart Wooden Shield:
   Standard:
@@ -4725,7 +4737,7 @@ Kakariko Village Malo Mart Wooden Shield:
   Pretty:
     Text: acheter le {Bouclier en Bois des Galeries Balder de Cocorico}
   Cryptic:
-    Text: buying the {Kakariko Village Malo Mart Wooden Shield}
+    Text: acheter une {défense naturel}
 
 Kakariko Inn Chest:
   Standard:
@@ -4757,7 +4769,7 @@ Barnes Bomb Bag:
   Pretty:
     Text: le {Sac de Bombes de Chez Crahmé}
   Cryptic:
-    Text: the {Barnes Bomb Bag}
+    Text: Acheter un {sac d'explosifs}
 
 Kakariko Village Bomb Shop Poe:
   Standard:
@@ -4839,7 +4851,7 @@ Rutelas Blessing:
   Pretty:
     Text: la {bénédiction de Reine Luterra}
   Cryptic:
-    Text: "{Rutelas Blessing}"
+    Text: le {don d'une reine}
 
 Gift From Ralis:
   Standard:
@@ -4847,7 +4859,7 @@ Gift From Ralis:
   Pretty:
     Text: le {Cadeau de Lars}
   Cryptic:
-    Text: the {Gift From Ralis}
+    Text: un {accessoire de mode}
 
 Kakariko Graveyard Lantern Chest:
   Standard:
@@ -4879,7 +4891,7 @@ Kakariko Graveyard Golden Wolf:
   Pretty:
     Text: le {loup dorée du cimetière de Cocorico}
   Cryptic:
-    Text: la bête aurifère {là où repose les défunts}
+    Text: la bête aurifère là où {repose les défunts}
 
 Kakariko Graveyard Open Poe:
   Standard:
@@ -4903,7 +4915,7 @@ Death Mountain Warp Portal:
   Pretty:
     Text: le portail {Montagne de la mort}
   Cryptic:
-    Text: le portail d'{un volcan}
+    Text: le passage d'{un volcan}
 
 Death Mountain Alcove Chest:
   Standard:
@@ -4999,7 +5011,7 @@ Goron Springwater Rush:
   Pretty:
     Text: la {livraison rapide d'eau thermal}
   Cryptic:
-    Text: the {Goron Springwater Rush}
+    Text: "{arroser un caillou}"
 
 Eldin Field Water Bomb Fish Grotto Chest:
   Standard:
@@ -5015,7 +5027,7 @@ Bridge of Eldin Warp Portal:
   Pretty:
     Text: le portail {Pont d'Ordinn}
   Cryptic:
-    Text: the {Bridge of Eldin Warp Portal}
+    Text: le passage {gardé par un nomade}
 
 Bridge of Eldin Female Phasmid:
   Standard:
@@ -5105,7 +5117,6 @@ Eldin Field Stalfos Grotto Stalfos Chest:
   Cryptic:
     Text: the {Eldin Field Stalfos Grotto Stalfos Chest}
 
-# todo La trad ici sonne bizarre
 Skybook From Impaz:
   Standard:
     Text: Écrits Célestiens d'Impa
@@ -5113,7 +5124,7 @@ Skybook From Impaz:
     Text: les {Écrits Célestiens d'Impa}
     Plurality: Plural
   Cryptic:
-    Text: un {très vieux livre}
+    Text: recevoir un {très vieux livre}
   Template Overrides:
     - Keys:
         - Location Hint
@@ -5368,7 +5379,7 @@ Lanayru Ice Block Puzzle Cave Chest:
   Pretty:
     Text: le {coffre de la caverne aux blocs de glace dans la plaine de Lanelle}
   Cryptic:
-    Text: l'{entrepot des glaçons}
+    Text: l'{entrepôt des glaçons}
   Template Overrides:
     - Keys:
         - Location Hint
@@ -5405,7 +5416,7 @@ Castle Town Warp Portal:
   Pretty:
     Text: le portail {Entrée de la citadelle}
   Cryptic:
-    Text: le portail du {bourg}
+    Text: le passage du {bourg}
 
 West Hyrule Field Female Butterfly:
   Standard:
@@ -5485,7 +5496,7 @@ Charlo Donation Blessing:
   Pretty:
     Text: la {bénédiction du don à Charlo}
   Cryptic:
-    Text: "{vider sa tirelire}"
+    Text: payer la {dîme}
 
 STAR Prize 1:
   Standard:
@@ -5509,7 +5520,7 @@ Castle Town Goron Shop Red Potion:
   Pretty:
     Text: acheter la {potion rouge de la boutique du goron de la citadelle}
   Cryptic:
-    Text: buying the {Castle Town Goron Shop Red Potion}
+    Text: acheter de l'{amour en poche} au bourg
 
 Castle Town Goron Shop Lantern Oil:
   Standard:
@@ -5517,7 +5528,7 @@ Castle Town Goron Shop Lantern Oil:
   Pretty:
     Text: acheter l'{huile de la boutique du goron de la citadelle}
   Cryptic:
-    Text: buying the {Castle Town Goron Shop Lantern Oil}
+    Text: acheter une {charge de lumière} au bourg
 
 Castle Town Goron Shop Hylian Shield:
   Standard:
@@ -5525,7 +5536,7 @@ Castle Town Goron Shop Hylian Shield:
   Pretty:
     Text: acheter le {Bouclier Hylien de la boutique du goron de la citadelle}
   Cryptic:
-    Text: buying the {Castle Town Goron Shop Hylian Shield}
+    Text: acheter un {pavois incassable} au bourg
 
 Castle Town Goron Shop Arrow Refill:
   Standard:
@@ -5533,7 +5544,7 @@ Castle Town Goron Shop Arrow Refill:
   Pretty:
     Text: acheter la {recharge de flèches de la boutique du goron de la citadelle}
   Cryptic:
-    Text: buying the {Castle Town Goron Shop Arrow Refill}
+    Text: acheter des {munitions} au bourg
 
 Castle Town Malo Mart Magic Armor:
   Standard:
@@ -5541,7 +5552,7 @@ Castle Town Malo Mart Magic Armor:
   Pretty:
     Text: acheter l'{Armure Magique des Galeries Balder (Filiale)}
   Cryptic:
-    Text: buying the {Castle Town Malo Mart Magic Armor}
+    Text: acheter des {vêtements magique}
 
 # HD Only Location
 # Castle Town Malo Mart Stamp:
@@ -5558,7 +5569,7 @@ North Castle Town Golden Wolf:
   Pretty:
     Text: le {loup dorée du nord de la citadelle}
   Cryptic:
-    Text: la {bête aurifère du bourg}
+    Text: la bête aurifère {du bourg}
 
 Doctors Office Balcony Chest:
   Standard:
@@ -5590,7 +5601,7 @@ Jovani 60 Poe Soul Reward:
   Pretty:
     Text: donner à {Giovanni 60 âmes de spectre}
   Cryptic:
-    Text: rassembler {toutes les volonté de défunts}
+    Text: rassembler {toutes les volontés de défunts}
 
 # HD Only Location
 # Gengle 60 Poe Soul Reward:
@@ -5623,7 +5634,7 @@ Agitha Male Beetle Reward:
   Pretty:
     Text: apporter à {Machaon le scarabée mâle}
   Cryptic:
-    Text: bringing {Machaon} the {Male Beetle}
+    Text: bringing {Machaon the Male Beetle}
 
 Agitha Female Beetle Reward:
   Standard:
@@ -5631,7 +5642,7 @@ Agitha Female Beetle Reward:
   Pretty:
     Text: apporter à {Machaon le scarabée femelle}
   Cryptic:
-    Text: bringing {Machaon} the {Female Beetle}
+    Text: bringing {Machaon the Female Beetle}
 
 Agitha Male Butterfly Reward:
   Standard:
@@ -5639,7 +5650,7 @@ Agitha Male Butterfly Reward:
   Pretty:
     Text: apporter à {Machaon le papillon mâle}
   Cryptic:
-    Text: bringing {Agitha} the {Male Butterfly}
+    Text: bringing {Agitha the Male Butterfly}
 
 Agitha Female Butterfly Reward:
   Standard:
@@ -5647,7 +5658,7 @@ Agitha Female Butterfly Reward:
   Pretty:
     Text: apporter à {Machaon le papillon femelle}
   Cryptic:
-    Text: bringing {Machaon} the {Female Butterfly}
+    Text: bringing {Machaon the Female Butterfly}
 
 Agitha Male Stag Beetle Reward:
   Standard:
@@ -5655,7 +5666,7 @@ Agitha Male Stag Beetle Reward:
   Pretty:
     Text: apporter à {Machaon la lucane mâle}
   Cryptic:
-    Text: bringing {Machaon} the {Male Stag Beetle}
+    Text: bringing {Machaon the Male Stag Beetle}
 
 Agitha Female Stag Beetle Reward:
   Standard:
@@ -5663,7 +5674,7 @@ Agitha Female Stag Beetle Reward:
   Pretty:
     Text: apporter à {Machaon la lucane femelle}
   Cryptic:
-    Text: bringing {Machaon} the {Female Stag Beetle}
+    Text: bringing {Machaon the Female Stag Beetle}
 
 Agitha Male Grasshopper Reward:
   Standard:
@@ -5671,7 +5682,7 @@ Agitha Male Grasshopper Reward:
   Pretty:
     Text: apporter à {Machaon la sauterelle mâle}
   Cryptic:
-    Text: bringing {Machaon} the {Male Grasshopper}
+    Text: bringing {Machaon the Male Grasshopper}
 
 Agitha Female Grasshopper Reward:
   Standard:
@@ -5679,7 +5690,7 @@ Agitha Female Grasshopper Reward:
   Pretty:
     Text: apporter à {Machaon la sauterelle femelle}
   Cryptic:
-    Text: bringing {Machaon} the {Female Grasshopper}
+    Text: bringing {Machaon the Female Grasshopper}
 
 Agitha Male Phasmid Reward:
   Standard:
@@ -5687,7 +5698,7 @@ Agitha Male Phasmid Reward:
   Pretty:
     Text: apporter à {Machaon le phasme mâle}
   Cryptic:
-    Text: bringing {Machaon} the {Male Phasmid}
+    Text: bringing {Machaon the Male Phasmid}
 
 Agitha Female Phasmid Reward:
   Standard:
@@ -5695,7 +5706,7 @@ Agitha Female Phasmid Reward:
   Pretty:
     Text: apporter à {Machaon le phasme femelle}
   Cryptic:
-    Text: bringing {Machaon} the {Female Phasmid}
+    Text: bringing {Machaon the Female Phasmid}
 
 Agitha Male Pill Bug Reward:
   Standard:
@@ -5703,7 +5714,7 @@ Agitha Male Pill Bug Reward:
   Pretty:
     Text: apporter à {Machaon le cloporte mâle}
   Cryptic:
-    Text: bringing {Machaon} the {Male Pill Bug}
+    Text: bringing {Machaon the Male Pill Bug}
 
 Agitha Female Pill Bug Reward:
   Standard:
@@ -5711,7 +5722,7 @@ Agitha Female Pill Bug Reward:
   Pretty:
     Text: apporter à {Machaon le cloporte femelle}
   Cryptic:
-    Text: bringing {Machaon} the {Female Pill Bug}
+    Text: bringing {Machaon the Female Pill Bug}
 
 Agitha Male Mantis Reward:
   Standard:
@@ -5719,7 +5730,7 @@ Agitha Male Mantis Reward:
   Pretty:
     Text: apporter à {Machaon la mante mâle}
   Cryptic:
-    Text: bringing {Machaon} the {Male Mantis}
+    Text: bringing {Machaon the Male Mantis}
 
 Agitha Female Mantis Reward:
   Standard:
@@ -5727,7 +5738,7 @@ Agitha Female Mantis Reward:
   Pretty:
     Text: apporter à {Machaon la mante femelle}
   Cryptic:
-    Text: bringing {Machaon} the {Female Mantis}
+    Text: bringing {Machaon the Female Mantis}
 
 Agitha Male Ladybug Reward:
   Standard:
@@ -5735,7 +5746,7 @@ Agitha Male Ladybug Reward:
   Pretty:
     Text: apporter à {Machaon la coccinelle mâle}
   Cryptic:
-    Text: bringing {Machaon} the {Male Ladybug}
+    Text: bringing {Machaon the Male Ladybug}
 
 Agitha Female Ladybug Reward:
   Standard:
@@ -5743,7 +5754,7 @@ Agitha Female Ladybug Reward:
   Pretty:
     Text: apporter à {Machaon la coccinelle femelle}
   Cryptic:
-    Text: bringing {Machaon} the {Female Ladybug}
+    Text: bringing {Machaon the Female Ladybug}
 
 Agitha Male Snail Reward:
   Standard:
@@ -5751,7 +5762,7 @@ Agitha Male Snail Reward:
   Pretty:
     Text: apporter à {Machaon l'escargot mâle}
   Cryptic:
-    Text: bringing {Machaon} the {Male Snail}
+    Text: bringing {Machaon the Male Snail}
 
 Agitha Female Snail Reward:
   Standard:
@@ -5759,7 +5770,7 @@ Agitha Female Snail Reward:
   Pretty:
     Text: apporter à {Machaon l'escargot femelle}
   Cryptic:
-    Text: bringing {Machaon} the {Female Snail}
+    Text: bringing {Machaon the Female Snail}
 
 Agitha Male Dragonfly Reward:
   Standard:
@@ -5767,7 +5778,7 @@ Agitha Male Dragonfly Reward:
   Pretty:
     Text: apporter à {Machaon la libellule mâle}
   Cryptic:
-    Text: bringing {Machaon} the {Male Dragonfly}
+    Text: bringing {Machaon the Male Dragonfly}
 
 Agitha Female Dragonfly Reward:
   Standard:
@@ -5775,7 +5786,7 @@ Agitha Female Dragonfly Reward:
   Pretty:
     Text: apporter à {Machaon la libellule femelle}
   Cryptic:
-    Text: bringing {Machaon} the {Female Dragonfly}
+    Text: bringing {Machaon the Female Dragonfly}
 
 Agitha Male Ant Reward:
   Standard:
@@ -5783,7 +5794,7 @@ Agitha Male Ant Reward:
   Pretty:
     Text: apporter à {Machaon la fourmi mâle}
   Cryptic:
-    Text: bringing {Machaon} the {Male Ant}
+    Text: bringing {Machaon the Male Ant}
 
 Agitha Female Ant Reward:
   Standard:
@@ -5791,7 +5802,7 @@ Agitha Female Ant Reward:
   Pretty:
     Text: apporter à {Machaon la fourmi femelle}
   Cryptic:
-    Text: bringing {Machaon} the {Female Ant}
+    Text: bringing {Machaon the Female Ant}
 
 Agitha Male Dayfly Reward:
   Standard:
@@ -5799,7 +5810,7 @@ Agitha Male Dayfly Reward:
   Pretty:
     Text: apporter à {Machaon l'éphémère mâle}
   Cryptic:
-    Text: bringing {Machaon} the {Male Dayfly}
+    Text: bringing {Machaon the Male Dayfly}
 
 Agitha Female Dayfly Reward:
   Standard:
@@ -5807,7 +5818,7 @@ Agitha Female Dayfly Reward:
   Pretty:
     Text: apporter à {Machaon l'éphémère femelle}
   Cryptic:
-    Text: bringing {Machaon} the {Female Dayfly}
+    Text: bringing {Machaon the Female Dayfly}
 
 # HD Only Location
 # Agitha 12 Golden Bugs Reward:
@@ -5872,7 +5883,7 @@ Outside South Castle Town Golden Wolf:
   Pretty:
     Text: le {loup dorée du sud de la citadelle}
   Cryptic:
-    Text: the {Outside South Castle Town Golden Wolf}
+    Text: la bête aurifère du {parc du bourg}
 
 Outside South Castle Town Double Clawshot Chasm Chest:
   Standard:
@@ -5896,7 +5907,7 @@ Wooden Statue Check:
   Pretty:
     Text: la {Statuette en bois}
   Cryptic:
-    Text: the {Wooden Statue}
+    Text: un {souvenir gravé}
 
 Lake Hylia Bridge Owl Statue Chest:
   Standard:
@@ -5984,7 +5995,7 @@ Lake Hylia Warp Portal:
   Pretty:
     Text: le portail {Lac Hylia}
   Cryptic:
-    Text: le portail d'{un grand plan d'eau}
+    Text: le passage d'{un grand plan d'eau}
 
 Auru Gift To Fyer:
   Standard:
@@ -6381,7 +6392,7 @@ Upper Zoras River Warp Portal:
   Pretty:
     Text: le portail {Rivière Zora (Amont)}
   Cryptic:
-    Text: le portail {torrentiel}
+    Text: le passage {torrentiel}
 
 Upper Zoras River Female Dragonfly:
   Standard:
@@ -6437,7 +6448,7 @@ Iza Helping Hand:
   Pretty:
     Text: pour avoir {aidé Lise}
   Cryptic:
-    Text: pour avoir {aidé une femme}
+    Text: pour avoir {aidé une femme et un poisson}
 
 Iza Raging Rapids Minigame:
   Standard:
@@ -6470,7 +6481,7 @@ Zoras Domain Warp Portal:
   Pretty:
     Text: le portail {Village des Zora}
   Cryptic:
-    Text: le portail de la {cité des eaux}
+    Text: le passage de la {cité des eaux}
 
 Zoras Domain Male Dragonfly:
   Standard:
@@ -6663,7 +6674,7 @@ Snowpeak Warp Portal:
   Pretty:
     Text: le portail {Cime des pics Blancs}
   Cryptic:
-    Text: le portail {d'un sommet enneigé}
+    Text: le passage {d'un sommet enneigé}
 
 Ashei Sketch:
   Standard:
@@ -6895,7 +6906,7 @@ Gerudo Desert Warp Portal:
   Pretty:
     Text: le portail {Désert Gerudo}
   Cryptic:
-    Text: le portail d'un {grand défi}
+    Text: le passage d'un {grand défi}
 
 Gerudo Desert East Poe:
   Standard:
@@ -7079,7 +7090,7 @@ Gerudo Desert Golden Wolf:
   Pretty:
     Text: le {loup dorée du Désert Gerudo}
   Cryptic:
-    Text: la bête aurifère d'un {grand espace vide}
+    Text: la bête aurifère de {nulle part}
 
 Outside Bulblin Camp Poe:
   Standard:
@@ -7111,7 +7122,7 @@ Bulblin Camp Roasted Boar:
   Pretty:
     Text: le {Bullbo rôti du Camp Bulblin}
   Cryptic:
-    Text: le {repas de nomades}
+    Text: le {repas des nomades}
 
 Bulblin Guard Key:
   Standard:
@@ -7119,7 +7130,7 @@ Bulblin Guard Key:
   Pretty:
     Text: la {clé du vigile Bulblin}
   Cryptic:
-    Text: the {Bulblin Guard Key}
+    Text: la clé de l'arène du {Roi des nomades}
 
 Bulblin Camp Poe:
   Standard:
@@ -7216,7 +7227,7 @@ Cave of Ordeals Great Fairy Reward:
   Pretty:
     Text: le {don de la grande Fée de la Caverne de l'Ordalie}
   Cryptic:
-    Text: the {Cave of Ordeals Great Fairy Reward}
+    Text: l'accomplissement du {défi ultime}
   Template Overrides:
     - Keys:
         - Location Hint
@@ -7229,7 +7240,7 @@ Mirror Chamber Warp Portal:
   Pretty:
     Text: le portail {Chambre du Miroir}
   Cryptic:
-    Text: le portail du {Colisée}
+    Text: le passage du {Colisée}
 
 Forest Temple Entrance Vines Chest:
   Standard:
@@ -8298,6 +8309,7 @@ Temple of Time Gilloutine Chest:
   Pretty:
     Text: le {coffre de la salle de la guillotine du Temple du Temps}
   Cryptic:
+#todo GUILLOTINE ? DANS MA FRANCE
     Text: the {Temple du Temps Gilloutine Chest}
 
 Temple of Time Chest Before Darknut:
@@ -8951,7 +8963,7 @@ Ordon Hint Sign:
   Pretty:
     Text: le {panneau d'indice de Toal}
   Cryptic:
-    Text: the {Ordon panneau d'indice}
+    Text: l'enseigne de la {maison}
 
 South Faron Woods Hint Sign:
   Standard:
@@ -8959,7 +8971,7 @@ South Faron Woods Hint Sign:
   Pretty:
     Text: le {panneau d'indice de la forêt de Firone - S}
   Cryptic:
-    Text: the {South Faron Woods panneau d'indice}
+    Text: l'enseigne de la {clairière}
 
 Sacred Grove Hint Sign:
   Standard:
@@ -8967,7 +8979,7 @@ Sacred Grove Hint Sign:
   Pretty:
     Text: le {panneau d'indice du Sanctuaire de la forêt}
   Cryptic:
-    Text: the {Sacred Grove panneau d'indice}
+    Text: l'enseigne de l'{antre boisé}
 
 Faron Field Hint Sign:
   Standard:
@@ -8975,7 +8987,7 @@ Faron Field Hint Sign:
   Pretty:
     Text: le {panneau d'indice de la plaine de Firone}
   Cryptic:
-    Text: the {Faron Field panneau d'indice}
+    Text: l'enseigne des {Landes}
 
 Kakariko Gorge Hint Sign:
   Standard:
@@ -8983,7 +8995,7 @@ Kakariko Gorge Hint Sign:
   Pretty:
     Text: le {panneau d'indice du Gorge de Cocorico}
   Cryptic:
-    Text: the {Kakariko Gorge panneau d'indice}
+    Text: l'enseigne au dessus du {gros trou}
 
 Kakariko Village Hint Sign:
   Standard:
@@ -8991,7 +9003,7 @@ Kakariko Village Hint Sign:
   Pretty:
     Text: le {panneau d'indice de Cocorico}
   Cryptic:
-    Text: the {Kakariko Village panneau d'indice}
+    Text: l'enseigne d'un {petit village}
 
 Kakariko Graveyard Hint Sign:
   Standard:
@@ -8999,7 +9011,7 @@ Kakariko Graveyard Hint Sign:
   Pretty:
     Text: le {panneau d'indice du cimetière de Cocorico}
   Cryptic:
-    Text: the {Kakariko Graveyard panneau d'indice}
+    Text: l'enseigne là où {repose les défunts}
 
 Eldin Field Hint Sign:
   Standard:
@@ -9007,7 +9019,7 @@ Eldin Field Hint Sign:
   Pretty:
     Text: le {panneau d'indice de la plaine d'Ordinn}
   Cryptic:
-    Text: the {Eldin Field panneau d'indice}
+    Text: l'enseigne de la {plaine des sables}
 
 North Eldin Field Hint Sign:
   Standard:
@@ -9015,7 +9027,7 @@ North Eldin Field Hint Sign:
   Pretty:
     Text: le {panneau d'indice de la plaine d'Ordinn - N}
   Cryptic:
-    Text: the {North Eldin Field panneau d'indice}
+    Text: l'enseigne après un {Pont très long}
 
 Hidden Village Hint Sign:
   Standard:
@@ -9023,7 +9035,7 @@ Hidden Village Hint Sign:
   Pretty:
     Text: le {panneau d'indice du Village Oublié}
   Cryptic:
-    Text: the {Hidden Village panneau d'indice}
+    Text: l'enseigne du {Far West}
 
 Lanayru Field Hint Sign:
   Standard:
@@ -9031,7 +9043,7 @@ Lanayru Field Hint Sign:
   Pretty:
     Text: le {panneau d'indice de la plaine de Lanelle}
   Cryptic:
-    Text: the {Lanayru Field panneau d'indice}
+    Text: l'enseigne des prés {salés}
 
 Beside Castle Town Hint Sign:
   Standard:
@@ -9039,7 +9051,7 @@ Beside Castle Town Hint Sign:
   Pretty:
     Text: le {panneau d'indice de derrière la citadelle}
   Cryptic:
-    Text: the {Beside Castle Town panneau d'indice}
+    Text: l'enseigne à l'{ombre du bourg}
 
 Castle Town Center Hint Sign:
   Standard:
@@ -9047,7 +9059,7 @@ Castle Town Center Hint Sign:
   Pretty:
     Text: le {panneau d'indice de la citadelle}
   Cryptic:
-    Text: the {Castle Town Center panneau d'indice}
+    Text: l'enseigne du {bourg}
 
 Outside South Castle Town Hint Sign:
   Standard:
@@ -9055,7 +9067,7 @@ Outside South Castle Town Hint Sign:
   Pretty:
     Text: le {panneau d'indice au sud de la citadelle}
   Cryptic:
-    Text: the {Outside South Castle Town panneau d'indice}
+    Text: l'enseigne du {parc du bourg}
 
 Lake Hylia Bridge Hint Sign:
   Standard:
@@ -9063,7 +9075,8 @@ Lake Hylia Bridge Hint Sign:
   Pretty:
     Text: le {panneau d'indice du pont du Lac Hylia}
   Cryptic:
-    Text: the {Lake Hylia Bridge panneau d'indice}
+# todo: aucune idée, j'ai bien envie de faire une référence au pétrole et le bulblin qui y a mis le feu
+    Text: l'enseigne du {undefined}
 
 Lake Hylia Hint Sign:
   Standard:
@@ -9071,7 +9084,7 @@ Lake Hylia Hint Sign:
   Pretty:
     Text: le {panneau d'indice du Lac Hylia}
   Cryptic:
-    Text: the {Lake Hylia panneau d'indice}
+    Text: l'enseigne d'un {grand plan d'eau}
 
 Lanayru Spring Hint Sign:
   Standard:
@@ -9079,6 +9092,7 @@ Lanayru Spring Hint Sign:
   Pretty:
     Text: le {panneau d'indice de la Source de Lanelle}
   Cryptic:
+# todo : trouver un nom pour la source de lanelle, un truc avec le canon ?
     Text: the {Lanayru Spring panneau d'indice}
 
 Lake Lantern Cave Hint Sign:
@@ -9087,7 +9101,8 @@ Lake Lantern Cave Hint Sign:
   Pretty:
     Text: le {panneau d'indice de la caverne du Lac Hylia}
   Cryptic:
-    Text: the {Lake Lantern Cave panneau d'indice}
+    # référence à Aladdin de Disney
+    Text: l'enseigne de la {Caverne aux merveilles}
 
 Fishing Hole Hint Sign:
   Standard:
@@ -9095,7 +9110,7 @@ Fishing Hole Hint Sign:
   Pretty:
     Text: le {panneau d'indice du Paradis du Pêcheur}
   Cryptic:
-    Text: the {Fishing Hole panneau d'indice}
+    Text: l'enseigne de l'{Aquarium}
 
 Zoras Domain Hint Sign:
   Standard:
@@ -9103,7 +9118,7 @@ Zoras Domain Hint Sign:
   Pretty:
     Text: le {panneau d'indice du Village Zora}
   Cryptic:
-    Text: the {Zoras Domain panneau d'indice}
+    Text: l'enseigne de la {cité des eaux}
 
 Snowpeak Hint Sign:
   Standard:
@@ -9111,7 +9126,7 @@ Snowpeak Hint Sign:
   Pretty:
     Text: le {panneau d'indice des Pics Blancs}
   Cryptic:
-    Text: the {Snowpeak panneau d'indice}
+    Text: l'enseigne du {sommet enneigé}
 
 Gerudo Desert Hint Sign:
   Standard:
@@ -9119,7 +9134,7 @@ Gerudo Desert Hint Sign:
   Pretty:
     Text: le {panneau d'indice du Désert Gerudo}
   Cryptic:
-    Text: the {Gerudo Desert panneau d'indice}
+    Text: l'enseigne dans un {endroit isolé}
 
 Bulblin Camp Hint Sign:
   Standard:
@@ -9127,7 +9142,7 @@ Bulblin Camp Hint Sign:
   Pretty:
     Text: le {panneau d'indice du Camp Bulblin}
   Cryptic:
-    Text: the {Bulblin Camp panneau d'indice}
+    Text: l'enseigne du {camp de nomades}
 
 Forest Temple Hint Sign:
   Standard:
@@ -9135,7 +9150,7 @@ Forest Temple Hint Sign:
   Pretty:
     Text: le {panneau d'indice du Temple Sylvestre}
   Cryptic:
-    Text: the {Forest Temple panneau d'indice}
+    Text: l'enseigne de l'{ante boisé}
 
 Goron Mines Hint Sign:
   Standard:
@@ -9143,7 +9158,7 @@ Goron Mines Hint Sign:
   Pretty:
     Text: le {panneau d'indice de la Mine Goron}
   Cryptic:
-    Text: the {Mine Goron panneau d'indice}
+    Text: l'enseigne de l'{ante magmatique}
 
 Lakebed Temple Hint Sign:
   Standard:
@@ -9151,7 +9166,7 @@ Lakebed Temple Hint Sign:
   Pretty:
     Text: le {panneau d'indice du Temple Abyssal}
   Cryptic:
-    Text: the {Temple Abyssal panneau d'indice}
+    Text: l'enseigne de l'{ante submergé}
 
 Arbiters Grounds Hint Sign:
   Standard:
@@ -9159,7 +9174,7 @@ Arbiters Grounds Hint Sign:
   Pretty:
     Text: le {panneau d'indice de la Tour du Jugement}
   Cryptic:
-    Text: the {Tour du Jugement panneau d'indice}
+    Text: l'enseigne du {tribunal}
 
 Snowpeak Ruins Hint Sign:
   Standard:
@@ -9167,7 +9182,7 @@ Snowpeak Ruins Hint Sign:
   Pretty:
     Text: le {panneau d'indice des Ruines des Pics Blancs}
   Cryptic:
-    Text: the {Ruines des Pics Blancs panneau d'indice}
+    Text: l'enseigne de la {maison délabrée}
 
 Temple of Time First Hint Sign:
   Standard:
@@ -9175,7 +9190,7 @@ Temple of Time First Hint Sign:
   Pretty:
     Text: le {premier panneau d'indice du Temple du Temps}
   Cryptic:
-    Text: the {Temple du Temps First panneau d'indice}
+    Text: la première enseigne d'un {temps révolu}
 
 Temple of Time Second Hint Sign:
   Standard:
@@ -9183,7 +9198,7 @@ Temple of Time Second Hint Sign:
   Pretty:
     Text: le {deuxième panneau d'indice du Temple du Temps}
   Cryptic:
-    Text: the {Temple du Temps Second panneau d'indice}
+    Text: la seconde enseigne d'un {temps révolu}
 
 City in the Sky Hint Sign:
   Standard:
@@ -9191,7 +9206,7 @@ City in the Sky Hint Sign:
   Pretty:
     Text: le {panneau d'indice de Célestia}
   Cryptic:
-    Text: the {Célestia panneau d'indice}
+    Text: l'enseigne du {paradis}
 
 Palace of Twilight Hint Sign:
   Standard:
@@ -9199,7 +9214,7 @@ Palace of Twilight Hint Sign:
   Pretty:
     Text: le {panneau d'indice du Palais du Crépuscule}
   Cryptic:
-    Text: the {Palais du Crépuscule panneau d'indice}
+    Text: l'enseigne d'un {autre dimension}
 
 Hyrule Castle Hint Sign:
   Standard:
@@ -9207,7 +9222,7 @@ Hyrule Castle Hint Sign:
   Pretty:
     Text: le {panneau d'indice du Château d'Hyrule}
   Cryptic:
-    Text: the {Château d'Hyrule panneau d'indice}
+    Text: l'enseigne {royal}
 
 Cave of Ordeals Hint Sign:
   Standard:
@@ -9215,7 +9230,7 @@ Cave of Ordeals Hint Sign:
   Pretty:
     Text: le {panneau d'indice de la Caverne de l'Ordalie}
   Cryptic:
-    Text: the {Cave of Ordeals panneau d'indice}
+    Text: l'enseigne en amont d'un {grand défi}
 
 # HINT REGION NAMES
 Ordon:
@@ -9224,7 +9239,7 @@ Ordon:
   Pretty:
     Text: à {Toal}
   Cryptic:
-    Text: a {quaint village}
+    Text: un {village paisible}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9238,7 +9253,7 @@ Faron Woods:
   Pretty:
     Text: à la {forêt de Firone}
   Cryptic:
-    Text: a {forest}
+    Text: une {forêt}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9252,7 +9267,7 @@ Sacred Grove:
   Pretty:
     Text: au {Sanctuaire de la forêt}
   Cryptic:
-    Text: a {hidden grove}
+    Text: un {lieu sacré}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9266,7 +9281,7 @@ Faron Field:
   Pretty:
     Text: dans la {plaine de Firone}
   Cryptic:
-    Text: a {field near the forest}
+    Text: les {Landes}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9280,7 +9295,7 @@ Kakariko Gorge:
   Pretty:
     Text: au {Gorge de Cocorico}
   Cryptic:
-    Text: a {field with a large chasm}
+    Text: un {gros trou}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9294,7 +9309,7 @@ Kakariko Village:
   Pretty:
     Text: à {Cocorico}
   Cryptic:
-    Text: a {charming village}
+    Text: un {petit Village}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9308,7 +9323,7 @@ Kakariko Graveyard:
   Pretty:
     Text: au {cimetière de Cocorico}
   Cryptic:
-    Text: a {yard for the dead}
+    Text: là où {repose les défunts}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9322,7 +9337,7 @@ Death Mountain:
   Pretty:
     Text: à la {Montagne de la mort}
   Cryptic:
-    Text: a {volcano path}
+    Text: une {sacrée randonnée}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9336,7 +9351,7 @@ Eldin Field:
   Pretty:
     Text: dans la {plaine d'Ordinn - S}
   Cryptic:
-    Text: a {field near a volcano}
+    Text: la {plaine des sables}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9350,7 +9365,7 @@ North Eldin:
   Pretty:
     Text: dans la {plaine d'Ordinn - N}
   Cryptic:
-    Text: a {narrow gray field}
+    Text: un {couloir à ciel ouvert}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9364,7 +9379,7 @@ Hidden Village:
   Pretty:
     Text: au {Village Oublié}
   Cryptic:
-    Text: a {secluded settlement}
+    Text: le {Far West}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9378,7 +9393,8 @@ Lanayru Field:
   Pretty:
     Text: dans la {plaine de Lanelle}
   Cryptic:
-    Text: a {field with a river}
+    Text: les {prés salés}
+    Plurality: Plural
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9392,7 +9408,7 @@ Beside Castle Town:
   Pretty:
     Text: "{derrière la citadelle}"
   Cryptic:
-    Text: a {field beside a city}
+    Text: à l'{ombre du bourg}
 
 Castle Town:
   Standard:
@@ -9400,7 +9416,7 @@ Castle Town:
   Pretty:
     Text: à la {citadelle}
   Cryptic:
-    Text: a {city}
+    Text: le {bourg}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9414,7 +9430,7 @@ South of Castle Town:
   Pretty:
     Text: au {sud de la citadelle}
   Cryptic:
-    Text: a {field south of a city}
+    Text: le {parc du bourg}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9428,7 +9444,8 @@ Great Bridge of Hylia:
   Pretty:
     Text: au {Viaduc Hylia}
   Cryptic:
-    Text: a {path along a great bridge}
+# todo: le viaduc
+    Text:
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9442,7 +9459,7 @@ Lake Hylia:
   Pretty:
     Text: au {Lac Hylia}
   Cryptic:
-    Text: a {vast lake}
+    Text: un {grand plan d'eau}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9456,6 +9473,7 @@ Lanayru Spring:
   Pretty:
     Text: à la {Source de Lanelle}
   Cryptic:
+# todo: trouver un nom
     Text: a {cavernous spring}
   Template Overrides:
     - Keys:
@@ -9470,7 +9488,7 @@ Upper Zoras River:
   Pretty:
     Text: à la {Rivière Zora (Amont)}
   Cryptic:
-    Text: a {fork in the river}
+    Text: un {torrent}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9484,7 +9502,7 @@ Zoras Domain:
   Pretty:
     Text: au {Village Zora}
   Cryptic:
-    Text: the {home of a grand waterfall}
+    Text: la {cité des eaux}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9498,7 +9516,7 @@ South Gerudo Desert:
   Pretty:
     Text: au {Désert Gerudo - S}
   Cryptic:
-    Text: the {southern desert}
+    Text: le {début de nulle part}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9512,7 +9530,7 @@ North Gerudo Desert:
   Pretty:
     Text: au {Désert Gerudo - N}
   Cryptic:
-    Text: the {northern desert}
+    Text: la {fin de nulle part}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9526,7 +9544,7 @@ Bulblin Camp:
   Pretty:
     Text: au {Camp Bulblin}
   Cryptic:
-    Text: a {camp of enemies}
+    Text: un {camp de nomades}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9540,7 +9558,7 @@ Mirror Chamber:
   Pretty:
     Text: dans la {Chambre du Miroir}
   Cryptic:
-    Text: a {chamber of chains}
+    Text: le {Colisée}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9550,19 +9568,17 @@ Mirror Chamber:
 
 Snowpeak Mountain:
   Standard:
-    Text: Cimes enneigées
+    Text: Cime des Pics Blancs
   Pretty:
-    Text: aux {Cimes enneigées}
-    Plurality: Plural
+    Text: à la {Cime des Pics Blancs}
   Cryptic:
-    Text: a {snowy mountain}
+    Text: le {sommet enneigé}
   Template Overrides:
     - Keys:
         - Path Hint
         - Item Hint
       Standard:
-        Text: aux {Cimes enneigées}
-        Plurality: Plural
+        Text: à la {Cime des Pics Blancs}
 
 Forest Temple:
   Standard:
@@ -9570,7 +9586,7 @@ Forest Temple:
   Pretty:
     Text: dans le {Temple Sylvestre}
   Cryptic:
-    Text: a {deep forest}
+    Text: un {antre boisé}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9584,7 +9600,7 @@ Goron Mines:
   Pretty:
     Text: dans la {Mine Goron}
   Cryptic:
-    Text: a {volcanic mine}
+    Text: un {antre magmatique}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9598,7 +9614,7 @@ Lakebed Temple:
   Pretty:
     Text: dans le {Temple Abyssal}
   Cryptic:
-    Text: an {underground lake}
+    Text: un {antre submergé}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9612,7 +9628,7 @@ Arbiters Grounds:
   Pretty:
     Text: dans la {Tour du Jugement}
   Cryptic:
-    Text: an {ancient prison}
+    Text: un {tribunal}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9627,7 +9643,7 @@ Snowpeak Ruins:
     Text: aux {Ruines des Pics Blancs}
     Plurality: Plural
   Cryptic:
-    Text: a {snowy mansion}
+    Text: une {maison délabrée}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9642,7 +9658,7 @@ Temple of Time:
   Pretty:
     Text: dans le {Temple du Temps}
   Cryptic:
-    Text: the {past}
+    Text: un {temps révolu}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9656,8 +9672,7 @@ City in the Sky:
   Pretty:
     Text: à {Célestia}
   Cryptic:
-    Plurality: Plural
-    Text: the {skies above}
+    Text: le {paradis}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9671,7 +9686,7 @@ Palace of Twilight:
   Pretty:
     Text: dans {Palais du Crépuscule}
   Cryptic:
-    Text: "{another realm}"
+    Text: une {autre dimension}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9685,7 +9700,7 @@ Hyrule Castle:
   Pretty:
     Text: au {Château d'Hyrule}
   Cryptic:
-    Text: the {kingdom's castle}
+    Text: la {maison du Roi}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -9697,47 +9712,65 @@ Hyrule Castle:
 Diababa:
   Standard:
     Text: Dionéa
+  Cryptic:
+    Text: une {grosse fleur}
 
 Fyrus:
   Standard:
     Text: Magmaudit
+  Cryptic:
+    Text: un {caillou en feu}
 
 Morpheel:
   Standard:
     Text: Octolacanthe
+  Cryptic:
+    Text: un {petit poisson}
 
 Stallord:
   Standard:
     Text: Humbaba
+  Cryptic:
+    Text: un {crâne}
 
 Blizzeta:
   Standard:
     Text: Blizzarnia
+  Cryptic:
+    Text: un {lit très frais}
 
 Armogohma:
   Standard:
     Text: Golgohma
+  Cryptic:
+    Text: trop {de pattes}
 
 Argorok:
   Standard:
     Text: Pyrodactilus
+  Cryptic:
+    Text: un {oiseau}
 
 Zant:
   Standard:
     Text: Xanto
+  Cryptic:
+    Text: l'{usurpateur}
 
 Ganondorf:
   Standard:
     Text: Ganondorf
+  Cryptic:
+    Text: la {force}
 
 # HINT TEMPLATES
+# Todo: cryptic hint templates ?
 Path Hint:
   Standard:
     Text: <fast>File <regions> si tu veux tenir face à <goal name>.
 
 Barren Hint:
   Standard:
-    # Todo Does not seem to be displayed
     Text: <fast>Aller <region>? Ce serait vraiment stupide de ta part.
 
 Item Hint:

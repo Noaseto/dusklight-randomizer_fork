@@ -510,7 +510,9 @@
   Metadata:
     Name Lookup:
       - Coro Gate Key
-    Event Flag: 0x1A10
+    Switch Flag:
+      Stage: 45
+      Flag: 0x32
 
 - Name: Coro Bottle
   Original Item: Bottle with Lantern Oil

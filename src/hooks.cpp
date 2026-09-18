@@ -28,6 +28,7 @@
 #include "d/actor/d_a_mg_rod.h"
 #include "d/actor/d_a_npc4.h"
 #include "d/actor/d_a_npc_bans.h"
+#include "d/actor/d_a_npc_bouS.h"
 #include "d/actor/d_a_npc_fairy.h"
 #include "d/actor/d_a_npc_ks.h"
 #include "d/actor/d_a_npc_shad.h"
@@ -73,6 +74,7 @@ DEFINE_HOOK(&dSv_event_c::onEventBit, dSv_event_c__onEventBit);
 
 DEFINE_HOOK(&dComIfGs_isStageSwitch, isStageSwitch);
 
+DEFINE_HOOK(&dSv_memBit_c::isTbox, dSv_memBit_c__isTbox);
 DEFINE_HOOK(&dSv_memBit_c::isSwitch, dSv_memBit_c__isSwitch);
 DEFINE_HOOK(&dSv_memBit_c::onSwitch, dSv_memBit_c__onSwitch);
 DEFINE_HOOK(&dSv_memBit_c::onDungeonItem, dSv_memBit_c__onDungeonItem);
@@ -140,6 +142,8 @@ DEFINE_HOOK_SYMBOL("daKytag08_Execute", int(kytag08_class*), Kytag08_Execute);
 DEFINE_HOOK(&daNpcT_chkEvtBit, NpcT_chkEvtBit);
 DEFINE_HOOK(&daNpcF_chkEvtBit, NpcF_chkEvtBit);
 DEFINE_HOOK(&daNpcF_c::orderEvent, daNpcF_c__orderEvent);
+
+DEFINE_HOOK(&daNpcBouS_c::wait, daNpcBouS_c__wait);
 
 DEFINE_HOOK(&daNpc_Bans_c::isDelete, daNpc_Bans_c__isDelete);
 
@@ -516,6 +520,18 @@ HookAction hookPreIsStageSwitch(ModContext*, void* args, void* retval, void*) {
         (i_stageNo == 7 && i_no == 0x18)))   // Temple of Time Boss
     {
         out = dComIfGs_isStageBossEnemy();
+        return HOOK_SKIP_ORIGINAL;
+    }
+
+    return HOOK_CONTINUE;
+}
+
+bool g_InNpcBouSWait = false;
+HookAction hookPreMembitIsTbox(ModContext*, void* args, void* retval, void*) {
+    // Always return false when checking if the chest inside Bo's house is open when
+    // talking to him
+    if (getStageID() == Ordon_Village_Interiors && g_InNpcBouSWait && mods::arg<int>(args, 1) == 2) {
+        *static_cast<BOOL*>(retval) = FALSE;
         return HOOK_SKIP_ORIGINAL;
     }
 
@@ -2203,6 +2219,16 @@ HookAction hookPreNpcFChkEvtBit(ModContext*, void* args, void* retval, void*) {
     return HOOK_CONTINUE;
 }
 
+
+HookAction hookPreNpcBouSWait(ModContext*, void* args, void* retval, void*) {
+    g_InNpcBouSWait = true;
+    return HOOK_CONTINUE;
+}
+
+void hookPostNpcBouSWait(ModContext*, void* args, void* retval, void*) {
+    g_InNpcBouSWait = false;
+}
+
 HookAction hookPreNpcBansIsDelete(ModContext*, void* args, void* retval, void*) {
     daNpc_Bans_c* i_this = mods::arg<daNpc_Bans_c*>(args, 0);
 
@@ -3440,6 +3466,7 @@ ModResult initialize() {
 
     ADD_HOOK_PRE(isStageSwitch, hookPreIsStageSwitch);
 
+    ADD_HOOK_PRE(dSv_memBit_c__isTbox, hookPreMembitIsTbox);
     ADD_HOOK_PRE(dSv_memBit_c__isSwitch, hookPreMembitIsSwitch);
     ADD_HOOK_PRE(dSv_memBit_c__onSwitch, hookPreMembitOnSwitch);
     ADD_HOOK_PRE(dSv_memBit_c__onDungeonItem, hookPreOnDungeonItem);
@@ -3504,6 +3531,9 @@ ModResult initialize() {
     ADD_HOOK_PRE(NpcT_chkEvtBit, hookPreNpcTChkEvtBit);
     ADD_HOOK_PRE(NpcF_chkEvtBit, hookPreNpcFChkEvtBit);
     ADD_HOOK_PRE(daNpcF_c__orderEvent, hookPreNpcFOrderEvent);
+
+    ADD_HOOK_PRE(daNpcBouS_c__wait, hookPreNpcBouSWait);
+    ADD_HOOK_POST(daNpcBouS_c__wait, hookPostNpcBouSWait);
 
     ADD_HOOK_PRE(daNpc_Bans_c__isDelete, hookPreNpcBansIsDelete);
 
@@ -3594,6 +3624,7 @@ ModResult uninstall() {
 
     mods::hook::uninstall<isStageSwitch>(svc_hook);
 
+    mods::hook::uninstall<dSv_memBit_c__isTbox>(svc_hook);
     mods::hook::uninstall<dSv_memBit_c__isSwitch>(svc_hook);
     mods::hook::uninstall<dSv_memBit_c__onSwitch>(svc_hook);
     mods::hook::uninstall<dSv_memBit_c__onDungeonItem>(svc_hook);
@@ -3653,6 +3684,8 @@ ModResult uninstall() {
     mods::hook::uninstall<NpcT_chkEvtBit>(svc_hook);
     mods::hook::uninstall<NpcF_chkEvtBit>(svc_hook);
     mods::hook::uninstall<daNpcF_c__orderEvent>(svc_hook);
+
+    mods::hook::uninstall<daNpcBouS_c__wait>(svc_hook);
 
     mods::hook::uninstall<daNpc_Bans_c__isDelete>(svc_hook);
 

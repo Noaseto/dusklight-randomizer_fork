@@ -12,19 +12,31 @@
 #   Great Fairy Reward in the english yaml for an example.
 
 # SPÉCIFICITÉS FRANÇAISES :
-# - Aucune traduction "Cryptic" n'a été faite pour le moment (s'il y a des champs modifiés, c'est du search and
-#   replace)
+# - la majorité des "Cryptic" a été faite. Il manque les free standing rupees, les coffres, les poes, peut-être les
+#   HINTS, c'était pas proposé atm, et ça va dépendre de comment la gestion cryptique est implémenté, standby pour ça
 # - J'ai utilisé ce site https://fr.zeldawiki.wiki/wiki/Traductions_de_Twilight_Princess/Tout pour les traductions
 #   mais dans certains cas, elles sont incorrectes, comme pour le village zora au lieu du domaine zora, j'ai vérifié
 #   dans ma partie pour être sûre
 # - Les traductions pour les freestanding rupees et les rubis sous les rochers ne me plaisent que moyennement
 # - Ce sont des propositions de traductions, si vous voulez les éditer ou modifier complètement allez-y sans aucun
 #   problème :>
+# - Note:
+#     * Les gorons roulent les R et en mettent 2.
+#     * J'ai voulu garder le côté mesquin de Midna dans ses dialogues lorsqu'elle donne des indices.
+#       (Si traduction cryptiques de midna, j'aimerais lui donner un air encore plus pédant
+#       ou alors extrêmement enfantin)
+#     * Pour les phrases des PNJ, je les ai rendu (ou dois les rendre) pour la plupart neutre en genre bien que ce
+#       soit possible, donc "Tu le veux?" -> "Tu veux?" J'espère que ça ne jure pas trop à l'oreille.
+#     * Bien qu'en Français on doit mettre un espace avant la ponctuation, la largeur de la police sur GC ne le
+#       permettait pas, j'ai donc gardé le style de la console.
+#     * Pour les traductions cryptiques, j'ai essayé (je voudrais autant que possible) garder une cohérence tout du
+#       long et ne pas nommer le même lieu avec 2 synonymes différents.
 #
 # todo: revoir la géographie du Désert Gerudo, j'ai mis Désert Gerudo à la fin partout, c'est pas correct
 #       par exemple, coffre du nord-ouest derrière les barrières du Désert Gerudo
 # todo les trads des salles de donjons sont pas folichones :/
-#
+# todo préciser en commentaire des cryptiques d'où viennent les réfs si trop obscurs (les changer?)
+# plein de todo un peu partout
 #
 # TODO: these will not stay, they are there while creating the cryptic messages as a memo
 # Lieux cryptiques :
@@ -49,6 +61,7 @@
 # un petit village
 #
 # Kakariko Graveyard: cimetière de Cocorico
+# là où reposent les défunts
 #
 # Death Mountain: Montagne de la mort
 # un volcan
@@ -4891,7 +4904,7 @@ Kakariko Graveyard Golden Wolf:
   Pretty:
     Text: le {loup dorée du cimetière de Cocorico}
   Cryptic:
-    Text: la bête aurifère là où {repose les défunts}
+    Text: la bête aurifère là où {reposent les défunts}
 
 Kakariko Graveyard Open Poe:
   Standard:
@@ -9011,7 +9024,7 @@ Kakariko Graveyard Hint Sign:
   Pretty:
     Text: le {panneau d'indice du cimetière de Cocorico}
   Cryptic:
-    Text: l'enseigne là où {repose les défunts}
+    Text: l'enseigne là où {reposent les défunts}
 
 Eldin Field Hint Sign:
   Standard:
@@ -9323,7 +9336,7 @@ Kakariko Graveyard:
   Pretty:
     Text: au {cimetière de Cocorico}
   Cryptic:
-    Text: là où {repose les défunts}
+    Text: là où {reposent les défunts}
   Template Overrides:
     - Keys:
         - Path Hint
@@ -10230,7 +10243,6 @@ Kakariko Malo Mart Hawkeye After Purchase Text Template:
   Standard:
     Text: |-
       <Item Pretty Name> que tu as acheté était mon dernier exemplaire...
-#     Todo les Pretty name commençant pas "un-e" à template override pas le-la (voir Fragment de cœur)
 
 Kakariko Malo Mart Red Potion Too Expensive Text Template:
   Standard:

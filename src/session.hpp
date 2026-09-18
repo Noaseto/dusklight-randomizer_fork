@@ -32,6 +32,7 @@ struct ServiceManager {
     const MessageService* message;
     const GameModeService* game_mode;
     const TextureService* texture;
+    const FileService* file;
 };
 
 extern ServiceManager svc_mng;

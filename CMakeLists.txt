@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 23)
 if (CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
     # Fetch dusklight if we are invoking this as the root CMakeLists.txt
     if (NOT DUSKLIGHT_VERSION)
-        set(DUSKLIGHT_VERSION "bc32702cb45a13b237aa01e28fd8b5fd22bd3f87")
+        set(DUSKLIGHT_VERSION "af7fc55a413e22b873c7b0b0522c454dbe400d27")
     endif ()
     include("${CMAKE_CURRENT_SOURCE_DIR}/cmake/FetchDusklight.cmake")
     option(DUSK_MOD_USE_FULL_TREE "Use full build instead of the minimal mod SDK" OFF)
@@ -118,7 +118,7 @@ foreach (RANDOMIZER_FILE IN LISTS RANDOMIZER_DATA)
 endforeach ()
 
 # Versioning
-set(RANDOMIZER_VERSION "1.0.1")
+set(RANDOMIZER_VERSION "1.0.2")
 find_package(Git QUIET)
 if(GIT_FOUND)
     execute_process(

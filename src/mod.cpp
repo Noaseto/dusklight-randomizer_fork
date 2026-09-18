@@ -1,10 +1,8 @@
 #include "mods/service.hpp"
 #include "mods/svc/log.h"
 
-#include "hooks.hpp"
 #include "item.hpp"
 #include "session.hpp"
-#include "ui/ui.hpp"
 
 DEFINE_MOD();
 IMPORT_SERVICE(HostService, svc_host);
@@ -20,6 +18,7 @@ IMPORT_SERVICE(FlowService, svc_flow);
 IMPORT_SERVICE(MessageService, svc_message);
 IMPORT_SERVICE(GameModeService, svc_game_mode);
 IMPORT_SERVICE(TextureService, svc_texture);
+IMPORT_SERVICE(FileService, svc_file);
 
 extern "C" {
 
@@ -39,6 +38,7 @@ MOD_EXPORT ModResult mod_initialize(ModError* error) {
         svc_message,
         svc_game_mode,
         svc_texture,
+        svc_file,
     });
     if (result != MOD_OK) {
         return mods::set_error(error, result, "failed to initialize session");

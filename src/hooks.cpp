@@ -198,6 +198,7 @@ DEFINE_HOOK(&dMenu_Ring_c::_draw, dMenu_Ring_c__draw);
 DEFINE_HOOK(&dMenu_Ring_c::setActiveCursor, dMenu_Ring_c__setActiveCursor);
 DEFINE_HOOK(&dMenu_Ring_c::getItemMaxNum, dMenu_Ring_c__getItemMaxNum);
 DEFINE_HOOK(&dMenu_Ring_c::getItemNum, dMenu_Ring_c__getItemNum);
+DEFINE_HOOK(&dMenu_Ring_c::openExplain, dMenu_Ring_c__openExplain);
 
 DEFINE_HOOK(&daItem_c::CreateInit, daItem_c__CreateInit);
 DEFINE_HOOK(&daItem_c::itemActionForBoomerang, daItem_c__itemActionForBoomerang);
@@ -2719,6 +2720,21 @@ HookAction hookPreMenuRingDraw(ModContext*, void* args, void*, void*) {
     textbox.setGradColor(white);
     textbox.draw(menuRing->mCenterPosX + 465.f, menuRing->mCenterPosY + 157.f);
 
+    if (menuRing->mItemSlots[menuRing->mCurrentSlot] == 0x15 && getWarashibeItemCount() >= 2) {
+        // Create the quest item toggle text
+        J2DTextBox questItemTextbox;
+        JUtility::TColor white(255, 255, 255, 255);
+        questItemTextbox.setFont(itemWheelTextFont);
+        questItemTextbox.setFontSize(16.f, 16.f);
+        questItemTextbox.setLineSpace(16.f);
+        questItemTextbox.setString(getTextStr("Quest Item Switch Toggle Text",
+            Text::STANDARD,
+            static_cast<Text::Language>(getCurrentLanguage())).c_str());
+        questItemTextbox.setCharColor(white);
+        questItemTextbox.setGradColor(white);
+        questItemTextbox.draw(menuRing->mCenterPosX + 465.f, menuRing->mCenterPosY + 257.f);
+    }
+
     return HOOK_CONTINUE;
 }
 
@@ -2862,7 +2878,7 @@ void hookPostMenuRingSetActiveCursor(ModContext*, void* args, void*, void*) {
         // And add our conditional onto the end
         else if (menuRing->mItemSlots[menuRing->mCurrentSlot] == 0x15) {
             // Allow switching quest items if dpad right is pressed
-            if (mDoCPd_c::getTrigRight(PAD_1)) {
+            if (mDoCPd_c::getTrigRight(PAD_1) || mDoCPd_c::getTrigA(PAD_1)) {
                 setNextWarashibeItem();
                 // Update slot image
                 for (int i = 0; i < menuRing->mTotalItemTexToAlloc; i++) {
@@ -2925,6 +2941,26 @@ void hookPostMenuRingGetItemNum(ModContext*, void* args, void* retval, void*) {
     default:
         break;
     }
+}
+
+HookAction hookPreMenuRingOpenExplain(ModContext*, void* args, void* retval, void*) {
+    auto itemId = mods::arg<u8>(args, 1);
+
+    static std::set<u8> questItems = {
+        dItemNo_Randomizer_LETTER_e,
+        dItemNo_Randomizer_BILL_e,
+        dItemNo_Randomizer_WOOD_STATUE_e,
+        dItemNo_Randomizer_IRIAS_PENDANT_e,
+        dItemNo_Randomizer_HORSE_FLUTE_e,
+    };
+
+    // Don't display item info for quest items so we can use A to switch between them
+    if (questItems.contains(itemId)) {
+        *static_cast<u8*>(retval) = 0;
+        return HOOK_SKIP_ORIGINAL;
+    }
+
+    return HOOK_CONTINUE;
 }
 
 void hookPostItemCreateInit(ModContext*, void* args, void*, void*) {
@@ -3521,6 +3557,7 @@ ModResult initialize() {
     ADD_HOOK_POST(dMenu_Ring_c__setActiveCursor, hookPostMenuRingSetActiveCursor);
     ADD_HOOK_POST(dMenu_Ring_c__getItemMaxNum, hookPostMenuRingGetItemMaxNum);
     ADD_HOOK_POST(dMenu_Ring_c__getItemNum, hookPostMenuRingGetItemNum);
+    ADD_HOOK_PRE(dMenu_Ring_c__openExplain, hookPreMenuRingOpenExplain);
 
     ADD_HOOK_POST(daItem_c__CreateInit, hookPostItemCreateInit);
     ADD_HOOK_PRE(daItem_c__itemActionForBoomerang, hookPreItemActionForBoomerang)
@@ -3660,6 +3697,7 @@ ModResult uninstall() {
     mods::hook::uninstall<dMenu_Ring_c__setActiveCursor>(svc_hook);
     mods::hook::uninstall<dMenu_Ring_c__getItemMaxNum>(svc_hook);
     mods::hook::uninstall<dMenu_Ring_c__getItemNum>(svc_hook);
+    mods::hook::uninstall<dMenu_Ring_c__openExplain>(svc_hook);
 
     mods::hook::uninstall<daItem_c__CreateInit>(svc_hook);
     mods::hook::uninstall<daItem_c__itemActionForBoomerang>(svc_hook);

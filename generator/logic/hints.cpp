@@ -86,7 +86,7 @@ namespace randomizer::logic::hints {
 
                     std::vector<Text> agithaItemTexts{};
                     for (const auto& [item, count] : agithaItems) {
-                        auto itemText = getTextObjectForTemplate(item->GetName(), Text::PRETTY, textTemplate);
+                        auto itemText = getTextObjectForTemplate(item->GetName(), Text::STANDARD, textTemplate);
                         if (count > 1) {
                             auto counterText = getTextObject("Agithas Castle Counter Text");
                             counterText.Replace("<Item>", itemText);

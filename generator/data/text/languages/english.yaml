@@ -8151,6 +8151,13 @@ Dungeon Item Additional Info Text:
       additional
       data
 
+Quest Item Switch Toggle Text:
+  Standard:
+    Text: |-
+      Press A
+      to switch
+      quest items
+
 Dungeon Item Inventory Text:
   Standard:
     Text: |-

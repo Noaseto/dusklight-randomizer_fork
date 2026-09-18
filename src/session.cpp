@@ -224,7 +224,7 @@ bool activateSeed(const char* hash) {
     svc_mng.item->set_check_resolver(mod_ctx, nullptr, resolve_check, nullptr, &s_check_resolver);
     svc_mng.item->observe_gives(mod_ctx, observe_give, nullptr, &s_check_observer);
 
-    registerStageEdits();    
+    registerStageEdits();
     mods::log::info("activated seed {}", ctx.mHash);
     g_seedActivated = true;
     return true;
@@ -503,12 +503,12 @@ ModResult onGameModeUpdate(void*, ModError*) {
 ModResult initialize(const ServiceManager& services) {
     svc_mng = services;
 
-    const ModResult messageResult = messages::initialize();
-    if (messageResult != MOD_OK) {
-        return messageResult;
+    auto result = messages::initialize();
+    if (result != MOD_OK) {
+        return result;
     }
 
-    const GameModeDesc gameModeDesc = {
+    constexpr GameModeDesc gameModeDesc{
         .struct_size = sizeof(GameModeDesc),
         .game_mode_id = "randomizer",
         .full_name = "Randomizer",
@@ -520,8 +520,19 @@ ModResult initialize(const ServiceManager& services) {
         .on_new_save = onNewSave,
         .on_tick = onGameModeUpdate,
     };
-    svc_mng.game_mode->register_game_mode(mod_ctx, &gameModeDesc);
-    return MOD_OK;
+    result = svc_game_mode->register_game_mode(mod_ctx, &gameModeDesc);
+    if (result != MOD_OK) {
+        return result;
+    }
+
+    UiModsPanelDesc panelDesc = UI_MODS_PANEL_DESC_INIT;
+    panelDesc.build = [](ModContext* ctx, UiElementHandle pane, void*, ModError*) -> ModResult {
+        return svc_ui->pane_add_text(ctx, pane,
+            "To play, select \"Randomizer\" from the Dusklight menu, then create a new save.",
+            nullptr);
+    };
+    result = svc_ui->register_mods_panel(mod_ctx, &panelDesc);
+    return result;
 }
 
 void update() {

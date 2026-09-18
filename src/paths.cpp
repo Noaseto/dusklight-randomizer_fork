@@ -10,7 +10,7 @@ std::filesystem::path GetRandomizerPath() {
         session::svc_mng.host->fail(session::svc_mng.mod_ctx, MOD_ERROR, "Failed to get data directory");
     }
 
-    return dataDir;
+    return reinterpret_cast<const char8_t*>(dataDir);
 }
 
 std::filesystem::path GetRandomizerSettingsPath() {

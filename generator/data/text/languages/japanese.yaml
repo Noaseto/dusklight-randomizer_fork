@@ -8113,6 +8113,13 @@ Dungeon Item Additional Info Text:
       Sボタン押すと
       情報が表示される
 
+Quest Item Switch Toggle Text:
+  Standard:
+    Text: |-
+      Press A
+      to switch
+      quest items
+
 Dungeon Item Inventory Text:
   Standard:
     Text: |-

@@ -2019,6 +2019,10 @@ Asheis Sketch:
     Text: un {dessin terrifiant}
   Template Overrides:
     - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: le Croquis du yéti
+    - Keys:
         - Castle Town Goron Red Potion Confirmation Initial Text Template
         - Castle Town Goron Red Potion Confirmation Later Text Template
         - Castle Town Goron Lantern Oil Confirmation Initial Text Template
@@ -3553,6 +3557,10 @@ Goron Mines Key Shard:
   Cryptic:
     Text: le {tiers d'une clé}
   Template Overrides:
+    - Keys:
+        - Agithas Castle Some Items Sign Text
+      Pretty:
+        Text: un Fragment de clé de la Mine Goron
     - Keys:
         - Kakariko Malo Mart Hawkeye After Purchase Text Template
         - Kakariko Malo Mart Hylian Shield After Purchase Text Template
@@ -9227,7 +9235,7 @@ Palace of Twilight Hint Sign:
   Pretty:
     Text: le {panneau d'indice du Palais du Crépuscule}
   Cryptic:
-    Text: l'enseigne d'un {autre dimension}
+    Text: l'enseigne d'une {autre dimension}
 
 Hyrule Castle Hint Sign:
   Standard:
@@ -9257,6 +9265,7 @@ Ordon:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: à {Toal}
 
@@ -9271,6 +9280,7 @@ Faron Woods:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: à la {forêt de Firone}
 
@@ -9285,6 +9295,7 @@ Sacred Grove:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: au {Sanctuaire de la forêt}
 
@@ -9299,6 +9310,7 @@ Faron Field:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: dans la {plaine de Firone}
 
@@ -9313,6 +9325,7 @@ Kakariko Gorge:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: au {Gorge de Cocorico}
 
@@ -9327,6 +9340,7 @@ Kakariko Village:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: à {Cocorico}
 
@@ -9341,6 +9355,7 @@ Kakariko Graveyard:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: au {cimetière de Cocorico}
 
@@ -9355,6 +9370,7 @@ Death Mountain:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: à la {Montagne de la mort}
 
@@ -9369,6 +9385,7 @@ Eldin Field:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: dans la {plaine d'Ordinn - S}
 
@@ -9383,6 +9400,7 @@ North Eldin:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: dans la {plaine d'Ordinn - N}
 
@@ -9397,6 +9415,7 @@ Hidden Village:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: au {Village Oublié}
 
@@ -9412,6 +9431,7 @@ Lanayru Field:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: dans la {plaine de Lanelle}
 
@@ -9434,6 +9454,7 @@ Castle Town:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: à la {citadelle}
 
@@ -9448,6 +9469,7 @@ South of Castle Town:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: au {sud de la citadelle}
 
@@ -9463,6 +9485,7 @@ Great Bridge of Hylia:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: au {Viaduc Hylia}
 
@@ -9477,6 +9500,7 @@ Lake Hylia:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: au {Lac Hylia}
 
@@ -9492,6 +9516,7 @@ Lanayru Spring:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: à la {Source de Lanelle}
 
@@ -9506,6 +9531,7 @@ Upper Zoras River:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: à la {Rivière Zora (Amont)}
 
@@ -9520,6 +9546,7 @@ Zoras Domain:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: au {Village Zora}
 
@@ -9534,6 +9561,7 @@ South Gerudo Desert:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: au {Désert Gerudo - S}
 
@@ -9548,6 +9576,7 @@ North Gerudo Desert:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: au {Désert Gerudo - N}
 
@@ -9562,6 +9591,7 @@ Bulblin Camp:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: au {Camp Bulblin}
 
@@ -9576,6 +9606,7 @@ Mirror Chamber:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: dans la {Chambre du Miroir}
 
@@ -9590,6 +9621,7 @@ Snowpeak Mountain:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: à la {Cime des Pics Blancs}
 
@@ -9604,6 +9636,7 @@ Forest Temple:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: dans le {Temple Sylvestre}
 
@@ -9618,6 +9651,7 @@ Goron Mines:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: dans la {Mine Goron}
 
@@ -9632,6 +9666,7 @@ Lakebed Temple:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: dans le {Temple Abyssal}
 
@@ -9646,6 +9681,7 @@ Arbiters Grounds:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: dans la {Tour du Jugement}
 
@@ -9661,6 +9697,7 @@ Snowpeak Ruins:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: aux {Ruines des Pics Blancs}
         Plurality: Plural
@@ -9676,6 +9713,7 @@ Temple of Time:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: dans le {Temple du Temps}
 
@@ -9690,6 +9728,7 @@ City in the Sky:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: à {Célestia}
 
@@ -9704,6 +9743,7 @@ Palace of Twilight:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: dans {Palais du Crépuscule}
 
@@ -9718,6 +9758,7 @@ Hyrule Castle:
     - Keys:
         - Path Hint
         - Item Hint
+        - Barren Hint
       Standard:
         Text: au {Château d'Hyrule}
 
@@ -9780,19 +9821,22 @@ Ganondorf:
 # Todo: cryptic hint templates ?
 Path Hint:
   Standard:
+    # Midna, goal name is a boss name
     Text: <fast>File <regions> si tu veux tenir face à <goal name>.
 
 Barren Hint:
   Standard:
-    Text: <fast>Aller <region>? Ce serait vraiment stupide de ta part.
+    # hint signs
+    Text: <fast>On raconte que les gens qui savent ce qu'ils font ne vont pas <region>.
 
 Item Hint:
   Standard:
+    # Midna
     Text: <fast><Item Pretty or Cryptic Name> se |trouve/trouvent| <regions>.
 
 Location Hint:
   Standard:
-    # todo les réceptacle de cœur de boss, et revoir la phrase pour coller au style de midna
+    # hint signs
     Text: <fast>On raconte que |la récompense <Location Pretty or Cryptic Name> est/les récompenses <Location Pretty or Cryptic Name> sont| <Item Pretty or Cryptic Name>.
 
 # NO REQUIRED DUNGEON TEXT
@@ -10185,12 +10229,12 @@ Slingshot Shop Text Template:
 Slingshot Shop Too Expensive Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> coûte <purple>30 rubis<white>. Si tu veux, il faut payer.
+      <Item Pretty Name> |coûte/coûtent| <purple>30 rubis<white>. Si tu veux, il faut payer.
 
 Slingshot Shop Purchase Confirmation Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> coûte <purple>30 rubis<white>. Tu veux?<begin choice>
+      <Item Pretty Name> |coûte/coûtent| <purple>30 rubis<white>. Tu veux?<begin choice>
 
 Slingshot Shop After Purchase Text Template:
   Standard:
@@ -10205,54 +10249,54 @@ Barnes Special Offer Text Template:
 Kakariko Malo Mart Wooden Shield Purchase Confirmation Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> est à <purple>50 rubis<white>.
+      <Item Pretty Name> |est/sont| à <purple>50 rubis<white>.
       tu veux?<begin choice>
 
 Kakariko Malo Mart Wooden Shield Too Expensive Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> est à <purple>50 rubis<white>. Ne crois pas que je te ferai un prix tout ça parce qu'on vient du même patelin!
+      <Item Pretty Name> |est/sont| à <purple>50 rubis<white>. Ne crois pas que je te ferai un prix tout ça parce qu'on vient du même patelin!
 
 Kakariko Malo Mart Hylian Shield Purchase Confirmation Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> fait <purple>200 rubis<white>. Tu achètes?<begin choice>
+      <Item Pretty Name> |fait/font| <purple>200 rubis<white>. Tu achètes?<begin choice>
 
 Kakariko Malo Mart Hylian Shield Too Expensive Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> fait <purple>200 rubis<white>, et tu n'as pas 200 rubis... Ne crois pas que je te ferai un prix tout ça parce qu'on vient du même patelin!
+      <Item Pretty Name> |fait/font| <purple>200 rubis<white>, et tu n'as pas 200 rubis... Ne crois pas que je te ferai un prix tout ça parce qu'on vient du même patelin!
 
 Kakariko Malo Mart Hylian Shield After Purchase Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> que tu as acheté était mon dernier en stock. Prends-en soin...
+      <Item Pretty Name> |finit/finissent| mon stock. Prends-en soin...
 
 Kakariko Malo Mart Hawkeye Purchase Confirmation Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> coûte <purple>100 rubis<white>,
+      <Item Pretty Name> |coûte/coûtent| <purple>100 rubis<white>,
       tu veux?<begin choice>
 
 Kakariko Malo Mart Hawkeye Too Expensive Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> coûte <purple>100 rubis<white>, ne crois pas que je te ferai un prix.
+      <Item Pretty Name> |coûte/coûtent| <purple>100 rubis<white>, ne crois pas que je te ferai un prix.
 
 Kakariko Malo Mart Hawkeye After Purchase Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> que tu as acheté était mon dernier exemplaire...
+      <Item Pretty Name>... Je n'en n'ai plus d'exemplaire|/s|...
 
 Kakariko Malo Mart Red Potion Too Expensive Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> coûte <purple>30 rubis<white>, et la maison ne fait pas crédit...
+      <Item Pretty Name> |coûte/coûtent| <purple>30 rubis<white>, et la maison ne fait pas crédit...
 
 Kakariko Malo Mart Red Potion Purchase Confirmation Text Template:
   Standard:
     Text: |-
-      <Item Pretty Name> coûte <purple>30 rubis<white>, tu veux?<begin choice>
+      <Item Pretty Name> |coûte/coûtent| <purple>30 rubis<white>, tu veux?<begin choice>
 
 Kakariko Malo Mart Red Potion Text Template:
   Standard:
@@ -10322,7 +10366,7 @@ Castle Town Malo Mart Magic Armor Sold Out Text Template:
   Standard:
     Text: |-
       <Item Standard Name>
-      Cet objet est en rupture de stock
+      |Cet objet est/Ces objets sont| en rupture de stock
       *Production arrêtée définitivement
 
 Charlo Donation Choice Text:

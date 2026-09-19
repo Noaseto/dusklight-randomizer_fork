@@ -635,16 +635,16 @@ ModResult buildSeedDialogPane(ModContext* ctx, UiElementHandle pane, void* user_
 
     for (auto& seedHash : g_seedHashes) {
         // Append the file a seed is being used on to the hash in this dialog
-        auto originalHash = seedHash;
+        auto adjustedHash = seedHash;
         for (size_t fileNum = 0; fileNum < 3; ++fileNum) {
             auto& fileHash = fileHashes[fileNum];
-            if (originalHash == fileHash) {
-                seedHash += " (File " + std::to_string(fileNum + 1) + ')';
+            if (seedHash == fileHash) {
+                adjustedHash += " (File " + std::to_string(fileNum + 1) + ')';
             }
         }
 
         ModResult rt = add_button(pane,
-            seedHash.c_str(),
+            adjustedHash.c_str(),
             "",
             on_pressed,
             is_disabled,

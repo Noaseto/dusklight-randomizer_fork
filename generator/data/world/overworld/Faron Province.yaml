@@ -397,7 +397,7 @@
   Exits:
     Faron Field Behind Boulder: Can_Use_Hot_Spring_Water and 'Can_Access_Outside_Castle_Town_South'
     Kakariko Gorge: Nothing
-    Lake Hylia Bridge: Gate_Keys or Small_Keys == Keysy
+    Lake Hylia Bridge South: Gate_Keys or Small_Keys == Keysy
     Faron Field Corner Grotto: Can_Dig
     Faron Field Fishing Grotto: Can_Dig
     South Faron Woods: Nothing

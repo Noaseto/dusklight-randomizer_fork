@@ -2602,7 +2602,7 @@
 
 - Type: Overworld
   Forward:
-    Connection: Outside Castle Town West -> Lake Hylia Bridge
+    Connection: Outside Castle Town West -> Lake Hylia Bridge North
     Stage: 56
     Room: 12
     Spawn: 1
@@ -2610,7 +2610,7 @@
     Parameters: "F01F"
     State: -1
   Return:
-    Connection: Lake Hylia Bridge -> Outside Castle Town West
+    Connection: Lake Hylia Bridge North -> Outside Castle Town West
     Stage: 57
     Room: 8
     Spawn: 2
@@ -2800,7 +2800,7 @@
 
 - Type: Overworld
   Forward:
-    Connection: Lake Hylia Bridge -> Flight by Fowl
+    Connection: Lake Hylia Bridge North -> Flight by Fowl
     Stage: 52
     Room: 0
     Spawn: 8
@@ -2808,7 +2808,7 @@
     Parameters: "F09F"
     State: -1
   Return:
-    Connection: Flight by Fowl -> Lake Hylia Bridge
+    Connection: Flight by Fowl -> Lake Hylia Bridge North
     Stage: 56
     Room: 13
     Spawn: 1

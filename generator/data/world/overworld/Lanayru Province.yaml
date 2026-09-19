@@ -79,7 +79,7 @@
     Lanayru Field North Spinner Track Boulder Rupee: Can_Smash
     Lanayru Field South Spinner Track Boulder Rupee: Can_Smash
   Exits:
-    Lake Hylia Bridge: Can_Smash
+    Lake Hylia Bridge North: Can_Smash
     Lanayru Field: Can_Smash
 
 # OUTSIDE CASTLE TOWN WEST
@@ -103,7 +103,7 @@
   Exits:
     Outside Castle Town West Grotto Ledge: Clawshot
     Castle Town West: Nothing
-    Lake Hylia Bridge: Nothing
+    Lake Hylia Bridge North: Nothing
     Lanayru Field: Nothing
 
 - Name: Outside Castle Town West Grotto Ledge
@@ -452,7 +452,7 @@
 
 # LAKE HYLIA BRIDGE
 
-- Name: Lake Hylia Bridge
+- Name: Lake Hylia Bridge North
   Map Sector: Lanayru Province
   Region: Great Bridge of Hylia
   Twilight: Lanayru
@@ -460,18 +460,29 @@
   Locations:
     Lake Hylia Bridge Vines Chest: Clawshot
     Lake Hylia Bridge Owl Statue Chest: Clawshot and Restored_Dominion_Rod
-    Lake Hylia Bridge Faron Boulder Rupee: Can_Smash
     Lake Hylia Bridge Owl Statue Boulder Rupee: Can_Smash
     Lake Hylia Bridge Owl Statue Sky Character: Clawshot and Restored_Dominion_Rod
     Lake Hylia Bridge Male Mantis: Clawshot or Gale_Boomerang
-    Lake Hylia Bridge Female Mantis: Clawshot or Gale_Boomerang
     Lake Hylia Bridge Hint Sign: Clawshot
   Exits:
-    Lake Hylia Bridge Grotto Ledge: Can_Launch_Bombs and Clawshot
+    Lake Hylia Bridge South: Not_Twilight
     Hyrule Field Near Spinner Rails: Can_Smash
     Flight by Fowl: Can_Open_Doors
-    Faron Field: Gate_Keys or Small_Keys == Keysy
     Outside Castle Town West: Nothing
+    Lake Hylia: Twilight
+
+- Name: Lake Hylia Bridge South
+  Map Sector: Lanayru Province
+  Region: Great Bridge of Hylia
+  Twilight: Lanayru
+  Can Warp: True
+  Locations:
+    Lake Hylia Bridge Faron Boulder Rupee: Can_Smash and Not_Twilight
+    Lake Hylia Bridge Female Mantis: Not_Twilight and (Clawshot or Gale_Boomerang)
+  Exits:
+    Lake Hylia Bridge North: Not_Twilight
+    Lake Hylia Bridge Grotto Ledge: Not_Twilight and Can_Launch_Bombs and Clawshot
+    Faron Field: Gate_Keys or Small_Keys == Keysy
     Lake Hylia: Twilight
 
 - Name: Lake Hylia Bridge Grotto Ledge
@@ -480,11 +491,12 @@
   Twilight: Lanayru
   Can Warp: True
   Locations:
-    Lake Hylia Bridge Cliff Chest: Nothing
+    Lake Hylia Bridge Cliff Chest: Not_Twilight
     Lake Hylia Bridge Cliff Poe: Can_Use_Senses and Can_Complete_MDH and Can_Complete_All_Twilight
   Exits:
-    Lake Hylia Bridge Bubble Grotto: Can_Dig
-    Lake Hylia Bridge: Nothing
+    Lake Hylia Bridge Bubble Grotto: Not_Twilight and Can_Dig
+    Lake Hylia Bridge South: Not_Twilight
+    Lake Hylia: Twilight
 
 - Name: Lake Hylia Bridge Bubble Grotto
   Locations:
@@ -602,7 +614,7 @@
     Lake Hylia Hint Sign: Nothing
   Exits:
     Lake Hylia Shell Blade Grotto Ledge: Can_Talk_to_Humans and 'Can_Farm_Rupees'
-    Lake Hylia Bridge: Can_Open_Doors
+    Lake Hylia Bridge North: Can_Open_Doors
     Lake Hylia: Can_Talk_to_Humans
 
 - Name: Lake Hylia Shell Blade Grotto Ledge

@@ -1888,6 +1888,11 @@ ModResult buildPlayTab(ModContext* ctx, UiWindowHandle, UiElementHandle leftPane
 
 // Function to call for pre-loading excluded location catalog when selecting randomizer game mode
 void load_excluded_locations() {
+    // Mutex so that we can pre-load excluded locations on a different thread when the randomizer
+    // is selected.
+    static std::mutex excludedLocationsMutex{};
+    std::lock_guard lock{excludedLocationsMutex};
+
     excluded_location_catalog(true);
 }
 

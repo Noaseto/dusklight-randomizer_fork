@@ -2040,7 +2040,7 @@ F_SP115:
         - 1
         - 3
 
-    # Spawn a red rupee behind the canon so players always have
+    # Spawn a red rupee behind the cannon so players always have
     # enough money for it
     - action: add
       name: item

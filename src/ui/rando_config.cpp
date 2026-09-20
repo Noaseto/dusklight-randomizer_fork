@@ -1422,11 +1422,15 @@ struct ExcludedTabLocData {
     std::unordered_set<std::string> categories{};
 };
 
-const std::vector<ExcludedTabLocData>& excluded_location_catalog(const bool forceLoad = false) {
+const std::vector<ExcludedTabLocData>& excluded_location_catalog(const bool reload = false) {
     static std::vector<ExcludedTabLocData> locationsForExcludedTab;
 
+    if(reload) {
+        locationsForExcludedTab.clear();
+    }
+
     // If we haven't loaded the locations to display for the excluded locations tab, load them up
-    if (locationsForExcludedTab.empty() || forceLoad) {
+    if (locationsForExcludedTab.empty()) {
         auto locationDataTree = LOAD_EMBED_YAML(RANDO_DATA_PATH "locations.yaml");
         for (const auto& locationNode : locationDataTree) {
             ExcludedTabLocData excludedTabLocData{};

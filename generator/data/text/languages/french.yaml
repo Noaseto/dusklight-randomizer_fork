@@ -27,7 +27,7 @@
 #       ou alors extrêmement enfantin)
 #     * Pour les phrases des PNJ, je les ai rendu (ou dois les rendre) pour la plupart neutre en genre bien que ce
 #       soit possible, donc "Tu le veux?" -> "Tu veux?" J'espère que ça ne jure pas trop à l'oreille.
-#     * Bien qu'en Français on doit mettre un espace avant la ponctuation, la largeur de la police sur GC ne le
+#     * Bien qu'en français on doive mettre un espace avant la ponctuation, la largeur de la police sur GC ne le
 #       permettait pas, j'ai donc gardé le style de la console.
 #     * Pour les traductions cryptiques, j'ai essayé (je voudrais autant que possible) garder une cohérence tout du
 #       long et ne pas nommer le même lieu avec 2 synonymes différents.
@@ -1275,6 +1275,7 @@ Lantern:
   Template Overrides:
     - Keys:
         - Agithas Castle Some Items Sign Text
+        - Coro Bottle Offer 3 Text Template
       Pretty:
         Text: la Lanterne
     - Keys:
@@ -9745,7 +9746,7 @@ Palace of Twilight:
         - Item Hint
         - Barren Hint
       Standard:
-        Text: dans {Palais du Crépuscule}
+        Text: dans le {Palais du Crépuscule}
 
 Hyrule Castle:
   Standard:
@@ -10470,6 +10471,7 @@ Coro Bottle Offer 2 Text Template:
       <Item Pretty Name> pour <purple>100 rubis<white>!
       Qu'est-ce que tu en dis? Hein?<begin choice>
 
+# todo maybe templates override in more places
 Coro Bottle Offer 3 Text Template:
   Standard:
     Text: |-

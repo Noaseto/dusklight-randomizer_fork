@@ -129,7 +129,7 @@
 # une maison délabrée
 #
 # Temple of Time: Temple du Temps
-# un temps révolu 
+# un temps révolu
 #
 # City in the Sky: Célestia
 # paradis/paradisiaque
@@ -5201,13 +5201,13 @@ Lake Hylia Burrowing Twilit Insect:
   Cryptic:
     Text: the {Lake Hylia Burrowing Twilit Insect}
 
-Lake Hylia Twilit Insect Behind Canon:
+Lake Hylia Twilit Insect Behind Cannon:
   Standard:
     Text: insecte des ombres derrière le canon du Lac Hylia
   Pretty:
     Text: l'{insecte des ombres derrière le canon du Lac Hylia}
   Cryptic:
-    Text: the {Lake Hylia Twilit Insect Behind Canon}
+    Text: the {Lake Hylia Twilit Insect Behind Cannon}
 
 Lake Hylia Twilit Insect on Docks:
   Standard:

@@ -635,16 +635,16 @@ ModResult buildSeedDialogPane(ModContext* ctx, UiElementHandle pane, void* user_
 
     for (auto& seedHash : g_seedHashes) {
         // Append the file a seed is being used on to the hash in this dialog
-        auto originalHash = seedHash;
+        auto adjustedHash = seedHash;
         for (size_t fileNum = 0; fileNum < 3; ++fileNum) {
             auto& fileHash = fileHashes[fileNum];
-            if (originalHash == fileHash) {
-                seedHash += " (File " + std::to_string(fileNum + 1) + ')';
+            if (seedHash == fileHash) {
+                adjustedHash += " (File " + std::to_string(fileNum + 1) + ')';
             }
         }
 
         ModResult rt = add_button(pane,
-            seedHash.c_str(),
+            adjustedHash.c_str(),
             "",
             on_pressed,
             is_disabled,
@@ -1422,11 +1422,15 @@ struct ExcludedTabLocData {
     std::unordered_set<std::string> categories{};
 };
 
-const std::vector<ExcludedTabLocData>& excluded_location_catalog(const bool forceLoad = false) {
+const std::vector<ExcludedTabLocData>& excluded_location_catalog(const bool reload = false) {
     static std::vector<ExcludedTabLocData> locationsForExcludedTab;
 
+    if(reload) {
+        locationsForExcludedTab.clear();
+    }
+
     // If we haven't loaded the locations to display for the excluded locations tab, load them up
-    if (locationsForExcludedTab.empty() || forceLoad) {
+    if (locationsForExcludedTab.empty()) {
         auto locationDataTree = LOAD_EMBED_YAML(RANDO_DATA_PATH "locations.yaml");
         for (const auto& locationNode : locationDataTree) {
             ExcludedTabLocData excludedTabLocData{};
@@ -1884,6 +1888,11 @@ ModResult buildPlayTab(ModContext* ctx, UiWindowHandle, UiElementHandle leftPane
 
 // Function to call for pre-loading excluded location catalog when selecting randomizer game mode
 void load_excluded_locations() {
+    // Mutex so that we can pre-load excluded locations on a different thread when the randomizer
+    // is selected.
+    static std::mutex excludedLocationsMutex{};
+    std::lock_guard lock{excludedLocationsMutex};
+
     excluded_location_catalog(true);
 }
 

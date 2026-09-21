@@ -973,6 +973,7 @@ F_SP111:
         - 0
         - 2
         - 3
+        - 4
 
     # Golden Wolf in Kakariko Graveyard
     - action: patch
@@ -994,6 +995,7 @@ F_SP111:
       layers:
         - 2
         - 3
+        - 4
 
     # Add hint sign behind zora grave
     - action: add
@@ -1013,6 +1015,7 @@ F_SP111:
         - 0
         - 2
         - 3
+        - 4
         - 14
     
     # Add entrance coming from lake hylia (entrance ID 5000)
@@ -1032,6 +1035,7 @@ F_SP111:
         - 0
         - 2
         - 3
+        - 4
         - 14
 
 # Zora's Domain

@@ -280,8 +280,9 @@
   Exits:
     Lost Woods: Nothing
     # In North Faron Woods, when you are near the Lost Woods entrance,
-    # you can save-warp to the main part of North Faron Woods.
-    North Faron Woods: Nothing
+    # you can save-warp to the main part of North Faron Woods. But this
+    # isn't very intuitive.
+    # North Faron Woods: Nothing
 
 
 # SACRED GROVE

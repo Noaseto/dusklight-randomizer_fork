@@ -857,7 +857,7 @@ const auto kSilverMessageCode = text_color_code(0xBFBFBFFF);
                 japanese += " and " + text.mEntries[Text::JAPANESE].str;
             } else if (i == texts.size() - 1) {
                 english += ", and " + text.mEntries[Text::ENGLISH].str;
-                french += ", and " + text.mEntries[Text::FRENCH].str;
+                french += ", et " + text.mEntries[Text::FRENCH].str;
                 german += ", und " + text.mEntries[Text::GERMAN].str;
                 italian += ", and " + text.mEntries[Text::ITALIAN].str;
                 spanish += ", and " + text.mEntries[Text::SPANISH].str;

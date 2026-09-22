@@ -442,6 +442,8 @@
     Spawn Type: "60"
     Parameters: "F01F"
     State: -1
+    Dungeon Stage Returns:
+      - 7
   Return:
     Connection: Forest Temple Boss Room -> South Faron Woods
     Alias: Forest Temple Boss Room -> Faron Woods
@@ -470,6 +472,8 @@
     Spawn Type: "60"
     Parameters: "F01F"
     State: -1
+    Dungeon Stage Returns:
+      - 4
   Return:
     Connection: Goron Mines Boss Room -> Lower Kakariko Village
     Alias: Goron Mines Boss Room -> Kakariko Village
@@ -498,6 +502,8 @@
     Spawn Type: "00"
     Parameters: "F01F"
     State: -1
+    Dungeon Stage Returns:
+      - 1
   Return:
     Connection: Lakebed Temple Boss Room -> Lake Hylia Lanayru Spring
     Alias: Lakebed Temple Boss Room -> Lanayru Spring
@@ -528,6 +534,8 @@
     State: -1
     Follower Entrances:
       - Mirror Chamber Lower -> Arbiters Grounds Boss Room
+    Dungeon Stage Returns:
+      - 25
   Return:
     Connection: Arbiters Grounds Boss Room -> Mirror Chamber Lower
     Alias: Arbiters Grounds Boss Room -> Mirror Chamber
@@ -569,6 +577,8 @@
     Spawn Type: "60"
     Parameters: "F01F"
     State: -1
+    Dungeon Stage Returns:
+      - 28
   Return:
     Connection: Snowpeak Ruins Boss Room -> Snowpeak Summit Lower
     Alias: Snowpeak Ruins Boss Room -> Outside Snowpeak Ruins
@@ -597,6 +607,8 @@
     Spawn Type: "60"
     Parameters: "F01F"
     State: -1
+    Dungeon Stage Returns:
+      - 10
   Return:
     Connection: Temple of Time Boss Room -> Sacred Grove Past Behind Window
     Alias: Temple of Time Boss Room -> Sacred Grove Past
@@ -625,6 +637,8 @@
     Spawn Type: "60"
     Parameters: "F01F"
     State: -1
+    Dungeon Stage Returns:
+      - 13
   Return:
     Connection: City in the Sky Boss Room -> City in the Sky Entrance
     Stage: 12
@@ -652,6 +666,9 @@
     Spawn Type: "60"
     Parameters: "F01F"
     State: -1
+    Dungeon Stage Returns:
+      - 16
+      - 19
   Return:
     Connection: Palace of Twilight Boss Room -> Palace of Twilight Entrance
     Stage: 15

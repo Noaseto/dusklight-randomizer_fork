@@ -385,6 +385,13 @@ namespace randomizer::logic::entrance
         return {parentAreaName, connectedAreaName};
     }
 
+    void Entrance::SetDungeonStageReturns(const YAML::Node& node) {
+        for (const auto& stageNode : node) {
+            auto stageId = stageNode.as<int>();
+            this->_dungeonStageReturns.insert(stageId);
+        }
+    }
+
     void Entrance::SetGameInfo(const YAML::Node& node) {
         SetStageId(node["Stage"].as<uint8_t>());
         SetRoomNo(node["Room"].as<int8_t>());

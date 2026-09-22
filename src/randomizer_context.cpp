@@ -1700,24 +1700,35 @@ RandomizerContext WriteSeedData(randomizer::logic::world::World* world) {
         }
     }
 
-    // Vanilla Return to Place Overrides. Will need to change when boss/miniboss ER is implemented
-    static const std::vector<std::pair<std::vector<int>, RandomizerContext::EntranceOverride>> defaultPlaceOverrides{
-        {{Forest_Temple, Ook, Diababa},                      {.stageId = Forest_Temple, .roomNo = 22, .mapLayer = -1, .pointNo = 0}},
-        {{Goron_Mines, Dangoro, Fyrus},                      {.stageId = Goron_Mines, .roomNo = 1, .mapLayer = -1, .pointNo = 0}},
-        {{Lakebed_Temple, Deku_Toad, Morpheel},              {.stageId = Lakebed_Temple, .roomNo = 0, .mapLayer = -1, .pointNo = 0}},
-        {{Arbiters_Grounds, Death_Sword, Stallord},          {.stageId = Arbiters_Grounds, .roomNo = 0, .mapLayer = -1, .pointNo = 0}},
-        {{Snowpeak_Ruins, Darkhammer, Blizzeta},             {.stageId = Snowpeak_Ruins, .roomNo = 0, .mapLayer = -1, .pointNo = 0}},
-        {{Temple_of_Time, Darknut, Armogohma},               {.stageId = Temple_of_Time, .roomNo = 0, .mapLayer = -1, .pointNo = 0}},
-        {{City_in_the_Sky, Aeralfos, Argorok},               {.stageId = City_in_the_Sky, .roomNo = 0, .mapLayer = -1, .pointNo = 3}},
-        {{Palace_of_Twilight, Phantom_Zant_1,
-                Phantom_Zant_2, Zant_Main_Room, Zant_Fight},     {.stageId = Palace_of_Twilight, .roomNo = 0, .mapLayer = -1, .pointNo = 0}},
-        {{Hyrule_Castle, Ganondorf_Castle, Ganondorf_Field}, {.stageId = Hyrule_Castle, .roomNo = 11, .mapLayer = -1, .pointNo = 0}},
+    static const std::map<std::string, RandomizerContext::EntranceOverride> defaultReturnPlaces = {
+        {"Forest Temple",      {.stageId = Forest_Temple, .roomNo = 22, .mapLayer = -1, .pointNo = 0}},
+        {"Goron Mines",        {.stageId = Goron_Mines, .roomNo = 1, .mapLayer = -1, .pointNo = 0}},
+        {"Lakebed Temple",     {.stageId = Lakebed_Temple, .roomNo = 0, .mapLayer = -1, .pointNo = 0}},
+        {"Arbiters Grounds",   {.stageId = Arbiters_Grounds, .roomNo = 0, .mapLayer = -1, .pointNo = 0}},
+        {"Snowpeak Ruins",     {.stageId = Snowpeak_Ruins, .roomNo = 0, .mapLayer = -1, .pointNo = 0}},
+        {"Temple of Time",     {.stageId = Temple_of_Time, .roomNo = 0, .mapLayer = -1, .pointNo = 0}},
+        {"City in the Sky",    {.stageId = City_in_the_Sky, .roomNo = 0, .mapLayer = -1, .pointNo = 3}},
+        {"Palace of Twilight", {.stageId = Palace_of_Twilight, .roomNo = 0, .mapLayer = -1, .pointNo = 0}},
+        {"Hyrule Castle",      {.stageId = Hyrule_Castle, .roomNo = 11, .mapLayer = -1, .pointNo = 0}},
+    };
+
+    // Vanilla Return to Place Overrides.
+    static const std::vector<std::pair<std::vector<int>, std::string>> defaultPlaceOverrides{
+        {{Forest_Temple, Ook},                                 "Forest Temple"},
+        {{Goron_Mines, Dangoro},                               "Goron Mines"},
+        {{Lakebed_Temple, Deku_Toad},                          "Lakebed Temple"},
+        {{Arbiters_Grounds, Death_Sword},                      "Arbiters Grounds"},
+        {{Snowpeak_Ruins, Darkhammer},                         "Snowpeak Ruins"},
+        {{Temple_of_Time, Darknut},                            "Temple of Time"},
+        {{City_in_the_Sky, Aeralfos},                          "City in the Sky"},
+        {{Palace_of_Twilight, Phantom_Zant_1, Phantom_Zant_2}, "Palace of Twilight"},
+        {{Hyrule_Castle, Ganondorf_Castle, Ganondorf_Field},   "Hyrule Castle"},
     };
 
     // Return to Place Overrides
     for (const auto& [stages, returnPlace] : defaultPlaceOverrides) {
         for (auto stage : stages) {
-            randoData.mReturnToPlaceOverrides[stage] = returnPlace;
+            randoData.mReturnToPlaceOverrides[stage] = defaultReturnPlaces.at(returnPlace);
         }
     }
 
@@ -1755,6 +1766,18 @@ RandomizerContext WriteSeedData(randomizer::logic::world::World* world) {
                     }
 
                     randoData.mEntranceOverrides[dataForward] = dataReplaces;
+                }
+            }
+
+            // Set dungeon return places
+            const auto& dungeonReturnStages = entrance->GetReplaces()->GetDungeonStageReturns();
+            if (!dungeonReturnStages.empty()) {
+                auto regions = entrance->GetParentArea()->GetHintRegions();
+                if (regions.size() == 1 && defaultReturnPlaces.contains(*regions.begin())) {
+                    auto dungeon = *regions.begin();
+                    for (auto stageId : dungeonReturnStages) {
+                        randoData.mReturnToPlaceOverrides[stageId] = defaultReturnPlaces.at(dungeon);
+                    }
                 }
             }
         }

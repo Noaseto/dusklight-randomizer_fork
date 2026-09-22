@@ -169,6 +169,8 @@ namespace randomizer::logic::entrance
         const auto& GetExtraOverrideData() const { return _extraOverrideData; }
         bool HasExtraOverrideData() const {return !_extraOverrideData.empty();}
         bool HasExtraOverrideData(const std::string& name) const { return _extraOverrideData.contains(name); }
+        const auto& GetDungeonStageReturns() const { return _dungeonStageReturns; }
+        void SetDungeonStageReturns(const YAML::Node& node);
         void SetGameInfo(const YAML::Node& node);
         void SetExtraOverrideInfo(const std::string& name, const YAML::Node& node);
         void SetCoupledEntrances(const std::vector<int16_t>& entrances) { _coupledEntrances = entrances; }
@@ -189,6 +191,7 @@ namespace randomizer::logic::entrance
 
         EntranceData _data{};
         std::map<std::string, EntranceData> _extraOverrideData{};
+        std::set<int> _dungeonStageReturns{};
 
         /**
          * @brief The local requirement for this entrance assuming we have access to its parent area.

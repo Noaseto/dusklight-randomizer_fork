@@ -88,6 +88,9 @@ namespace randomizer::logic::entrance_shuffle
             if (forwardEntry["Follower Entrances"]) {
                 forwardEntrance->SetFollowerEntrances(forwardEntry["Follower Entrances"]);
             }
+            if (forwardEntry["Dungeon Stage Returns"]) {
+                forwardEntrance->SetDungeonStageReturns(forwardEntry["Dungeon Stage Returns"]);
+            }
 
             Entrance* returnEntrance = nullptr;
             if (entranceDataNode["Return"])

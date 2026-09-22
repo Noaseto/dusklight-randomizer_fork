@@ -392,10 +392,10 @@ namespace randomizer::logic::entrance
         SetLayerNo(node["State"].as<int8_t>());
     }
 
-    void Entrance::SetOoccooInfo(const YAML::Node& node) {
-        this->_ooccoo._stageId = node["Stage"].as<uint8_t>();
-        this->_ooccoo._roomNo = node["Room"].as<int8_t>();
-        this->_ooccoo._layerNo = node["State"].as<int8_t>();
-        this->_ooccoo._pointNo = node["Spawn"].as<int16_t>();
+    void Entrance::SetExtraOverrideInfo(const std::string& name, const YAML::Node& node) {
+        this->_extraOverrideData[name].stageId = node["Stage"].as<uint8_t>();
+        this->_extraOverrideData[name].roomNo = node["Room"].as<int8_t>();
+        this->_extraOverrideData[name].layerNo = node["State"].as<int8_t>();
+        this->_extraOverrideData[name].pointNo = node["Spawn"].as<int16_t>();
     }
 } // namespace randomizer::logic::entrance

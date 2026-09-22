@@ -120,11 +120,15 @@ namespace randomizer::logic::entrance_shuffle
                 }
             }
 
-            if (entranceDataNode["Ooccoo"]) {
-                auto& ooccooEntry = entranceDataNode["Ooccoo"];
-                forwardEntrance->SetOoccooInfo(ooccooEntry);
-                if (returnEntrance) {
-                    returnEntrance->SetOoccooInfo(ooccooEntry);
+            // Set any extra override data this entrance has
+            if (entranceDataNode["Extra Override Data"]) {
+                for (const auto& entry : entranceDataNode["Extra Override Data"]) {
+                    const auto& name = entry.first.as<std::string>();
+                    const auto& data = entry.second;
+                    forwardEntrance->SetExtraOverrideInfo(name, data);
+                    if (returnEntrance) {
+                        returnEntrance->SetExtraOverrideInfo(name, data);
+                    }
                 }
             }
         }

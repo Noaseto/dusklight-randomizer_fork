@@ -252,6 +252,26 @@ D_MN08:
       layers:
         - 14
 
+  # Room 9 - Boss Door Room
+  9:
+    # Add entrance as if player died to the Zant
+    # This will be used as the respawn point for dying
+    # to bosses other than Zant if they're randomized to be the Palace Boss
+    - action: add
+      name: Link
+      parameters: 0xFF00503F
+      position:
+        x: 0.0
+        y: 1900.0
+        z: -9000.0
+      angle:
+        x: 0
+        y: 0x8000
+        z: 0x1388
+      set id: 0xFFFF
+      layers:
+        - 14
+
 # Hyrule Castle
 D_MN09:
   # Room 11 - Entrance Courtyard Area

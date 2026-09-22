@@ -67,6 +67,13 @@ namespace randomizer::logic::entrance
 
     Type TypeToReverse(const Type& type);
 
+    struct EntranceData {
+        uint8_t stageId = 0xFF;
+        int8_t roomNo = -1;
+        int8_t layerNo = -1;
+        int16_t pointNo = -1;
+    };
+
     class Entrance
     {
        public:
@@ -151,18 +158,19 @@ namespace randomizer::logic::entrance
          */
         Entrance* AssumeReachable();
 
-        void SetStageId(uint8_t stageId) { _stageId = stageId; }
-        void SetRoomNo(int8_t roomNo) { _roomNo = roomNo; }
-        void SetLayerNo(int8_t layerNo) { _layerNo = layerNo; }
-        void SetPointNo(int16_t pointNo) { _pointNo = pointNo; }
-        uint8_t GetStageId() const { return _stageId; }
-        int8_t GetRoomNo() const { return _roomNo; }
-        int8_t GetLayerNo() const { return _layerNo; }
-        int16_t GetPointNo() const { return _pointNo; }
-        const auto& GetOoccoo() const { return _ooccoo; }
-        bool HasOoccoo() const {return _ooccoo._stageId != 0xFF;}
+        void SetStageId(uint8_t stageId) { _data.stageId = stageId; }
+        void SetRoomNo(int8_t roomNo) { _data.roomNo = roomNo; }
+        void SetLayerNo(int8_t layerNo) { _data.layerNo = layerNo; }
+        void SetPointNo(int16_t pointNo) { _data.pointNo = pointNo; }
+        uint8_t GetStageId() const { return _data.stageId; }
+        int8_t GetRoomNo() const { return _data.roomNo; }
+        int8_t GetLayerNo() const { return _data.layerNo; }
+        int16_t GetPointNo() const { return _data.pointNo; }
+        const auto& GetExtraOverrideData() const { return _extraOverrideData; }
+        bool HasExtraOverrideData() const {return !_extraOverrideData.empty();}
+        bool HasExtraOverrideData(const std::string& name) const { return _extraOverrideData.contains(name); }
         void SetGameInfo(const YAML::Node& node);
-        void SetOoccooInfo(const YAML::Node& node);
+        void SetExtraOverrideInfo(const std::string& name, const YAML::Node& node);
         void SetCoupledEntrances(const std::vector<int16_t>& entrances) { _coupledEntrances = entrances; }
         const std::vector<int16_t>& GetCoupledEntrances() const { return _coupledEntrances; }
         void SetFollowerEntrances(const YAML::Node& followerList);
@@ -179,17 +187,8 @@ namespace randomizer::logic::entrance
         std::string _alias = "";
         world::World* _world = nullptr;
 
-        uint8_t _stageId = 0xFF;
-        int8_t _roomNo = -1;
-        int8_t _layerNo = -1;
-        int16_t _pointNo = -1;
-
-        struct {
-            uint8_t _stageId = 0xFF;
-            int8_t _roomNo = -1;
-            int8_t _layerNo = -1;
-            int16_t _pointNo = -1;
-        } _ooccoo;
+        EntranceData _data{};
+        std::map<std::string, EntranceData> _extraOverrideData{};
 
         /**
          * @brief The local requirement for this entrance assuming we have access to its parent area.

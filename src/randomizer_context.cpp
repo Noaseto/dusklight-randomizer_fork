@@ -1738,19 +1738,24 @@ RandomizerContext WriteSeedData(randomizer::logic::world::World* world) {
                 randoData.mEntranceOverrides[coupled] = replaces;
             }
 
-            // Set Ooccoo overrides
-            if (entrance->GetReplaces()->IsPrimary() && entrance->GetReplaces()->HasOoccoo()) {
-                const auto& ooccooData = entrance->GetReplaces()->GetOoccoo();
-                RandomizerContext::EntranceOverride ooccooForward = {.stageId = ooccooData._stageId, .roomNo = ooccooData._roomNo, .mapLayer = ooccooData._layerNo, .pointNo = ooccooData._pointNo};
-                RandomizerContext::EntranceOverride ooccooReplaces = {.stageId = entrance->GetReverse()->GetStageId(),
-                    .roomNo = entrance->GetReverse()->GetRoomNo(), .mapLayer = entrance->GetReverse()->GetLayerNo(),
-                    .pointNo = entrance->GetReverse()->GetPointNo()};
-                if (entrance->GetReverse()->HasOoccoo()) {
-                    const auto& reverseOoccooData = entrance->GetReverse()->GetOoccoo();
-                    ooccooReplaces = {.stageId = reverseOoccooData._stageId, .roomNo = reverseOoccooData._roomNo, .mapLayer = reverseOoccooData._layerNo, .pointNo = reverseOoccooData._pointNo};
-                }
+            // Set overrides for extra override data
+            if (entrance->GetType() != randomizer::logic::entrance::NONE &&
+                entrance->GetReplaces()->IsPrimary() &&
+                entrance->GetReplaces()->HasExtraOverrideData()) {
+                for (const auto& [name, data] : entrance->GetReplaces()->GetExtraOverrideData()) {
+                    RandomizerContext::EntranceOverride dataForward = {.stageId = data.stageId, .roomNo = data.roomNo, .mapLayer = data.layerNo, .pointNo = data.pointNo};
+                    RandomizerContext::EntranceOverride dataReplaces = {.stageId = entrance->GetReverse()->GetStageId(),
+                        .roomNo = entrance->GetReverse()->GetRoomNo(), .mapLayer = entrance->GetReverse()->GetLayerNo(),
+                        .pointNo = entrance->GetReverse()->GetPointNo()};
 
-                randoData.mEntranceOverrides[ooccooForward] = ooccooReplaces;
+                    // If the reverse of this entrance has the same type of extra override data, then use that as the override instead
+                    if (entrance->GetReverse()->HasExtraOverrideData(name)) {
+                        const auto& reverseData = entrance->GetReverse()->GetExtraOverrideData().at(name);
+                        dataReplaces = {.stageId = reverseData.stageId, .roomNo = reverseData.roomNo, .mapLayer = reverseData.layerNo, .pointNo = reverseData.pointNo};
+                    }
+
+                    randoData.mEntranceOverrides[dataForward] = dataReplaces;
+                }
             }
         }
     }

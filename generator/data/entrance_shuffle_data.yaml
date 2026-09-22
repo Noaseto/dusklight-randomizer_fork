@@ -189,13 +189,14 @@
     Spawn Type: "50"
     Parameters: "F01F"
     State: -1
-  Ooccoo:
-    Stage: 45
-    Room: 6
-    Spawn: 150
-    Spawn Type: "0C"
-    Parameters: ""
-    State: -1
+  Extra Override Data:
+    Ooccoo:
+      Stage: 45
+      Room: 6
+      Spawn: 150
+      Spawn Type: "0C"
+      Parameters: ""
+      State: -1
 
 - Type: Dungeon
   Forward:
@@ -216,13 +217,14 @@
     Spawn Type: "50"
     Parameters: "F01F"
     State: -1
-  Ooccoo:
-    Stage: 47
-    Room: 3
-    Spawn: 6
-    Spawn Type: "0C"
-    Parameters: ""
-    State: -1
+  Extra Override Data:
+    Ooccoo:
+      Stage: 47
+      Room: 3
+      Spawn: 6
+      Spawn Type: "0C"
+      Parameters: ""
+      State: -1
 
 - Type: Dungeon
   Forward:
@@ -243,13 +245,14 @@
     Spawn Type: "D0"
     Parameters: "F01F"
     State: -1
-  Ooccoo:
-    Stage: 52
-    Room: 0
-    Spawn: 150
-    Spawn Type: "0C"
-    Parameters: ""
-    State: -1
+  Extra Override Data:
+    Ooccoo:
+      Stage: 52
+      Room: 0
+      Spawn: 150
+      Spawn Type: "0C"
+      Parameters: ""
+      State: -1
 
 - Type: Dungeon
   Forward:
@@ -270,13 +273,14 @@
     Spawn Type: "50"
     Parameters: "F01F"
     State: -1
-  Ooccoo:
-    Stage: 55
-    Room: 3
-    Spawn: 5
-    Spawn Type: "0C"
-    Parameters: ""
-    State: -1
+  Extra Override Data:
+    Ooccoo:
+      Stage: 55
+      Room: 3
+      Spawn: 5
+      Spawn Type: "0C"
+      Parameters: ""
+      State: -1
 
 - Type: Dungeon
   Entrance Couple Tag: Snowpeak Ruins Entrance
@@ -298,13 +302,14 @@
     Spawn Type: "0B"
     Parameters: "F01F"
     State: -1
-  Ooccoo:
-    Stage: 51
-    Room: 1
-    Spawn: 13
-    Spawn Type: "0C"
-    Parameters: ""
-    State: -1
+  Extra Override Data:
+    Ooccoo:
+      Stage: 51
+      Room: 1
+      Spawn: 13
+      Spawn Type: "0C"
+      Parameters: ""
+      State: -1
 
 - Type: Dungeon
   Entrance Couple Tag: Snowpeak Ruins Entrance
@@ -326,13 +331,14 @@
     Spawn Type: "0B"
     Parameters: "F01F"
     State: -1
-  Ooccoo:
-    Stage: 51
-    Room: 1
-    Spawn: 13
-    Spawn Type: "0C"
-    Parameters: ""
-    State: -1
+  Extra Override Data:
+    Ooccoo:
+      Stage: 51
+      Room: 1
+      Spawn: 13
+      Spawn Type: "0C"
+      Parameters: ""
+      State: -1
 
 - Type: Dungeon
   Forward:
@@ -353,13 +359,14 @@
     Spawn Type: "50"
     Parameters: "F01F"
     State: -1
-  Ooccoo:
-    Stage: 54
-    Room: 1
-    Spawn: 100
-    Spawn Type: "0C"
-    Parameters: ""
-    State: -1
+  Extra Override Data:
+    Ooccoo:
+      Stage: 54
+      Room: 1
+      Spawn: 100
+      Spawn Type: "0C"
+      Parameters: ""
+      State: -1
 
 - Type: Dungeon
   Forward:
@@ -444,6 +451,14 @@
     Spawn Type: ""
     Parameters: ""
     State: -1
+  Extra Override Data:
+    Boss Death:
+      Stage: 6
+      Room: 12
+      Spawn: 1
+      Spawn Type: "05"
+      Parameters: ""
+      State: -1
 
 - Type: Boss
   Forward:
@@ -464,6 +479,14 @@
     Spawn Type: ""
     Parameters: ""
     State: -1
+  Extra Override Data:
+    Boss Death:
+      Stage: 3
+      Room: 12
+      Spawn: 1
+      Spawn Type: "05"
+      Parameters: ""
+      State: -1
 
 - Type: Boss
   Forward:
@@ -484,6 +507,14 @@
     Spawn Type: ""
     Parameters: ""
     State: -1
+  Extra Override Data:
+    Boss Death:
+      Stage: 0
+      Room: 3
+      Spawn: 1
+      Spawn Type: "05"
+      Parameters: ""
+      State: -1
 
 - Type: Boss
   Forward:
@@ -506,6 +537,14 @@
     Spawn Type: "10"
     Parameters: "501F"
     State: -1
+  Extra Override Data:
+    Boss Death:
+      Stage: 24
+      Room: 9
+      Spawn: 1
+      Spawn Type: "05"
+      Parameters: ""
+      State: -1
 
 # Define data for Mirror Chamber Lower -> Arbiters Grounds Boss Room so that it can follow
 # Arbiters Grounds -> Arbiters Grounds Boss Room
@@ -539,6 +578,14 @@
     Spawn Type: ""
     Parameters: ""
     State: -1
+  Extra Override Data:
+    Boss Death:
+      Stage: 27
+      Room: 4
+      Spawn: 4
+      Spawn Type: "05"
+      Parameters: ""
+      State: -1
 
 - Type: Boss
   Forward:
@@ -559,6 +606,14 @@
     Spawn Type: ""
     Parameters: ""
     State: -1
+  Extra Override Data:
+    Boss Death:
+      Stage: 9
+      Room: 8
+      Spawn: 2
+      Spawn Type: "05"
+      Parameters: ""
+      State: -1
 
 - Type: Boss
   Forward:
@@ -578,6 +633,14 @@
     Spawn Type: ""
     Parameters: ""
     State: -1
+  Extra Override Data:
+    Boss Death:
+      Stage: 12
+      Room: 15
+      Spawn: 4
+      Spawn Type: "05"
+      Parameters: ""
+      State: -1
 
 - Type: Boss
   Forward:
@@ -597,6 +660,15 @@
     Spawn Type: ""
     Parameters: ""
     State: -1
+  Extra Override Data:
+    # Custom spawn for when dying at a boss randomized as the palace of twilight boss
+    Boss Death:
+      Stage: 15
+      Room: 9
+      Spawn: 5000
+      Spawn Type: "05"
+      Parameters: ""
+      State: -1
 
 ###############################
 #          GROTTOS            #

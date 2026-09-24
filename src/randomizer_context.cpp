@@ -1786,7 +1786,6 @@ RandomizerContext WriteSeedData(randomizer::logic::world::World* world) {
     // Set exiting the Arbiter's Grounds Boss Room to spawn at the Arbiter's Grounds entrance
     // if mirror chamber access is closed
     if (world->Setting("Mirror Chamber Access") == "Closed") {
-
         RandomizerContext::EntranceOverride mirrorChamberEntrance = {
             .stageId = StageIDs::Mirror_Chamber,
             .roomNo = 4,
@@ -1814,6 +1813,39 @@ RandomizerContext WriteSeedData(randomizer::logic::world::World* world) {
             for (auto& override : randoData.mEntranceOverrides | std::views::values) {
                 if (override == mirrorChamberEntrance) {
                     override = mirrorChamberOverride;
+                }
+            }
+        }
+    }
+
+    // If dungeon entrances are randomized and double doors are decoupled, set the return of the
+    // Blizzeta boss warp to be inside Snowpeak ruins. Otherwise, we have to arbitrarily choose
+    // between one of the two entrances that now leads into Snowpeak
+    if (world->Setting("Randomize Dungeon Entrances") == "On" &&
+        world->Setting("Decouple Double Door Entrances") == "On") {
+        RandomizerContext::EntranceOverride defaultBlizzetaBossReturn = {
+            .stageId = Snowpeak,
+            .roomNo = 1,
+            .mapLayer = -1,
+            .pointNo = 11,
+        };
+
+        RandomizerContext::EntranceOverride decoupledDoorBlizzetaBossReturn = {
+            .stageId = Snowpeak_Ruins,
+            .roomNo = 0,
+            .mapLayer = -1,
+            .pointNo = 0,
+        };
+
+        // If boss entrance rando is off, then we set this manually
+        if (world->Setting("Randomize Boss Entrances") == "Off") {
+            randoData.mEntranceOverrides[defaultBlizzetaBossReturn] = decoupledDoorBlizzetaBossReturn;
+        } else {
+            // If boss entrances are randomized, then loop through and change all overrides which match
+            // the default Blizzeta boss warp entrance (this could be multiple if bosses are mixed with doors).
+            for (auto& override : randoData.mEntranceOverrides | std::views::values) {
+                if (override == defaultBlizzetaBossReturn) {
+                    override = decoupledDoorBlizzetaBossReturn;
                 }
             }
         }

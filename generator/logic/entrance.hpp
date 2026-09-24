@@ -112,7 +112,7 @@ namespace randomizer::logic::entrance
         bool IsShuffled() const;
         void SetDecoupled(const bool& decoupled);
         bool IsDecoupled() const;
-        void SetDisbled(const bool& disabled);
+        void SetDisabled(const bool& disabled);
         bool IsDisabled() const;
         void SetPrimary(const bool& primary);
         bool IsPrimary() const;
@@ -177,6 +177,8 @@ namespace randomizer::logic::entrance
         const std::vector<int16_t>& GetCoupledEntrances() const { return _coupledEntrances; }
         void SetFollowerEntrances(const YAML::Node& followerList);
         const std::list<Entrance*>& GetFollowerEntrances() const { return _followerEntrances; }
+        void SetBossEntrance(Entrance* bossEntrance) {_bossEntrance = bossEntrance;}
+        Entrance* GetBossEntrance() const {return _bossEntrance;};
 
        private:
         int _id = -1;
@@ -211,8 +213,8 @@ namespace randomizer::logic::entrance
         bool _disabled = false;
 
         // A target entrance is one created to mimic the effect of going 
-        // through a specific real entrance. The target is attatched to
-        // the root of the world graph and is connected to it's correpsonding
+        // through a specific real entrance. The target is attached to
+        // the root of the world graph and is connected to it's corresponding
         // entrance's connected area.
         bool _target = false;
 
@@ -242,10 +244,23 @@ namespace randomizer::logic::entrance
 
         // Entrances that are to follow where this one leads if it's randomized
         std::list<Entrance*> _followerEntrances = {};
+
+        // Boss entrance associated with this dungeon entrance. If this dungeon entrance is
+        // shuffled, we need to update where the boss return points to
+        Entrance* _bossEntrance = nullptr;
     };
 
     using EntrancePool = std::vector<Entrance*>;
     using EntrancePools = std::map<Type, EntrancePool>;
 
     std::tuple<std::string, std::string> GetParentAndConnectedAreaNames(const std::string& originalName);
+
+    struct PointerTypeCompare {
+        bool operator()(const Entrance* a, const Entrance* b) const {
+            if (a->GetType() == b->GetType()) {
+                return a->GetOriginalName() < b->GetOriginalName();
+            }
+            return a->GetType() < b->GetType();
+        }
+    };
 } // namespace randomizer::logic::entrance

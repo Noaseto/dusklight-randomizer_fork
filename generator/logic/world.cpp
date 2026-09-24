@@ -880,7 +880,7 @@ namespace randomizer::logic::world
             // Disable the dungeon's starting entrances
             for (auto& entrance : dungeon->GetStartingEntrances())
             {
-                entrance->SetDisbled(true);
+                entrance->SetDisabled(true);
             }
 
             // Run an accessibility search to see which locations inherently require accessing this dungeon
@@ -902,7 +902,7 @@ namespace randomizer::logic::world
             // Re-enable the dungeon's entrances
             for (auto& entrance : dungeon->GetStartingEntrances())
             {
-                entrance->SetDisbled(false);
+                entrance->SetDisabled(false);
             }
         }
     }
@@ -963,7 +963,7 @@ namespace randomizer::logic::world
             // Disable the dungeon's starting entrances
             for (auto& entrance : dungeon->GetStartingEntrances())
             {
-                entrance->SetDisbled(true);
+                entrance->SetDisabled(true);
             }
 
             // Check if the game is beatable, set dungeon as required if so. If the dungeon is not required and barren
@@ -989,7 +989,7 @@ namespace randomizer::logic::world
             // Re-enable the dungeon's entrances
             for (auto& entrance : dungeon->GetStartingEntrances())
             {
-                entrance->SetDisbled(false);
+                entrance->SetDisabled(false);
             }
         }
     }
@@ -1146,7 +1146,7 @@ namespace randomizer::logic::world
         this->_plandomizerEntrances[entrance] = target;
     }
 
-    std::unordered_map<entrance::Entrance*, entrance::Entrance*> World::GetPlandomizerEntrances()
+    std::map<entrance::Entrance*, entrance::Entrance*, entrance::PointerTypeCompare> World::GetPlandomizerEntrances()
     {
         return this->_plandomizerEntrances;
     }
@@ -1396,5 +1396,10 @@ namespace randomizer::logic::world
                Setting("Randomize Cave Entrances") != "Off" ||
                Setting("Randomize Interior Entrances") != "Off" ||
                Setting("Randomize Overworld Entrances") != "Off";
+    }
+
+    bool World::AdjustBossReturns() {
+        return Setting("Randomize Dungeon Entrances") == "On" &&
+               Setting("Randomize Boss Entrances") == "On" && Setting("Decouple Entrances") == "Off";
     }
 } // namespace randomizer::logic::world

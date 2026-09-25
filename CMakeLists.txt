@@ -118,7 +118,7 @@ foreach (RANDOMIZER_FILE IN LISTS RANDOMIZER_DATA)
 endforeach ()
 
 # Versioning
-set(RANDOMIZER_VERSION "1.0.4")
+set(RANDOMIZER_VERSION "1.0.5")
 find_package(Git QUIET)
 if(GIT_FOUND)
     execute_process(

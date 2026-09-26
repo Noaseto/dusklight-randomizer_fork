@@ -33,7 +33,7 @@ namespace randomizer::logic::spoiler_log
     void LogBasicInfo(std::ofstream& log, Randomizer* randomizer)
     {
         log << "Dusklight Randomizer Version: " << FULL_RANDOMIZER_VERSION << std::endl;
-        log << "Seed: " << randomizer->GetConfig().GetSeed() << std::endl;
+        log << "# Seed: " << randomizer->GetConfig().GetSeed() << std::endl;
         log << "Permalink: " << randomizer->GetConfig().GetPermalink() << std::endl;
         log << "Hash: " << randomizer->GetConfig().GetHash() << std::endl;
     }
@@ -213,6 +213,11 @@ namespace randomizer::logic::spoiler_log
                 auto mixedPools = world->GetSettings().GetMixedEntrancePools();
                 for (auto& [entranceType, entrancePool] : entrancePools)
                 {
+                    // Ignore boss reverse entrances if we adjusted them
+                    if (entranceType == entrance::BOSS_REVERSE && world->AdjustBossReturns()) {
+                        continue;
+                    }
+
                     auto typeStr = entrance::TypeToStr(entranceType);
                     // If this is a mixed pool, display the types it mixed
                     if (typeStr.starts_with("Mixed Pool"))
@@ -249,14 +254,14 @@ namespace randomizer::logic::spoiler_log
         for (const auto& world : worlds) {
             // Midna hints first
             spoilerLog << "    World " << world->GetID() << ":" << std::endl;
-            spoilerLog << "        Midna:" << std::endl;
+            spoilerLog << "        Midna: |-" << std::endl;
             auto midnaText = world->GetText("Custom Midna Call Hints Text");
             midnaText = utility::str::Replace(midnaText, "\n", "\n            ");
             spoilerLog << "            " << midnaText << std::endl;
 
             // Then Agitha's Castle Sign
             if (world->Setting("Agitha Hints") == "On") {
-                spoilerLog << "        Agitha's Castle Sign:" << std::endl;
+                spoilerLog << "        Agitha's Castle Sign: |-" << std::endl;
                 auto agithaSignText = world->GetText("Agithas Castle Sign Text");
                 agithaSignText = utility::str::Replace(agithaSignText, "\n", "\n            ");
                 spoilerLog << "            " << agithaSignText << std::endl;
@@ -283,7 +288,7 @@ namespace randomizer::logic::spoiler_log
             if (!hints.empty()) {
                 spoilerLog << "        Hint Signs:" << std::endl;
                 for (const auto& [signName, hintsOnSign] : hints) {
-                    spoilerLog << "           " << signName << ":" << std::endl;
+                    spoilerLog << "           " << signName << ": |-" << std::endl;
                     for (const auto& hint : hintsOnSign) {
                         spoilerLog << "               " << hint << std::endl;
                     }

@@ -148,7 +148,7 @@ namespace randomizer::logic::item_pool
     std::map<std::string, int> standardItemPool = {
         {"Bomb Bag", 2},
         {"Progressive Bow", 2},
-        {"Progressive Wallet", 1},
+        // {"Progressive Wallet", 1}, // Only HD has 3 progressive wallets
         {"Magic Armor", 1},
         {"Hawkeye", 1},
         {"Giant Bomb Bag", 1},

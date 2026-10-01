@@ -2,6 +2,30 @@
 
 # Lakebed Temple
 D_MN01:
+  # Change the position of the initial lakebed spawn
+  # so that it's possible to swim out as wolf and
+  # without needing zora armor or iron boots as human
+  0:
+    - action: patch
+      name: Link
+      parameters: 0xFF00003F
+      position:
+        x: -2.38719701766968
+        y: 606.403015136719
+        z: 24666.087890625
+      angle:
+        x: 0x0000
+        y: 0x8000
+        z: 0x0000
+      set id: 0xFFFF
+      patch:
+        position:
+          x: 0.0
+          y: 500.0
+          z: 25200.0
+      layers:
+        - 0xFF
+
   # Room 2 - Outer Bridges Rooms
   2:
     # Add hint sign near lower west water wheel

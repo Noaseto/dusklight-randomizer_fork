@@ -2808,6 +2808,9 @@ F_SP118:
       set id: 0xFFFF
       layers:
         - 0
+        - 1
+        - 2
+        - 3
 
     # Move the entrance from outside arbiters -> bublin camp forward
     # incase randomized entrances lead here. Otherwise, the player gets

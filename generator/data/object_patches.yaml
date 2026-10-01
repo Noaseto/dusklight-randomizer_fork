@@ -19,7 +19,7 @@ D_MN01:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
 # Goron Mines
 D_MN04:
@@ -40,7 +40,7 @@ D_MN04:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
 # Forest Temple
 D_MN05:
@@ -61,7 +61,7 @@ D_MN05:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
 # Temple of Time
 D_MN06:
@@ -82,7 +82,7 @@ D_MN06:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
   # Room 4 - Moving Walls Room
   4:
@@ -101,7 +101,7 @@ D_MN06:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
 
 # City in the Sky
@@ -124,7 +124,7 @@ D_MN07:
       patch:
         parameters: 0x00000003
       layers:
-        - 0
+        - 0xFF
 
   # Room 0 - Entrance
   0:
@@ -148,7 +148,7 @@ D_MN07:
         y: 67
         z: 54
       layers:
-        - 0
+        - 0xFF
 
   # Room 2 - Central Room
   2:
@@ -167,7 +167,7 @@ D_MN07:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
   # Room 6 - West Bridge
   6:
@@ -185,7 +185,7 @@ D_MN07:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
 # Palace of Twilight
 D_MN08:
@@ -291,7 +291,7 @@ D_MN09:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
 # Arbiter's Grounds
 D_MN10:
@@ -312,7 +312,7 @@ D_MN10:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
 # Snowpeak Ruins
 D_MN11:
@@ -333,7 +333,7 @@ D_MN11:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
 # Cave of Ordeals
 D_SB01:
@@ -354,7 +354,7 @@ D_SB01:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
 # Lake Hylia Lantern Cave
 D_SB03:
@@ -375,7 +375,7 @@ D_SB03:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
 # Ordon Village
 F_SP103:
@@ -403,7 +403,7 @@ F_SP103:
         angle:
           x: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
     # Bo's House right door
     - action: patch
@@ -427,7 +427,7 @@ F_SP103:
         angle:
           x: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
     # Delete Bo on layer 0 so we can't attempt the glitchy goat stop
     - action: delete
@@ -462,9 +462,7 @@ F_SP103:
         # Give this item a unique flag
         parameters: 0xF3FF8403
       layers:
-        - 0
-        - 5
-        - 6
+        - 0xFF
 
     # Rupee above Haunch's House (also flag sharing situation)
     - action: patch
@@ -483,8 +481,7 @@ F_SP103:
         # Give this item a unique flag
         parameters: 0xF3FF8501
       layers:
-        - 0
-        - 6
+        - 0xFF
 
     # Rupee by Bo's Window (also flag sharing situation)
     - action: patch
@@ -503,7 +500,7 @@ F_SP103:
         # Give this item a unique flag
         parameters: 0xF3FF8A01
       layers:
-        - 0
+        - 0xFF
 
     # Rupee in Ordon River (also flag sharing situation)
     - action: patch
@@ -522,7 +519,7 @@ F_SP103:
         # Give this item a unique flag
         parameters: 0x13FF9101
       layers:
-        - 0
+        - 0xFF
 
     # Add Epona actor to Ordon Village so we don't crash
     # when entering on layer 0
@@ -556,12 +553,7 @@ F_SP103:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
+        - 0xFF
 
     - action: delete
       name: Wljump
@@ -576,12 +568,7 @@ F_SP103:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
+        - 0xFF
 
     - action: delete
       name: Wljump
@@ -596,12 +583,7 @@ F_SP103:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
+        - 0xFF
 
   # Room 1 - Outside Link's House
   1:
@@ -652,16 +634,7 @@ F_SP103:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
-        - 6
-        - 8
-        - 9
-        - 12
+        - 0xFF
 
 # Ordon Spring
 F_SP104:
@@ -685,7 +658,7 @@ F_SP104:
         name: htPiece
         parameters: 0xFFFFFFE1
       layers:
-        - 2
+        - 0xFF
 
 # Faron Woods
 F_SP108:
@@ -765,13 +738,7 @@ F_SP108:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 5
-        - 9
-        - 14
+        - 0xFF
 
     # Rupee under boulder near coro (green)
     - action: patch
@@ -790,13 +757,7 @@ F_SP108:
         # Give this item a unique flag
         parameters: 0xF3048101
       layers:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 5
-        - 9
-        - 14
+        - 0xFF
 
     # Rupee under boulder near coro (blue)
     - action: patch
@@ -815,13 +776,7 @@ F_SP108:
         # Give this item a unique flag
         parameters: 0xF3048201
       layers:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 5
-        - 9
-        - 14
+        - 0xFF
 
     # Rupee under boulder near coro (yellow)
     - action: patch
@@ -840,13 +795,7 @@ F_SP108:
         # Give this item a unique flag
         parameters: 0xF3048301
       layers:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 5
-        - 9
-        - 14
+        - 0xFF
 
     # Add the Midna Hint for the Coro Window midna jump to all layers
     # (normally it's just on the twilight layer)
@@ -867,12 +816,7 @@ F_SP108:
         y: 10
         z: 24
       layers:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 5
-        - 9
+        - 0xFF
 
     # Add Coro actor to twilight layer
     - action: add
@@ -981,10 +925,7 @@ F_SP109:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 2
-        - 3
-        - 12
-        - 14
+        - 0xFF
 
     # Remove all hider objects from the twilight layer
     # Otherwise, doors aren't interactable until the
@@ -1126,10 +1067,7 @@ F_SP111:
         name: htPiece
         parameters: 0x00FF91D4
       layers:
-        - 0
-        - 2
-        - 3
-        - 4
+        - 0xFF
 
     # Golden Wolf in Kakariko Graveyard
     - action: patch
@@ -1149,9 +1087,7 @@ F_SP111:
         name: htPiece
         parameters: 0xFFFFFFE1
       layers:
-        - 2
-        - 3
-        - 4
+        - 0xFF
 
     # Add hint sign behind zora grave
     - action: add
@@ -1168,11 +1104,7 @@ F_SP111:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 2
-        - 3
-        - 4
-        - 14
+        - 0xFF
     
     # Add entrance coming from lake hylia (entrance ID 5000)
     - action: add
@@ -1188,11 +1120,7 @@ F_SP111:
         z: 0x1388
       set id: 0xFFFF
       layers:
-        - 0
-        - 2
-        - 3
-        - 4
-        - 14
+        - 0xFF
 
 # Zora's Domain
 F_SP113:
@@ -1216,8 +1144,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0x13FFFF02
       layers:
-        - 0
-        - 2
+        - 0xFF
 
     # East Gate Underwater Rupee (Blue 2)
     - action: patch
@@ -1237,8 +1164,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0x13FFFF02
       layers:
-        - 0
-        - 2
+        - 0xFF
 
     # West Gate Underwater Rupee (Blue 1)
     - action: patch
@@ -1258,8 +1184,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0x13FFFF02
       layers:
-        - 0
-        - 2
+        - 0xFF
 
     # West Gate Underwater Rupee (Blue 1)
     - action: patch
@@ -1279,8 +1204,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0x13FFFF02
       layers:
-        - 0
-        - 2
+        - 0xFF
 
   # Room 1 - Main Zora's Domain Area
   1:
@@ -1304,8 +1228,7 @@ F_SP113:
         position:
           y: -5300
       layers:
-        - 0
-        - 2
+        - 0xFF
 
     # Central Underwater Boulder Rupee (Yellow)
     - action: patch
@@ -1325,10 +1248,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0x133BFF03
       layers:
-        - 0
-        - 2
-        - 13
-        - 14
+        - 0xFF
 
     # Central Underwater Boulder Rupee (Blue)
     - action: patch
@@ -1348,10 +1268,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0x133BFF02
       layers:
-        - 0
-        - 2
-        - 13
-        - 14
+        - 0xFF
 
     # Central Underwater Boulder Rupee (Green 1)
     - action: patch
@@ -1371,10 +1288,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0x133BFF01
       layers:
-        - 0
-        - 2
-        - 13
-        - 14
+        - 0xFF
 
     # Central Underwater Boulder Rupee (Green 2)
     - action: patch
@@ -1394,10 +1308,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0x133BFF01
       layers:
-        - 0
-        - 2
-        - 13
-        - 14
+        - 0xFF
 
     # North Underwater Boulder Rupee (Red)
     - action: patch
@@ -1417,10 +1328,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0x133AFF04
       layers:
-        - 0
-        - 2
-        - 13
-        - 14
+        - 0xFF
 
     # North Underwater Boulder Rupee (Yellow 1)
     - action: patch
@@ -1440,10 +1348,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0x133AFF03
       layers:
-        - 0
-        - 2
-        - 13
-        - 14
+        - 0xFF
 
     # North Underwater Boulder Rupee (Yellow 2)
     - action: patch
@@ -1463,10 +1368,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0x133AFF03
       layers:
-        - 0
-        - 2
-        - 13
-        - 14
+        - 0xFF
 
     # Shortcut Lower Boulder Rupee (Yellow)
     - action: patch
@@ -1486,10 +1388,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0xF324FF03
       layers:
-        - 0
-        - 2
-        - 13
-        - 14
+        - 0xFF
 
     # Shortcut Lower Boulder Rupee (Green 1)
     - action: patch
@@ -1509,10 +1408,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0xF324FF01
       layers:
-        - 0
-        - 2
-        - 13
-        - 14
+        - 0xFF
 
     # Shortcut Lower Boulder Rupee (Green 2)
     - action: patch
@@ -1532,10 +1428,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0xF324FF01
       layers:
-        - 0
-        - 2
-        - 13
-        - 14
+        - 0xFF
 
     # Shortcut Upper Boulder Rupee (Yellow)
     - action: patch
@@ -1555,10 +1448,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0xF365FF03
       layers:
-        - 0
-        - 2
-        - 13
-        - 14
+        - 0xFF
 
     # Shortcut Upper Boulder Rupee (Blue 1)
     - action: patch
@@ -1578,10 +1468,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0xF365FF02
       layers:
-        - 0
-        - 2
-        - 13
-        - 14
+        - 0xFF
 
     # Shortcut Upper Boulder Rupee (Blue 2)
     - action: patch
@@ -1601,10 +1488,7 @@ F_SP113:
         # with the one randomizer rupee nearby
         parameters: 0xF365FF02
       layers:
-        - 0
-        - 2
-        - 13
-        - 14
+        - 0xFF
 
     # Add hint sign on west ledge
     - action: add
@@ -1621,10 +1505,7 @@ F_SP113:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 2
-        - 13
-        - 14
+        - 0xFF
 
 # Snowpeak Province
 F_SP114:
@@ -1645,8 +1526,7 @@ F_SP114:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 4
+        - 0xFF
 
   # Room 1 - Snowboard Area
   1:
@@ -1667,8 +1547,7 @@ F_SP114:
         # Give this rupee a unique flag (0x84)
         parameters: 0xF3FF8401
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Bridge Ledge Middle Rupee
     - action: patch
@@ -1687,8 +1566,7 @@ F_SP114:
         # Give this rupee a unique flag (0x83)
         parameters: 0xF3FF8301
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Bridge Ledge Upper Rupee
     - action: patch
@@ -1707,8 +1585,7 @@ F_SP114:
         # Give this rupee a unique flag (0x82)
         parameters: 0xF3FF8201
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Shortcut Rupee 1
     - action: patch
@@ -1727,8 +1604,7 @@ F_SP114:
         # Give this rupee a unique flag (0x88)
         parameters: 0xF3FF8801
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Shortcut Rupee 2
     - action: patch
@@ -1747,8 +1623,7 @@ F_SP114:
         # Give this rupee a unique flag (0x89)
         parameters: 0xF3FF8901
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Shortcut Rupee 3
     - action: patch
@@ -1767,8 +1642,7 @@ F_SP114:
         # Give this rupee a unique flag (0x8A)
         parameters: 0xF3FF8A01
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Shortcut Rupee 4
     - action: patch
@@ -1787,8 +1661,7 @@ F_SP114:
         # Give this rupee a unique flag (0x8B)
         parameters: 0xF3FF8B04
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Shortcut Rupee 5
     - action: patch
@@ -1807,8 +1680,7 @@ F_SP114:
         # Give this rupee a unique flag (0x8C)
         parameters: 0xF3FF8C01
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Shortcut Rupee 6
     - action: patch
@@ -1827,8 +1699,7 @@ F_SP114:
         # Give this rupee a unique flag (0x8D)
         parameters: 0xF3FF8D01
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Shortcut Rupee 7
     - action: patch
@@ -1847,8 +1718,7 @@ F_SP114:
         # Give this rupee a unique flag (0x8E)
         parameters: 0xF3FF8E01
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Shortcut Rupee 8
     - action: patch
@@ -1867,8 +1737,7 @@ F_SP114:
         # Give this rupee a unique flag (0x8F)
         parameters: 0xF3FF8F01
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Shortcut Rupee 9
     - action: patch
@@ -1887,8 +1756,7 @@ F_SP114:
         # Give this rupee a unique flag (0x90)
         parameters: 0xF3FF9001
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Shortcut Rupee 10
     - action: patch
@@ -1907,8 +1775,7 @@ F_SP114:
         # Give this rupee a unique flag (0x91)
         parameters: 0xF3FF9101
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Shortcut Rupee 11
     - action: patch
@@ -1927,8 +1794,7 @@ F_SP114:
         # Give this rupee a unique flag (0x92)
         parameters: 0xF3FF9201
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Snowy Tree Top Rupee 1 (Blue)
     - action: patch
@@ -1947,8 +1813,7 @@ F_SP114:
         # Give this rupee a unique flag (0x85)
         parameters: 0xF3FF8502
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Snowy Tree Top Rupee 2 (Red)
     - action: patch
@@ -1967,8 +1832,7 @@ F_SP114:
         # Give this rupee a unique flag (0x86)
         parameters: 0xF3FF8604
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Snowy Tree Top Rupee 3 (Purple)
     - action: patch
@@ -1987,8 +1851,7 @@ F_SP114:
         # Give this rupee a unique flag (0x87)
         parameters: 0xF3FF8705
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Top Left Rupee
     - action: patch
@@ -2007,8 +1870,7 @@ F_SP114:
         # Give this rupee a unique flag (0x80)
         parameters: 0xF3FF8001
       layers:
-        - 0
-        - 3
+        - 0xFF
 
     # Snowboarding Top Right Rupee
     - action: patch
@@ -2027,8 +1889,7 @@ F_SP114:
         # Give this rupee a unique flag (0x81)
         parameters: 0xF3FF8101
       layers:
-        - 0
-        - 3
+        - 0xFF
 
 # Lake Hylia
 F_SP115:
@@ -2050,10 +1911,7 @@ F_SP115:
       patch: # Give it a unique tbox id
         parameters: 0x00190106
       layers:
-        - 1
-        - 2
-        - 3
-        - 4
+        - 0xFF
 
     # Left Underwater Boulder Rupee (Yellow 1)
     - action: patch
@@ -2073,9 +1931,7 @@ F_SP115:
         # with the one randomizer rupee nearby
         parameters: 0x1359FF03
       layers:
-        - 1
-        - 2
-        - 3
+        - 0xFF
 
     # Left Underwater Boulder Rupee (Yellow 2)
     - action: patch
@@ -2095,9 +1951,7 @@ F_SP115:
         # with the one randomizer rupee nearby
         parameters: 0x1359FF03
       layers:
-        - 1
-        - 2
-        - 3
+        - 0xFF
 
     # Left Underwater Boulder Rupee (Yellow 3)
     - action: patch
@@ -2117,9 +1971,7 @@ F_SP115:
         # with the one randomizer rupee nearby
         parameters: 0x1359FF03
       layers:
-        - 1
-        - 2
-        - 3
+        - 0xFF
 
     # Left Underwater Boulder Rupee (Blue)
     - action: patch
@@ -2139,9 +1991,7 @@ F_SP115:
         # with the one randomizer rupee nearby
         parameters: 0x1359FF02
       layers:
-        - 1
-        - 2
-        - 3
+        - 0xFF
 
     # Right Underwater Boulder Rupee (Yellow)
     - action: patch
@@ -2161,9 +2011,7 @@ F_SP115:
         # with the one randomizer rupee nearby
         parameters: 0x1358FF03
       layers:
-        - 1
-        - 2
-        - 3
+        - 0xFF
 
     # Right Underwater Boulder Rupee (Blue 1)
     - action: patch
@@ -2183,9 +2031,7 @@ F_SP115:
         # with the one randomizer rupee nearby
         parameters: 0x1358FF02
       layers:
-        - 1
-        - 2
-        - 3
+        - 0xFF
 
     # Right Underwater Boulder Rupee (Blue 2)
     - action: patch
@@ -2205,9 +2051,7 @@ F_SP115:
         # with the one randomizer rupee nearby
         parameters: 0x1358FF02
       layers:
-        - 1
-        - 2
-        - 3
+        - 0xFF
 
     # Spawn Auru on layers 1 & 3
     - action: add
@@ -2260,11 +2104,7 @@ F_SP115:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 1
-        - 2
-        - 3
-        - 13
-        - 14
+        - 0xFF
 
     # Add entrance coming from gerudo desert (entrance ID 5000)
     - action: add
@@ -2280,11 +2120,7 @@ F_SP115:
         z: 0x1388
       set id: 0xFFFF
       layers:
-        - 1
-        - 2
-        - 3
-        - 13
-        - 14
+        - 0xFF
 
   # Room 1 - Lanayru Spring
   1:
@@ -2306,9 +2142,7 @@ F_SP115:
         # with the one randomizer rupee nearby
         parameters: 0x131DFF03
       layers:
-        - 0
-        - 2
-        - 14
+        - 0xFF
 
     # Lower Underwater Boulder Rupee (Blue)
     - action: patch
@@ -2328,9 +2162,7 @@ F_SP115:
         # with the one randomizer rupee nearby
         parameters: 0x131DFF02
       layers:
-        - 0
-        - 2
-        - 14
+        - 0xFF
 
     # Lower Underwater Boulder Rupee (Green 1)
     - action: patch
@@ -2350,9 +2182,7 @@ F_SP115:
         # with the one randomizer rupee nearby
         parameters: 0x131DFF01
       layers:
-        - 0
-        - 2
-        - 14
+        - 0xFF
 
     # Lower Underwater Boulder Rupee (Green 2)
     - action: patch
@@ -2372,9 +2202,7 @@ F_SP115:
         # with the one randomizer rupee nearby
         parameters: 0x131DFF01
       layers:
-        - 0
-        - 2
-        - 14
+        - 0xFF
 
     # Upper Underwater Boulder Rupee (Yellow 1)
     - action: patch
@@ -2394,9 +2222,7 @@ F_SP115:
         # with the one randomizer rupee nearby
         parameters: 0x1339FF03
       layers:
-        - 0
-        - 2
-        - 14
+        - 0xFF
 
     # Upper Underwater Boulder Rupee (Yellow 2)
     - action: patch
@@ -2416,9 +2242,7 @@ F_SP115:
         # with the one randomizer rupee nearby
         parameters: 0x1339FF03
       layers:
-        - 0
-        - 2
-        - 14
+        - 0xFF
 
     # Upper Underwater Boulder Rupee (Green)
     - action: patch
@@ -2438,9 +2262,7 @@ F_SP115:
         # with the one randomizer rupee nearby
         parameters: 0x1339FF01
       layers:
-        - 0
-        - 2
-        - 14
+        - 0xFF
 
     # Add hint sign underwater
     - action: add
@@ -2457,9 +2279,7 @@ F_SP115:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 2
-        - 14
+        - 0xFF
 
 # Castle Town
 F_SP116:
@@ -2482,7 +2302,7 @@ F_SP116:
         # Make the shoe shiner always appear
         parameters: 0x0434F000
       layers:
-        - 0
+        - 0xFF
 
     # Add hint sign south of the central fountain
     - action: add
@@ -2499,7 +2319,7 @@ F_SP116:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
   # Room 1 - North Castle Town
   1:
@@ -2521,7 +2341,7 @@ F_SP116:
         name: htPiece
         parameters: 0xFFFFFFE1
       layers:
-        - 1
+        - 0xFF
 
 # Sacred Grove
 F_SP117:
@@ -2547,7 +2367,7 @@ F_SP117:
         position:
           y: 1383
       layers:
-        - 2
+        - 0xFF
 
     # Door to the past
     - action: patch
@@ -2658,7 +2478,7 @@ F_SP117:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 2
+        - 0xFF
 
   # Room 2 - Temple of Time
   2:
@@ -2680,7 +2500,7 @@ F_SP117:
         name: htPiece
         parameters: 0x00FF98D1
       layers:
-        - 2
+        - 0xFF
 
 # Outside Arbiters Grounds
 F_SP118:
@@ -2745,10 +2565,7 @@ F_SP118:
         # Give this chest a unique tboxid
         parameters: 0xFF0FF7C0
       layers:
-        - 0
-        - 1
-        - 2
-        - 3
+        - 0xFF
 
     # Chest in back of bulblin camp
     - action: patch
@@ -2767,10 +2584,7 @@ F_SP118:
         # Give this chest a unique tboxid
         parameters: 0xFF0FF780
       layers:
-        - 0
-        - 1
-        - 2
-        - 3
+        - 0xFF
 
     # Gate to King Bublin 2 Fight
     - action: patch
@@ -2807,10 +2621,7 @@ F_SP118:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 1
-        - 2
-        - 3
+        - 0xFF
 
     # Move the entrance from outside arbiters -> bublin camp forward
     # incase randomized entrances lead here. Otherwise, the player gets
@@ -2857,9 +2668,7 @@ F_SP121:
         name: htPiece
         parameters: 0x00FF99C2
       layers:
-        - 0
-        - 6
-        - 8
+        - 0xFF
 
     # Female Grasshopper
     - action: patch
@@ -2879,9 +2688,7 @@ F_SP121:
         name: htPiece
         parameters: 0x00FF98C3
       layers:
-        - 0
-        - 6
-        - 8
+        - 0xFF
 
     # Male Phasmid
     - action: patch
@@ -2901,9 +2708,7 @@ F_SP121:
         name: htPiece
         parameters: 0x00FF97C8
       layers:
-        - 0
-        - 6
-        - 8
+        - 0xFF
 
     # Female Phasmid
     - action: patch
@@ -2923,9 +2728,7 @@ F_SP121:
         name: htPiece
         parameters: 0x00FF96C9
       layers:
-        - 0
-        - 6
-        - 8
+        - 0xFF
 
     # Yellow Rupee under BoE Boulder 1
     - action: patch
@@ -2945,10 +2748,7 @@ F_SP121:
         # with the one randomizer rupee nearby
         parameters: 0xF377FF03
       layers:
-        - 0
-        - 6
-        - 8
-        - 14
+        - 0xFF
 
     # Yellow Rupee under BoE Boulder 2
     - action: patch
@@ -2968,10 +2768,7 @@ F_SP121:
         # with the one randomizer rupee nearby
         parameters: 0xF377FF03
       layers:
-        - 0
-        - 6
-        - 8
-        - 14
+        - 0xFF
 
     # Add hint sign next to Eldin field south small bridge
     - action: add
@@ -2988,10 +2785,7 @@ F_SP121:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 6
-        - 8
-        - 14
+        - 0xFF
 
   # Room 3 - Kakariko Gorge
   3:
@@ -3013,8 +2807,7 @@ F_SP121:
         name: htPiece
         parameters: 0x00FF95CA
       layers:
-        - 0
-        - 6
+        - 0xFF
 
     # Female Pill Bug
     - action: patch
@@ -3034,8 +2827,7 @@ F_SP121:
         name: htPiece
         parameters: 0x00FF94CB
       layers:
-        - 0
-        - 6
+        - 0xFF
 
     # Blue Rupee under Gorge Spire Boulder 1
     - action: patch
@@ -3055,9 +2847,7 @@ F_SP121:
         # with the one randomizer rupee nearby
         parameters: 0xF37AFF02
       layers:
-        - 0
-        - 6
-        - 14
+        - 0xFF
 
     # Blue Rupee under Gorge Spire Boulder 2
     - action: patch
@@ -3077,9 +2867,7 @@ F_SP121:
         # with the one randomizer rupee nearby
         parameters: 0xF37AFF02
       layers:
-        - 0
-        - 6
-        - 14
+        - 0xFF
 
     # Green Rupee under Gorge Spire Boulder
     - action: patch
@@ -3099,9 +2887,7 @@ F_SP121:
         # with the one randomizer rupee nearby
         parameters: 0xF37AFF01
       layers:
-        - 0
-        - 6
-        - 14
+        - 0xFF
 
     # Blue Rupee under Gorge Statue Boulder 1
     - action: patch
@@ -3121,9 +2907,7 @@ F_SP121:
         # with the one randomizer rupee nearby
         parameters: 0xF378FF02
       layers:
-        - 0
-        - 6
-        - 14
+        - 0xFF
 
     # Blue Rupee under Gorge Statue Boulder 2
     - action: patch
@@ -3143,9 +2927,7 @@ F_SP121:
         # with the one randomizer rupee nearby
         parameters: 0xF378FF02
       layers:
-        - 0
-        - 6
-        - 14
+        - 0xFF
 
     # Blue Rupee under Gorge Statue Boulder 3
     - action: patch
@@ -3165,9 +2947,7 @@ F_SP121:
         # with the one randomizer rupee nearby
         parameters: 0xF378FF02
       layers:
-        - 0
-        - 6
-        - 14
+        - 0xFF
 
     # Blue Rupee under Gorge Statue Boulder 4
     - action: patch
@@ -3187,9 +2967,7 @@ F_SP121:
         # with the one randomizer rupee nearby
         parameters: 0xF378FF02
       layers:
-        - 0
-        - 6
-        - 14
+        - 0xFF
 
     # Add Epona Jump to post MDH layers
     - action: add
@@ -3227,9 +3005,7 @@ F_SP121:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 6
-        - 14
+        - 0xFF
 
   # Room 6 - Faron Field
   6:
@@ -3253,10 +3029,7 @@ F_SP121:
         position:
           y: -8910 # Lower by 100 so Link can reach it
       layers:
-        - 0
-        - 6
-        - 9
-        - 10
+        - 0xFF
 
     # Female Beetle
     - action: patch
@@ -3276,10 +3049,7 @@ F_SP121:
         name: htPiece
         parameters: 0x00FF9EC1
       layers:
-        - 0
-        - 6
-        - 9
-        - 10
+        - 0xFF
 
     # Spawn coming from Outside South Castle Town
     - action: patch
@@ -3301,10 +3071,7 @@ F_SP121:
           y: -9428.5810546875
           z: 53030.3203125
       layers:
-        - 0
-        - 6
-        - 9
-        - 10
+        - 0xFF
 
     # Add hint sign under bridge
     - action: add
@@ -3321,10 +3088,7 @@ F_SP121:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 6
-        - 9
-        - 10
+        - 0xFF
 
   # Room 7 - North Eldin
   7:
@@ -3390,10 +3154,7 @@ F_SP121:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 6
-        - 8
-        - 14
+        - 0xFF
 
   # Room 10 - Lanayru Field
   10:
@@ -3415,8 +3176,7 @@ F_SP121:
         name: htPiece
         parameters: 0x00FF9BC4
       layers:
-        - 0
-        - 6
+        - 0xFF
 
     # Female Stag Beetle
     - action: patch
@@ -3436,8 +3196,7 @@ F_SP121:
         name: htPiece
         parameters: 0x00FF9AC5
       layers:
-        - 0
-        - 6
+        - 0xFF
 
     # South Underwater Boulder Rupee (Yellow)
     - action: patch
@@ -3457,10 +3216,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0x137FFF03
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # South Underwater Boulder Rupee (Green)
     - action: patch
@@ -3480,10 +3236,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0x137FFF01
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # South Underwater Boulder Rupee (Blue 1)
     - action: patch
@@ -3503,10 +3256,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0x137FFF02
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # South Underwater Boulder Rupee (Blue 2)
     - action: patch
@@ -3526,10 +3276,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0x137FFF02
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # North Underwater Boulder Rupee (Red 1)
     - action: patch
@@ -3549,10 +3296,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0x137EFF04
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # North Underwater Boulder Rupee (Red 1)
     - action: patch
@@ -3572,10 +3316,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0x137EFF04
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # North Spinner Track Boulder Rupee (Yellow 1)
     - action: patch
@@ -3595,10 +3336,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0xF30FFF03
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # North Spinner Track Boulder Rupee (Yellow 2)
     - action: patch
@@ -3618,10 +3356,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0xF30FFF03
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Add hint sign at path fork in west Lanayru Field
     - action: add
@@ -3638,10 +3373,7 @@ F_SP121:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
   # Room 12 - Hylia Bridge-Lanayru Field Transition
   12:
@@ -3663,10 +3395,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0xF30EFF02
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # South Spinner Track Boulder Rupee (Blue 2)
     - action: patch
@@ -3686,10 +3415,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0xF30EFF02
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # South Spinner Track Boulder Rupee (Blue 3)
     - action: patch
@@ -3709,10 +3435,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0xF30EFF02
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
   # Room 13 - Great Bridge of Hylia
   13:
@@ -3734,8 +3457,7 @@ F_SP121:
         name: htPiece
         parameters: 0x00FF93CC
       layers:
-        - 0
-        - 6
+        - 0xFF
 
     # Female Mantis
     - action: patch
@@ -3755,8 +3477,7 @@ F_SP121:
         name: htPiece
         parameters: 0x00FF92CD
       layers:
-        - 0
-        - 6
+        - 0xFF
 
     # Boulder Near Owl Statue Rupee (Blue 1)
     - action: patch
@@ -3776,10 +3497,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0xF37CFF02
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Boulder Near Owl Statue Rupee (Blue 2)
     - action: patch
@@ -3799,10 +3517,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0xF37CFF02
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Boulder Near Owl Statue Rupee (Blue 3)
     - action: patch
@@ -3822,10 +3537,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0xF37CFF02
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Boulder Near Faron Rupee (Yellow)
     - action: patch
@@ -3845,10 +3557,7 @@ F_SP121:
         # with the nearby randomized item
         parameters: 0xF37BFF03
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Add hint sign on platform above owl statue
     - action: add
@@ -3865,10 +3574,7 @@ F_SP121:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
 # Outside Castle Town Maps
 F_SP122:
@@ -3892,7 +3598,7 @@ F_SP122:
         name: htPiece
         parameters: 0x00FF9DC2
       layers:
-        - 0
+        - 0xFF
 
     # Male Butterfly again (for some reason the one on layer 6 has a different x position)
     - action: patch
@@ -3932,8 +3638,7 @@ F_SP122:
         name: htPiece
         parameters: 0x00FF9CCD
       layers:
-        - 0
-        - 6
+        - 0xFF
 
     # Golden Wolf Outside Castle Town West
     - action: patch
@@ -3953,11 +3658,7 @@ F_SP122:
         name: htPiece
         parameters: 0xFFFFFFE1
       layers:
-        - 0
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Northern Boulder Rupee (Yellow)
     - action: patch
@@ -3977,11 +3678,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34BFF03
       layers:
-        - 0
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Northern Boulder Rupee (Green 1)
     - action: patch
@@ -4001,11 +3698,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34BFF01
       layers:
-        - 0
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Northern Boulder Rupee (Green 2)
     - action: patch
@@ -4025,11 +3718,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34BFF01
       layers:
-        - 0
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Northern Boulder Rupee (Green 3)
     - action: patch
@@ -4049,11 +3738,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34BFF01
       layers:
-        - 0
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Northern Boulder Rupee (Blue)
     - action: patch
@@ -4073,11 +3758,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34BFF02
       layers:
-        - 0
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Southern Boulder Rupee (Yellow 1)
     - action: patch
@@ -4097,11 +3778,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34BFF03
       layers:
-        - 0
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Southern Boulder Rupee (Yellow 2)
     - action: patch
@@ -4121,11 +3798,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34BFF03
       layers:
-        - 0
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Southern Boulder Rupee (Blue 1)
     - action: patch
@@ -4145,11 +3818,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34BFF02
       layers:
-        - 0
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Southern Boulder Rupee (Blue 2)
     - action: patch
@@ -4169,11 +3838,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34BFF02
       layers:
-        - 0
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Add hint sign on platform with helmasaur grotto
     - action: add
@@ -4190,10 +3855,7 @@ F_SP122:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
   # Room 16 - Outside South Castle Town
   16:
@@ -4217,9 +3879,7 @@ F_SP122:
         position:
           y: -6081 # Lower the item so it isn't awkwardly floating
       layers:
-        - 0
-        - 1
-        - 6
+        - 0xFF
 
     # Female Ladybug
     - action: patch
@@ -4239,9 +3899,7 @@ F_SP122:
         name: htPiece
         parameters: 0x00FF90CF
       layers:
-        - 0
-        - 1
-        - 6
+        - 0xFF
 
     # Golden Wolf Outside Castle Town South
     - action: patch
@@ -4261,8 +3919,7 @@ F_SP122:
         name: htPiece
         parameters: 0xFFFFFFE1
       layers:
-        - 1
-        - 6
+        - 0xFF
 
     # Boulder Rupee (Green 1)
     - action: patch
@@ -4282,12 +3939,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34AFF01
       layers:
-        - 0
-        - 1
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Boulder Rupee (Green 2)
     - action: patch
@@ -4307,12 +3959,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34AFF01
       layers:
-        - 0
-        - 1
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Boulder Rupee (Green 3)
     - action: patch
@@ -4332,12 +3979,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34AFF01
       layers:
-        - 0
-        - 1
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Boulder Rupee (Blue 1)
     - action: patch
@@ -4357,12 +3999,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34AFF02
       layers:
-        - 0
-        - 1
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Boulder Rupee (Blue 2)
     - action: patch
@@ -4382,12 +4019,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34AFF02
       layers:
-        - 0
-        - 1
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Boulder Rupee (Blue 3)
     - action: patch
@@ -4407,12 +4039,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34AFF02
       layers:
-        - 0
-        - 1
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Boulder Rupee (Yellow)
     - action: patch
@@ -4432,12 +4059,7 @@ F_SP122:
         # with the nearby randomized item
         parameters: 0xF34AFF03
       layers:
-        - 0
-        - 1
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Spawn coming from Faron Field
     - action: patch
@@ -4459,12 +4081,7 @@ F_SP122:
           y: -6698.830078125
           z: 37038.19140625
       layers:
-        - 0
-        - 1
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
     # Add hint sign south of the fountain
     - action: add
@@ -4481,12 +4098,7 @@ F_SP122:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 1
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
     
     # Add entrance coming from lake hylia (entrance ID 5000)
     - action: add
@@ -4502,12 +4114,7 @@ F_SP122:
         z: 0x1388
       set id: 0xFFFF
       layers:
-        - 0
-        - 1
-        - 4
-        - 6
-        - 13
-        - 14
+        - 0xFF
 
 # Gerudo Desert
 F_SP124:
@@ -4531,7 +4138,7 @@ F_SP124:
         name: htPiece
         parameters: 0x00FF99D6
       layers:
-        - 0
+        - 0xFF
 
     # Female Dayfly
     - action: patch
@@ -4551,7 +4158,7 @@ F_SP124:
         name: htPiece
         parameters: 0x00FF98D7
       layers:
-        - 0
+        - 0xFF
 
     # Golden Wolf in Desert
     - action: patch
@@ -4571,7 +4178,7 @@ F_SP124:
         name: htPiece
         parameters: 0xFFFFFFE1
       layers:
-        - 0
+        - 0xFF
 
     # Add hint sign before jump down to lower desert
     - action: add
@@ -4588,7 +4195,7 @@ F_SP124:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
+        - 0xFF
 
 # Mirror Chamber
 F_SP125:
@@ -4609,8 +4216,7 @@ F_SP125:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 1
+        - 0xFF
 
 # Upper Zora's River
 F_SP126:
@@ -4634,8 +4240,7 @@ F_SP126:
         name: htPiece
         parameters: 0x00FF9ED3
       layers:
-        - 0
-        - 1
+        - 0xFF
 
     # Central Underwater Boulder Rupee (Blue 1)
     - action: patch
@@ -4655,10 +4260,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1360FF02
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # Central Underwater Boulder Rupee (Blue 2)
     - action: patch
@@ -4678,10 +4280,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1360FF02
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # Central Underwater Boulder Rupee (Blue 3)
     - action: patch
@@ -4701,10 +4300,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1360FF02
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # Central Underwater Boulder Rupee (Green)
     - action: patch
@@ -4724,10 +4320,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1360FF01
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # Central Underwater Boulder Rupee (Yellow)
     - action: patch
@@ -4747,10 +4340,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1360FF03
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # West Underwater Boulder Rupee (Yellow 1)
     - action: patch
@@ -4770,10 +4360,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x135FFF03
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # West Underwater Boulder Rupee (Yellow 2)
     - action: patch
@@ -4793,10 +4380,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x135FFF03
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # West Underwater Boulder Rupee (Blue 1)
     - action: patch
@@ -4816,10 +4400,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x135FFF02
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # West Underwater Boulder Rupee (Blue 2)
     - action: patch
@@ -4839,10 +4420,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x135FFF02
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # West Underwater Boulder Rupee (Blue 3)
     - action: patch
@@ -4862,10 +4440,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x135FFF02
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # West Underwater Boulder Rupee (Green 1)
     - action: patch
@@ -4885,10 +4460,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x135FFF01
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # West Underwater Boulder Rupee (Green 2)
     - action: patch
@@ -4908,10 +4480,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x135FFF01
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # West Underwater Boulder Rupee (Green 3)
     - action: patch
@@ -4931,10 +4500,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x135FFF01
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # East Underwater Boulder Rupee (Yellow)
     - action: patch
@@ -4954,10 +4520,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1354FF03
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # East Underwater Boulder Rupee (Blue 1)
     - action: patch
@@ -4977,10 +4540,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1354FF02
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # East Underwater Boulder Rupee (Blue 2)
     - action: patch
@@ -5000,10 +4560,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1354FF02
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # East Underwater Boulder Rupee (Green 1)
     - action: patch
@@ -5023,10 +4580,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1354FF01
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # East Underwater Boulder Rupee (Green 1)
     - action: patch
@@ -5046,10 +4600,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1354FF01
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # Ledge Boulder Rupee (Yellow)
     - action: patch
@@ -5069,10 +4620,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1367FF03
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # Ledge Boulder Rupee (Blue 1)
     - action: patch
@@ -5092,10 +4640,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1367FF02
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # Ledge Boulder Rupee (Blue 2)
     - action: patch
@@ -5115,10 +4660,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1367FF02
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # Ledge Boulder Rupee (Blue 3)
     - action: patch
@@ -5138,10 +4680,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1367FF02
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
     # Ledge Boulder Rupee (Green)
     - action: patch
@@ -5161,10 +4700,7 @@ F_SP126:
         # with the one randomizer rupee nearby
         parameters: 0x1367FF01
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
     
     # Add entrance coming from hyrule field (entrance ID 5000)
     - action: add
@@ -5180,10 +4716,7 @@ F_SP126:
         z: 0x1388
       set id: 0xFFFF
       layers:
-        - 0
-        - 1
-        - 13
-        - 14
+        - 0xFF
 
 # Fishing Pond
 F_SP127:
@@ -5204,11 +4737,7 @@ F_SP127:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 14
+        - 0xFF
 
 # Hidden Village
 F_SP128:
@@ -5229,9 +4758,7 @@ F_SP128:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 1
-        - 2
+        - 0xFF
 
 # Faron Woods Interiors
 R_SP108:
@@ -5461,10 +4988,7 @@ R_SP109:
         name: htPiece
         parameters: 0x00FF90D5
       layers:
-        - 0
-        - 1
-        - 2
-        - 3
+        - 0xFF
 
 # Castle Town Shops
 R_SP160:
@@ -5484,5 +5008,4 @@ R_SP160:
         z: 0x0000
       set id: 0xFFFF
       layers:
-        - 0
-        - 1
+        - 0xFF

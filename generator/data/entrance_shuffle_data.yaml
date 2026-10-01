@@ -3040,11 +3040,11 @@
 - Type: Overworld
   Forward:
     Connection: Outside Castle Town South -> Lake Hylia
-    Stage: 57
-    Room: 16
-    Spawn: 1
-    Spawn Type: "05"
-    Parameters: "F09F"
+    Stage: 52
+    Room: 0
+    Spawn: 17
+    Spawn Type: "0C"
+    Parameters: ""
     State: -1
   Return:
     Connection: Lake Hylia -> Outside Castle Town South

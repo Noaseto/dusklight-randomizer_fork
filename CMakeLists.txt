@@ -32,10 +32,15 @@ FetchContent_Declare(
         GIT_TAG yaml-cpp-0.9.0
 )
 message(STATUS "randomizer: Fetching base64pp")
+set(_randomizer_exclude_from_all)
+if (CMAKE_VERSION VERSION_GREATER_EQUAL 3.28)
+    set(_randomizer_exclude_from_all EXCLUDE_FROM_ALL)
+endif ()
 FetchContent_Declare(
         base64pp
         GIT_REPOSITORY https://github.com/matheusgomes28/base64pp.git
         GIT_TAG v0.2.0-rc0
+        ${_randomizer_exclude_from_all}
 )
 
 message(STATUS "randomizer: Fetching battery-embed")
@@ -118,7 +123,7 @@ foreach (RANDOMIZER_FILE IN LISTS RANDOMIZER_DATA)
 endforeach ()
 
 # Versioning
-set(RANDOMIZER_VERSION "1.0.5")
+set(RANDOMIZER_VERSION "1.0.6")
 find_package(Git QUIET)
 if(GIT_FOUND)
     execute_process(

@@ -479,6 +479,17 @@ ModResult onGameModeActivated(void*, ModError* error) {
     return MOD_OK;
 }
 
+ModResult onNewSaveSelect(void* user_data, GameModeNewSaveState* state, ModError* out_error) {
+    ui::g_dialogSelectModeState = state;
+
+    ModResult rt = ui::buildFileSelectGateMenu();
+    if (rt != MOD_OK) {
+        return mods::set_error(out_error, rt, "Failed to build menu");
+    }
+
+    return MOD_OK;
+}
+
 void shutdown() {
     deactivateSeed();
     hooks::uninstall();
@@ -518,6 +529,7 @@ ModResult initialize(const ServiceManager& services) {
         .on_deactivated = onGameModeDeactivated,
         .on_save_loaded = onSaveLoaded,
         .on_new_save = onNewSave,
+        .on_new_save_select = onNewSaveSelect,
         .on_tick = onGameModeUpdate,
     };
     result = svc_game_mode->register_game_mode(mod_ctx, &gameModeDesc);

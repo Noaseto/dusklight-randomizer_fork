@@ -6769,6 +6769,11 @@ Snowboard Racing Prize:
     Text: la {récompense de la Course de glissade}
   Cryptic:
     Text: the {Snowboard Racing Prize}
+  Template Overrides:
+    - Keys:
+        - Location Hint
+      Pretty:
+        Text: de la {Course de glissade}
 
 Snowboarding Bridge Ledge Bottom Rupee:
   Standard:
@@ -9991,7 +9996,7 @@ Mirror Shard 2 Get item Text:
   Standard:
     Text: |-
       <fast>Vous obtenez le second fragment
-      du <red>Mirroir des Ombres<white>! Il
+      du <red>Miroir des Ombres<white>! Il
       a un éclat magnifique et il s'en 
       dégage une légère <light blue>fraicheur<white>...
 
@@ -9999,7 +10004,7 @@ Mirror Shard 3 Get item Text:
   Standard:
     Text: |-
       <fast>Vous obtenez le troisième
-      fragment du <red>Mirroir des Ombres<white>!
+      fragment du <red>Miroir des Ombres<white>!
       Il est recouvert de terre et de
       <dark green>toiles d'araignées<white>...
 
@@ -10007,7 +10012,7 @@ Mirror Shard 4 Get item Text:
   Standard:
     Text: |-
       <fast>Vous obtenez le dernier fragment
-      du <red>Mirroir des Ombres<white>! Il
+      du <red>Miroir des Ombres<white>! Il
       est plus léger que l'<yellow>air<white>...
 
 Arbiters Grounds Compass Get Item Text:
@@ -10134,7 +10139,7 @@ Mirror Shard 1 Get Item Text:
   Standard:
     Text: |-
       <fast>Vous obtenez le premier fragment
-      du <red>Mirroir des Ombres<white>! Il 
+      du <red>Miroir des Ombres<white>! Il 
       est couvert de <orange>sable<white>...
 
 Poe Soul Get Item Text:
